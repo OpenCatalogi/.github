@@ -1,2 +1,2 @@
 # General Repository
-This repository holds al the porject managment files for OpenCatalogi
+This repository holds all the project management files for OpenCatalogi
