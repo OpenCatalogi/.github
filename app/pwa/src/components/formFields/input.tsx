@@ -28,12 +28,13 @@ export const InputText: React.FC<IInputProps & IReactHookFormProps> = ({
   name,
   defaultValue,
   validation,
+  icon,
   register,
   errors,
 }) => (
   <TextField
     type="text"
-    {...{ defaultValue, disabled }}
+    {...{ defaultValue, disabled, icon }}
     {...register(name, { ...validation })}
     invalid={errors[name]}
   />
@@ -44,12 +45,13 @@ export const InputEmail: React.FC<IInputProps & IReactHookFormProps> = ({
   name,
   defaultValue,
   validation,
+  icon,
   register,
   errors,
 }) => (
   <TextField
     type="email"
-    {...{ defaultValue, disabled }}
+    {...{ defaultValue, disabled, icon }}
     {...register(name, { ...validation })}
     invalid={errors[name]}
   />
@@ -59,13 +61,14 @@ export const InputDate: React.FC<IInputProps & IReactHookFormProps> = ({
   disabled,
   name,
   defaultValue,
+  icon,
   validation,
   register,
   errors,
 }) => (
   <TextField
     type="date"
-    {...{ defaultValue, disabled }}
+    {...{ defaultValue, disabled, icon }}
     {...register(name, { ...validation })}
     invalid={errors[name]}
   />
@@ -75,13 +78,14 @@ export const InputNumber: React.FC<IInputProps & IReactHookFormProps> = ({
   disabled,
   name,
   defaultValue,
+  icon,
   validation,
   register,
   errors,
 }) => (
   <TextField
     type="number"
-    {...{ defaultValue, disabled }}
+    {...{ defaultValue, disabled, icon }}
     {...register(name, { ...validation })}
     invalid={errors[name]}
   />

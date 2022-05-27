@@ -8,6 +8,7 @@ export interface IReactHookFormProps {
 
 export interface IInputProps {
   name: string;
+  icon?: JSX.Element;
   disabled?: boolean;
   defaultValue?: string;
 }
