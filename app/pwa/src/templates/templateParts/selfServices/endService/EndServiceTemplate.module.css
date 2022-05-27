@@ -1,0 +1,20 @@
+.container > *:not(:last-child) {
+  margin-block-end: var(--nlportal-space-block-4xl);
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tableRow {
+  display: flex;
+}
+
+.tableHeader {
+  flex: 1;
+}
+
+.tableCell {
+  flex: 2;
+}

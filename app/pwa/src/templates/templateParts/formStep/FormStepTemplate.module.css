@@ -1,0 +1,19 @@
+.container > *:not(:last-child) {
+  margin-block-end: var(--nlportal-space-block-2xl);
+}
+
+.formContainer > form > *:not(:last-child) {
+  margin-block-end: var(--nlportal-space-block-2xl);
+}
+
+.formContainer > form button {
+  all: unset;
+  display: flex;
+  margin-inline-start: auto;
+}
+
+.previousStep {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+}

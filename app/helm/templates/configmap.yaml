@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "api-platform.fullname" . }}
+  labels:
+    {{- include "api-platform.labels" . | nindent 4 }}
+data:
+  {{- if .Values.gateway.enabled }}
+  gateway-location: https://{{ .Values.ingress.hostname }}
+  {{- else }}
+  gateway-location: {{ .Values.gateway.location }}
+  {{- end }}
+  properties: |-
+    export const GATSBY_API_URL= "{{ .Values.pwa.apiUrl }}"
+    export const GATSBY_ADMIN_URL= "{{ .Values.pwa.adminUrl }}"
+    export const GATSBY_ME_URL= "{{ .Values.pwa.meUrl }}"
+    export const GATSBY_BASE_URL= "{{ .Values.pwa.baseUrl }}"
+    export const GATSBY_FRONTEND_URL= "{{ .Values.pwa.frontendUrl }}"
+    export const GATSBY_ORGANIZATION= "{{ .Values.pwa.organization }}"
+    export const GATSBY_LOGIN_REDIRECT= "{{ .Values.pwa.redirectUrl }}"

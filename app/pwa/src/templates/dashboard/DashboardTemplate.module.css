@@ -1,0 +1,20 @@
+.container {
+  padding-block-start: var(--nlportal-space-block-5xl, 4rem);
+  padding-block-end: var(--nlportal-space-block-5xl, 4rem);
+}
+
+.menu {
+  position: fixed;
+  margin-inline-end: var(--denhaag-space-inline-2xl);
+}
+
+.content {
+  z-index: 0;
+  position: relative;
+  width: calc(100% / 12 * 9);
+  margin-inline-start: calc(100% / 12 * 3);
+}
+
+.content > :first-child {
+  margin-block-end: var(--nlportal-space-block-2xl);
+}

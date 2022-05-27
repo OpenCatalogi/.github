@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dividerHidden {
+  visibility: hidden;
+}

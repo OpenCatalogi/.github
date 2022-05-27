@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container > *:not(:last-child) {
+  margin-block-end: var(--nlportal-space-block-xs);
+}
+
+.icon {
+  color: var(--nlportal-meta-icon-color);
+}
+
+.value {
+  font-weight: var(--nlportal-meta-icon-font-weight-bold);
+}

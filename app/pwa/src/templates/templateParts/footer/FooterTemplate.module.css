@@ -1,0 +1,39 @@
+/* AuthenticatedFooterTemplate */
+.authenticated {
+  position: relative;
+  background-color: var(--nlportal-footer-background-color);
+}
+
+.inner {
+  display: flex;
+  padding-block-start: var(--nlportal-space-block-2xl);
+  padding-block-end: var(--nlportal-space-block-2xl);
+}
+
+.inner > *:not(:last-child) {
+  margin-inline-end: var(--denhaag-space-inline-5xl);
+  color: var(--utrecht-heading-4-color);
+}
+
+.inner .subHeader {
+  color: var(--nlportal-footer-header-color);
+}
+
+.listItem > button > div > span,
+.listItem > button > div {
+  color: var(--nlportal-footer-link-color);
+}
+
+.authenticatedImageDivider {
+  height: var(--nlportal-header-facet-height);
+}
+
+/* UnauthenticatedFooterTemplate */
+.unauthenticated {
+  background-color: var(--conduction-footer-secondary-background-color);
+  height: var(--conduction-footer-height);
+}
+
+.unauthenticatedImageDivider {
+  height: var(--nlportal-space-block-md);
+}

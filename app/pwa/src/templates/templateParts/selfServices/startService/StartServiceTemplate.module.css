@@ -1,0 +1,18 @@
+.container > *:not(:last-child) {
+  margin-block-end: var(--nlportal-space-block-4xl);
+}
+
+.title > *:not(:first-child),
+.process > *:not(:first-child),
+.info > *:not(:first-child) {
+  margin-block-end: var(--nlportal-space-block-4xl);
+}
+
+.listItem > div > span {
+  display: list-item;
+  list-style-type: disc;
+}
+
+.listItem > button > div > span {
+  text-align: left;
+}

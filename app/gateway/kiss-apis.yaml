@@ -1,0 +1,64 @@
+App\Entity\CollectionEntity:
+  zrcCollection:
+    name: zrc collection
+    sourceType: GitHub
+    locationOAS: https://raw.githubusercontent.com/VNG-Realisatie/gemma-zaken/master/api-specificatie/zrc/1.2.x/openapi.yaml
+    testDataLocation: https://raw.githubusercontent.com/ConductionNL/zrc_publiccode/main/data/zrc.json
+    loadTestData: true
+    autoLoad: true
+
+  ztcCollection:
+    name: ZTC collection
+    sourceType: GitHub
+    locationOAS: https://raw.githubusercontent.com/VNG-Realisatie/gemma-zaken/master/api-specificatie/ztc/1.1.x/openapi.yaml
+    testDataLocation: https://raw.githubusercontent.com/ConductionNL/ztc_publiccode/main/data/ztc.json
+    loadTestData: true
+    autoLoad: true
+
+  drcCollection:
+    name: DRC collection
+    sourceType: GitHub
+    locationOAS: https://raw.githubusercontent.com/VNG-Realisatie/gemma-zaken/master/api-specificatie/drc/1.1.x/openapi.yaml
+    testDataLocation: https://raw.githubusercontent.com/ConductionNL/drc_publiccode/main/data/drc.json
+    loadTestData: true
+    autoLoad: true
+
+  verzoekenCollection:
+    name: verzoeken collection
+    sourceType: GitHub
+    locationOAS: https://raw.githubusercontent.com/VNG-Realisatie/verzoeken-api/master/src/openapi.yaml
+    testDataLocation: https://raw.githubusercontent.com/ConductionNL/verzoeken_publiccode/main/data/verzoeken.json
+    loadTestData: true
+    autoLoad: true
+
+  brcCollection:
+    name: brc collection
+    sourceType: GitHub
+    locationOAS: https://raw.githubusercontent.com/VNG-Realisatie/gemma-zaken/master/api-specificatie/brc/1.1.x/openapi.yaml
+    testDataLocation: https://raw.githubusercontent.com/ConductionNL/brc_publiccode/main/data/brc.json
+    loadTestData: true
+    autoLoad: true
+
+  brpCollection:
+    name: brp collection
+    sourceType: GitHub
+    locationOAS: https://raw.githubusercontent.com/VNG-Realisatie/Haal-Centraal-BRP-bevragen/master/specificatie/genereervariant/openapi.yaml
+    testDataLocation: https://raw.githubusercontent.com/ConductionNL/brp_publiccode/main/data/brp.yml
+    loadTestData: true
+    autoLoad: true
+
+  contactmomentenCollection:
+    name: contactmomenten collection
+    sourceType: GitHub
+    locationOAS: https://raw.githubusercontent.com/VNG-Realisatie/contactmomenten-api/master/src/openapi.yaml
+    testDataLocation: https://raw.githubusercontent.com/ConductionNL/contactmomenten_publiccode/main/data/contactmomenten.json
+    loadTestData: true
+    autoLoad: true
+        
+  pdcCollection:
+    name: pdc collection 
+    sourceType: GitHub
+    locationOAS: https://raw.githubusercontent.com/ConductionNL/PDC_publiccode/main/PDC_OAS.json
+    testDataLocation: https://raw.githubusercontent.com/ConductionNL/PDC_publiccode/main/data/PDC.json
+    loadTestData: true
+    autoLoad: true

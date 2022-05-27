@@ -1,0 +1,62 @@
+App\Entity\Group:
+    digid:
+        name: DIGID
+        description: Digid group
+        organization: http://api/admin/organizations/a1c8e0b6-2f78-480d-a9fb-9792142f4761
+        scopes:
+            - '@zaken_read'
+            - '@contactmomenten_read'
+
+    anonymous:
+        name: ANONYMOUS
+        description: Anonymous group
+        organization: http://api/admin/organizations/a1c8e0b6-2f78-480d-a9fb-9792142f4761
+        scopes: 
+            - '@products_read'
+
+    admin:
+        description: the admin group
+        id: 2809c0d7-fecf-41da-8dbf-3d09af0d025c
+        name: admin
+        organization: http://api/admin/organizations/a1c8e0b6-2f78-480d-a9fb-9792142f4761
+        scopes:
+            - '@admin_create'
+            - '@admin_read'
+            - '@admin_remove'
+            - '@admin_update'
+App\Entity\Scope:
+    admin_create:
+        code: POST.admin
+        name: Create admin
+    admin_read:
+        code: GET.admin
+        name: Read admin
+    admin_remove:
+        code: DELETE.admin
+        name: Remove admin
+    admin_update:
+        code: PUT.admin
+        name: Update admin
+
+    products_read:
+        name: 'Read products'
+        code: 'GET.product'
+
+    zaken_read:
+        code: 'GET.zaak'
+        name: 'Read zaken'
+
+    contactmomenten_read:
+        code: 'GET.contactmoment'
+        name: 'Read contactmomenten'
+    
+App\Entity\User:
+    someUser:
+        id: 2ac800cc-b844-458d-87e1-b206fa80113a
+        organization: http://api/admin/organizations/a1c8e0b6-2f78-480d-a9fb-9792142f4761
+        #!ChangeMe!
+        password: '\$2y\$10\$j.1PMChAalEoRYgVd3xAN.6Ikk8p0MfiknhLGrp8bU./SjxXUa6pG'
+        person: http://api/admin/people/d2a24edf-6ced-40a2-8e7c-56803f4ce3f5
+        userGroups:
+            - '@admin'
+        username: test@gateway.local

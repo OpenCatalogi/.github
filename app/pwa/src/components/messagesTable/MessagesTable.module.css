@@ -1,0 +1,4 @@
+.contentRow > :last-child {
+  display: flex;
+  justify-content: flex-end;
+}

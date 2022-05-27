@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--denhaag-color-grey-1);
+  border-radius: var(--nlportal-border-radius);
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageOrIconContainer > :first-child {
+  width: var(--conduction-horizontal-image-card-icon-size);
+  height: var(--conduction-horizontal-image-card-icon-size);
+
+  padding-inline-start: var(--nlportal-space-inline-md);
+  padding-inline-end: var(--nlportal-space-inline-md);
+  padding-block-start: var(--nlportal-space-block-md);
+  padding-block-end: var(--nlportal-space-block-md);
+}
+
+.title {
+  font-size: var(--conduction-horizontal-image-card-font-size);
+}

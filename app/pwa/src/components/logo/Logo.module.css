@@ -1,0 +1,15 @@
+.logoContainer {
+  height: 100%;
+}
+
+.logo {
+  background-size: 100% 100%;
+}
+
+.authenticatedLogo {
+  background-image: var(--conduction-authenticated-logo-background);
+}
+
+.unauthenticatedLogo {
+  background-image: var(--conduction-unauthenticated-logo-background);
+}

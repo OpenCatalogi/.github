@@ -1,0 +1,12 @@
+.container {
+  z-index: 0;
+  position: relative;
+}
+
+.authenticatedHeader {
+  z-index: 1;
+}
+
+.pageContent {
+  min-height: 100vh;
+}

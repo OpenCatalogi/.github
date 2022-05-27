@@ -1,0 +1,25 @@
+.th {
+  width: 35%;
+}
+
+.cancel {
+  color: var(--denhaag-color-grey-3) !important;
+}
+
+.editButtonsContainer {
+  display: flex;
+  margin-block-start: var(--nlportal-space-block-xs);
+}
+
+.editButtonsContainer > *:not(:last-child) {
+  margin-inline-end: var(--nlportal-space-inline-md);
+}
+
+.submit {
+  all: unset;
+}
+
+.editButton {
+  display: flex;
+  justify-content: flex-end;
+}

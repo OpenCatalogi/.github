@@ -1,0 +1,13 @@
+.container {
+  margin-block-start: var(--nlportal-space-block-4xl);
+}
+
+.container > *:not(:last-child) {
+  margin-block-end: var(--nlportal-space-block-4xl);
+}
+
+.container > .loginCards {
+  display: grid;
+  grid-gap: var(--nlportal-space-inline-xl);
+  grid-template-columns: 1fr 1fr;
+}

@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > *:not(:last-child) {
+  margin-block-end: var(--nlportal-space-block-4xl);
+}
+
+.container > .services > *,
+.container > .cases > *,
+.container > .messages > * {
+  margin-block-end: var(--nlportal-space-block-xl);
+}
+
+.container > .services > .servicesHeading,
+.container > .cases > .casesHeading,
+.container > .messages > .messagesHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container > .services > .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.container > .services > .grid > .card {
+  width: unset;
+}

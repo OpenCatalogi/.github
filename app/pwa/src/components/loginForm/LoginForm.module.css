@@ -1,0 +1,3 @@
+.container > *:not(:first-child) {
+  margin-block-start: var(--nlportal-space-block-md);
+}

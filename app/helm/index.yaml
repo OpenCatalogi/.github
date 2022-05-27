@@ -1,0 +1,34 @@
+apiVersion: v1
+entries:
+  commonground-gateway:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-04-15T12:33:50.484417+02:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.9.5
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.3.2
+    description: A Helm chart for Kubernetes
+    digest: f562da7744a44b335afdb6e027c3ac9795fa2eb8d8338e4836c11ac5e435a68d
+    name: commonground-gateway
+    type: application
+    urls:
+    - charts/commonground-gateway-0.1.6.tgz
+    version: 0.1.6
+  skeleton-pip:
+  - apiVersion: v1
+    appVersion: 0.1.0
+    created: "2022-04-15T12:33:50.47766+02:00"
+    description: A Helm chart for the Skeleton Gatsby Application
+    digest: 192143ecbe15dca8bac6b5601f0514bea030d651ba6e2eed8c8c1c204fde099d
+    name: skeleton-pip
+    type: application
+    urls:
+    - skeleton-pip-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-04-15T12:33:50.466024+02:00"
