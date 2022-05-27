@@ -39,6 +39,13 @@
   padding-block-end: 6.5px;
 }
 
+.select > div:hover {
+  border-color: var(
+    --utrecht-textbox-border-color,
+    var(--utrecht-form-input-border-color)
+  );
+}
+
 .select > div:focus-within {
   outline: none;
   box-shadow: none;
