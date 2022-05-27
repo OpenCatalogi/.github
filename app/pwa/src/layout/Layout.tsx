@@ -6,15 +6,8 @@ import APIContext, { APIProvider } from "../apiService/apiContext";
 import APIService from "../apiService/apiService";
 import { GatsbyProvider, IGatsbyContext } from "../context/gatsby";
 import { StylesProvider } from "@gemeente-denhaag/components-react";
-import {
-  AuthenticatedHeaderTemplate,
-  UnauthenticatedHeaderTemplate,
-} from "../templates/templateParts/header/HeaderTemplate";
-import {
-  AuthenticatedFooterTemplate,
-  UnauthenticatedFooterTemplate,
-} from "../templates/templateParts/footer/FooterTemplate";
-import { isLoggedIn } from "../services/auth";
+import { HeaderTemplate } from "../templates/templateParts/header/HeaderTemplate";
+import { FooterTemplate } from "../templates/templateParts/footer/FooterTemplate";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -35,11 +28,13 @@ const Layout: React.FC<LayoutProps> = ({ children, pageContext, location }) => {
   }, [pageContext, location]);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.layout}>
       <GatsbyProvider value={gatsbyContext}>
         <APIProvider value={API}>
           <StylesProvider>
-            {isLoggedIn() ? <AuthenticatedLayout {...{ children }} /> : <UnauthenticatedLayout {...{ children }} />}
+            <HeaderTemplate />
+            <div className={styles.pageContent}>{children}</div>
+            <FooterTemplate />
           </StylesProvider>
         </APIProvider>
       </GatsbyProvider>
@@ -48,33 +43,3 @@ const Layout: React.FC<LayoutProps> = ({ children, pageContext, location }) => {
 };
 
 export default Layout;
-
-/**
- * Authenticated Template
- */
-interface AuthenticatedLayoutProps {
-  children: React.ReactNode;
-}
-
-const AuthenticatedLayout: React.FC<AuthenticatedLayoutProps> = ({ children }) => (
-  <>
-    <AuthenticatedHeaderTemplate layoutClassName={styles.authenticatedHeader} />
-    <div className={styles.pageContent}>{children}</div>
-    <AuthenticatedFooterTemplate />
-  </>
-);
-
-/**
- * Unauthenticated Template
- */
-interface UnauthenticatedLayoutProps {
-  children: React.ReactNode;
-}
-
-const UnauthenticatedLayout: React.FC<UnauthenticatedLayoutProps> = ({ children }) => (
-  <>
-    <UnauthenticatedHeaderTemplate />
-    <div className={styles.pageContent}>{children}</div>
-    <UnauthenticatedFooterTemplate />
-  </>
-);
