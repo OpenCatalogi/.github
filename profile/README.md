@@ -10,7 +10,7 @@
 Het datamodel van open catalogi is gebaseerd op publiccode, een Europeess standaard voor het beschrijven van opensource projecten. Dit model vertaald naar een OpenAPI beschrijving in lijn met de NL API Strategie. Deze is standaard is tevens aangevuld met elementen uit de huidige commonground catalogus en developer.overheid om te komen tot een overkoepeld datamodel voor opensource in Nederland.
 
 Lees meer
--	[Het volledige datamodel]([https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/OpenCatalogi/api/master/OAS.json&nocors](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/OpenCatalogi/api/9b7ab405820227e162d9fa8068c110b71268c8fe/OAS.yaml&nocors))
+-	[Het volledige datamodel](https://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/OpenCatalogi/api/9b7ab405820227e162d9fa8068c110b71268c8fe/OAS.yaml&nocors)
 -	[Afwijkingen ten opzichte van publiccode](https://github.com/OpenCatalogi/.github/discussions/10)
 
 
