@@ -1,4 +1,4 @@
-name: Bug
+name: Bug report
 description: File a bug report
 title: "[Bug]: "
 labels: [bug]
@@ -34,9 +34,9 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: technical-location
+    id: installation
     attributes:
-      label: Project Location
+      label: Instalation Location
       description: Where is the project located?
       options:
         - Local
