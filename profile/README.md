@@ -81,7 +81,7 @@ In indelding van de user stories naar sprints en een overzicht van de begin en e
 | Wie             | Wat                    | Wanneer               | Datums      |
 |-----------------|------------------------|-----------------------|-------------|
 | Stuurgroep      | Stuurgroep overleg     | Eens in de vier weken | Te bepalen  |
-| Ontwerpgroep    | Sprint Refinement      | Eens in de twee weken | Te bepalen  |
+| Ontwerpgroep    | Sprint Refinement & Review     | Eens in de twee weken | Te bepalen  |
 | Validatiegroep  | Sprint Review en Demo  | Eens in de twee weken | Te bepalen  |
 | Developmentteam | Sprint                 | Aantal dagen per week | Te bepalen  |
 | Geintreseerde   | Publieke Demo          | Eens in de 6 weken    | Te bepalen  |
