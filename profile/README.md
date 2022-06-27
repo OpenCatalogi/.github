@@ -2,6 +2,13 @@
 # Welkom! 👋
 
 ## 🙋‍♀️ Wat is het Open Catalogi
+Een federatieve catalogus ‘OpenCatalogi’, passend in het nieuwe informatielandschap Common Ground. Het concept OpenCatalogi biedt overzicht per gekozen (individuele) gemeente en geaggregeerde informatie van deelnemende gemeenten. Elke deelnemende gemeente installeert de OpenCatalogi software ten behoeve van vulling van het individuele deel. Gemeenten gebruiken de publicatiefunctie van het individuele deel om herbruikbare en uitwisselbare onderdelen te publiceren zodat dit inzichtelijk wordt voor andere deelnemers van OpenCatalogi.
+
+![image](https://user-images.githubusercontent.com/4021899/175858094-1000864a-525d-4f86-934a-07490bc796e9.png)
+
+
+## Aanleiding
+Vanuit de Vereniging van Nederlandse Gemeenten (VNG) is er in het groeipact Common Ground een samenwerking aangegaan op het gebied van een nieuwe, moderne, gezamenlijke informatievoorziening voor gemeenten. Samen organiseren op de Common Ground houdt onder andere in dat gemeenten gebruik maken van dezelfde componenten en services. Hiervoor is het van belang dat deze componenten en services vindbaar en herbruikbaar zijn, zodat andere gemeenten deze ook kunnen implementeren. Op deze manier worden maar één keer ontwikkelkosten gemaakt en hoeft niet elke gemeente het wiel opnieuw uit te vinden. Omdat gemeenten steeds meer landelijk samenwerken en daarbij gebruikmaken van hetzelfde vijflaags informatiekundig model, is een overzicht nodig van herbruikbare en uitwisselbare onderdelen binnen en tussen gemeenten, in alle ontwikkelingsfases. Daarnaast is inzicht nodig in de werking en samenhang van elk onderdeel. Idealiter zijn deze onderdelen ook direct op te halen vanuit dit overzicht (zowel bron als instructies). In deze zin is Open Catalogi een opvolger van de huidige [componentencatalogus](https://componentencatalogus.commonground.nl/).
 
 ## 👩‍💻 Useful resources 
 - Demo omgeving: [OpenCatalogi.nl](https://opencatalogi.nl)
@@ -13,6 +20,47 @@ Lees meer
 -	[Het volledige datamodel](https://conduction.stoplight.io/docs/publiccode)
 -	[Afwijkingen ten opzichte van publiccode](https://github.com/OpenCatalogi/.github/discussions/10)
 
+## Project Inrichting
+Open Catalogi wordt naast het developerment teamd 
+
+*Ontwerpgroep*
+Verantwoordelijkheden
+- Detailuitwerking userstories
+- Beoordeling opgeleverde userstories
+- Leveren input
+- Beoordelen en werken mee aan ontwerpen
+- Raadplegen wanneer nodig de achterban
+- Aanwezig bij 2-wekelijkse sprintreview
+- Toegang tot acceptatieomgeving
+- Eindacceptatieprocedure 
+Samenstelling
+- Rotterdam
+- Overige gemeenten
+- Vertegenwoordiging Validatiegroep
+- Conduction
+
+*Validatiegroep*
+Verantwoordelijkheden
+- Deelnemen aan gebruikerstests
+- Feedback geven op gebruiksvriendelijkheid van de opgeleverde software
+Samenstelling
+- Eindgebruikers OpenCatalogi (Rotterdam, … ) 
+
+*Stuurgroep*
+Verantwoordelijkheden
+- Beslissen bij afwijkingen
+- Sturen op voortgang
+Samenstelling
+- Opdrachtgever Rotterdam
+- PO Rotterdam
+- IPO Conduction
+
+*Development Team*
+Verantwoordelijkheden
+- Bouwen en testen van de code
+Samenstelling
+- Conduction
+- SIG (in een eind stadium)
 
 ## Open Source
 Als project geloven wij in open source en open community. We kiezen er daarom bewust voor ons project open en eerlijk te draaien. Naast de code zijn ook alle user stories en de roadmap publiek toegankelijk. Overheden en leveranciers wordt gevraagd hier kennis van te nemen en actief bij te dragen.
