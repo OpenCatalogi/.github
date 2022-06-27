@@ -78,13 +78,15 @@ We werken met 8 sprints van twee weken, een volledig overizcht van alle sprints 
 
 In indelding van de user stories naar sprints en een overzicht van de begin en einddatums van de verschillende sprints kan worden terug gevonden op de [roadmap](https://github.com/orgs/OpenCatalogi/projects/1).
 
-| Wie             | Wat                                  | Wanneer               |
-|-----------------|--------------------------------------|-----------------------|
-| Stuurgroep      | Stuurgroep overleg                   | Eens in de vier weken |
-| Ontwerpgroep    | Sprint Refinement (elke 2 weken)     | Eens in de twee weken |
-| Validatiegroep  | Sprint Review en Demo (elke 2 weken) | Eens in de twee weken |
-| Developmentteam | Sprint                               | Aantal dagen per week |
-| Geintreseerde   | Publieke Demo                        | Eens in de 6 weken    |
+| Wie             | Wat                    | Wanneer               | Datums      |
+|-----------------|------------------------|-----------------------|-------------|
+| Stuurgroep      | Stuurgroep overleg     | Eens in de vier weken | Te bepalen  |
+| Ontwerpgroep    | Sprint Refinement      | Eens in de twee weken | Te bepalen  |
+| Validatiegroep  | Sprint Review en Demo  | Eens in de twee weken | Te bepalen  |
+| Developmentteam | Sprint                 | Aantal dagen per week | Te bepalen  |
+| Geintreseerde   | Publieke Demo          | Eens in de 6 weken    | Te bepalen  |
+
+Alle datums worden gedeeld via deze github organisatie, pleio en agende uitnodigingen.
 
 ## Open Source
 Als project geloven wij in open source en open community. We kiezen er daarom bewust voor ons project open en eerlijk te draaien. Naast de code zijn ook alle user stories en de roadmap publiek toegankelijk. Overheden en leveranciers wordt gevraagd hier kennis van te nemen en actief bij te dragen.
