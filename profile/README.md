@@ -70,6 +70,16 @@ Samenstelling
 - Conduction
 - SIG (in een eind stadium)
 
+## Aanpak
+We werken met 8 sprints van twee weken, een volledig overizcht van alle sprints is terug te vinden op de [roadmap](/orgs/OpenCatalogi/projects/1/views/2). De eerste sprint noemen we design sprint. Hierin stellen we het plan van aanpak op, kaderen we de MVP en maken we het technisch ontwerp. Elke twee sprints (dus om de 4 weken) komt de stuurgroep bij elkaar. Om de 3 sprints (dus elke 6 weken) is er een release en publieke demo.  Aan het einde van het project is er een oplevering en code review en acceptatie door de product owner.
+
+![image](https://user-images.githubusercontent.com/4021899/175860408-34f7750a-58e1-43ae-a7f5-440185b3f98e.png)
+![image](https://user-images.githubusercontent.com/4021899/175860417-205fc725-a2db-4ee0-b8ad-3837f1a1d8db.png)
+
+
+
+
+
 ## Open Source
 Als project geloven wij in open source en open community. We kiezen er daarom bewust voor ons project open en eerlijk te draaien. Naast de code zijn ook alle user stories en de roadmap publiek toegankelijk. Overheden en leveranciers wordt gevraagd hier kennis van te nemen en actief bij te dragen.
 
