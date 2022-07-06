@@ -1,114 +1,114 @@
-# Contribution guidelines
+# Richtlijnen voor bijdragen
 
-If you want to contribute to this repository, we ask you to follow these guidelines.
+Als je een bijdrage wilt leveren aan deze repository, vragen we je om deze richtlijnen te volgen.
 
-## Reporting bugs
-If you encounter a bug in this component, please check if an issue already exists in the issue section of this repository.
+## Fouten melden
+Als je een bug tegenkomt in dit onderdeel, controleer dan of er al een issue bestaat in onder de issue tab van deze repository.
 
-If such an issue does not exist you can create one [here](/../../issues/new?assignees=&labels=&template=bug_report.md&title=).
+Als een dergelijk probleem niet bestaat, kunt u er een [hier](/../../issues/new?assignees=&labels=&template=bug_report.md&title=) aanmaken.
 
-Make sure you answer each step in detail.
+Zorg ervoor dat u elke stap in detail beantwoordt.
 
-## Requesting new features
-Before requesting a new feature please check if the feature isn't listed in either the roadmap on the project board, or the issue tab in Github.
+## Nieuwe functies aanvragen
+Controleer voordat u een nieuwe functie aanvraagt ​​of de functie niet wordt vermeld in de roadmap op het projectbord of op het tabblad Probleem in GitHub.
 
-If this is not the case you can create one [here](/../../issues/new?assignees=&labels=&template=feature_request.md&title=).
+Als dit niet het geval is, kunt u er een [hier](/../../issues/new?assignees=&labels=&template=feature_request.md&title=) aanmaken.
 
-Make sure you answer each step in detail.
+Zorg ervoor dat u elke stap in detail beantwoordt.
 
-## Forking the repository
-To start you must first fork the repository, which can be done [here](/../../fork).
-Once this is done you can clone it to your local machine.
+## Forking van de repository
+Om te beginnen moet je eerst de repository forken, wat kan [hier](/../../fork).
+Zodra dit is gebeurd, kunt u het naar uw lokale computer klonen.
 
-## Making the changes
-On your local machine, create a new branch on the development branch.
-please use the following naming convention for your branch name:
-- `issue/issue-number`
-- `feature/feature-name`
+## De wijzigingen aanbrengen
+Maak op uw lokale computer een nieuwe vertakking op de ontwikkelingsvertakking.
+Gebruik de volgende naamgevingsconventie voor uw filiaalnaam:
+- `issue/issue-nummer`
+- `functie/functienaam`
 
-Once you have made changes or additions to the code, you can commit them (try to keep the commit message descriptive but short). 
-Be sure to format your commit message to include the issue number.
+Als je eenmaal wijzigingen of toevoegingen aan de code hebt gemaakt, kun je ze committen (probeer het commit-bericht beschrijvend maar kort te houden).
+Zorg ervoor dat u uw commit-bericht opmaakt met het nummer van de uitgave.
 
-## Code quality & conventions
-To keep the code clean and readable, we use the following coding standards:
-- [Style CI](https://styleci.io/)
+## Codekwaliteit en conventies
+Om de code schoon en leesbaar te houden, gebruiken we de volgende coderingsstandaarden:
+- [Stijl-CI](https://styleci.io/)
 - [Better code hub](https://bettercodehub.com/repositories)
 - [PSR-02](https://docs.opnsense.org/development/guidelines/psr2.html)
 - [Public Code](https://publiccode.net/)
 
 ### DocBlocks
-We use [DocBlock](https://en.wikipedia.org/wiki/Docblock) annotations in our projects.
-Docblock annotations are a tool to embed metadata inside the documentation section which can then be processed by some tool.
+We gebruiken [DocBlock](https://en.wikipedia.org/wiki/Docblock) annotaties in onze projecten.
+Docblock-annotaties zijn een hulpmiddel om metadata in de documentatiesectie in te sluiten, die vervolgens door een of ander hulpmiddel kan worden verwerkt.
 
-A few examples of how we use this in our projects:
+Een paar voorbeelden van hoe we dit toepassen in onze projecten:
 
-```vue
+```vue'
     /**
-     * @var string Name of this application
+     * @var string Naam van deze applicatie
      *
-     * @example application name
+     * @voorbeeld applicatienaam
      */
-    private $name;
+    privé $naam;
 
 
     /**
-     * Function description comes here.
+     * Functiebeschrijving komt hier.
      *
-     * @param string $code the code received by id-vault oauth endpoint.
-     * @param string $applicationId id of your id-vault application.
-     * @param string $secret secret of your id-vault application.
-     * @param string $state (optional) A random string used by your application to identify a unique session
+     * @param string $code de code ontvangen door id-vault oauth-eindpunt.
+     * @param string $applicationId id van uw id-vault-toepassing.
+     * @param string $geheim geheim van uw id-vault-toepassing.
+     * @param string $state (optioneel) Een willekeurige string die door uw toepassing wordt gebruikt om een ​​unieke sessie te identificeren
      *
-     * @return array|false information about what this function returns
+     * @return array|false informatie over wat deze functie retourneert
      */
-    public function authenticateUser(string $code, string $applicationId, string $secret, string $state = '')
+    openbare functie authenticateUser(string $code, string $applicationId, string $secret, string $state = '')
     {
 
     }
 ```
 
-You can read more about this here:
+Hier kun je meer over lezen:
 - [DocBlock](https://en.wikipedia.org/wiki/Docblock)
 
 ### Postman
-To ensure your changes work we can test this using [postman](https://www.postman.com/).
-Make sure to provide a working postman test script in your pull request.
+Om ervoor te zorgen dat uw wijzigingen werken, kunnen we dit testen met [Postman](https://www.postman.com/).
+Zorg ervoor dat u een werkend Postman-testscript opgeeft in uw pull-verzoek.
 
-### Testing and acceptence
-For all branches, when a pull request is started
-- Codebase is checker for vulnerablities trough [dependabot](https://github.com/dependabot)
-- [Style CI](https://styleci.io/) is run to determine the quality of psr-02 compliance
-- [Better code hub](https://www.bettercodehub.com/) is run to determine codebase quallity
-- Containers are build from the codebase
-- Containers are checked for vulnerablities trough [snyk](https://snyk.io/)
+### Testen en accepteren
+Voor alle branches, wanneer een pull-verzoek wordt gestart
+- Codebase controleert op kwetsbaarheden via [dependabot](https://github.com/dependabot)
+- [Style CI](https://styleci.io/) wordt uitgevoerd om de kwaliteit van psr-02-compliance te bepalen
+- [Better code hub](https://www.bettercodehub.com/) wordt uitgevoerd om de kwaliteit van de codebase te bepalen
+- Containers worden gebouwd vanuit de codebase
+- Containers worden gecontroleerd op kwetsbaarheden via [snyk](https://snyk.io/)
 
-PR’s can only be accepted when all of the above checks are completed succesfully
+PR's kunnen alleen worden geaccepteerd als alle bovenstaande controles met succes zijn voltooid
 
-Only for development and acceptation afther PR acceptence
-- The (symanthic) version number is upped
-- The changelog is filled with the released features
-- Containers are published as artifact on github
-- After each succefull container build the container is  deployed to the appropriate environment. (dev fot  developement and Demodamfor acceptation)
-- After the containers  are deployed to the appropriate envirnoment an Pen Test tool (insert link) is activated. The results of the pen test are mailed to the senior developer.
-- After each deployment the API’s are tested trough the “api test voorziening”, the results of these test are visable as a badge on de repositories readme.
-- After each deployment the frontend is checked for WCAG compliance
-- Helm files are publsiched to artifacthub
+Alleen voor ontwikkeling en acceptatie na PR-acceptatie
+- Het (symantische) versienummer is verhoogd
+- De changelog is gevuld met de vrijgegeven functies
+- Containers worden gepubliceerd als artefact op github
+- Na elke succesvolle container build wordt de container ingezet in de juiste omgeving. (dev voor ontwikkeling en Demodam voor acceptatie)
+- Nadat de containers in de juiste omgeving zijn ingezet, wordt een Pen Test-tool (link invoegen) geactiveerd. De resultaten van de pentest worden naar de senior ontwikkelaar gemaild.
+- Na elke implementatie worden de API's getest via de “api test voorziening”, de resultaten van deze testen zijn zichtbaar als een badge op de repositories readme.
+- Na elke implementatie wordt de frontend gecontroleerd op WCAG-compliance
+- Helmbestanden worden gepubliceerd op Artifacthub
 
 
-## Prepare your Pull Request
+## Bereid uw Pull Request voor
 
-When preparing your Pull Request you have to keep the following things in mind:
-- try not to break backwards compatibility, PRs that break backwards compatibility have less chance to be merged;
-- make sure you follow the coding standards defined in the code quality section
-- write clear and descriptive commit messages
+Bij het opstellen van je Pull Request moet je rekening houden met de volgende zaken:
+- probeer de achterwaartse compatibiliteit niet te verbreken, PR's die de achterwaartse compatibiliteit verbreken, hebben minder kans om te worden samengevoegd;
+- zorg ervoor dat u de coderingsnormen volgt die zijn gedefinieerd in het gedeelte over codekwaliteit
+- schrijf duidelijke en beschrijvende commit-berichten
 
-If your pull request is a feature request make sure to add it to the [changelog](CHANGELOG.md).
+Als uw pull-verzoek een functieverzoek is, zorg er dan voor dat u het toevoegt aan de [changelog](CHANGELOG.md).
 
-In the pull request description, give as much detail as possible about your changes (don’t hesitate to give code examples to illustrate your points). If your pull request is about adding a new feature or modifying an existing one, explain the rationale for the changes. The pull request description helps the code review and it serves as a reference when the code is merged (the pull request description and all its associated comments are part of the merge commit message).
-Make sure your pull requests also refers to at least one or more of the issues you worked on.
+Geef in de beschrijving van het pull-verzoek zoveel mogelijk details over uw wijzigingen (schroom niet om codevoorbeelden te geven om uw punten te illustreren). Als uw pull-verzoek gaat over het toevoegen van een nieuwe functie of het wijzigen van een bestaande, leg dan de reden voor de wijzigingen uit. De beschrijving van het pull-verzoek helpt bij het beoordelen van de code en het dient als referentie wanneer de code wordt samengevoegd (de beschrijving van het pull-verzoek en alle bijbehorende opmerkingen maken deel uit van het commit-bericht voor samenvoegen).
+Zorg ervoor dat je pull-verzoeken ook verwijzen naar ten minste een of meer van de problemen waaraan je hebt gewerkt.
 
-Whenever you feel that your code is ready for submission you can make a pull request to the development branch.
+Wanneer je denkt dat je code klaar is om te worden ingediend, kun je een pull-verzoek indienen bij de ontwikkelingstak.
 
-Keep in mind that when you create a PR you transfer the ownership of your code.
+Houd er rekening mee dat wanneer u een PR maakt, u het eigendom van uw code overdraagt.
 
-While the prerequisites above must be satisfied prior to having your pull request reviewed, the reviewer(s) may ask you to complete additional design work, tests, or other changes before your pull request can be ultimately accepted.
+Hoewel aan de bovenstaande vereisten moet zijn voldaan voordat uw pull-verzoek wordt beoordeeld, kunnen de beoordelaar(s) u vragen om extra ontwerpwerk, tests of andere wijzigingen uit te voeren voordat uw pull-verzoek uiteindelijk kan worden geaccepteerd.
