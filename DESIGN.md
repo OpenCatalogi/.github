@@ -1,9 +1,9 @@
 # Design Decisions
 
 ##  We gebruiken GitHub voor onze code en bestanden
-GitHub is een veel gebruikte oplossing binnen Common Ground en bied ons als open source project voldoende functionaliteit om ons project open en gratis te draaien
+GitHub is een veel gebruikte oplossing binnen Common Ground en biedt ons als open source project voldoende functionaliteit om ons project open en gratis te draaien
 
-## We baseren on op PublicCode
+## We baseren on op Public Code
 
 ### Afwijkingen 
-- Aan het contract opject is de property phone toegevoegd voor het vasthouden van telefoon nummers
+- Aan het contract object is de property phone toegevoegd voor het vasthouden van telefoonnummers
