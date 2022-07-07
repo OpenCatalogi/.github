@@ -73,7 +73,7 @@ Samenstelling
 - SIG (in een eind stadium)
 
 ## Aanpak
-We werken met 8 sprints van twee weken, een volledig overizcht van alle sprints is terug te vinden op de [roadmap](/orgs/OpenCatalogi/projects/1/views/2). De eerste sprint noemen we design sprint. Hierin stellen we het plan van aanpak op, kaderen we de MVP en maken we het technisch ontwerp. Elke twee sprints (dus om de 4 weken) komt de stuurgroep bij elkaar. Om de 3 sprints (dus elke 6 weken) is er een release en publieke demo.  Aan het einde van het project is er een oplevering en code review en acceptatie door de product owner.
+We werken met 8 sprints van twee weken, een volledig overizcht van alle sprints is terug te vinden op de [roadmap](/orgs/OpenCatalogi/projects/1). De eerste sprint noemen we design sprint. Hierin stellen we het plan van aanpak op, kaderen we de MVP en maken we het technisch ontwerp. Elke twee sprints (dus om de 4 weken) komt de stuurgroep bij elkaar. Om de 3 sprints (dus elke 6 weken) is er een release en publieke demo.  Aan het einde van het project is er een oplevering en code review en acceptatie door de product owner.
 
 ![image](https://user-images.githubusercontent.com/102670903/177734451-c63aadf9-0dd8-4d66-8a36-83f95fe788ab.png)
 ![image](https://user-images.githubusercontent.com/102670903/177733700-0d95fd56-f123-4264-94c2-feb0c56506e6.png)
