@@ -76,7 +76,7 @@ Samenstelling
 We werken met 8 sprints van twee weken, een volledig overizcht van alle sprints is terug te vinden op de [roadmap](/orgs/OpenCatalogi/projects/1/views/2). De eerste sprint noemen we design sprint. Hierin stellen we het plan van aanpak op, kaderen we de MVP en maken we het technisch ontwerp. Elke twee sprints (dus om de 4 weken) komt de stuurgroep bij elkaar. Om de 3 sprints (dus elke 6 weken) is er een release en publieke demo.  Aan het einde van het project is er een oplevering en code review en acceptatie door de product owner.
 
 ![image](https://user-images.githubusercontent.com/4021899/175860408-34f7750a-58e1-43ae-a7f5-440185b3f98e.png)
-![image](https://user-images.githubusercontent.com/4021899/175860417-205fc725-a2db-4ee0-b8ad-3837f1a1d8db.png)
+![image](https://user-images.githubusercontent.com/102670903/177733700-0d95fd56-f123-4264-94c2-feb0c56506e6.png)
 
 In indelding van de user stories naar sprints en een overzicht van de begin en einddatums van de verschillende sprints kan worden terug gevonden op de [roadmap](https://github.com/orgs/OpenCatalogi/projects/1).
 
