@@ -78,7 +78,7 @@ We werken met 8 sprints van twee weken, een volledig overizcht van alle sprints 
 ![image](https://user-images.githubusercontent.com/102670903/177734451-c63aadf9-0dd8-4d66-8a36-83f95fe788ab.png)
 ![image](https://user-images.githubusercontent.com/102670903/177733700-0d95fd56-f123-4264-94c2-feb0c56506e6.png)
 
-In indelding van de user stories naar sprints en een overzicht van de begin en einddatums van de verschillende sprints kan worden terug gevonden op de [roadmap](https://github.com/orgs/OpenCatalogi/projects/1).
+De indeling van de user stories naar sprints en een overzicht van de begin en einddatums van de verschillende sprints kan worden terug gevonden op de [roadmap](https://github.com/orgs/OpenCatalogi/projects/1).
 
 | Wie             | Wat                    | Wanneer               | Datums      |
 |-----------------|------------------------|-----------------------|-------------|
@@ -86,7 +86,7 @@ In indelding van de user stories naar sprints en een overzicht van de begin en e
 | Ontwerpgroep    | Sprint Refinement & Review     | Eens in de twee weken | 11-07, 25-07. 08-08, 22-08, 05-09, 19-09  |
 | Validatiegroep  | Sprint Review en Demo  | Eens in de twee weken | 22-07, 05-08, 19-08, 02-09, 16-09, 30-09  |
 | Developmentteam | Sprint                 | Aantal dagen per week | Te bepalen  |
-| Geintreseerde   | Publieke Demo          | Eens in de 6 weken    | 05-08 ,  16-09, 06-10-2022 13:00 -14:30 [Teams](https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzU4YzkxMWItNTAxNy00ZmRkLTg5YmUtY2NlYWIwNWVhYzVk%40thread.v2/0?context=%7b%22Tid%22%3a%2249c4cd82-8f65-4d6a-9a3b-0ecd07c0cf5b%22%2c%22Oid%22%3a%221b462843-5753-4f96-8506-d9af1b7f6024%22%7d) |
+| Geïntresseerden   | Publieke Demo          | Eens in de 6 weken    | 05-08 ,  16-09, 06-10-2022 13:00 -14:30 [Teams](https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzU4YzkxMWItNTAxNy00ZmRkLTg5YmUtY2NlYWIwNWVhYzVk%40thread.v2/0?context=%7b%22Tid%22%3a%2249c4cd82-8f65-4d6a-9a3b-0ecd07c0cf5b%22%2c%22Oid%22%3a%221b462843-5753-4f96-8506-d9af1b7f6024%22%7d) |
 
 Alle datums worden gedeeld via deze github organisatie, pleio en agende uitnodigingen.
 
