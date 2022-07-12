@@ -68,7 +68,7 @@ De indeling van de user stories naar sprints en een overzicht van de begin en ei
 Alle datums worden gedeeld via deze github organisatie, pleio en agende uitnodigingen.
 
 ## Communicatie
-Om de tot stand koming van OpenCatalogi zo open en transparant mogelijk houden, zullen we proberen om Reviews, demo's em dergelijke ook hier op Github te plaatsen. Maar op dit moment zoeken we nog naar de meest handige manier.
+Om de realisatie van OpenCatalogi zo open en transparant mogelijk houden, zullen we proberen om Reviews, demo's em dergelijke ook hier op Github te plaatsen. Maar op dit moment zoeken we nog naar de meest handige manier.
 
 ## Open Source
 Als project geloven wij in open source en open community. We kiezen er daarom bewust voor ons project open en eerlijk te draaien. Naast de code zijn ook alle user stories en de roadmap publiek toegankelijk. Overheden en leveranciers wordt gevraagd hier kennis van te nemen en actief bij te dragen.
