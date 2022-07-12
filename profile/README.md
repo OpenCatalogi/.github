@@ -25,75 +25,29 @@ Lees meer
 ## Project Inrichting
 Open Catalogi word ontwikkeld door de volgende groepen, partijen die willen bijdragen worden expliciet uitgenodigd deel te nemen. Zie daarvoor [“Bijdragen”](#bijdragen).
 
-| Gremium        | Samenstelling            | Verantwoordelijkheden               |
-|----------------|--------------------------|-------------------------------------|
-| Ontwerpgroep   | - Rotterdam              | - Detailuitwerking userstories      |
-|                | - Overige Gemeenten       | - Beoordeling opgeleverde userstories                                    |
-|                | - Vertegenwoordiging Validatiegroep                         | - Leveren input                                    |
-|                | - Conduction                         | - Beoordelen en werken mee aan ontwerpen                                    |
-|                |                          | - Raadplegen wanneer nodig de achterban                                    |
-|                |                          | - Aanwezig bij 2-wekelijkse sprintreview                                    |
-|                |                          | - Toegang tot acceptatieomgeving                                    |
-|                |                          | - Eindacceptatieprocedure                                    |
-|                |                          |                                     |
-| Validatiegroep | - Eindgebruikers OpenCatalogi (Rotterdam, … )                         | - Deelnemen aan gebruikerstests                                    |
-|                |                          | - Feedback geven op gebruiksvriendelijkheid van de opgeleverde software                                    |
-|                |                          |                                     |
-| Stuurgroep     | - Opdrachtgever Rotterdam | - Beslissen bij afwijkingen                                    |
-|                | - PO Rotterdam           | - Sturen op voortgang                                    |
-|                | - IPO Conduction         |                                     |
-|                |                          |                                     |
-| Developmentteam | - Conduction                         | - Bouwen en testen van de code                                    |
-|                | - SIG (in een eind stadium)                         |                                     |
-|                |                          |                                     |
+| Gremium           | Samenstelling                                   | Verantwoordelijkheden                                                       |
+|-------------------|-------------------------------------------------|-----------------------------------------------------------------------------|
+| Ontwerpgroep      | - Rotterdam                                     | - Detailuitwerking userstories                                              |
+|                   | - Overige Gemeenten                             | - Beoordeling opgeleverde userstories                                       |
+|                   | - Vertegenwoordiging Validatiegroep             | - Leveren input                                                             |
+|                   | - Conduction                                    | - Beoordelen en werken mee aan ontwerpen                                    |
+|                   |                                                 | - Raadplegen wanneer nodig de achterban                                     |
+|                   |                                                 | - Aanwezig bij 2-wekelijkse sprintreview                                    |
+|                   |                                                 | - Toegang tot acceptatieomgeving                                            |
+|                   |                                                 | - Eindacceptatieprocedure                                                   |
+|                   |                                                 |                                                                             |
+| Validatiegroep    | - Eindgebruikers OpenCatalogi (Rotterdam, … )   | - Deelnemen aan gebruikerstests                                             |
+|                   |                                                 | - Feedback geven op gebruiksvriendelijkheid van de opgeleverde software     |
+|                   |                                                 |                                                                             |
+| Stuurgroep        | - Opdrachtgever Rotterdam                       | - Beslissen bij afwijkingen                                                 |
+|                   | - PO Rotterdam                                  | - Sturen op voortgang                                                       |
+|                   | - IPO Conduction                                |                                                                             |
+|                   |                                                 |                                                                             |
+| Developmentteam   | - Conduction                                    | - Bouwen en testen van de code                                              |
+|                   | - SIG (in een eind stadium)                     |                                                                             |
+|                   |                                                 |                                                                             |
 
 
-*Ontwerpgroep*
-
-Verantwoordelijkheden
-- Detailuitwerking userstories
-- Beoordeling opgeleverde userstories
-- Leveren input
-- Beoordelen en werken mee aan ontwerpen
-- Raadplegen wanneer nodig de achterban
-- Aanwezig bij 2-wekelijkse sprintreview
-- Toegang tot acceptatieomgeving
-- Eindacceptatieprocedure 
-
-Samenstelling
-- Rotterdam
-- Overige gemeenten
-- Vertegenwoordiging Validatiegroep
-- Conduction
-
-*Validatiegroep*
-
-Verantwoordelijkheden
-- Deelnemen aan gebruikerstests
-- Feedback geven op gebruiksvriendelijkheid van de opgeleverde software
-
-Samenstelling
-- Eindgebruikers OpenCatalogi (Rotterdam, … ) 
-
-*Stuurgroep*
-
-Verantwoordelijkheden
-- Beslissen bij afwijkingen
-- Sturen op voortgang
-
-Samenstelling
-- Opdrachtgever Rotterdam
-- PO Rotterdam
-- IPO Conduction
-
-*Development Team*
-
-Verantwoordelijkheden
-- Bouwen en testen van de code
-
-Samenstelling
-- Conduction
-- SIG (in een eind stadium)
 
 ## Aanpak
 We werken met 8 sprints van twee weken, een volledig overizcht van alle sprints is terug te vinden op de [roadmap](https://github.com/orgs/OpenCatalogi/projects/1). De eerste sprint noemen we design sprint. Hierin stellen we het plan van aanpak op, kaderen we de MVP en maken we het technisch ontwerp. Elke twee sprints (dus om de 4 weken) komt de stuurgroep bij elkaar. Om de 3 sprints (dus elke 6 weken) is er een release en publieke demo.  Aan het einde van het project is er een oplevering en code review en acceptatie door de product owner.
