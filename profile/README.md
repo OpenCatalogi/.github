@@ -25,6 +25,29 @@ Lees meer
 ## Project Inrichting
 Open Catalogi word ontwikkeld door de volgende groepen, partijen die willen bijdragen worden expliciet uitgenodigd deel te nemen. Zie daarvoor [“Bijdragen”](#bijdragen).
 
+| Gremium        | Samenstelling            | Verantwoordelijkheden               |
+|----------------|--------------------------|-------------------------------------|
+| Ontwerpgroep   | - Rotterdam              | - Detailuitwerking userstories      |
+|                | - Overige Gemeenten       | - Beoordeling opgeleverde userstories                                    |
+|                | - Vertegenwoordiging Validatiegroep                         | - Leveren input                                    |
+|                | - Conduction                         | - Beoordelen en werken mee aan ontwerpen                                    |
+|                |                          | - Raadplegen wanneer nodig de achterban                                    |
+|                |                          | - Aanwezig bij 2-wekelijkse sprintreview                                    |
+|                |                          | - Toegang tot acceptatieomgeving                                    |
+|                |                          | - Eindacceptatieprocedure                                    |
+|                |                          |                                     |
+| Validatiegroep | - Eindgebruikers OpenCatalogi (Rotterdam, … )                         | - Deelnemen aan gebruikerstests                                    |
+|                |                          | - Feedback geven op gebruiksvriendelijkheid van de opgeleverde software                                    |
+|                |                          |                                     |
+| Stuurgroep     | - Opdrachtgever Rotterdam | - Beslissen bij afwijkingen                                    |
+|                | - PO Rotterdam           | - Sturen op voortgang                                    |
+|                | - IPO Conduction         |                                     |
+|                |                          |                                     |
+| Developmentteam | - Conduction                         | - Bouwen en testen van de code                                    |
+|                | - SIG (in een eind stadium)                         |                                     |
+|                |                          |                                     |
+
+
 *Ontwerpgroep*
 
 Verantwoordelijkheden
