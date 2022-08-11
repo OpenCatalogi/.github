@@ -15,6 +15,11 @@ Vanuit de Vereniging van Nederlandse Gemeenten (VNG) is er in het groeipact Comm
 ## 👩‍💻 Useful resources 
 - Demo omgeving: [OpenCatalogi.nl](https://opencatalogi.nl)
 
+## Communicatie
+Sprint review gemist? Kijk ze hier terug! 
+Sprint review 7 juli: https://vimeo.com/738214716
+Sprint review 5 augustus: https://vimeo.com/738214652
+
 ## Datamodel
 Het datamodel van open catalogi is gebaseerd op publiccode, een Europeess standaard voor het beschrijven van opensource projecten. Dit model vertaald naar een OpenAPI beschrijving in lijn met de NL API Strategie. Deze is standaard is tevens aangevuld met elementen uit de huidige commonground catalogus en developer.overheid om te komen tot een overkoepeld datamodel voor opensource in Nederland.
 
@@ -67,8 +72,6 @@ De indeling van de user stories naar sprints en een overzicht van de begin en ei
 
 Alle datums worden gedeeld via deze github organisatie, pleio en agende uitnodigingen.
 
-## Communicatie
-Om de realisatie van OpenCatalogi zo open en transparant mogelijk houden, zullen we proberen om Reviews, demo's em dergelijke ook hier op Github te plaatsen. Maar op dit moment zoeken we nog naar de meest handige manier.
 
 ## Open Source
 Als project geloven wij in open source en open community. We kiezen er daarom bewust voor ons project open en eerlijk te draaien. Naast de code zijn ook alle user stories en de roadmap publiek toegankelijk. Overheden en leveranciers wordt gevraagd hier kennis van te nemen en actief bij te dragen.
