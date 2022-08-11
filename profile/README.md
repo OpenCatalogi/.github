@@ -15,9 +15,12 @@ Vanuit de Vereniging van Nederlandse Gemeenten (VNG) is er in het groeipact Comm
 ## 👩‍💻 Useful resources 
 - Demo omgeving: [OpenCatalogi.nl](https://opencatalogi.nl)
 
-## Communicatie
+## Communicatie 
+
 Sprint review gemist? Kijk ze hier terug! 
+
 Sprint review 7 juli: https://vimeo.com/738214716
+
 Sprint review 5 augustus: https://vimeo.com/738214652
 
 ## Datamodel
