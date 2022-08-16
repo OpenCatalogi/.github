@@ -19,9 +19,11 @@ Vanuit de Vereniging van Nederlandse Gemeenten (VNG) is er in het groeipact Comm
 
 Sprint review gemist? Kijk ze hier terug! 
 
+Sprint review 5 augustus: https://vimeo.com/738214652
+
 Sprint review 7 juli: https://vimeo.com/738214716
 
-Sprint review 5 augustus: https://vimeo.com/738214652
+Kick Off 27 juni: https://vimeo.com/740023163 
 
 ## Datamodel
 Het datamodel van open catalogi is gebaseerd op publiccode, een Europeess standaard voor het beschrijven van opensource projecten. Dit model vertaald naar een OpenAPI beschrijving in lijn met de NL API Strategie. Deze is standaard is tevens aangevuld met elementen uit de huidige commonground catalogus en developer.overheid om te komen tot een overkoepeld datamodel voor opensource in Nederland.
