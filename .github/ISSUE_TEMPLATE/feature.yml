@@ -1,6 +1,6 @@
 name: Feature request
 description: Request a feature
-title: "[feature]: "
+title: "[feature]: Als gebruiker wil ik ....."
 labels: [feature-request]
 assignees:
   - rubenvdlinde
@@ -9,42 +9,41 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before crreating a feature request, please search for the behaviour in the existing issues. 
+        Before crreating a feature request, please search for the behaviour in the existing issues. Keep in mind that we use the [agile style](https://www.agilealliance.org/glossary/user-story-template/) for our user stories
         
+        - The *Who* should be included in the title. E.g. `As a user I want ...`
+        - The *What* should also  be included in the title. E.g. `a good site map`
+        - The *Why* should be defined in the firt paragraph of the user story 
         ---
         
         Thank you for taking the time to file a feature request. To procces this request as fast as possible, we need some information.
-
+  - type: textarea
+    id: why
+    attributes:
+      value: "Zodat ...."
+      label: What is the goal of your request? Why should we d0 this?
+      description: a clear and concise description of what the question is that you ar trying to solve. E.g.,  Zodat ik niet op 5 knopen moet drukken voordat ik antwoord heb  op mijn vraag
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: The acceptance criteria of the feature
+      description: When would you consider your request to be fixed.  E.g.,  Ik kan vanaf de home pagina in een keer doorklikken naar de informatie die ik zoek
+    validations:
+      required: true
   - type: dropdown
     id: component-location
     attributes:
       label: Project Location
       description: Where did you find the bug?
       options:
-        - Frontend
-        - Backend
+        - Componenten overzicht (zoek pagina)
+        - Homepage
+        - Documentatie pagina's
+        - Beheerschermen
+        - API
         - Somewhere else (please specify in the description!)
-    validations:
-      required: true
-  - type: textarea
-    id: problem
-    attributes:
-      label: Is your feature request related to a problem? Please describe
-      description: a clear and concise description of what the problem is. E.g.,  I'm always frustrated when [...]
-    validations:
-      required: false
-  - type: textarea
-    id: description
-    attributes:
-      label: Describe the solution you'd like
-      description: A clear and concise description of what you want to happen.
-    validations:
-      required: true
-  - type: textarea
-    id: alternatives
-    attributes:
-      label: Describe alternatives you've considered
-      description: A clear and concise description of any alternative solutions or features you've considered.
     validations:
       required: true
   - type: textarea
