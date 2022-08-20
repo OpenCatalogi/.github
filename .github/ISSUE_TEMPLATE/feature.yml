@@ -42,8 +42,10 @@ body:
       label: Project Location
       description: Where should we change this
       options:
-        - Componenten overzicht (zoek pagina)
         - Homepage
+        - Componenten overzicht (zoek pagina)
+        - Component detail pagina
+        - Organisatie detail pagina
         - Documentatie pagina's
         - Beheerschermen
         - API
