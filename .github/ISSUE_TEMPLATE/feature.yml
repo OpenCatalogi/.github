@@ -21,7 +21,7 @@ body:
     id: why
     attributes:
       value: "Zodat ...."
-      label: What is the goal of your request? Why should we d0 this?
+      label: What is the goal of your request? Why should we do this?
       description: a clear and concise description of what the question is that you ar trying to solve. E.g.,  Zodat ik niet op 5 knopen moet drukken voordat ik antwoord heb  op mijn vraag
     validations:
       required: true
@@ -36,7 +36,7 @@ body:
     id: component-location
     attributes:
       label: Project Location
-      description: Where did you find the bug?
+      description: Where should we change this
       options:
         - Componenten overzicht (zoek pagina)
         - Homepage
