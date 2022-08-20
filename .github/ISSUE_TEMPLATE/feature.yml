@@ -20,7 +20,7 @@ body:
   - type: textarea
     id: why
     attributes:
-      value: "Zodat ...."
+      placeholder: "Zodat ...."
       label: What is the goal of your request? Why should we do this?
       description: a clear and concise description of what the question is that you ar trying to solve. E.g.,  Zodat ik niet op 5 knopen moet drukken voordat ik antwoord heb  op mijn vraag
     validations:
@@ -28,6 +28,10 @@ body:
   - type: textarea
     id: acceptance
     attributes:
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...       
       label: The acceptance criteria of the feature
       description: When would you consider your request to be fixed.  E.g.,  Ik kan vanaf de home pagina in een keer doorklikken naar de informatie die ik zoek
     validations:
