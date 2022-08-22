@@ -19,6 +19,8 @@ Vanuit de Vereniging van Nederlandse Gemeenten (VNG) is er in het groeipact Comm
 
 Sprint review gemist? Kijk ze hier terug! 
 
+Sprint review 19 augustus: https://vimeo.com/741783237
+
 Sprint review 5 augustus: https://vimeo.com/738214652
 
 Sprint review 7 juli: https://vimeo.com/738214716
