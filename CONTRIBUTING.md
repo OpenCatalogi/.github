@@ -127,3 +127,19 @@ Publiceren vanuit repositories kan door het opnemen van een [publiccode.yaml](ht
 Op de [website van public code](https://developers.italia.it/en/reuse) valt meer te lezen over de standaard en toepassing daarvan. Vanuit de italiaanse overheid is er tevens een [online editor](https://publiccode-editor.developers.italia.it/) beschikbaar voor het maken van public code bestanden.
 
 Soms wil je geen uur wachten totdat een component (of wijzigingen daarbinnen) zichtbaar worden op github. In dat geval kan het wenselijk zijn om gebruik te maken van de opencatalogi github webhook (`https://opencatalogi.nl/github_events`). Deze github events kunnen zowel worden ingeregeld op repository als organisatieniveau. Vanuit open Catalogi zelf gaat de voorkeur uit naar organisatieniveau, in dat geval worden naast wijzigingen in de componenten ook wijzigingen in de organisatie beschrijven en het aanmaken van nieuwe repositories automatisch verwerkt. 
+
+### Aanmaken van GitHub webhook
+Kies op de organisaties pagina (of repository pagina voor de optie settings)
+![img.png](img.png)
+Kies vervolgens voor webhooks en druk rechts boven in op "Add webhook"
+![img_2.png](img_2.png)
+Geef vervolgens de volgende waardes op
+- *Payload URL* https://opencatalogi.nl/github_events
+- *Content type:* application/json
+- *Secret* `leeg laten`
+- *Which events would you like to trigger this webhook?* Let me select individual events. 
+- En selecteer dan de events -> `Organizations`,`Repositories`,`Pull requests` en `Pushes`
+- Controleer de active is aangevinkt en druk op `Add webhook`
+
+Je webhook is nu aangemaakt
+
