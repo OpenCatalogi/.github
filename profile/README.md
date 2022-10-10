@@ -21,6 +21,8 @@ Sprint review gemist? Kijk ze hier terug!
 
 Demo 6 oktober : https://vimeo.com/758638790
 
+Sprint review 16 september : https://vimeo.com/757143986
+
 Sprint review 2 september : https://vimeo.com/745780818
 
 Demo 25 augustus : https://vimeo.com/743032298
