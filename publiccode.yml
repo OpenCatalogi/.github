@@ -36,18 +36,6 @@ inputTypes:
   - application/json
   - application/ld+json
   - application/hal+json
-it:
-  conforme:
-    gdpr: false
-    lineeGuidaDesign: false
-    misureMinimeSicurezza: false
-    modelloInteroperabilita: false
-  countryExtensionVersion: '0.2'
-  piattaforme:
-    anpr: false
-    cie: false
-    pagopa: false
-    spid: false
 legal:
   license: EUPL-1.1
   mainCopyrightOwner: City of Rotterdam
@@ -67,3 +55,9 @@ platforms:
 releaseDate: '2022-10-31'
 softwareType: standalone/web
 url: 'https://github.com/OpenCatalogi/.github'
+nl:
+ gemma:
+   bedrijfsfuncties:
+      - Informatiseringsmanagement
+usedBy:
+  - Gemeente Rotterdam
