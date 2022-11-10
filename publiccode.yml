@@ -31,6 +31,7 @@ description:
       herbruikbare en uitwisselbare onderdelen te publiceren zodat dit
       inzichtelijk wordt voor andere deelnemers van OpenCatalogi.
     shortDescription: Front-end applicatie voor de federatieve catalogus
+    screenshots: "screen OpenCatalogi.PNG"
 developmentStatus: stable
 inputTypes:
   - application/json
