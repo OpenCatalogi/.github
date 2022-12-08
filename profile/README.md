@@ -19,6 +19,8 @@ Vanuit de Vereniging van Nederlandse Gemeenten (VNG) is er in het groeipact Comm
 
 Sprint review gemist? Kijk ze hier terug!
 
+Sprint review 11 november : https://vimeo.com/779203040
+
 Lancering OpenCatalogi 31 oktober : https://vimeo.com/766006826
 
 Sprint review 14 oktober : https://vimeo.com/761501647
