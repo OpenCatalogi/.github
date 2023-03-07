@@ -24,15 +24,16 @@ Momenteel zijn er twee beproefde methode om open catalogi te installeren. De pri
 De voor gedefinieerde repository kan worden binnengehaald via
 
 ```cli
-$ helm repo add common-gateway https://raw.githubusercontent.com/ConductionNL/commonground-gateway/master/api/helm/
+$ helm repo add open-catalogi https://raw.githubusercontent.com/OpenCatalogi/web-app/development/helm/index.yaml
 ```
 
 En vervolgens geïnstalleerd via 
 
 ```cli
+$ helm install [my-opencatalogi] open-catalogi/opencatalogi 
 ```
 
-Meer installatie over installeren via helm kan worden gevonden op de  [helm](https://helm.sh/), meer informatie over installatie opties kan worden gevonden op artifact hub.
+Meer installatie over installeren via helm kan worden gevonden op de  [helm](https://helm.sh/), meer informatie over installatie opties kan worden gevonden op [artifact hub](https://artifacthub.io/packages/helm/opencatalogi/commonground-gateway?modal=values).
 
 ### Alternatieve installatie route
 In sommige gevallen is er meer behoefte aan controle over de installatie (bijvoorbeeld omdat er geen kubernetes omgeving beschikbaar is) in dat geval kan gebruik worden gemaakt van een ‘kale’ common gateway instalatie, zie voor meer informatie over het installeren van de Vommon Gateway de [Common Gateway installatie handleiding](https://github.com/ConductionNL/commonground-gateway).
