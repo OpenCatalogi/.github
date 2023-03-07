@@ -15,6 +15,34 @@ Vanuit de Vereniging van Nederlandse Gemeenten (VNG) is er in het groeipact Comm
 ## 👩‍💻 Useful resources 
 - Demo omgeving: [OpenCatalogi.nl](https://opencatalogi.nl)
 
+## Installatie
+
+Open Catalogi is een common ground applicatie die is opgebouwd uit losse componenten, om deze componenten optioneel te maken zijn ze ondergebracht in losse [kubernetes containers](https://kubernetes.io/docs/concepts/containers/). Dat betekend dat voor een totaal installatie van Open Catalogi een aantal Containers nodig zijn.
+
+Momenteel zijn er twee beproefde methode om open catalogi te installeren. De primaire route is door middel van een [helm](https://helm.sh/) installatie op kubernetes. Daarvoor bieden we ook een voor gedefinieerde helm repository aan.
+
+De voor gedefinieerde repository kan worden binnengehaald via
+
+```cli
+$ helm repo add common-gateway https://raw.githubusercontent.com/ConductionNL/commonground-gateway/master/api/helm/
+```
+
+En vervolgens geïnstalleerd via 
+
+```cli
+```
+
+Meer installatie over installeren via helm kan worden gevonden op de  [helm](https://helm.sh/), meer informatie over installatie opties kan worden gevonden op artifact hub.
+
+### Alternatieve installatie route
+In sommige gevallen is er meer behoefte aan controle over de installatie (bijvoorbeeld omdat er geen kubernetes omgeving beschikbaar is) in dat geval kan gebruik worden gemaakt van een ‘kale’ common gateway instalatie, zie voor meer informatie over het installeren van de Vommon Gateway de [Common Gateway installatie handleiding](https://github.com/ConductionNL/commonground-gateway).
+
+Omdat Open Catalogi een Common Gateway plugin is kan je vervolgens simpelweg in de common gateway naar plugins navigeren zoeken naar Open Catalogi en op installeren klikken.
+
+## Bijwerken naar nieuwere versies
+Er worden regelmatig nieuwe updates van Open Catalogi gepubliceerd, deze kunnen via de Common Gateway Admin ui worden geïnstalleerd door  naar plugins te navigeren Open Catalogi te selecteren en op Update te drukken.
+
+
 ## Communicatie 
 
 Sprint review gemist? Kijk ze hier terug!
