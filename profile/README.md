@@ -36,7 +36,7 @@ $ helm install [my-opencatalogi] open-catalogi/opencatalogi
 Meer installatie over installeren via helm kan worden gevonden op de  [helm](https://helm.sh/), meer informatie over installatie opties kan worden gevonden op [artifact hub](https://artifacthub.io/packages/helm/opencatalogi/commonground-gateway?modal=values).
 
 ### Alternatieve installatie route
-In sommige gevallen is er meer behoefte aan controle over de installatie (bijvoorbeeld omdat er geen kubernetes omgeving beschikbaar is) in dat geval kan gebruik worden gemaakt van een ‘kale’ common gateway instalatie, zie voor meer informatie over het installeren van de Vommon Gateway de [Common Gateway installatie handleiding](https://github.com/ConductionNL/commonground-gateway).
+In sommige gevallen is er meer behoefte aan controle over de installatie (bijvoorbeeld omdat er geen kubernetes omgeving beschikbaar is) in dat geval kan gebruik worden gemaakt van een ‘kale’ common gateway instalatie, zie voor meer informatie over het installeren van de Common Gateway de [Common Gateway installatie handleiding](https://github.com/ConductionNL/commonground-gateway).
 
 Omdat Open Catalogi een Common Gateway plugin is kan je vervolgens simpelweg in de common gateway naar plugins navigeren zoeken naar Open Catalogi en op installeren klikken.
 
