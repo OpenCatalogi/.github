@@ -2,6 +2,7 @@
 # Welkom! 👋
 
 ## 🙋‍♀️ Wat is Open Catalogi
+
 Een federatieve catalogus ‘OpenCatalogi’, passend in het nieuwe informatielandschap Common Ground. Het concept OpenCatalogi biedt overzicht per gekozen (individuele) gemeente en geaggregeerde informatie van deelnemende gemeenten. Elke deelnemende gemeente installeert de OpenCatalogi software ten behoeve van vulling van het individuele deel. Gemeenten gebruiken de publicatiefunctie van het individuele deel om herbruikbare en uitwisselbare onderdelen te publiceren zodat dit inzichtelijk wordt voor andere deelnemers van OpenCatalogi.
 
 Lever je bijdrage hier: [User Story indienen](https://github.com/OpenCatalogi/.github/issues/new/choose).
@@ -10,16 +11,19 @@ Lever je bijdrage hier: [User Story indienen](https://github.com/OpenCatalogi/.g
 
 
 ## Aanleiding
-Vanuit de Vereniging van Nederlandse Gemeenten (VNG) is er in het groeipact Common Ground een samenwerking aangegaan op het gebied van een nieuwe, moderne, gezamenlijke informatievoorziening voor gemeenten. Samen organiseren op de Common Ground houdt onder andere in dat gemeenten gebruik maken van dezelfde componenten en services. Hiervoor is het van belang dat deze componenten en services vindbaar en herbruikbaar zijn, zodat andere gemeenten deze ook kunnen implementeren. Op deze manier worden maar één keer ontwikkelkosten gemaakt en hoeft niet elke gemeente het wiel opnieuw uit te vinden. Omdat gemeenten steeds meer landelijk samenwerken en daarbij gebruikmaken van hetzelfde vijflaags informatiekundig model, is een overzicht nodig van herbruikbare en uitwisselbare onderdelen binnen en tussen gemeenten, in alle ontwikkelingsfases. Daarnaast is inzicht nodig in de werking en samenhang van elk onderdeel. Idealiter zijn deze onderdelen ook direct op te halen vanuit dit overzicht (zowel bron als instructies). In deze zin is Open Catalogi een opvolger van de huidige [componentencatalogus](https://componentencatalogus.commonground.nl/).
+
+Vanuit de Vereniging van Nederlandse Gemeenten (VNG) is er in het groeipact Common Ground een samenwerking aangegaan op het gebied van een nieuwe, moderne, gezamenlijke informatievoorziening voor gemeenten. Samen organiseren op de Common Ground houdt onder andere in dat gemeenten gebruikmaken van dezelfde componenten en services. Hiervoor is het van belang dat deze componenten en services vindbaar en herbruikbaar zijn, zodat andere gemeenten deze ook kunnen implementeren. Op deze manier worden maar één keer ontwikkelkosten gemaakt en hoeft niet elke gemeente het wiel opnieuw uit te vinden. 
+
+Omdat gemeenten steeds meer landelijk samenwerken en daarbij gebruikmaken van hetzelfde informatiekundige vijflaagsmodel, is een overzicht nodig van herbruikbare en uitwisselbare onderdelen binnen en tussen gemeenten, in alle ontwikkelingsfases. Daarnaast is inzicht nodig in de werking en samenhang van elk onderdeel. Idealiter zijn deze onderdelen ook direct op te halen vanuit dit overzicht (zowel bron als instructies). In deze zin is OpenCatalogi een opvolger van de huidige [componentencatalogus](https://componentencatalogus.commonground.nl/).
 
 ## 👩‍💻 Useful resources 
 - Demo omgeving: [OpenCatalogi.nl](https://opencatalogi.nl)
 
 ## Installatie
 
-Open Catalogi is een common ground applicatie die is opgebouwd uit losse componenten, om deze componenten optioneel te maken zijn ze ondergebracht in losse [kubernetes containers](https://kubernetes.io/docs/concepts/containers/). Dat betekend dat voor een totaal installatie van Open Catalogi een aantal Containers nodig zijn.
+OpenCatalogi is een Common Ground applicatie die is opgebouwd uit losse componenten, om deze componenten optioneel te maken, zijn ze ondergebracht in losse [Kubernetescontainers](https://kubernetes.io/docs/concepts/containers/). Dat betekent dat voor een totaal installatie van OpenCatalogi een aantal containers nodig zijn.
 
-Momenteel zijn er twee beproefde methode om open catalogi te installeren. De primaire route is door middel van een [helm](https://helm.sh/) installatie op kubernetes. Daarvoor bieden we ook een voor gedefinieerde helm repository aan.
+Momenteel zijn er twee beproefde methode om OpenCatalogi te installeren. De primaire route is door middel van een [Helm](https://helm.sh/) installatie op Kubernetes. Daarvoor bieden we ook een voorgedefinieerde Helm repository aan.
 
 De voor gedefinieerde repository kan worden binnengehaald via
 
@@ -33,15 +37,17 @@ En vervolgens geïnstalleerd via
 $ helm install [my-opencatalogi] open-catalogi/opencatalogi 
 ```
 
-Meer installatie over installeren via helm kan worden gevonden op de  [helm](https://helm.sh/), meer informatie over installatie opties kan worden gevonden op [artifact hub](https://artifacthub.io/packages/helm/opencatalogi/commonground-gateway?modal=values).
+Meer informatie over installeren via Helm kan worden gevonden op de [helm](https://helm.sh/). Verdere informatie over installatie opties kan worden gevonden op [artifact hub](https://artifacthub.io/packages/helm/opencatalogi/commonground-gateway?modal=values).
 
 ### Alternatieve installatie route
-In sommige gevallen is er meer behoefte aan controle over de installatie (bijvoorbeeld omdat er geen kubernetes omgeving beschikbaar is) in dat geval kan gebruik worden gemaakt van een ‘kale’ common gateway instalatie, zie voor meer informatie over het installeren van de Common Gateway de [Common Gateway installatie handleiding](https://github.com/ConductionNL/commonground-gateway).
 
-Omdat Open Catalogi een Common Gateway plugin is kan je vervolgens simpelweg in de common gateway naar plugins navigeren zoeken naar Open Catalogi en op installeren klikken.
+In sommige gevallen is er meer behoefte aan controle over de installatie (bijvoorbeeld omdat er geen Kubernetes omgeving beschikbaar is) in dat geval kan gebruik worden gemaakt van een ‘kale’ Common Gateway instalatie, zie voor meer informatie over het installeren van de Common Gateway de [Common Gateway installatie handleiding](https://github.com/ConductionNL/commonground-gateway).
+
+Omdat OpenCatalogi een Common Gateway plugin is kan je vervolgens simpelweg in de Common Gatewayy naar plugins navigeren, zoeken naar OpenCatalogi, en op installeren klikken.
 
 ## Bijwerken naar nieuwere versies
-Er worden regelmatig nieuwe updates van Open Catalogi gepubliceerd, deze kunnen via de Common Gateway Admin ui worden geïnstalleerd door  naar plugins te navigeren Open Catalogi te selecteren en op Update te drukken.
+
+Er worden regelmatig nieuwe updates van OpenCatalogi gepubliceerd, deze kunnen via de Common Gateway Admin ui worden geïnstalleerd door naar plugins te navigeren OpenCatalogi te selecteren en op Update te drukken.
 
 
 ## Communicatie 
@@ -73,14 +79,17 @@ Sprint review 7 juli: https://vimeo.com/738214716
 Kick Off 27 juni: https://vimeo.com/740023163 
 
 ## Datamodel
-Het datamodel van open catalogi is gebaseerd op publiccode, een Europeess standaard voor het beschrijven van opensource projecten. Dit model vertaald naar een OpenAPI beschrijving in lijn met de NL API Strategie. Deze is standaard is tevens aangevuld met elementen uit de huidige commonground catalogus en developer.overheid om te komen tot een overkoepeld datamodel voor opensource in Nederland.
+
+Het datamodel van OpenCatalogi is gebaseerd op Public Code, een Europese standaard voor het beschrijven van opensource projecten. Dit model vertaald naar een OpenAPI-beschrijving in lijn met de NL API-strategie. Deze is standaard is tevens aangevuld met elementen uit de huidige Common Ground catalogus en developer.overheid om te komen tot een overkoepeld datamodel voor opensource in Nederland.
 
 Lees meer
+
 -	[Het volledige datamodel](https://conduction.stoplight.io/docs/publiccode)
 -	[Afwijkingen ten opzichte van publiccode](https://github.com/OpenCatalogi/.github/discussions/10)
 
-## Project Inrichting
-Open Catalogi word ontwikkeld door de volgende groepen, partijen die willen bijdragen worden expliciet uitgenodigd deel te nemen. Zie daarvoor [“Bijdragen”](#bijdragen).
+## Projectinrichting
+
+OpenCatalogi wordt ontwikkeld door de volgende groepen, partijen die willen bijdragen worden expliciet uitgenodigd deel te nemen. Zie daarvoor [“Bijdragen”](#bijdragen).
 
 | Gremium           | Samenstelling                                   | Verantwoordelijkheden                                                       |
 |-------------------|-------------------------------------------------|-----------------------------------------------------------------------------|
@@ -122,7 +131,7 @@ De indeling van de user stories naar sprints en een overzicht van de begin en ei
 | Developmentteam | Sprint                 | Aantal dagen per week | Te bepalen  |
 | Geïntresseerden   | Publieke Demo          | Eens in de 6 weken    | 25-08 13:00 - 14:30 [Teams](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NDRlMGVlZWQtZjQ3Zi00MzVkLThjMTAtZjc1NjBhNzkxOTMw%40thread.v2/0?context=%7b%22Tid%22%3a%2249c4cd82-8f65-4d6a-9a3b-0ecd07c0cf5b%22%2c%22Oid%22%3a%221b462843-5753-4f96-8506-d9af1b7f6024%22%7d),  06-10-2022 13:00 -14:30 [Teams](https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzU4YzkxMWItNTAxNy00ZmRkLTg5YmUtY2NlYWIwNWVhYzVk%40thread.v2/0?context=%7b%22Tid%22%3a%2249c4cd82-8f65-4d6a-9a3b-0ecd07c0cf5b%22%2c%22Oid%22%3a%221b462843-5753-4f96-8506-d9af1b7f6024%22%7d) |
 
-Alle datums worden gedeeld via deze github organisatie, pleio en agende uitnodigingen.
+Alle datums worden gedeeld via deze GitHub organisatie, Pleio en agende uitnodigingen.
 
 
 ## Open Source
@@ -137,4 +146,4 @@ Overheden en leveranciers kunnen op een aantal manieren bijdragen aan dit projec
 - *Bijdrage van code*. Het staat iedere partij vrij om code voor te dragen aan het project door middel van een pull request. Let er wel op dat het voordragen van code niet automatisch leidt tot het accepteren hiervan. Lees de contributing.md voor een beschrijving van het aanleverproces en daaraan verbonden eisen.
 
 ## Roadmap
-Dit project volgt een openbare [roadmap](https://github.com/orgs/OpenCatalogi/projects/1), je kunt deze terug vinden onder het bijbehorende board. De  [roadmap](https://github.com/orgs/OpenCatalogi/projects/1) heeft een indicatief karakter en er kunnen geen rechten aan worden ontleend. De [product owner](https://github.com/RonaldvCortenberghe) stelt in overleg met de product steering group de roadmap vast. Partijen die goede ideeën hebben over de roadmap wordt gevraagd deze aan te dragen. Zie daarvoor [“Bijdragen”](#bijdragen).
+Dit project volgt een openbare [roadmap](https://github.com/orgs/OpenCatalogi/projects/1), je kunt deze terugvinden onder het bijbehorende board. De [roadmap](https://github.com/orgs/OpenCatalogi/projects/1) heeft een indicatief karakter en er kunnen geen rechten aan worden ontleend. De [product owner](https://github.com/RonaldvCortenberghe) stelt in overleg met de product steering group de roadmap vast. Partijen die goede ideeën hebben over de roadmap wordt gevraagd deze aan te dragen. Zie daarvoor [“Bijdragen”](#bijdragen).
