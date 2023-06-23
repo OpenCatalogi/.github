@@ -1,6 +1,6 @@
 name: Feature request
 description: Request a feature
-title: "[feature]: Als gebruiker wil ik ....."
+title: "[feature]: As a user I want ....."
 labels: [feature-request]
 assignees:
   - rubenvdlinde
@@ -9,20 +9,20 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before crreating a feature request, please search for the behaviour in the existing issues. Keep in mind that we use the [agile style](https://www.agilealliance.org/glossary/user-story-template/) for our user stories
+        Before creating a feature request, please search for the behaviour in the existing issues. Keep in mind that we use the [agile style](https://www.agilealliance.org/glossary/user-story-template/) for our user stories
         
         - The *Who* should be included in the title. E.g. `As a user I want ...`
-        - The *What* should also  be included in the title. E.g. `a good site map`
-        - The *Why* should be defined in the firt paragraph of the user story 
+        - The *What* should also be included in the title. E.g. `a good site map`
+        - The *Why* should be defined in the first paragraph of the user story 
         ---
         
         Thank you for taking the time to file a feature request. To procces this request as fast as possible, we need some information.
   - type: textarea
     id: why
     attributes:
-      placeholder: "Zodat ...."
+      placeholder: "So ...."
       label: What is the goal of your request? Why should we do this?
-      description: a clear and concise description of what the question is that you ar trying to solve. E.g.,  Zodat ik niet op 5 knopen moet drukken voordat ik antwoord heb  op mijn vraag
+      description: a clear and concise description of what the question is that you are trying to solve. E.g.,  So I don't have to click five times before reaction
     validations:
       required: true
   - type: textarea
@@ -33,7 +33,7 @@ body:
         2. ...
         3. ...       
       label: The acceptance criteria of the feature
-      description: When would you consider your request to be fixed.  E.g.,  Ik kan vanaf de home pagina in een keer doorklikken naar de informatie die ik zoek
+      description: When would you consider your request to be fixed.  E.g.,  So I can link from the homepage
     validations:
       required: true
   - type: dropdown
@@ -43,7 +43,7 @@ body:
       description: Where should we change this
       options:
         - Homepage
-        - Componenten overzicht (zoek pagina)
+        - Componenten overzicht (zoekpagina)
         - Component detail pagina
         - Organisatie detail pagina
         - Documentatie pagina's
