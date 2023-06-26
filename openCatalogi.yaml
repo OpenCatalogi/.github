@@ -25,14 +25,14 @@ softwareUsed:
 
 # List of software the public organisation supports
 # Each item is a maintenance object representing the support provided for a software
-softwareSupported:
-  - software: 'https://github.com/organisation/software2'
-    type: 'maintenance' # The type of support provided
-    contact:
-      email: 'contact@publicorganisation.com' # Public contact email
-      phone: '+1234567890' # Public contact phone number
-  - software: 'https://github.com/organisation/software2'
-    type: 'saas' # The type of support provided
-    contact:
-      email: 'contact@publicorganisation.com' # Public contact email
-      phone: '+1234567890' # Public contact phone number
+# softwareSupported:
+#  - software: 'https://github.com/organisation/software2'
+#    type: 'maintenance' # The type of support provided
+#    contact:
+#      email: 'contact@publicorganisation.com' # Public contact email
+#      phone: '+1234567890' # Public contact phone number
+#  - software: 'https://github.com/organisation/software2'
+#    type: 'saas' # The type of support provided
+#    contact:
+#      email: 'contact@publicorganisation.com' # Public contact email
+#      phone: '+1234567890' # Public contact phone number
