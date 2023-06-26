@@ -29,7 +29,7 @@ body:
   - type: textarea
     id: acceptance
     attributes:
-      placeholder: |
+      placeholder:|
         1. ...
         2. ...
         3. ...       
@@ -40,7 +40,7 @@ body:
   - type: dropdown
     id: component-location
     attributes:
-      label: Implementation Area
+      label: Implementation Area Include any other pertinent details or screenshots related to the feature request.
       description: Where should this change occur?
       options:
         - Startpagina(Homepage)
@@ -50,7 +50,7 @@ body:
         - Documentatiepagina's
         - Beheerschermen
         - API
-        - Somewhere else (please specify in the description!)
+        - Somewhere else (please specify in the description)
     validations:
       required: true
   - type: textarea
