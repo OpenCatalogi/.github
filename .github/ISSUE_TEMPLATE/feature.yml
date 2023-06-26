@@ -43,11 +43,11 @@ body:
       label: Implementation Area
       description: Where should this change occur?
       options:
-        - Homepage
+        - Startpagina(Homepage)
         - Componenten overzicht (zoekpagina)
-        - Component detailpagina
+        - Componenten detailpagina
         - Organisatie detailpagina
-        - Documentatie pagina's
+        - Documentatiepagina's
         - Beheerschermen
         - API
         - Somewhere else (please specify in the description!)
