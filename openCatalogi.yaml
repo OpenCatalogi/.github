@@ -1,17 +1,38 @@
-name: "OpenCatalogi"
-description: "Een federatieve catalogus ‘OpenCatalogi’, passend in het nieuwe informatielandschap Common Ground. Het concept OpenCatalogi biedt overzicht per gekozen (individuele) gemeente en geaggregeerde informatie van deelnemende gemeenten. Elke deelnemende gemeente installeert de OpenCatalogi software ten behoeve van vulling van het individuele deel. Gemeenten gebruiken de publicatiefunctie van het individuele deel om herbruikbare en uitwisselbare onderdelen te publiceren zodat dit inzichtelijk wordt voor andere deelnemers van OpenCatalogi."
+openCatalogiYmlVersion: "0.2"
 
-type: "public"
+# The official name of the public organisation
+name: 'Gemeente Rotterdam'
 
-telephone: ""
-email: ""
-website: "https://opencatalogi.nl"
-logo: "https://avatars.githubusercontent.com/u/106239067?v=4"
+# The official website of the public organisation
+website: 'https://www.rotterdam.nl/'
 
-catalogusAPI: []
+# The contact details of the public organisation
+contact:
+  email: 'commongroundBCO@rotterdam.nl' # Public contact email
+  # phone: '+1234567890' # Public contact phone number
 
-uses:
-  - https://github.com/OpenCatalogi/web-app
-  - https://github.com/CommonGateway/gateway
+# List of software the public organisation owns. keep in mind that owns dosn't automaticly means maintained
+# Each item refers to the repository URL of the software
+softwareOwned:
+  - 'https://github.com/OpenCatalogi'
+  - 'https://github.com/Municipality-of-Rotterdam/Digitale-Balie'
+  
+# List of software the public organisation uses
+# Each item refers to the repository URL of the software
+softwareUsed:
+  - 'https://github.com/OpenCatalogi'
+  - 'https://github.com/Municipality-of-Rotterdam/Digitale-Balie'
 
-supports: []
+# List of software the public organisation supports
+# Each item is a maintenance object representing the support provided for a software
+softwareSupported:
+  - software: 'https://github.com/organisation/software2'
+    type: 'maintenance' # The type of support provided
+    contact:
+      email: 'contact@publicorganisation.com' # Public contact email
+      phone: '+1234567890' # Public contact phone number
+  - software: 'https://github.com/organisation/software2'
+    type: 'saas' # The type of support provided
+    contact:
+      email: 'contact@publicorganisation.com' # Public contact email
+      phone: '+1234567890' # Public contact phone number
