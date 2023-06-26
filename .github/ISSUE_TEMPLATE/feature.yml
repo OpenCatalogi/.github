@@ -9,20 +9,21 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before creating a feature request, please search for the behaviour in the existing issues. Keep in mind that we use the [agile style](https://www.agilealliance.org/glossary/user-story-template/) for our user stories
+        Before proposing a new feature, please ensure to double-check our backlog to avoid duplications. We structure our user stories in an[agile format](https://www.agilealliance.org/glossary/user-story-template/) 
         
-        - The *Who* should be included in the title. E.g. `As a user I want ...`
-        - The *What* should also be included in the title. E.g. `a good site map`
-        - The *Why* should be defined in the first paragraph of the user story 
+        - Include the *Who* in the title. For instance, `As a user, I want …`
+        - Incorporate the *What* into the title as well. For example, `… a robust site map`
+        - Define the *Why* in the first paragraph of the user story
         ---
-        
-        Thank you for taking the time to file a feature request. To procces this request as fast as possible, we need some information.
+
+        We appreciate the time you've taken to suggest a new feature. To expedite the processing of this request, we need certain details.
+
   - type: textarea
     id: why
     attributes:
       placeholder: "So ...."
-      label: What is the goal of your request? Why should we do this?
-      description: a clear and concise description of what the question is that you are trying to solve. E.g.,  So I don't have to click five times before reaction
+      label: What is the purpose of your request? Why is it necessary?
+      description: Provide a clear and precise description of the issue you're aiming to address.. 
     validations:
       required: true
   - type: textarea
@@ -32,20 +33,20 @@ body:
         1. ...
         2. ...
         3. ...       
-      label: The acceptance criteria of the feature
-      description: When would you consider your request to be fixed.  E.g.,  So I can link from the homepage
+      label: The acceptance criteria for the proposed feature
+      description: Detail the conditions that, if met, would mean your request has been successfully implemented.
     validations:
       required: true
   - type: dropdown
     id: component-location
     attributes:
-      label: Project Location
-      description: Where should we change this
+      label: Implementation Area
+      description: Where should this change occur?
       options:
         - Homepage
         - Componenten overzicht (zoekpagina)
-        - Component detail pagina
-        - Organisatie detail pagina
+        - Component detailpagina
+        - Organisatie detailpagina
         - Documentatie pagina's
         - Beheerschermen
         - API
@@ -56,4 +57,4 @@ body:
     id: context
     attributes:
       label: Additional context
-      description: Add any other context or screenshots about the feature request here.
+      description:  Include any other pertinent details or screenshots related to the feature request.
