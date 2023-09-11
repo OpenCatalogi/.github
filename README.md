@@ -59,7 +59,7 @@ Lees meer:
 
 ## API
 
-OpenCatalogi is een Common Ground applicatie en biedt daarom een API aan conform de Common Ground API standaarden. De API is beschreven in een OpenAPI specificatie en is te vinden op [deze locatie](REDOCLY LINK).
+OpenCatalogi is een Common Ground applicatie en biedt daarom een API aan conform de Common Ground API standaarden. De API is beschreven in een OpenAPI specificatie en is te vinden op [deze locatie](https://redocly.github.io/redoc/?url=https://api.opencatalogi.nl/openapi.json&nocors#tag/component/operation/component-get-item).
 
 ## Open Source
 
