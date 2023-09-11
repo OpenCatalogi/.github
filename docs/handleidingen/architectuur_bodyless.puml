@@ -1,0 +1,14 @@
+@startuml
+title OpenWeb Architecture
+
+' User Interface Component
+interface "Open WOO Website" as Website
+
+' Backend Components
+component "Open Webconcept CMS" as CMS
+
+' Relationships
+Website -down-> CMS : Directly connected trough API
+
+
+@enduml
