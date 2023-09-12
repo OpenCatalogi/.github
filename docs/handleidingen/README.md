@@ -1,5 +1,5 @@
 # Handleidingen
 
-- [Installatie](/installatie)
-- [Deelnemen](/deelnemen)
-- [Architectuur](/architectuur)
+- [Installatie](installatie)
+- [Deelnemen](deelnemen)
+- [Architectuur](architectuur)
