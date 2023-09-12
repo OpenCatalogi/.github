@@ -17,16 +17,3 @@ Omdat gemeenten steeds meer landelijk samenwerken en daarbij gebruikmaken van he
 ## 👩‍💻 Useful resources
 
 - Online omgeving: [OpenCatalogi.nl](https://opencatalogi.nl)
-
-
-
-## API
-
-OpenCatalogi is een Common Ground applicatie en biedt daarom een API aan conform de Common Ground API standaarden. De API is beschreven in een OpenAPI specificatie en is te vinden op [deze locatie](https://redocly.github.io/redoc/?url=https://api.opencatalogi.nl/openapi.json&nocors#tag/component/operation/component-get-item).
-
-## Open Source
-
-
-## Roadmap
-
-Dit project volgt een openbare [roadmap](https://github.com/orgs/OpenCatalogi/projects/1), je kunt deze terugvinden onder het bijbehorende board. De [roadmap](https://github.com/orgs/OpenCatalogi/projects/1) heeft een indicatief karakter en er kunnen geen rechten aan worden ontleend. De [product owner](https://github.com/RonaldvCortenberghe) stelt in overleg met de product steering group de roadmap vast. Partijen die goede ideeën hebben over de roadmap wordt gevraagd deze aan te dragen. Zie daarvoor [“Bijdragen”](#bijdragen).
