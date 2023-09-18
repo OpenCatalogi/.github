@@ -1,31 +1,37 @@
-# Welkom! 👋
+## Hoe Werkt Het?
+Open Catalogi creëert een federatief stelsel dat informatie verzamelt van verschillende overheidsorganisaties en deze indexeerd, vervolgs kunt u als overheids oganisaite gebruik maken van deze index of een eigen index starten. Door gebruik te maken van API's en gestandaardiseerde dataformaten, kunnen verschillende entiteiten hun informatie naadloos integreren in één federatieve  catalogus. 
 
-## 🙋‍♀️ Wat is OpenCatalogi?
+## Gebruiken
+### Informatie Beschikbaar Stellen
+Als u een overheidsorganisatie bent die informatie wil delen, kunt u eenvoudig uw data koppelen aan Open Catalogi. Het platform biedt verschillende tools en documentatie om u te helpen bij het gestandaardiseerd aanleveren van uw informatie.
 
-Een federatieve catalogus ‘OpenCatalogi’, passend in het nieuwe informatielandschap Common Ground. Het concept OpenCatalogi biedt overzicht per gekozen (individuele) gemeente en geaggregeerde informatie van deelnemende gemeenten. Elke deelnemende gemeente installeert de OpenCatalogi software ten behoeve van vulling van het individuele deel. Gemeenten gebruiken de publicatiefunctie van het individuele deel om herbruikbare en uitwisselbare onderdelen te publiceren zodat dit inzichtelijk wordt voor andere deelnemers van OpenCatalogi.
+1. Zorg dat je code of gegevens in een publieke github repository staan
+2. Maak binnen deze repository een map `.github` aan en plaats daarin [deze workflow.yaml]()
 
-Lever je bijdrage hier: [User Story indienen](https://github.com/OpenCatalogi/.github/issues/new/choose).
+Voor meer details over het leveren van informatie aan Open Catalogi via bijvoorbeeld andere catalogi of een eingen installatie zie [Aanleveren](/pages/Handleidingen/Aanleveren).
 
-![image](https://user-images.githubusercontent.com/4021899/175858094-1000864a-525d-4f86-934a-07490bc796e9.png)
+### Hergebruik door uw Organisatie kenbaar maken
+Het kan natuurlijk ook zijn dat uw organisatie software of gegevens van andere organisaties (her)gebruikt, in dat geval kan het handig zijn dat kenbaar te maken. Bijvoorbeel zodat de oorspronkenlijk aanbieder u pro-actief kan benaderen over wijzigingen.
 
-## Aanleiding
+Voor het kenbaar maken van deze gegevens kunt u gebruik maken vaan een [publicorganisation.yaml]() die meer informatie geeft over uw github organisatie.
 
-Vanuit de Vereniging van Nederlandse Gemeenten (VNG) is er in het groeipact Common Ground een samenwerking aangegaan op het gebied van een nieuwe, moderne, gezamenlijke informatievoorziening voor gemeenten. Samen organiseren op de Common Ground houdt onder andere in dat gemeenten gebruikmaken van dezelfde componenten en services. Hiervoor is het van belang dat deze componenten en services vindbaar en herbruikbaar zijn, zodat andere gemeenten deze ook kunnen implementeren. Op deze manier worden maar één keer ontwikkelkosten gemaakt en hoeft niet elke gemeente het wiel opnieuw uit te vinden.
+1. Maak binnen uw github organisaite een repositry aan met de naam .github (als us deze nog niet heeft)
+2. Maak binnen deze repository een map `.github` aan en plaats daarin [deze workflow.yaml]()
 
-Omdat gemeenten steeds meer landelijk samenwerken en daarbij gebruikmaken van hetzelfde informatiekundige vijflaagsmodel, is een overzicht nodig van herbruikbare en uitwisselbare onderdelen binnen en tussen gemeenten, in alle ontwikkelingsfases. Daarnaast is inzicht nodig in de werking en samenhang van elk onderdeel. Idealiter zijn deze onderdelen ook direct op te halen vanuit dit overzicht (zowel bron als instructies). In deze zin is OpenCatalogi een opvolger van de huidige [componentencatalogus](https://componentencatalogus.commonground.nl/).
+Voor meer details, het installeren van een eigen index en het afschermen van toegang zie [Installatie](/pages/Handleidingen/Installatie).
 
-## 👩‍💻 Useful resources
+### Een Eigen Open Catalogus Starten
+Voor organisaties die een stap verder willen gaan, biedt Open Catalogi de mogelijkheid om een eigen, op maat gemaakte catalogus te starten. Hiermee kunt u specifieke datasets en functionaliteiten toevoegen die het beste passen bij de behoeften van uw organisatie en doelgroep. En uw eigen huisstijl toepassen.
 
-- Online omgeving: [OpenCatalogi.nl](https://opencatalogi.nl)
+De makenlijkste manier om dit te doen is vanuit een github organisatie. 
+
+1. Maak binnen uw github organisaite een repositry aan met de naam .github (als us deze nog niet heeft)
+2. Maak binnen deze repository een map `.github` aan en plaats daarin [deze workflow.yaml]()
+3. Ga binnen de repository naar instellingen(Settings) -> pagina's(Pages)  en selecteer onder Build en deploy bij **Branch** `gh-pages`
+
+Voor meer details, het installeren van een eigen index en het afschermen van toegang zie [Installatie](/pages/Handleidingen/Installatie).
+
+## Meedoen
+Organisaties kunnen op verschillende manieren deelnemen aan het Open Catalogi project. Of u nu financieel wilt bijdragen aan de doorontwikkeling, deel wilt nemen aan de stuurgroep, of simpelweg de ontwikkelingen wilt volgen en feedback wilt geven, er is een vorm van deelname die bij uw organisatie past. Raadpleeg het gedeelte ['Deelname aan het Open Catalogi Project'](/pages/Handleidingen/deelnemen) voor meer informatie over hoe u kunt aansluiten en bijdragen.
 
 
-## Onderscheiding vermogen versus software catalogus
-In tegenstelling tot de gemma software catalogus kan je open catalogi direct koppelen aan interne bronnen binnen uw organisateis zo als CMDB
-
-Daarnaast ondersteund Open Catalogi ook het delen van de niet software typen zo als
-- Product service blueprints
-- Regels
-- Algoritmes
-- Zaaktypen
-- Documenten
-- Datasets
