@@ -10,3 +10,8 @@ Daarnaast ondersteund Open Catalogi ook het delen van de niet software typen zo 
 - Zaaktypen
 - Documenten
 - Datasets
+
+## PublicCode.yaml
+
+
+## PublicOrganisation.yaml

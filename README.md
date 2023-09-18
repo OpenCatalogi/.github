@@ -31,7 +31,7 @@ De makenlijkste manier om dit te doen is vanuit een github organisatie.
 
 Voor meer details, het installeren van een eigen index en het afschermen van toegang zie [Installatie](/pages/Handleidingen/Installatie).
 
-## Meedoen
+## Meedoen aan Open Catalogi
 Organisaties kunnen op verschillende manieren deelnemen aan het Open Catalogi project. Of u nu financieel wilt bijdragen aan de doorontwikkeling, deel wilt nemen aan de stuurgroep, of simpelweg de ontwikkelingen wilt volgen en feedback wilt geven, er is een vorm van deelname die bij uw organisatie past. Raadpleeg het gedeelte ['Deelname aan het Open Catalogi Project'](/pages/Handleidingen/deelnemen) voor meer informatie over hoe u kunt aansluiten en bijdragen.
 
 

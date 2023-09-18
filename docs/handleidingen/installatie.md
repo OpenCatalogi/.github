@@ -27,4 +27,4 @@ Omdat OpenCatalogi een Common Gateway plugin is kan je vervolgens simpelweg in d
 ## Bijwerken naar nieuwere versies
 
 Er worden regelmatig nieuwe updates van OpenCatalogi gepubliceerd, deze kunnen via de Common Gateway Admin ui worden geïnstalleerd door naar plugins te navigeren OpenCatalogi te selecteren en op Update te drukken.
-# Architectuur
+
