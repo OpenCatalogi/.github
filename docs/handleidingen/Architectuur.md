@@ -1,6 +1,7 @@
 # Architectuur
 
 ## Bodyless
+
 In de meest simpele opzet is een opencatalogi installatie een statles/platte react frontend de gegevens weergeeft uit het open catalogi federatieve netwerk.
 
 Als er geen aanvullende busnes logica van toepassing is (zo als rollen en rechten) en de data uit het federatieve netwerk direct wordt weergegeven is er geen noodzaak vooor een backend.
@@ -15,8 +16,6 @@ Lees meer:
 
 - [Het volledige datamodel](https://conduction.stoplight.io/docs/publiccode)
 - [Afwijkingen ten opzichte van publiccode](https://github.com/OpenCatalogi/.github/discussions/10)
-
-
 
 Het systeem is verdeeld in verschillende lagen. Laag 5 is de interactielaag, Laag 4 is de logische laag en Laag 1 is de datalaag.
 
@@ -62,5 +61,5 @@ OpenCatalogi geeft de voorkeur aan het indexeren van gegevens wanneer de bron di
 
 > :note:
 >
-> *   Bronnen worden pas gebruikt door een catalogus als de beheerder hiervoor akkoord heeft gegeven
-> *   Bronnen kunnen zelf voorwaarde stellen aan het gebruikt (bijvoorbeeld alleen met PKI-certificaat, of aan de hand van API-sleutel)
+> - Bronnen worden pas gebruikt door een catalogus als de beheerder hiervoor akkoord heeft gegeven
+> - Bronnen kunnen zelf voorwaarde stellen aan het gebruikt (bijvoorbeeld alleen met PKI-certificaat, of aan de hand van API-sleutel)
