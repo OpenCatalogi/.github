@@ -1,0 +1,14 @@
+@startuml
+title Generic Architecture
+
+' User Interface Component
+interface "Open Catalogi Website" as Website
+
+' Backend Components
+component "Federatief Netwerk" as Source
+
+' Relationships
+Website -down-> Source : Directly connected trough API
+
+
+@enduml

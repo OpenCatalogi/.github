@@ -1,6 +1,10 @@
 ## Hoe Werkt Het?
 Open Catalogi creëert een federatief stelsel dat informatie verzamelt van verschillende overheidsorganisaties en deze indexeerd, vervolgs kunt u als overheids oganisaite gebruik maken van deze index of een eigen index starten. Door gebruik te maken van API's en gestandaardiseerde dataformaten, kunnen verschillende entiteiten hun informatie naadloos integreren in één federatieve  catalogus. 
 
+Naast het fedatieve netwerk bestaad Open Catalogi uit een react frontend gebaseerd op NL Design, deze kan aan de hand van Design Tokens worden ingericht in de huisstlijl van een organisatie. 
+
+Doordat de frontend serverles (vanaf Github) gedraaid kan worden is het voor deelnemende organisaties niet noodzakenlijk om open catalogi zelf te installeren voor gebruik. Zowel voorkant als gegevens kunnen vanaf github worden aangeboden.
+
 ## Gebruiken
 ### Informatie Beschikbaar Stellen
 Als u een overheidsorganisatie bent die informatie wil delen, kunt u eenvoudig uw data koppelen aan Open Catalogi. Het platform biedt verschillende tools en documentatie om u te helpen bij het gestandaardiseerd aanleveren van uw informatie.
