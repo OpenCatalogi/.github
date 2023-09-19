@@ -1,29 +1,25 @@
-# Installatie
+# Installatie van OpenCatalogi
 
-OpenCatalogi is een Common Ground applicatie die is opgebouwd uit losse componenten, om deze componenten optioneel te maken, zijn ze ondergebracht in losse [Kubernetescontainers](https://kubernetes.io/docs/concepts/containers/). Dat betekent dat voor een volledige installatie van OpenCatalogi een aantal containers nodig zijn.
+OpenCatalogi is een Common Ground applicatie die bestaat uit diverse componenten. Om deze flexibel te houden, zijn ze gehuisvest in afzonderlijke [Kubernetes containers](https://kubernetes.io/docs/concepts/containers/). Dit houdt in dat je meerdere containers nodig hebt voor een complete installatie van OpenCatalogi.
 
-Momenteel zijn er twee beproefde methodes om OpenCatalogi te installeren. De primaire route is door middel van een [Helm](https://helm.sh/)installatie op Kubernetes. Daarvoor bieden we ook een voorgedefinieerde Helm repository aan.
+Er zijn op dit moment twee aanbevolen manieren om OpenCatalogi te installeren:
 
-De voorgedefinieerde repository kan worden binnengehaald via
+1. **Via Helm op Kubernetes**: Dit is de voornaamste methode. We hebben een speciale Helm repository voor je klaarstaan. Voeg deze toe met:
 
-```cli
-helm repo add open-catalogi https://raw.githubusercontent.com/OpenCatalogi/web-app/development/helm/index.yaml
-```
+   ```cli
+   helm repo add open-catalogi https://raw.githubusercontent.com/OpenCatalogi/web-app/development/helm/index.yaml
+   ```
 
-En vervolgens geïnstalleerd via
+   Installeer vervolgens met:
 
-```cli
-helm install [my-opencatalogi] open-catalogi/opencatalogi 
-```
+   ```cli
+   helm install [my-opencatalogi] open-catalogi/opencatalogi 
+   ```
 
-Meer informatie over installeren via Helm kan worden gevonden op de [Helm](https://helm.sh/) site. Meer informatie over de installatieopties is te vinden op [Artifact Hub](https://artifacthub.io/packages/helm/opencatalogi/commonground-gateway?modal=values).
+   Meer details over de Helm installatie vind je op de [Helm website](https://helm.sh/). Voor aanvullende installatieopties, bezoek [Artifact Hub](https://artifacthub.io/packages/helm/opencatalogi/commonground-gateway?modal=values).
 
-## Alternatieve installatieroute
+2. **Alternatieve Installatie**: Als je meer controle wilt of als je geen Kubernetes omgeving hebt, kun je kiezen voor een standaard Common Gateway installatie. Meer hierover lees je in de [Common Gateway installatiehandleiding](https://github.com/ConductionNL/commonground-gateway). Aangezien OpenCatalogi een plugin is voor Common Gateway, kun je daarna eenvoudig naar de plugins-sectie gaan, OpenCatalogi opzoeken en deze installeren.
 
-In sommige gevallen is er meer behoefte aan controle over de installatie (bijvoorbeeld omdat er geen Kubernetes omgeving beschikbaar is) in dat geval kan gebruik worden gemaakt van een "kale" Common Gateway installatie, zie voor meer informatie over het installeren van de Common Gateway de [Common Gateway installatiehandleiding](https://github.com/ConductionNL/commonground-gateway).
+## Updates
 
-Omdat OpenCatalogi een Common Gateway plugin is, kan je vervolgens simpelweg in de Common Gateway naar plugins navigeren, zoeken naar OpenCatalogi, en op installeren klikken.
-
-## Bijwerken naar nieuwere versies
-
-Er worden regelmatig nieuwe updates van OpenCatalogi gepubliceerd, deze kunnen via de Common Gateway Admin ui worden geïnstalleerd door naar plugins te navigeren OpenCatalogi te selecteren en op Update te drukken.
+OpenCatalogi krijgt regelmatig updates. Deze kun je eenvoudig installeren via de Common Gateway Admin UI. Ga naar de plugins-sectie, selecteer OpenCatalogi en klik op 'Update'.
