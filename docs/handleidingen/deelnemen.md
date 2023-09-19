@@ -1,4 +1,5 @@
 # Deelnemen
+
 Als project geloven wij in open source en open community. We kiezen er daarom bewust voor ons project open en eerlijk te draaien. Naast de code zijn ook alle user stories en de roadmap publiek toegankelijk. Overheden en leveranciers wordt gevraagd hier kennis van te nemen en actief bij te dragen.
 
 ## Bijdragen
@@ -11,13 +12,14 @@ Overheden en leveranciers kunnen op een aantal manieren bijdragen aan dit projec
 - *Bijdrage van code*. Het staat iedere partij vrij om code voor te dragen aan het project door middel van een pull request. Let er wel op dat het voordragen van code niet automatisch leidt tot het accepteren hiervan. Lees de contributing.md voor een beschrijving van het aanleverproces en daaraan verbonden eisen.
 - *Financieren van doorontwikkeling*. Als open source project is Open Catalogi afhankenlijk van externe bijdragen voor haar doorontwikkeling.
 
+## Deelname OpenCatalogi
 
-## Deelnemen
-Als uw organisatie geintreseerd is in deelname aan de Open Catalogi coaliie kunt u contact opnemen via [jaap.vanvliet@dimpact.nl](jaap.vanvliet@dimpact.nl)
+Als uw organisatie geintreseerd is in deelname aan de OpenCatalogi coalitie kunt u contact opnemen via [jaap.vanvliet@dimpact.nl](jaap.vanvliet@dimpact.nl)
 
 ## Deelnemers stuurgroep
+
 - Dimpact
-- Conxilium
+- Conxillium
 - Rotterdam
 - Roermond
 - Assen
@@ -26,7 +28,8 @@ Als uw organisatie geintreseerd is in deelname aan de Open Catalogi coaliie kunt
 - Enchede
 - Eindhoven
 
-## Geintreseerde
+## Geïntresseerde
+
 - Amersfoort
 - Zwolle
 - Hoorn
@@ -36,8 +39,8 @@ Als uw organisatie geintreseerd is in deelname aan de Open Catalogi coaliie kunt
 - Bronckhorst
 - Delft
 
-
 ## Financiering
+
 - Dimpact
 - Conxilium
 - Rotterdam
