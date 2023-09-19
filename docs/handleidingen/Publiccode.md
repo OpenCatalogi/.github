@@ -1,12 +1,27 @@
 # Publiccode
 
-Het publiceren van een component op opencatalogi.nl gaat met behulp van een publiccode.yaml bestand in de root van je repository. Om jouw component te publiceren, dien je een publiccode.yaml bestand te maken dat metadata en informatie over jouw component bevat. Dit bestand helpt het platform om jouw component te indexeren en gemakkelijk te vinden voor andere gebruikers.
+Open Catalogi maakt gebruikt van de publiccode standaard, dat betekend dat we er vanuit gaan dat alle publicaties in een publieke repository staan en zijn voorzien van een publiccode.yaml bestand.
 
-1.  Maak een `publiccode.yaml` bestand in de root van jouw repository met een teksteditor of een geïntegreerde ontwikkelomgeving (IDE).
-2.  Voeg de vereiste metadata toe aan het `publiccode.yaml` bestand. Een voorbeeld van een basisstructuur tref je hieronder.
-3.  Voeg eventuele aanvullende metadata toe die relevant kan zijn voor jouw component, zoals documentatie, afhankelijkheden, contactinformatie of onderhoudsinformatie.
-4.  Commit en push het `publiccode.yaml` bestand naar jouw repository. Houd er rekening mee dat het de eerste keer tot 24 uur kan duren voordat OpenCatalogi je component indexeert.
+Dit bestand bevat de metadata en informatie van je publicatie zo als naam, beschrijving en type. Dit bestand helpt het platform om jouw component te indexeren en gemakkelijk te vinden voor andere gebruikers.
 
+## Maken met workflow
+Vanuit het Open Catalogi project is een github workflow beschickbaar die een publicorganisation bestand aanmaakt, bijwerkt en het federatieve netwerk op de hoogte steld van eventueele wijzigingen in uw organisatie beschrijving.
+
+U kunt deze op de volgende manier gebruiken:
+
+> 1. Zorg dat je code of gegevens in een publieke github repository staan
+> 2. Maak binnen deze repository een map `.github` aan en plaats daarin [deze workflow.yaml]()
+
+
+## Handmatig Maken
+U kunt er ook voor kiezen om handmatig een publicorganisation bestand in uw repository op te nemen, houdt er in dat geval rekening mee dat het tot 24 uur kan duren voordat wijzigingen in het federatieve netwerk zichtbaar worden.
+
+> 1.  Maak een `publiccode.yaml` bestand in de root van jouw repository met een teksteditor of een geïntegreerde ontwikkelomgeving (IDE).
+> 2.  Voeg de vereiste metadata toe aan het `publiccode.yaml` bestand. Een voorbeeld van een basisstructuur tref je hieronder.
+> 3.  Voeg eventuele aanvullende metadata toe die relevant kan zijn voor jouw component, zoals documentatie, afhankelijkheden, contactinformatie of onderhoudsinformatie.
+> 4.  Commit en push het `publiccode.yaml` bestand naar jouw repository. Houd er rekening mee dat het de eerste keer tot 24 uur kan duren voordat OpenCatalogi je component indexeert.
+
+## Voorbeeld
 ```yaml
 publiccodeYmlVersion: "0.2"
 # Pas dit voorbeeld aan op basis van de specificaties van jouw component. Een volledige beschrijving van de publiccode standaard vind je op [yml.publiccode.tools](https://yml.publiccode.tools/schema.core.html#top-level-keys-and-sections) 

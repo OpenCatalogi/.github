@@ -3,3 +3,4 @@ app/.idea/
 app/pwa/.cache
 app/pwa/node_modules
 app/pwa/public
+.idea/

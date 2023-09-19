@@ -9,17 +9,12 @@ Doordat de frontend serverles (vanaf Github) gedraaid kan worden is het voor dee
 ### Informatie Beschikbaar Stellen
 Als u een overheidsorganisatie bent die informatie wil delen, kunt u eenvoudig uw data koppelen aan Open Catalogi. Het platform biedt verschillende tools en documentatie om u te helpen bij het gestandaardiseerd aanleveren van uw informatie.
 
-> 1. Zorg dat je code of gegevens in een publieke github repository staan
-> 2. Maak binnen deze repository een map `.github` aan en plaats daarin [deze workflow.yaml]()
-
 Voor meer details over het leveren van informatie aan Open Catalogi via bijvoorbeeld andere catalogi of een eingen installatie zie [Aanleveren](/pages/Handleidingen/Aanleveren).
 
 ### Hergebruik door uw Organisatie kenbaar maken
 Het kan natuurlijk ook zijn dat uw organisatie software of gegevens van andere organisaties (her)gebruikt, in dat geval kan het handig zijn dat kenbaar te maken. Bijvoorbeel zodat de oorspronkenlijk aanbieder u pro-actief kan benaderen over wijzigingen.
 
 > Voor het kenbaar maken van deze gegevens kunt u gebruik maken vaan een [publicorganisation.yaml]() die meer informatie geeft over uw github organisatie.
-> 1. Maak binnen uw github organisaite een repositry aan met de naam .github (als us deze nog niet heeft)
-> 2. Maak binnen deze repository een map `.github` aan en plaats daarin [deze workflow.yaml]()
 
 Voor meer details, het installeren van een eigen index en het afschermen van toegang zie [Installatie](/pages/Handleidingen/Installatie).
 
