@@ -2,9 +2,9 @@
 
 ## Bodyless
 
-In de meest simpele opzet is een opencatalogi installatie een statles/platte react frontend de gegevens weergeeft uit het open catalogi federatieve netwerk.
+In de meest simpele opzet is een OpenCatalogi-installatie een stateless/platte React frontend die gegevens weergeeft uit het OpenCatalogi federatieve netwerk.
 
-Als er geen aanvullende busnes logica van toepassing is (zo als rollen en rechten) en de data uit het federatieve netwerk direct wordt weergegeven is er geen noodzaak vooor een backend.
+Als er geen aanvullende business logica van toepassing is (zoals rollen en rechten) en de data uit het federatieve netwerk direct wordt weergegeven is er geen noodzaak voor een backend.
 
 ## Federatieve netwerk
 
