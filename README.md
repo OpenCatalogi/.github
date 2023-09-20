@@ -16,19 +16,14 @@ Voor meer details over het leveren van informatie aan Open Catalogi via bijvoorb
 ### Hergebruik door uw Organisatie kenbaar maken
 Het kan natuurlijk ook zijn dat uw organisatie software of gegevens van andere organisaties (her)gebruikt, in dat geval kan het handig zijn dat kenbaar te maken. Bijvoorbeel zodat de oorspronkenlijk aanbieder u pro-actief kan benaderen over wijzigingen.
 
-> Voor het kenbaar maken van deze gegevens kunt u gebruik maken vaan een [publicorganisation.yaml]() die meer informatie geeft over uw github organisatie.
-
-Voor meer details, het installeren van een eigen index en het afschermen van toegang zie [Installatie](/pages/Handleidingen/Installatie).
+Voor meer details, het installeren van een eigen index en het afschermen van toegang zie [Installatie](/pages/Handleidingen/Publicorganisation).
 
 ### Een Eigen Open Catalogus Starten
 Voor organisaties die een stap verder willen gaan, biedt Open Catalogi de mogelijkheid om een eigen, op maat gemaakte catalogus te starten. Hiermee kunt u specifieke datasets en functionaliteiten toevoegen die het beste passen bij de behoeften van uw organisatie en doelgroep. En uw eigen huisstijl toepassen.
 
-> De makenlijkste manier om dit te doen is vanuit een github organisatie.
-> 1. Maak binnen uw github organisaite een repositry aan met de naam .github (als us deze nog niet heeft)
-> 2. Maak binnen deze repository een map `.github` aan en plaats daarin [deze workflow.yaml]()
-> 3. Ga binnen de repository naar instellingen(Settings) -> pagina's(Pages)  en selecteer onder Build en deploy bij **Branch** `gh-pages`
 
-Voor meer details, het installeren van een eigen index en het afschermen van toegang zie [Installatie](/pages/Handleidingen/Installatie).
+
+Voor meer details, het installeren van een eigen index en het afschermen van toegang zie [Installatie](/pages/Handleidingen/Frontend).
 
 ## Meedoen aan Open Catalogi
 Organisaties kunnen op verschillende manieren deelnemen aan het Open Catalogi project. Of u nu financieel wilt bijdragen aan de doorontwikkeling, deel wilt nemen aan de stuurgroep, of simpelweg de ontwikkelingen wilt volgen en feedback wilt geven, er is een vorm van deelname die bij uw organisatie past. Raadpleeg het gedeelte ['Deelname aan het Open Catalogi Project'](Handleidingen/deelnemen.md) voor meer informatie over hoe u kunt aansluiten en bijdragen.
