@@ -1,3 +1,5 @@
+## Waarom Open Catalogi
+
 ## Hoe Werkt Het?
 Open Catalogi creëert een federatief stelsel dat informatie verzamelt van verschillende overheidsorganisaties en deze indexeerd, vervolgs kunt u als overheids oganisaite gebruik maken van deze index of een eigen index starten. Door gebruik te maken van API's en gestandaardiseerde dataformaten, kunnen verschillende entiteiten hun informatie naadloos integreren in één federatieve  catalogus. 
 

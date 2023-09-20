@@ -18,7 +18,18 @@ Vanuit de gedachte van zelf-documenterende code hoef je in dit geval alleen een 
 
 In de praktijk merken we echter dat het maken van een `yaml-bestand` uitdagend kan zijn. We hebben daarom een kleine GitHub workflow gemaakt die het bestand voor je genereert en automatisch bijwerkt als er wijzigingen zijn aan je codebase. Je kunt deze workflow als volgt installeren:
 
+Voor meer informatie en een korte handleiding zie [publiccode](publiccode).
+
 > **Warning**
 > GitLab en Bitbucket worden op dit moment vanwege technische redenen (limitatie op hun search API) niet ondersteund.
 
 ## Via een eigen installatie
+Als u op zoek bent naar meer controle over de toegang tot uw publicaties, biedt een eigen installatie van Open Catalogi een uitstekende oplossing. Met deze optie kunt u gedetailleerde toegangscontroles instellen voor verschillende componenten en informatie binnen uw catalogus. Dit betekent dat u vertrouwelijke informatie veilig kunt opnemen, met de zekerheid dat alleen geautoriseerde personen toegang hebben.
+
+Deze eigen installatie kan op twee manieren worden geïmplementeerd. Ten eerste kunt u kiezen voor een lokale installatie op uw eigen server, wat u volledige controle geeft over de infrastructuur. Ten tweede biedt Conduction een Software-as-a-Service (SaaS) optie, waarbij wij de technische aspecten van de hosting voor u beheren.
+
+Beide opties bieden de flexibiliteit en veiligheid die nodig zijn om aan uw specifieke behoeften te voldoen, terwijl u de controle behoudt over wie toegang heeft tot uw gegevens.
+
+Voor een installatie handleiding zie [publiccode](publiccode).
+
+Voor meer informatie over saas neem contact op met [conduction.nl](info@conduction.nl).

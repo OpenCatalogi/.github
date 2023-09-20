@@ -16,37 +16,26 @@ Overheden en leveranciers kunnen op een aantal manieren bijdragen aan dit projec
 
 Als uw organisatie geintreseerd is in deelname aan de OpenCatalogi coalitie kunt u contact opnemen via [jaap.vanvliet@dimpact.nl](jaap.vanvliet@dimpact.nl)
 
-## Deelnemers stuurgroep
+## Deelnemers
+| Organisatie         | Type                | Geïnteresseerd | Stuurgroep | Installatie | Financiering |
+|---------------------|---------------------|----------------|-----------|-------------|--------------|
+| [Dimpact](https://www.dimpact.nl)           | Samenwerkingsverband| ✓                | ✓         | ✓           | ✓            |
+| [Conxillium](https://www.conxillium.com)    | Leverancier         | ✓                |           |             |             |
+| [Rotterdam](https://www.rotterdam.nl)       | Gemeente            | ✓                | ✓         | ✓           | ✓            |
+| [Roermond](https://www.roermond.nl)         | Gemeente            | ✓                | ✓         |             | ✓            |
+| [Assen](https://www.assen.nl)               | Gemeente            | ✓                | ✓         |             | ✓            |
+| [Hilversum](https://www.hilversum.nl)       | Gemeente            | ✓              | ✓         |             | ✓            |
+| [Haarlemermeer](https://haarlemmermeergemeente.nl)| Gemeente     | ✓              | ✓         |             | ✓            |
+| [Enchede](https://www.enschede.nl)          | Gemeente            | ✓              | ✓         |             | ✓            |
+| [Eindhoven](https://www.eindhoven.nl)       | Gemeente            | ✓              | ✓         |             | ✓            |
+| [Conduction](https://www.conduction.nl)     | Leverancier         | ✓              |           | ✓           |              |
+| [Amersfoort](https://www.amersfoort.nl)     | Gemeente            | ✓              |           |             |              |
+| [Zwolle](https://www.zwolle.nl)             | Gemeente            | ✓              |           |             |              |
+| [Hoorn](https://www.hoorn.nl)               | Gemeente            | ✓              |           |             |              |
+| [Emmen](https://www.emmen.nl)               | Gemeente            | ✓              |           |             |              |
+| [Hardewijk](https://www.harderwijk.nl)      | Gemeente            | ✓              |           |             |              |
+| [Leiden](https://gemeente.leiden.nl)        | Gemeente            | ✓              |           | ✓            |              |
+| [Bronckhorst](https://www.bronckhorst.nl)   | Gemeente            | ✓              |           |             |              |
+| [Delft](https://www.delft.nl)               | Gemeente            | ✓              |           |             |              |
+| [Buren](https://www.buren.nl)               | Gemeente            | ✓              |           | ✓           |              |
 
-- Dimpact
-- Conxillium
-- Rotterdam
-- Roermond
-- Assen
-- Hilversum
-- Haarlemermeer
-- Enchede
-- Eindhoven
-
-## Geïntresseerde
-
-- Amersfoort
-- Zwolle
-- Hoorn
-- Emmen
-- Hardewijk
-- Leiden
-- Bronckhorst
-- Delft
-
-## Financiering
-
-- Dimpact
-- Conxilium
-- Rotterdam
-- Roermond
-- Assen
-- Hilversum
-- Haarlemermeer
-- Enchede
-- Eindhoven
