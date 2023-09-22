@@ -1,4 +1,10 @@
+description: The project management repository for this organization
 logo: https://avatars.githubusercontent.com/u/106239067?v=4
-name: OpenCatalogi
+name: .github
 nl: {}
-url: OpenCatalogi
+organisation:
+  logo: https://avatars.githubusercontent.com/u/106239067?v=4
+  name: OpenCatalogi
+  url: OpenCatalogi
+releaseDate: '2023-09-22'
+url: https://github.com/OpenCatalogi/.github
