@@ -1,38 +1,14 @@
-openCatalogiYmlVersion: "0.2"
-
-# The official name of the public organisation
-name: 'Gemeente Rotterdam'
-
-# The official website of the public organisation
-website: 'https://www.rotterdam.nl/'
-
-# The contact details of the public organisation
 contact:
-  email: 'commongroundBCO@rotterdam.nl' # Public contact email
-  # phone: '+1234567890' # Public contact phone number
-
-# List of software the public organisation owns. keep in mind that owns dosn't automaticly means maintained
-# Each item refers to the repository URL of the software
+  email: commongroundBCO@rotterdam.nl
+logo: https://avatars.githubusercontent.com/u/106239067?v=4
+name: OpenCatalogi
+nl: {}
+openCatalogiYmlVersion: '0.2'
 softwareOwned:
-  - 'https://github.com/OpenCatalogi'
-  - 'https://github.com/Municipality-of-Rotterdam/Digitale-Balie'
-  
-# List of software the public organisation uses
-# Each item refers to the repository URL of the software
+- https://github.com/OpenCatalogi
+- https://github.com/Municipality-of-Rotterdam/Digitale-Balie
 softwareUsed:
-  - 'https://github.com/OpenCatalogi'
-  - 'https://github.com/Municipality-of-Rotterdam/Digitale-Balie'
-
-# List of software the public organisation supports
-# Each item is a maintenance object representing the support provided for a software
-# softwareSupported:
-#  - software: 'https://github.com/organisation/software2'
-#    type: 'maintenance' # The type of support provided
-#    contact:
-#      email: 'contact@publicorganisation.com' # Public contact email
-#      phone: '+1234567890' # Public contact phone number
-#  - software: 'https://github.com/organisation/software2'
-#    type: 'saas' # The type of support provided
-#    contact:
-#      email: 'contact@publicorganisation.com' # Public contact email
-#      phone: '+1234567890' # Public contact phone number
+- https://github.com/OpenCatalogi
+- https://github.com/Municipality-of-Rotterdam/Digitale-Balie
+url: OpenCatalogi
+website: https://www.rotterdam.nl/
