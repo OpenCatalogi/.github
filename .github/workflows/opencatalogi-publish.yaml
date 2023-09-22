@@ -19,7 +19,7 @@ jobs:
           python-version: '3.x'
 
       - name: Check and Update publiccode.yaml
-        if: (github.repository != *'.github')
+        if: (!contains('.github', github.repository))
         run: |
           REPO_NAME="${{ github.event.repository.name }}"
           REPO_DESC="${{ github.event.repository.description }}"
@@ -97,7 +97,7 @@ jobs:
           END
 
       - name: Check and Update publiccode.yaml
-        if: (github.repository == *'.github')
+        if: (contains('.github', github.repository))
         run: |
           REPO_NAME="${{ github.event.repository.name }}"
           REPO_DESC="${{ github.event.repository.description }}"
@@ -148,7 +148,7 @@ jobs:
           END
 
       - name: Commit changes
-        if: (github.repository != *'.github')
+        if: (!contains('.github', github.repository))
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -157,7 +157,7 @@ jobs:
           git push
 
       - name: Commit changes
-        if: (github.repository == *'.github')
+        if: (contains('.github', github.repository))
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
