@@ -46,15 +46,15 @@ jobs:
           echo "Installing PyYAML..."
           pip install PyYAML
 
-          echo "Updating publiccode.yaml..."
+          echo "Updating openCatalogi.yaml..."
           python - <<END
           import yaml
           import json
           from datetime import datetime
 
-          # Read existing publiccode.yaml
+          # Read existing openCatalogi.yaml
           try:
-              with open("publiccode.yaml", "r") as f:
+              with open("openCatalogi.yaml", "r") as f:
                   data = yaml.safe_load(f)
           except FileNotFoundError:
               data = {}
@@ -72,8 +72,8 @@ jobs:
           if 'nl' not in data:
               data['nl'] = {}
 
-          # Write updated publiccode.yaml
-          with open("publiccode.yaml", "w") as f:
+          # Write updated openCatalogi.yaml
+          with open("openCatalogi.yaml", "w") as f:
               yaml.safe_dump(data, f)
           END
 
@@ -82,7 +82,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add publiccode.yaml
+          git add openCatalogi.yaml
           git commit -m "${{ github.workflow }}" || echo "No changes to commit"
           git push
 
