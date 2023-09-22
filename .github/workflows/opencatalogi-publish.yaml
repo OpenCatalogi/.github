@@ -167,6 +167,7 @@ jobs:
 
   publish-to-opencatalogi:
     runs-on: ubuntu-latest
+    needs: check-and-update
     steps:
 
       - name: Post Repository URL to OpenCatalogi API
