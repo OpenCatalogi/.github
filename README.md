@@ -29,8 +29,8 @@ Voor organisaties die een stap verder willen gaan, biedt OpenCatalogi de mogelij
 2. Maak binnen deze repository een map `.github` aan en plaats daarin [deze workflow.yaml](https://github.com/OpenCatalogi/.github/blob/main/.github/workflows/opencatalogi-publish.yaml).
 3. Ga binnen de repository naar instellingen (Settings) -> pagina's (Pages) en selecteer onder 'Build en deploy' bij **Branch** `gh-pages`.
 
-Voor meer details, het installeren van een eigen index en het afschermen van toegang zie [Installatie](/pages/Handleidingen/Installatie).
+Voor meer details, het installeren van een eigen index en het afschermen van toegang zie [Installatie](https://documentatie.opencatalogi.nl/pages/Handleidingen/Installatie).
 
 ## Meedoen aan Open Catalogi
 
-Organisaties kunnen op verschillende manieren deelnemen aan het OpenCatalogi-project. Of u nu financieel wilt bijdragen aan de doorontwikkeling, deel wilt nemen aan de stuurgroep, of simpelweg de ontwikkelingen wilt volgen en feedback wilt geven, er is een vorm van deelname die bij uw organisatie past. Raadpleeg het gedeelte ['Deelname aan het Open Catalogi Project'](./docs/handleidingen/Deelnemen.md) voor meer informatie over hoe u kunt aansluiten en bijdragen.
+Organisaties kunnen op verschillende manieren deelnemen aan het OpenCatalogi-project. Of u nu financieel wilt bijdragen aan de doorontwikkeling, deel wilt nemen aan de stuurgroep, of simpelweg de ontwikkelingen wilt volgen en feedback wilt geven, er is een vorm van deelname die bij uw organisatie past. Raadpleeg het gedeelte ['Deelname aan het Open Catalogi Project'](https://documentatie.opencatalogi.nl/pages/Handleidingen/Deelnemen) voor meer informatie over hoe u kunt aansluiten en bijdragen.
