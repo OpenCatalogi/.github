@@ -22,7 +22,12 @@ Meer informatie over het zelf inrichten van een OpenCatalogi vind je [hier](./ha
 
 ### Via andere catalogi
 
-OpenCatalogi synchroniseert onder andere met <https://componentencatalogus.commonground.nl/>, <https://developer.overheid.nl/> en <https://www.softwarecatalogus.nl/>. Het daar vermelden van software zorgt ervoor dat deze wordt overgenomen in OpenCatalogi.
+OpenCatalogi synchroniseert onder andere met:
+<https://componentencatalogus.commonground.nl/>,
+<https://developer.overheid.nl/>,
+<https://www.softwarecatalogus.nl/>.
+
+Het daar vermelden van software zorgt ervoor dat deze wordt overgenomen in OpenCatalogi.
 
 ### Via het aanmaken van een account
 
