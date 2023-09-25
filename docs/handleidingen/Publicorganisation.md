@@ -236,9 +236,9 @@ softwareUsed:
   - 'https://github.com/OpenCatalogi/OpenCatalogiBundle'
 ```
 
-5. Vervang de bovenstaande waarden door de relevante gegevens van jouw organisatie
-6. Voeg eventueel extra gebruikte softwarepakketten toe (zie tabel boven).
-7. Klik op 'Commit changes'.
+11. Vervang de bovenstaande waarden door de relevante gegevens van jouw organisatie
+12. Voeg eventueel extra gebruikte softwarepakketten toe (zie tabel boven).
+13. Klik op 'Commit changes'.
 
 ### Stap 4: (verplicht) Meld jouw GitLab groep aan voor OpenCatalogi
 

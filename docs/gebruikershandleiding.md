@@ -12,6 +12,8 @@ OpenCatalogi is gebouwd op het Europese Publiccode framework. Uitgangspunt hierb
 
 Vanuit de gedachte van zelf-documenterende code hoef je in dit geval alleen een `publiccode.yaml` op te nemen in de root van je repository. In deze `yaml` beschrijf je het project op een machineleesbare manier. Meer uitleg over `publiccode.yaml` vind je [hier](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html) en een online editor kan je [hier](https://publiccode-editor.developers.italia.it/) terugvinden.
 
+Zie ook de handleiding voor het automatisch instellen via [workflow](./handleidingen/Publicorganisation.md)
+
 ### Start een eigen OpenCatalogi installatie
 
 OpenCatalogi is een federatief ecosysteem. Dat betekent dat iedere organisatie zijn eigen componentencatalogus kan starten. Vanuit de eigen catalogus kunnen zowel componenten worden geïmporteerd als beschikbaar gesteld voor andere catalogi.
