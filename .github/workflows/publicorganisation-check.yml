@@ -3,7 +3,7 @@ name: PublicOrganisation Check and Update
 on:
   push:
     branches:
-      - main
+      - never
 
 jobs:
   check:
@@ -27,64 +27,7 @@ jobs:
 
 
 
-      - name: Check and Update publiccode.yaml
-        run: |
-          REPO_NAME="${{ github.event.repository.name }}"
-          REPO_DESC="${{ github.event.repository.description }}"
-          REPO_URL="${{ github.event.repository.html_url }}"
-          REPO_HOMEPAGE="${{ github.event.repository.homepage }}"
-          #REPO_TOPICS="${{ github.event.repository.topics }}"
-          REPO_LICENSE="${{ github.event.repository.license.key }}"
-          REPO_CREATED_AT="${{ github.event.repository.created_at }}"
 
-          ORGANISATION_NAME="${{ github.event.organization.login }}"     
-          ORGANISATION_DESCRIPTION="${{ github.event.organization.description }}"     
-          ORGANISATION_GITID="${{ github.event.organization.id}}"     
-          ORGANISATION_URL="${{ github.event.organization.login }}"     
-          ORGANISATION_AVATAR="${{ github.event.organization.avatar_url }}"     
-
-          echo "Installing PyYAML..."
-          pip install PyYAML
-
-          echo "Updating publiccode.yaml..."
-          python - <<END
-          import yaml
-          import json
-          from datetime import datetime
-
-          # Read existing publiccode.yaml
-          try:
-              with open("publiccode.yaml", "r") as f:
-                  data = yaml.safe_load(f)
-          except FileNotFoundError:
-              data = {}
-          
-          if "$ORGANISATION_NAME" != "null" and "$ORGANISATION_NAME":
-              data['name'] = "$ORGANISATION_NAME"
-          if "$ORGANISATION_AVATAR" != "null" and "$ORGANISATION_AVATAR":
-              data['logo'] = "$ORGANISATION_AVATAR"
-          if "$ORGANISATION_URL" != "null" and "$ORGANISATION_URL":
-              data['url'] = "$ORGANISATION_URL"
-          if "$ORGANISATION_DESCRIPTION" != "null" and "$ORGANISATION_DESCRIPTION":
-              data['description'] = "$ORGANISATION_DESCRIPTION"
-
-          # Create or update nested 'nl' array
-          if 'nl' not in data:
-              data['nl'] = {}
-
-          # Write updated publiccode.yaml
-          with open("publiccode.yaml", "w") as f:
-              yaml.safe_dump(data, f)
-          END
-
-
-      - name: Commit changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add publiccode.yaml
-          git commit -m "${{ github.workflow }}" || echo "No changes to commit"
-          git push
 
       - name: Post Repository URL to OpenCatalogi API
         run: |

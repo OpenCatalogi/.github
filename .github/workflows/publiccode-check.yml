@@ -3,7 +3,7 @@ name: PublicCode Check and Update
 on:
   push:
     branches:
-      - main
+      - never
 
 jobs:
   check:
@@ -102,14 +102,6 @@ jobs:
               yaml.safe_dump(data, f)
           END
 
-
-      - name: Commit changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add publiccode.yaml
-          git commit -m "${{ github.workflow }}" || echo "No changes to commit"
-          git push
 
       - name: Post Repository URL to OpenCatalogi API
         run: |
