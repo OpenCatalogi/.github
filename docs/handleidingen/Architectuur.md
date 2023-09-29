@@ -10,7 +10,7 @@ Als er geen aanvullende business logica van toepassing is (zoals rollen en recht
 
 ## Datamodel
 
-Het datamodel van OpenCatalogi is gebaseerd op Public Code, een Europese standaard voor het beschrijven van opensource projecten. Dit model vertaald naar een OpenAPI-beschrijving in lijn met de NL API-strategie. Deze is standaard is tevens aangevuld met elementen uit de huidige Common Ground catalogus en developer.overheid om te komen tot een overkoepeld datamodel voor opensource in Nederland.
+Het datamodel van OpenCatalogi is gebaseerd op Public Code, een Europese standaard voor het beschrijven van opensource-projecten. Dit model vertaald naar een OpenAPI-beschrijving in lijn met de NL API-strategie. Deze is standaard is tevens aangevuld met elementen uit de huidige Common Ground catalogus en developer.overheid om te komen tot een overkoepeld datamodel voor opensource in Nederland.
 
 Lees meer:
 
@@ -27,7 +27,7 @@ De Redis Container bevat het Redis-component en de MongoDB Container bevat de Mo
 
 Laag 1 (Data) bevat een Database Service die verschillende databasesystemen bevat zoals PostgreSQL, MsSQL, MySQL en Oracle. De ORM slaat gegevens op in deze databases.
 
-Het systeem is ondergebracht in een Kubernetes-cluster. Het ingress-component maakt de gebruikersinterface, de beheerdersinterface en het Nginx-component beschikbaar. Het ingress-component communiceert met F5 extern alleen voor openbare eindpunten en objecten, en met F5 intern voor alle eindpunten. Het communiceert ook met het Hipp-component voor catalogusuitwisselingen.
+Het systeem is ondergebracht in een Kubernetes-cluster. Het ingress-component maakt de gebruikersinterface, de beheerdersinterface en het Nginx-component beschikbaar. Het ingress-component communiceert met F5 extern alleen voor openbare eindpunten en objecten, en met F5 intern voor alle eindpunten. Het communiceert ook met het Hipp-component voor catalogusuitwisseling.
 
 De externe catalogus communiceert met het Hipp-component met behulp van PKIO. Het Hipp-component valt buiten de scope van het systeem.
 
@@ -35,9 +35,9 @@ De Azure-cloud bevat het ADFS-component dat fungeert als een identiteitsprovider
 
 Ten slotte omvat het systeem een externe catalogusacteur die communiceert met het Hipp-component, en een beheerdersacteur die communiceert met het F5 intern-component via een browser met JWT-claims. Er is ook een gebruikersacteur die communiceert met het F5 extern-component via een anonieme browser.
 
-![](oc_user.svg "UML Diagram of OpenCatalogi")
-![](oc_admin.svg "UML Diagram of OpenCatalogi")
-![](oc_extern.svg "UML Diagram of OpenCatalogi")
+![Alt](oc_user.svg "UML Diagram of OpenCatalogi")
+![Alt](oc_admin.svg "UML Diagram of OpenCatalogi")
+![Alt](oc_extern.svg "UML Diagram of OpenCatalogi")
 
 ## Hoe vormt OpenCatalogi een gefedereerd netwerk?
 
@@ -47,14 +47,14 @@ Vervolgens communiceert de nieuwe installatie met alle andere installaties die v
 
 Dit onderzoekproces wordt regelmatig herhaald. Omdat elke installatie zijn eigen directory bijhoudt, blijft het netwerk robuust en operationeel, zelfs als een individuele installatie niet beschikbaar is.
 
-![](createnetwork.svg "Sequence Diagram network creation")
+![Alt](createnetwork.svg "Sequence Diagram network creation")
 
 ## Hoe maakt OpenCatalogi gebruik van een gefedereerd netwerk?
 
 **Live gegevens**:
 Telkens wanneer een query wordt uitgevoerd naar het `/search` eindpunt van een OpenCatalogi-installatie, zoekt het antwoorden in zijn eigen MongoDB-index op basis van bepaalde filters. Tegelijkertijd controleert het ook zijn directory van bekende catalogi om andere catalogi te vinden die mogelijk de gevraagde gegevens bevatten en waar de oorspronkelijke catalogus toegang toe heeft. De query wordt ook asynchroon naar deze catalogi verzonden, en de reacties worden gecombineerd, tenzij een vooraf gedefinieerde time-outdrempel wordt bereikt.
 
-![](live.svg "Sequence Diagram network creation")
+![Alt](live.svg "Sequence Diagram network creation")
 
 **Geïndexeerde gegevens**:
 OpenCatalogi geeft de voorkeur aan het indexeren van gegevens wanneer de bron dit toestaat. Tijdens elke uitvoer van netwerksynchronisatie (zoals uitgelegd in 'Hoe vormt OpenCatalogi een gefedereerd netwerk?'), worden alle gegevens die kunnen worden geïndexeerd, geïndexeerd als de bron is ingesteld op indexering. Het is belangrijk op te merken dat wanneer een object wordt gedeeld vanuit een andere catalogus, er een cloudgebeurtenisabonnement wordt gemaakt. Dit betekent dat wanneer het object wordt bijgewerkt in die catalogus, de wijzigingen ook vrijwel direct worden bijgewerkt in de lokale installatie.
@@ -62,4 +62,4 @@ OpenCatalogi geeft de voorkeur aan het indexeren van gegevens wanneer de bron di
 > :note:
 >
 > - Bronnen worden pas gebruikt door een catalogus als de beheerder hiervoor akkoord heeft gegeven
-> - Bronnen kunnen zelf voorwaarde stellen aan het gebruikt (bijvoorbeeld alleen met PKI-certificaat, of aan de hand van API-sleutel)
+> - Bronnen kunnen zelf voorwaarden stellen aan het gebruikt (bijvoorbeeld alleen met PKI-certificaat, of aan de hand van API-sleutel)
