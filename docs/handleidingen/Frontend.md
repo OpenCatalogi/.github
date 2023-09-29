@@ -1,6 +1,6 @@
 # Frontend
 
-Omdat een eigen catlogus vanuit de [architectuur](Architectuur) bestaad uit een frontend + bron heeft u in princiepe niet meer nodig dan een frontend om uw eigen catalgous te starten. Doordat de Open Catalgoi frontend serverless is ontwerpen kun u deze in princiepe serverles draaien. met andere woorden kunt uw online omgeving direct vanuti github aanleveren zoonder dat u zelf locaal iets hoeft te installeren.
+Omdat een eigen catalogus vanuit de [architectuur](Architectuur) bestaad uit een frontend + bron heeft u in princiepe niet meer nodig dan een frontend om uw eigen catalgous te starten. Doordat de Open Catalgoi frontend serverless is ontwerpen kun u deze in princiepe serverles draaien. met andere woorden kunt uw online omgeving direct vanuti github aanleveren zoonder dat u zelf locaal iets hoeft te installeren.
 
 ## Serverless installatie (github)
 
