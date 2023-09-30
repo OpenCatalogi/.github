@@ -1,13 +1,13 @@
 # Installatie
-1. [Introductie](#Introductie)
-2. [Publiceren](#Publiceren)
-    - [Publiceren van Componenten](#Publiceren-van-Componenten)
-    - [Publiceren van Organisatie](#Publiceren-van-Organisatie)
-    - [Publiceren Frontend (Portaal)](#Publiceren-Frontend-(Portaal))
-3. [Gebruiken als SAAS](#Gebruiken-als-SAAS)
-4. [Lokaal Installeren](#Lokaal-Installeren)
-    - [Kubernetes/Haven](#Kubernetes/Haven)
-    - [Linux](#Linux)
+1. [Introductie](#introductie)
+2. [Publiceren](#publiceren)
+    - [Publiceren van Componenten](#publiceren-van-componenten)
+    - [Publiceren van Organisatie](#publiceren-van-organisatie)
+    - [Publiceren Frontend (Portaal)](#publiceren-frontend-portaal)
+3. [Gebruiken als SAAS](#gebruiken-als-saas)
+4. [Lokaal Installeren](#lokaal-installeren)
+    - [Kubernetes/Haven](#kuberneteshaven)
+    - [Linux](#linux)
 
 ## Introductie
 Je hebt geen lokale installatie van Open Catalogi nodig om het te benutten. Met een GitHub-organisatie kun je eenvoudig openbare data toevoegen en weergeven via ons federaal netwerk.
