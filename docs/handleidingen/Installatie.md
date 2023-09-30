@@ -1,29 +1,71 @@
 # Installatie
+1. [Introductie](#Introductie)
+2. [Publiceren](#Publiceren)
+    - [Publiceren van Componenten](#Publiceren-van-Componenten)
+    - [Publiceren van Organisatie](#Publiceren-van-Organisatie)
+    - [Publiceren Frontend (Portaal)](#Publiceren-Frontend-(Portaal))
+3. [Gebruiken als SAAS](#Gebruiken-als-SAAS)
+4. [Lokaal Installeren](#Lokaal-Installeren)
+    - [Kubernetes/Haven](#Kubernetes/Haven)
+    - [Linux](#Linux)
 
-OpenCatalogi is een Common Ground applicatie die is opgebouwd uit losse componenten, om deze componenten optioneel te maken, zijn ze ondergebracht in losse [Kubernetescontainers](https://kubernetes.io/docs/concepts/containers/). Dat betekent dat voor een volledige installatie van OpenCatalogi een aantal containers nodig zijn.
+## Introductie
+Je hebt geen lokale installatie van Open Catalogi nodig om het te benutten. Met een GitHub-organisatie kun je eenvoudig openbare data toevoegen en weergeven via ons federaal netwerk.
 
-Momenteel zijn er twee beproefde methodes om OpenCatalogi te installeren. De primaire route is door middel van een [Helm](https://helm.sh/)installatie op Kubernetes. Daarvoor bieden we ook een voorgedefinieerde Helm repository aan.
+## Publiceren
+### Publiceren van Componenten
+Om componenten (informatie) te publiceren op Open Catalogi, bieden we een GitHub-workflow aan. Voeg simpelweg het workflow-bestand toe aan de repository die je wilt publiceren.
 
-De voorgedefinieerde repository kan worden binnengehaald via
+> 1. Maak binnen de repository van uw component een directory aan met de naam `.github` (als u deze nog niet heeft).
+> 2. Maak binnen deze directory een map `workflows` aan, die zelf binnen een `.github` map hoort te zitten. Plaats daarin [deze workflow.yaml](https://github.com/OpenCatalogi/.github/blob/main/.github/workflows/opencatalogi-publish.yaml).
+> 3. Commit en push het workflow-bestand naar jouw repository.
+
+[Lees meer](Publiccode.md) over de configuratie-opties van de workflow.
+
+### Publiceren van Organisatie
+Om organisatiegegevens te publiceren op Open Catalogi, is er eveneens een GitHub-workflow beschikbaar. Voeg het workflow-bestand toe aan de .github-repository van de organisatie die je wilt publiceren.
+
+> 1. Maak binnen uw GitHub-organisatie een repository aan met de naam `.github` (als u deze nog niet heeft).
+> 2. Maak binnen deze repository een map `workflows` aan, die zelf binnen een `.github` map hoort te zitten. Plaats daarin [deze workflow.yaml](https://github.com/OpenCatalogi/.github/blob/main/.github/workflows/opencatalogi-publish.yaml).
+> 3. Commit en push het workflow-bestand naar jouw repository.
+
+[Lees meer](Publicorganisation.md) over de configuratie-opties van de workflow.
+
+### Publiceren Frontend (Portaal)
+Om je eigen Open Catalogi-portaal te publiceren, bieden we een GitHub-workflow aan. Voeg het workflow-bestand toe aan de .github-repository van de organisatie die je wilt publiceren. Publiceer vervolgens handmatig de gegenereerde GitHub Page.
+
+> 1. Maak binnen uw github organisaite een repositry aan met de naam .github (als us deze nog niet heeft)
+> 2. Maak binnen deze repository een map `.github` aan met daarin een map `workflows`en plaats daarin [deze workflow.yaml](https://raw.githubusercontent.com/OpenCatalogi/web-app/development/.github/workflows/opencatalogi-page-deploy.yml)
+> 3. Ga binnen de repository naar instellingen(Settings) -> pagina's(Pages)  en selecteer onder Build en deploy bij **Branch** `gh-pages`
+
+[Lees meer](Frontend.md) over de configuratie-opties van de workflow.
+
+## Gebruiken als SAAS
+Als je vertrouwelijke data wilt beheren in Open Catalogi, kun je de catalogus als SAAS afnemen. Voor alle [deelnemers](Deelnemen.md) van Open Catalogi biedt [Conduction](https://www.conduction.nl) een SAAS-installatie aan. Lees [hier](Deelnemen.md) meer over deelname aan Open Catalogi.
+
+Als je niet wilt deelnemen aan de Open Catalogi-coalitie maar wel gebruik wilt maken van de SAAS-oplossing, neem dan direct contact op met [Conduction](mailto:info@conduction.nl).
+
+## Lokaal Installeren
+Natuurlijk kun je als gebruiker van open-source software Open Catalogi altijd lokaal installeren. Er zijn twee installatieroutes beschikbaar.
+
+### Kubernetes/Haven
+Open Catalogi is een Common Ground-applicatie opgebouwd uit losse componenten. Deze componenten zijn ondergebracht in afzonderlijke [Kubernetes-containers](https://kubernetes.io/docs/concepts/containers/). Voor een volledige installatie zijn meerdere containers vereist.
+
+Er zijn momenteel twee beproefde installatiemethoden. De primaire methode is via een [Helm](https://helm.sh/)-installatie op Kubernetes. We bieden ook een voorgedefinieerde Helm-repository aan.
+
+Haal de voorgedefinieerde repository op met:
 
 ```cli
 helm repo add open-catalogi https://raw.githubusercontent.com/OpenCatalogi/web-app/development/helm/index.yaml
 ```
 
-En vervolgens geïnstalleerd via
+Installeer vervolgens met:
 
 ```cli
-helm install [my-opencatalogi] open-catalogi/opencatalogi 
+helm install [my-opencatalogi] open-catalogi/opencatalogi
 ```
 
-Meer informatie over installeren via Helm kan worden gevonden op de [Helm](https://helm.sh/) site. Meer informatie over de installatieopties is te vinden op [Artifact Hub](https://artifacthub.io/packages/helm/opencatalogi/commonground-gateway?modal=values).
+Meer informatie over installatie via Helm vind je op de [Helm-website](https://helm.sh/). Meer details over de installatieopties zijn beschikbaar op [Artifact Hub](https://artifacthub.io/packages/helm/opencatalogi/commonground-gateway?modal=values).
 
-## Alternatieve installatieroute
-
-In sommige gevallen is er meer behoefte aan controle over de installatie (bijvoorbeeld omdat er geen Kubernetes omgeving beschikbaar is) in dat geval kan gebruik worden gemaakt van een "kale" Common Gateway installatie, zie voor meer informatie over het installeren van de Common Gateway de [Common Gateway installatiehandleiding](https://github.com/ConductionNL/commonground-gateway).
-
-Omdat OpenCatalogi een Common Gateway plugin is, kan je vervolgens simpelweg in de Common Gateway naar plugins navigeren, zoeken naar OpenCatalogi, en op installeren klikken.
-
-## Bijwerken naar nieuwere versies
-
-Er worden regelmatig nieuwe updates van OpenCatalogi gepubliceerd, deze kunnen via de Common Gateway Admin ui worden geïnstalleerd door naar plugins te navigeren OpenCatalogi te selecteren en op Update te drukken.
+### Linux
+*De Linux-installatie-instructies volgen nog.*
