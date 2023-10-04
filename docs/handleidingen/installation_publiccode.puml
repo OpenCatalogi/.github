@@ -1,0 +1,24 @@
+@startuml
+
+title: Publiccode Installation
+footer: Open Catalogi | Publiccode  Installation
+header: Publiccode
+
+actor Employee
+entity Repository
+entity OpenCatalogi
+entity Frontend
+actor Citizen
+
+
+Employee -> Repository : Places data or code that schould be shared
+Employee -> Repository : Places and configures workflow
+Repository -> Repository : Workflow builds publiccode.yaml
+Repository -> OpenCatalogi : Workflow notifies of repository
+Citizen -> Frontend : Views frontend
+Frontend -> OpenCatalogi : Queries federilizad data
+OpenCatalogi -> Frontend : Provides data
+Frontend -> Citizen : Provides view of data
+Employee -> Repository : Alters any data or code
+Repository -> OpenCatalogi : Workflow notifies of changes
+@enduml
