@@ -161,6 +161,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git pull
           git add openCatalogi.yaml
           git commit -m "${{ github.workflow }}" || echo "No changes to commit"
           git push
