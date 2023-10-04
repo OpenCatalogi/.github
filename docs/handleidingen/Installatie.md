@@ -22,6 +22,8 @@ Om componenten (informatie) te publiceren op Open Catalogi, bieden we een GitHub
 
 [Lees meer](Publiccode.md) over de configuratie-opties van de workflow.
 
+![Alt](installation_publiccode.svg "Publiceren van Componenten")
+
 ### Publiceren van Organisatie
 Om organisatiegegevens te publiceren op Open Catalogi, is er eveneens een GitHub-workflow beschikbaar. Voeg het workflow-bestand toe aan de .github-repository van de organisatie die je wilt publiceren.
 
@@ -31,6 +33,8 @@ Om organisatiegegevens te publiceren op Open Catalogi, is er eveneens een GitHub
 
 [Lees meer](Publicorganisation.md) over de configuratie-opties van de workflow.
 
+![Alt](installation_publicorganisation.svg "Publiceren van Organisatie")
+
 ### Publiceren Frontend (Portaal)
 Om je eigen Open Catalogi-portaal te publiceren, bieden we een GitHub-workflow aan. Voeg het workflow-bestand toe aan de .github-repository van de organisatie die je wilt publiceren. Publiceer vervolgens handmatig de gegenereerde GitHub Page.
 
@@ -39,6 +43,8 @@ Om je eigen Open Catalogi-portaal te publiceren, bieden we een GitHub-workflow a
 > 3. Ga binnen de repository naar instellingen(Settings) -> pagina's(Pages)  en selecteer onder Build en deploy bij **Branch** `gh-pages`
 
 [Lees meer](Frontend.md) over de configuratie-opties van de workflow.
+
+![Alt](installation_frontend.svg "Publiceren van Frontend")
 
 ## Gebruiken als SAAS
 Als je vertrouwelijke data wilt beheren in Open Catalogi, kun je de catalogus als SAAS afnemen. Voor alle [deelnemers](Deelnemen.md) van Open Catalogi biedt [Conduction](https://www.conduction.nl) een SAAS-installatie aan. Lees [hier](Deelnemen.md) meer over deelname aan Open Catalogi.

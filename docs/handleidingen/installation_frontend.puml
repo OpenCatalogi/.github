@@ -1,0 +1,24 @@
+@startuml
+
+title: Frontend Installation
+footer: Open Catalogi | Frontend Installation
+header: Frontend
+
+actor Employee
+entity Repository
+entity OpenCatalogi
+entity NLDesignSystem
+entity Frontend
+actor Citizen
+
+Employee -> Repository : Places and configures workflow
+OpenCatalogi -> Repository : Pulls Frontend Code
+NLDesignSystem -> Repository : Pulls organistions NL Design tokens
+Repository -> Repository : Workflow builds frontend
+Employee -> Repository : Configures github Pages
+Repository -> Frontend : Deploys Github page
+Citizen -> Frontend : Views frontend
+Frontend -> OpenCatalogi : Queries federilizad data
+OpenCatalogi -> Frontend : Provides data
+Frontend -> Citizen : Provides view of data
+@enduml

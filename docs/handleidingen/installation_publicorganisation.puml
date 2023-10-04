@@ -1,0 +1,20 @@
+@startuml
+title: Publicorganisation Installation
+footer: Open Catalogi | Publicorganisation Installation
+header: Publicorganisation
+
+actor Employee
+entity Repository
+entity OpenCatalogi
+entity Frontend
+actor Citizen
+
+
+Employee -> Repository : Places and configures workflow
+Repository -> Repository : Workflow builds opencatalogi.yaml in .github repository
+Repository -> OpenCatalogi : Workflow notifies of organisation
+Citizen -> Frontend : Views frontend
+Frontend -> OpenCatalogi : Queries federilizad data
+OpenCatalogi -> Frontend : Provides data
+Frontend -> Citizen : Provides view of data
+@enduml
