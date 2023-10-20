@@ -32,14 +32,53 @@ We kunnen de testscripts opsplitsen in de volgende categorieën:
 - De nieuwe repository is vindbaar en word correct weergegeven op opencatalogi.nl.
 
 ### Testcase 2: Een publicatie archiveren
+
+**Verwachte resultaten**:
+
+- De publicatie is alleen vindbaar als in het filter op opencatalogi.nl. `inclusief gearchifeerde publicaties` is aangevinkt.
 ### Testcase 3: Een publicatie verwijderen
+
+**Verwachte resultaten**:
+
+- De publicatie is niet meer vindbaar
 ### Testcase 4: Een organisatie toevoegen
+
+**Verwachte resultaten**:
+
+- De nieuwe organisatie is vindbaar en word correct weergegeven op opencatalogi.nl
 ### Testcase 5: Een hergebruik van componenten aangeven
+
+**Verwachte resultaten**:
+
+- Het hergebruikte component staat vermeld onder hergebruik bij de applicaite pagina
+- De organisatie staat vermeld op de component pagina onder hergebruik
+- 
 ### Testcase 6: Een ondersteuning van componenten aangeven
+
+**Verwachte resultaten**:
+
+- Het ondersteunde component staat vermeld onder hergebruik bij de applicaite pagina
+- De organisatie staat vermeld op de component pagina onder ondersteuning
+- 
 ### Testcase 7: Een organisatie verwijderen
+
+**Verwachte resultaten**:
+
+- De organisatie is niet meer vindbaar
 ### Testcase 8: Een catalogus toevoegen
+
+**Verwachte resultaten**:
+
+- De catalogus wordt weergegeven op de Catalogusen pagina van Open Catalogi
+- De catalogus is benaderbaar op de ingestelde domein naam
+
 ### Testcase 9: Een catalogus configureren
 
+**Verwachte resultaten**:
+
+- De catalogus geeft in de footer de ingestelde gegevens weer
+- De catalogus geeft het ingestelde menu weer
+- 
 ## Technische test
 Naast functioneele tests is het ook belangrijk om te controleren of de website voldoet aan de teschnsiche eisen voor overheids websites.
 
