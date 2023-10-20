@@ -90,7 +90,7 @@ Naast functionele tests is het ook belangrijk om te controleren of de website vo
 Er is een [WCAG-rapportage](https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/WCAG-Raportage.pdf) beschikbaar voor de website.
 
 U kunt de test zelf herhalen, vervang in de volgende url `https://opencatalogi.nl/` door het adres van uw OpenCatalogi-installatie
-[https://accessibe.com/accessscan?website=https://opencatalogi.nl/](https://accessibe.com/accessscan?website=https://opencatalogi.nl/])
+[https://accessibe.com/accessscan?website=https://opencatalogi.nl/](https://accessibe.com/accessscan?website=https://opencatalogi.nl/)
 
 ### Pentest
 Er is een [Pentest rapportage](https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/PENTEST-Raportage.pdf) beschikbaar voor de website.
