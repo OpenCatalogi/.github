@@ -1,6 +1,6 @@
 # Testscenario's
 
-Om Open Catalogi zelfstandig te kunnen installeren of doorontwikkelen, is het belangrijk om ook over herbruikbare testscenario's te beschikken.
+Om OpenCatalogi zelfstandig te kunnen installeren of doorontwikkelen, is het belangrijk om ook over herbruikbare testscenario's te beschikken.
 
 We kunnen de testscripts opsplitsen in de volgende categorieën:
 
@@ -10,26 +10,26 @@ We kunnen de testscripts opsplitsen in de volgende categorieën:
 
 ## 1. Opzet en voorwaarden
 
-**Omgevingseisen**: Zorg ervoor dat je een lokale/testversie van Open Catalogi hebt draaien (zie [Installatie](https://documentatie.opencatalogi.nl/pages/Handleidingen/Installatie) voor hoe).
+**Omgevingseisen**: Zorg ervoor dat je een lokale/testversie van OpenCatalogi hebt draaien (zie [Installatie](https://documentatie.opencatalogi.nl/pages/Handleidingen/Installatie) voor hoe dit werkt).
 
 ## 2. Testcases
 
-### Testcase 1: Een nieuwe publicatie toevoegen aan open catalogi
+### Testcase 1: Een nieuwe publicatie toevoegen aan OpenCatalogi
 
 **Doel**: Verifiëren dat een nieuwe publicatie correct wordt weergegeven op het federatieve netwerk.
 
 **Stappen**:
 
-1. Voeg een nieuwe repository toe aan uw organisatie met duidenlijke naam en omschrijving.
-2. Plaats hierin de publiccode [github action](https://github.com/marketplace/actions/create-or-update-publiccode-yaml).
-3. Zorg dat de github actie triggerd (bijvoorbeeld door deze handmatig te activeren of een wijziging uit te voeren op de repository).
-4. Vul de publiccode.yam verder aan met de gegevens zo als beschreven onder [publiccode](https://documentatie.opencatalogi.nl/pages/Handleidingen/Publiccode).
-4. Ga naar open catalogi en gebruik zoeken om de repository als publicatie te vinden
-5. Open de gevonden publicatie en vergelijk de getoonde gegevens met de publiccode in uw repository
+1. Voeg een nieuwe repository toe aan uw organisatie met duidelijke naam en omschrijving.
+2. Plaats hierin de publiccode [GitHub action](https://github.com/marketplace/actions/create-or-update-publiccode-yaml).
+3. Zorg dat de GitHub-actie wordt getriggerd (bijvoorbeeld door deze handmatig te activeren of een wijziging uit te voeren op de repository).
+4. Vul de `publiccode.yaml` verder aan met de gegevens zoals beschreven onder [publiccode](https://documentatie.opencatalogi.nl/pages/Handleidingen/Publiccode).
+4. Ga naar OpenCatalogi en gebruik zoeken om de repository als publicatie te vinden.
+5. Open de gevonden publicatie en vergelijk de getoonde gegevens met de publiccode in uw repository.
 
 **Verwachte resultaten**:
 
-- De nieuwe repository is vindbaar en word correct weergegeven op opencatalogi.nl.
+- De nieuwe repository is vindbaar en wordt correct weergegeven op opencatalogi.nl.
 
 ### Testcase 2: Een publicatie archiveren
 
@@ -80,13 +80,13 @@ We kunnen de testscripts opsplitsen in de volgende categorieën:
 - De catalogus geeft het ingestelde menu weer
 - 
 ## Technische test
-Naast functioneele tests is het ook belangrijk om te controleren of de website voldoet aan de teschnsiche eisen voor overheids websites.
+Naast functionele tests is het ook belangrijk om te controleren of de website voldoet aan de technische eisen voor overheidswebsites.
 
 ### WCAG
-Er is een [WCAG raportage](https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/WCAG-Raportage.pdf) beschickbaar voor de website.
+Er is een [WCAG-rapportage](https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/WCAG-Raportage.pdf) beschikbaar voor de website.
 
-U kunt de test zelf herhalen, vervang in de volgende url https://opencatalogi.nl/ door het addres van uw Open Catalogi installatie
+U kunt de test zelf herhalen, vervang in de volgende url `https://opencatalogi.nl/` door het adres van uw OpenCatalogi-installatie
 [https://accessibe.com/accessscan?website=https://opencatalogi.nl/](https://accessibe.com/accessscan?website=https://opencatalogi.nl/])
 
 ### Pentest
-Er is een [Pentest raportage](https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/PENTEST-Raportage.pdf) beschickbaar voor de website.
+Er is een [Pentest rapportage](https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/PENTEST-Raportage.pdf) beschikbaar voor de website.
