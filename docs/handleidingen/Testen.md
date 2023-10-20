@@ -14,19 +14,31 @@ We kunnen de testscripts opsplitsen in de volgende categorieën:
 
 ## 2. Testcases
 
-### Testcase 1: Een nieuwe WOO-publicatie toevoegen in het zaaksysteem
+### Testcase 1: Een nieuwe publicatie toevoegen aan open catalogi
 
-**Doel**: Verifiëren dat een nieuwe WOO-publicatie correct wordt weergegeven op de WOO-website.
+**Doel**: Verifiëren dat een nieuwe publicatie correct wordt weergegeven op het federatieve netwerk.
 
 **Stappen**:
 
-1. Voeg een nieuwe WOO-publicatie toe in het zaaksysteem met een publicatiedatum die nu is of in het verleden.
-2. Laat het zaaksysteem synchroniseren met de WOO-website.
-3. Ga naar de WOO-website en controleer of het nieuwe verzoek correct wordt weergegeven.
+1. Voeg een nieuwe repository toe aan uw organisatie met duidenlijke naam en omschrijving.
+2. Plaats hierin de publiccode [github action](https://github.com/marketplace/actions/create-or-update-publiccode-yaml).
+3. Zorg dat de github actie triggerd (bijvoorbeeld door deze handmatig te activeren of een wijziging uit te voeren op de repository).
+4. Vul de publiccode.yam verder aan met de gegevens zo als beschreven onder [publiccode](https://documentatie.opencatalogi.nl/pages/Handleidingen/Publiccode).
+4. Ga naar open catalogi en gebruik zoeken om de repository als publicatie te vinden
+5. Open de gevonden publicatie en vergelijk de getoonde gegevens met de publiccode in uw repository
 
 **Verwachte resultaten**:
 
-- Het nieuwe WOO-publicatie moet zichtbaar zijn op de WOO-website en moet alle relevante informatie correct weergeven.
+- De nieuwe repository is vindbaar en word correct weergegeven op opencatalogi.nl.
+
+### Testcase 2: Een publicatie archiveren
+### Testcase 3: Een publicatie verwijderen
+### Testcase 4: Een organisatie toevoegen
+### Testcase 5: Een hergebruik van componenten aangeven
+### Testcase 6: Een ondersteuning van componenten aangeven
+### Testcase 7: Een organisatie verwijderen
+### Testcase 8: Een catalogus toevoegen
+### Testcase 9: Een catalogus configureren
 
 ## Technische test
 Naast functioneele tests is het ook belangrijk om te controleren of de website voldoet aan de teschnsiche eisen voor overheids websites.
@@ -35,7 +47,7 @@ Naast functioneele tests is het ook belangrijk om te controleren of de website v
 Er is een [WCAG raportage](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/Handleidingen/WCAG-Raportage.pdf) beschickbaar voor de website.
 
 U kunt de test zelf herhalen, vervang in de volgende url https://opencatalogi.nl/ door het addres van uw Open Catalogi installatie
-[https://accessibe.com/accessscan?website=https://opencatalogi.nl/](https://accessibe.com/accessscan?website=https://opencatalogi.nl/)
+[https://accessibe.com/accessscan?website=https://opencatalogi.nl/](https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/WCAG-Raportage.pdf)
 
 ### Pentest
-Er is een [Pentest raportage](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/Handleidingen/WCAG-Raportage.pdf) beschickbaar voor de website.
+Er is een [Pentest raportage](https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/PENTEST-Raportage.pdf) beschickbaar voor de website.

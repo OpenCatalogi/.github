@@ -212,3 +212,8 @@ Bij het veld platforms ondersteunen we extra opties "haven", "kubernetes", "azur
 Daarnaast zijn in de normale versie van de standaard de velden "publiccodeYmlVersion", "name", "url" verplicht en kent Public Code vanuit de standaard geen default values (die wij onttrekken aan de repository)
 
 Bij logo laten we naast een relatief pad ook een absolute URL naar het logo toe.
+
+## Monorepo
+Het kan voorkomen dat uw organisatie code en documenten niet over meerdere repositories verdeeld maar alles opslaat in één repository, een zogenoemde [monorepo](https://en.wikipedia.org/wiki/Monorepo). In dat geval is het mogenlijk om meerdere Open Catalogi publicaties vanuit dezelfde repository te publiceren. Voor het het publiceren van een tweede publicatie kunt u simpelweg een tweede publiccode.yaml in de repository toevoegen (let er hierbij wel op dat er geen twee publiccode bestanden in één folder kunnen staan). 
+
+Let er wel op de alle verijkings functies op repositorie niveau gaan, met andere woorden als bijvoorbeeld de beschrijving in de publiccode zal die worden overgenomen vanuti de repository. Het zelfde geld ook voor de punten beoordeling van de publicatie. 
