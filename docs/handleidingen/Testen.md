@@ -44,10 +44,10 @@ We kunnen de testscripts opsplitsen in de volgende categorieën:
 Naast functioneele tests is het ook belangrijk om te controleren of de website voldoet aan de teschnsiche eisen voor overheids websites.
 
 ### WCAG
-Er is een [WCAG raportage](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/Handleidingen/WCAG-Raportage.pdf) beschickbaar voor de website.
+Er is een [WCAG raportage](https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/WCAG-Raportage.pdf) beschickbaar voor de website.
 
 U kunt de test zelf herhalen, vervang in de volgende url https://opencatalogi.nl/ door het addres van uw Open Catalogi installatie
-[https://accessibe.com/accessscan?website=https://opencatalogi.nl/](https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/WCAG-Raportage.pdf)
+[https://accessibe.com/accessscan?website=https://opencatalogi.nl/](https://accessibe.com/accessscan?website=https://opencatalogi.nl/])
 
 ### Pentest
 Er is een [Pentest raportage](https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/PENTEST-Raportage.pdf) beschickbaar voor de website.
