@@ -4,3 +4,6 @@ logo: https://avatars.githubusercontent.com/u/106239067?v=4
 name: OpenCatalogi
 nl: {}
 url: OpenCatalogi
+catalogus:
+  catalogusAPI: https://test-catalogus-api.com
+  catalogusUrl: https://test-catalogus-url.com
