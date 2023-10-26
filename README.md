@@ -14,7 +14,7 @@ De basis architectuur van Open Catalogi bestaat uit drie componenten
 
 Met andere woorden repositories en organisaties wisselen onderling en met zichzelf gegevens uit aan de hand van eht netwerk.
 
-![Alt](/handleiding.svg "UML Diagram of OpenCatalogi")
+![UML Diagram of OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/architectuur_basic.svg "UML Diagram of OpenCatalogi")
 
 In een meer geavenceerd opzet zijn er ook andere bronnen mogenlijk dan repositories (zo als bijvoorbeeld API) en zouden organisaties ook hun eigen nodes kunnen starten. Meer hierover onder [architetuur]().
 
