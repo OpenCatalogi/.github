@@ -40,6 +40,7 @@ name: 'Public Organization Name'   # for example  name: 'Gemeente Rotterdam'
 website: 'https://www.publicorganizationwebsite.com'    # for example  website: 'https://www.rotterdam.nl'
 
 # The (optional) location of your own open catalogi installation
+catalogusURL: "'https://catalogus.publicorganizationwebsite.com"
 catalogusAPI: "'https://catalogus.publicorganizationwebsite.com/api"
 
 # The contact details of the public organization

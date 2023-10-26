@@ -1,0 +1,35 @@
+@startuml
+!define RECTANGLE class
+
+package "Landelijk Federatief Netwerk" {
+    INTERFACE "opencatalogi.nl" as openCatalogi
+    RECTANGLE "api.opencatalogi.nl" as api
+}
+
+package "Organisatie Repository" {
+    RECTANGLE "Publiccode Actions Service" as orgAction
+    RECTANGLE "opencatalogi.yaml (data)" as openCat
+    RECTANGLE "Catalogi Action Service" as catalogiAction
+    INTERFACE "Organisation Catalogi" as organisatieCatalogi
+}
+
+package "Publicatie Repository" {
+    RECTANGLE "Publiccode Action Service" as pubAction
+    RECTANGLE "publiccode.yaml (data)" as pubCode
+    RECTANGLE "Product Page Action Service" as productPageAction
+    INTERFACE "Product Page" as productPage
+}
+
+
+openCat --|> api : Register
+pubCode --|> api : Register
+
+productPage --|> api : Access
+openCatalogi --|> api : Access
+organisatieCatalogi --|> api : Access
+
+catalogiAction--|> organisatieCatalogi: Creates and updates
+orgAction--|> openCat: Creates and updates
+pubAction--|> pubCode: Creates and updates
+productPageAction--|> productPage: Creates and updates
+@enduml

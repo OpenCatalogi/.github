@@ -5,31 +5,80 @@ React frontend gebaseerd op NL Design, deze kan aan de hand van Design Tokens wo
 
 Doordat de frontend serverless (vanaf GitHub) gedraaid kan worden is het voor deelnemende organisaties niet noodzakelijk om OpenCatalogi zelf te installeren voor gebruik. Zowel voorkant als gegevens kunnen vanaf GitHub worden aangeboden.
 
-### Informatie Beschikbaar Stellen
+## Opzet
+De basis architectuur van Open Catalogi bestaat uit drie componenten
 
-Als u een overheidsorganisatie bent die informatie wil delen, kunt u eenvoudig uw data koppelen aan OpenCatalogi. Het platform biedt verschillende tools en documentatie om u te helpen bij het gestandaardiseerd aanleveren van uw informatie.
+1. Een geferaliseerd netwerk voor het uitwisselen van gevens met eigen [zoek pagina](https://opencatalogi.nl/).
+2. Repositories die informatie aanleveren voor het netwerk (bijvoorbeeeld [Open WOO](https://github.com/ConductionNL/woo-website-template)) en optioneel een eigen pagina hebben (bijvoorbeeld [https://openwoo.app/](https://openwoo.app/))
+3. Organisaties die informatie aanleveren voor het netwerk (bijvoorbeeld [Open Webconcept](https://github.com/OpenWebconcept)) en optioneel een eigen catalogi hebben (bijvoorbeeld [Open Webconcept](https://openwebconcept.github.io/.github/))
 
-Voor meer details over het leveren van informatie aan OpenCatalogi via bijvoorbeeld andere catalogi of een eigen installatie, zie [Aanleveren](./docs/handleidingen/Aanleveren.md).
+Met andere woorden repositories en organisaties wisselen onderling en met zichzelf gegevens uit aan de hand van eht netwerk.
 
-### Hergebruik door uw Organisatie kenbaar maken
+![Alt](/handleiding.svg "UML Diagram of OpenCatalogi")
 
-Het kan natuurlijk ook zijn dat uw organisatie software of gegevens van andere organisaties (her)gebruikt, in dat geval kan het handig zijn dat kenbaar te maken. Bijvoorbeeld zodat de oorspronkelijke aanbieder u pro-actief kan benaderen over wijzigingen.
+In een meer geavenceerd opzet zijn er ook andere bronnen mogenlijk dan repositories (zo als bijvoorbeeld API) en zouden organisaties ook hun eigen nodes kunnen starten. Meer hierover onder [architetuur]().
 
-> Voor het kenbaar maken van deze gegevens kunt u gebruik maken van een [publicorganisation.yaml](./docs/handleidingen/Publicorganisation.md) die meer informatie geeft over uw GitHub-organisatie en de componenten die u gebruikt. Deze publicorganisation.yaml kan worden opgenomen in de root van uw organisatie repository.
+## Snelle start
+Voor het beschickbaar stellen van publicaties of zelfs een eigen catalogus heeft u geen server nodig, maar wel een [github organisatie]() waar u beheerder van bent.
 
-Voor meer details, het installeren van een eigen index en het afschermen van toegang zie [Installatie](/pages/Handleidingen/Installatie).
+**Voor het kenbaar en vindbaar maken van uw repository**
+1. Maak binnen deze repository een folder aan met (wederom) de naam `.github`, daarin een folder met de naam `workflows` en daarin een bestand genaamd `openCatalogi.yaml`. Voor in totaal dus `.github/.github/workflows/openCatalogi.yaml`
+3. Plaats in het bestand `openCatalogi.yaml` de volgende yaml code:
+````yaml
+name: My Open Catalogi Workflow
 
-### Een Eigen Open Catalogus Starten
+on:
+  push:
+    branches:
+      - main
 
-Voor organisaties die een stap verder willen gaan, biedt OpenCatalogi de mogelijkheid om een eigen, op maat gemaakte catalogus te starten. Hiermee kunt u specifieke datasets en functionaliteiten toevoegen die het beste passen bij de behoeften van uw organisatie en doelgroep. En uw eigen huisstijl toepassen.
+permissions:
+  contents: write
 
-> De makkelijkste manier om dit te doen is vanuit een GitHub-organisatie.
->
-1. Maak binnen uw GitHub-organisatie een repository aan met de naam `.github` (als u deze nog niet heeft).
-2. Maak binnen deze repository een map `.github` aan en plaats daarin [deze workflow.yaml](https://github.com/OpenCatalogi/.github/blob/main/.github/workflows/opencatalogi-publish.yaml).
-3. Ga binnen de repository naar instellingen (Settings) -> pagina's (Pages) en selecteer onder 'Build en deploy' bij **Branch** `gh-pages`.
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:              
+      - name: Create or Update publiccode.yaml
+        uses: OpenCatalogi/publiccode-action@1.0.0
+        with:
+          opencatalogi: true
+      - name: Create an Product page
+        uses: OpenCatalogi/productpage-action@1.0.0
+````
+4. Voor extra configuratie opties en stappen kijk bij de [Product Page](https://github.com/marketplace/actions/create-an-product-page) en [Publiccode](https://github.com/marketplace/actions/create-or-update-publiccode-yaml) acties op Github.
+
+
+**Voor het kenbaar maken van uw organisatie en starten van een eigen catalogus**
+1. Zorgt u dat u binnen uw organistie een repositorie heeft met de naam `.github`
+2. Maak binnen deze repository een folder aan met (wederom) de naam `.github`, daarin een folder met de naam `workflows` en daarin een bestand genaamd `openCatalogi.yaml`. Voor in totaal dus `.github/.github/workflows/openCatalogi.yaml`
+3. Plaats in het bestand `openCatalogi.yaml` de volgende yaml code:
+````yaml
+name: My Open Catalogi Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:              
+      - name: Create or Update publiccode.yaml
+        uses: OpenCatalogi/publiccode-action@1.0.0
+        with:
+          opencatalogi: true
+      - name: Create an Open Catalogi page
+        uses: OpenCatalogi/opencatalogi-action@1.0.0
+````
+4. Voor extra configuratie opties en stappen kijk bij de [Catalogi Page](https://github.com/marketplace/actions/create-an-open-catalogi-page) en [Publiccode](https://github.com/marketplace/actions/create-or-update-publiccode-yaml) acties op Github.
 
 Voor meer details, het installeren van een eigen index en het afschermen van toegang zie [Installatie](https://documentatie.opencatalogi.nl/pages/Handleidingen/Installatie).
+
 
 ## Meedoen aan Open Catalogi
 

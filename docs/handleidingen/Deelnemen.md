@@ -18,24 +18,24 @@ Als uw organisatie geïntreseerd is in deelname aan de OpenCatalogi-coalitie kun
 
 ## Deelnemers
 
-| Organisatie         | Type                | Geïnteresseerd | Stuurgroep | Installatie | Financiering |
-|---------------------|---------------------|----------------|-----------|-------------|--------------|
-| [Dimpact](https://www.dimpact.nl)           | Samenwerkingsverband| ✓                | ✓         | ✓           | ✓            |
-| [Conxillium](https://www.conxillium.com)    | Leverancier         | ✓                |           |             |             |
-| [Rotterdam](https://www.rotterdam.nl)       | Gemeente            | ✓                | ✓         | ✓           | ✓            |
-| [Roermond](https://www.roermond.nl)         | Gemeente            | ✓                | ✓         |             | ✓            |
-| [Assen](https://www.assen.nl)               | Gemeente            | ✓                | ✓         |             | ✓            |
-| [Hilversum](https://www.hilversum.nl)       | Gemeente            | ✓              | ✓         |             | ✓            |
-| [Haarlemermeer](https://haarlemmermeergemeente.nl)| Gemeente     | ✓              | ✓         |             | ✓            |
-| [Enchede](https://www.enschede.nl)          | Gemeente            | ✓              | ✓         |             | ✓            |
-| [Eindhoven](https://www.eindhoven.nl)       | Gemeente            | ✓              | ✓         |             | ✓            |
-| [Conduction](https://www.conduction.nl)     | Leverancier         | ✓              |           | ✓           |              |
-| [Amersfoort](https://www.amersfoort.nl)     | Gemeente            | ✓              |           |             |              |
-| [Zwolle](https://www.zwolle.nl)             | Gemeente            | ✓              |           |             |              |
-| [Hoorn](https://www.hoorn.nl)               | Gemeente            | ✓              |           |             |              |
-| [Emmen](https://www.emmen.nl)               | Gemeente            | ✓              |           |             |              |
-| [Hardewijk](https://www.harderwijk.nl)      | Gemeente            | ✓              |           |             |              |
-| [Leiden](https://gemeente.leiden.nl)        | Gemeente            | ✓              |           | ✓            |              |
-| [Bronckhorst](https://www.bronckhorst.nl)   | Gemeente            | ✓              |           |             |              |
-| [Delft](https://www.delft.nl)               | Gemeente            | ✓              |           |             |              |
-| [Buren](https://www.buren.nl)               | Gemeente            | ✓              |           | ✓           |              |
+| Organisatie                                        | Type                | Geïnteresseerd | Stuurgroep | Installatie                                        | Financiering |
+|----------------------------------------------------|---------------------|----------------|-----------|----------------------------------------------------|--------------|
+| [Dimpact](https://www.dimpact.nl)                  | Samenwerkingsverband| ✓                | ✓         | ✓                                                  | ✓            |
+| [Conxillium](https://www.conxillium.com)           | Leverancier         | ✓                |           |                                                    |             |
+| [Rotterdam](https://www.rotterdam.nl)              | Gemeente            | ✓                | ✓         | ✓                                                  | ✓            |
+| [Roermond](https://www.roermond.nl)                | Gemeente            | ✓                | ✓         |                                                    | ✓            |
+| [Assen](https://www.assen.nl)                      | Gemeente            | ✓                | ✓         |                                                    | ✓            |
+| [Hilversum](https://www.hilversum.nl)              | Gemeente            | ✓              | ✓         |                                                    | ✓            |
+| [Haarlemermeer](https://haarlemmermeergemeente.nl) | Gemeente     | ✓              | ✓         |                                                    | ✓            |
+| [Enchede](https://www.enschede.nl)                 | Gemeente            | ✓              | ✓         |                                                    | ✓            |
+| [Eindhoven](https://www.eindhoven.nl)              | Gemeente            | ✓              | ✓         |                                                    | ✓            |
+| [Conduction](https://www.conduction.nl)            | Leverancier         | ✓              |           | ✓                                                  |              |
+| [Amersfoort](https://www.amersfoort.nl)            | Gemeente            | ✓              |           |                                                    |              |
+| [Zwolle](https://www.zwolle.nl)                    | Gemeente            | ✓              |           |                                                    |              |
+| [Hoorn](https://www.hoorn.nl)                      | Gemeente            | ✓              |           |                                                    |              |
+| [Emmen](https://www.emmen.nl)                      | Gemeente            | ✓              |           |                                                    |              |
+| [Hardewijk](https://www.harderwijk.nl)             | Gemeente            | ✓              |           |                                                    |              |
+| [Leiden](https://gemeente.leiden.nl)               | Gemeente            | ✓              |           | [link](https://gemeente-leiden.github.io/.github/) |              |
+| [Bronckhorst](https://www.bronckhorst.nl)          | Gemeente            | ✓              |           |                                                    |              |
+| [Delft](https://www.delft.nl)                      | Gemeente            | ✓              |           |                                                    |              |
+| [Open Webconcept](https://openwebconcept.nl/)            | Gemeente            | ✓              |           | ✓                                                  |              |
