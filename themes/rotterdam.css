@@ -1,0 +1,194 @@
+/******* START OF THEME TEMPLATE ********/
+.rotterdam-theme {
+  /* Font families */
+  --web-app-primary-font-family: "Bolder";
+  --web-app-content-font-family: var(--skeleton-content-font-family);
+
+  /* Theme colors */
+  --web-app-color-text-grey: #404b4f;
+  --web-app-color-footer-text: var(--web-app-color-text-grey);
+
+  --web-app-color-grey: var(--skeleton-color-grey-1);
+  --web-app-color-table-grey: #f9f9f9;
+  --web-app-color-table-hover-grey: #eff4f6;
+  --web-app-color-top-nav-grey: #586265;
+
+  --web-app-color-link: var(--rotterdam-color-green);
+  --web-app-color-link-active: var(--rotterdam-color-green);
+
+  --web-app-color-heading: var(--web-app-color-black);
+
+  --web-app-color-primary-text: var(--web-app-color-black);
+
+  --web-app-color-disabled: #eff4f6;
+
+  --web-app-color-primary-action: var(--rotterdam-color-green);
+  --web-app-color-primary-action-hover: var(--rotterdam-color-green);
+
+  --web-app-color-secondary-action: var(--rotterdam-color-green);
+  --web-app-color-secondary-action-hover: var(--rotterdam-color-green);
+
+  --web-app-color-table-row-background-hover: #eff4f6;
+
+  --web-app-color-invalid: hsl(6 93% 42%);
+
+  --web-app-color-background-light: #eff4f6;
+  --web-app-color-body-background: var(--web-app-color-white);
+
+  --web-app-color-background-page-header: var(--rotterdam-color-green);
+  --web-app-color-page-header: var(--web-app-color-white);
+
+  --web-app-color-background-page-top-bar: var(--web-app-color-white);
+
+  --web-app-color-background-footer: #eff4f6;
+  --web-app-color-footer-headings: auto;
+  --web-app-color-footer-links: var(--web-app-color-black);
+
+  --web-app-header-logo-container-background-color: unset;
+  --web-app-header-logo-container-padding: unset;
+  --web-app-header-logo-container-border-radius: 0;
+  --web-app-header-logo-container-height: 44px;
+  --web-app-header-organization-logo-width: 202px;
+  --web-app-header-organization-logo-src: url("../images/LogoRotterdam.svg");
+
+  --web-app-footer-logo-container-background-color: unset;
+  --web-app-footer-logo-container-padding: unset;
+  --web-app-footer-logo-container-border-radius: 0;
+  --web-app-footer-logo-container-height: 50px;
+  --web-app-footer-organization-logo-width: 230px;
+  --web-app-footer-organization-logo-src: url("../images/LogoRotterdam.svg");
+  --web-app-footer-forum-standaardisatie-icon-path-fill: var(--web-app-color-background-footer);
+
+  --web-app-rating-active-color: var(--rotterdam-color-green);
+  --web-app-rating-disable-color: #bfbfbf;
+
+  --web-app-filter-badge-color: hsl(0deg 0% 85%);
+
+  --web-app-breadcrumb-color: hsl(211 60% 35%);
+
+  --web-app-checkbox-color: var(--rotterdam-color-green);
+  --web-app-radio-button-color: var(--rotterdam-color-green);
+
+  --web-app-submit-component-background-color: var(--skeleton-color-grey-1);
+
+  /* Components */
+  --web-app-tag-color: var(--web-app-color-black);
+  --web-app-tag-background-color: var(--skeleton-color-grey-1);
+
+  --web-app-card-border-color: 1px solid var(--skeleton-color-grey-2);
+
+  --web-app-organization-card-logo-height: 100px;
+  --web-app-organization-card-logo-width: 100px;
+
+  --web-app-code-block-background-color: var(--skeleton-color-grey-1);
+
+  --web-app-badge-counter-color: var(--web-app-color-black);
+  --web-app-badge-counter-background-color: var(--skeleton-color-grey-1);
+  --web-app-badge-counter-height: 18px;
+  --web-app-badge-counter-width: 18px;
+  --web-app-badge-counter-font-size: 12px;
+  --web-app-badge-counter-max-number-font-size: 10px;
+
+  --web-app-component-image-max-width: 300px;
+  --web-app-component-rating-indicator-height: 160px;
+
+  --web-app-organization-detail-logo-height: 300px;
+  --web-app-organization-detail-logo-width: 350px;
+
+  --web-app-component-detail-logo-height: 225px;
+  --web-app-component-detail-logo-width: 300px;
+
+  --web-app-relations-frame-width: 1024px;
+  --web-app-relations-frame-height: 500px;
+  --web-app-relations-border: 1px solid #dddddd;
+  --web-app-relations-background-color: rgb(251, 251, 251);
+
+  --web-app-download-popup-width: 500px;
+  --web-app-overlay-background: rgba(0, 0, 0, 0.3);
+
+  --web-app-container-width-lg: 1440px;
+
+  /* 
+  * Utrecht component overrides
+  */
+  --web-app-button-secondary-action-background-color: var(--rotterdam-color-base-green);
+  --web-app-button-secondary-action-color: var(--web-app-color-white);
+}
+
+.rotterdam-theme {
+  /* @gemeente-utrecht: Databadge */
+  --utrecht-badge-padding-block: var(--web-app-size-xs) !important;
+  --utrecht-badge-background-color: var(--rotterdam-color-base-black) !important;
+  --utrecht-badge-font-size: var(--web-app-font-size-sm) !important;
+  --utrecht-badge-font-weight: var(--web-app-font-weight-normal) !important;
+  --utrecht-badge-padding-block: var(--web-app-size-xs) !important;
+  --utrecht-badge-padding-inline: var(--web-app-size-xs) !important;
+
+  /* @denhaag alert icon */
+  --utrecht-icon-size: 1.3em;
+
+  --utrecht-feedback-safe-fill-background-color: hsla(139, 81%, 35%, 1);
+  --utrecht-feedback-warning-fill-background-color: hsla(41, 100%, 43%, 1);
+  --utrecht-feedback-danger-fill-background-color: hsla(7, 60%, 52%, 1);
+  --utrecht-feedback-neutral-fill-background-color: hsla(201, 100%, 36%, 1);
+
+  --utrecht-alert-icon-info-color: var(--utrecht-alert-icon-color);
+  --utrecht-alert-info-background-color: var(--utrecht-alert-background-color);
+  --utrecht-alert-info-border-color: var(--utrecht-alert-border-color);
+  --utrecht-alert-info-border-width: var(--utrecht-alert-border-width);
+
+  --utrecht-button-group-inline-gap: var(--rotterdam-space-scale-3);
+  --utrecht-action-activate-cursor: pointer;
+
+  /* @gemeente-utrecht: separator */
+  --utrecht-separator-color: var(--web-app-color-table-hover-grey);
+  --utrecht-separator-block-size: var(--web-app-size-3xs);
+  --utrecht-separator-margin-block-end: 0px;
+  --utrecht-separator-margin-block-start: 0px;
+
+  /* @conduction: Breadcumbs */
+  --utrecht-breadcrumb-nav-separator-icon-color: var(--rotterdam-color-green);
+  --utrecht-breadcrumb-nav-separator-icon-size: 16px;
+  --utrecht-breadcrumb-nav-link-color: var(--rotterdam-color-green);
+  --utrecht-breadcrumb-nav-link-disabled-color: var(--web-app-color-text-grey);
+
+  /* @gemeente-utrecht: Heading4 */
+  --utrecht-heading-4-margin-block-end: var(--web-app-size-lg);
+}
+
+
+.utrecht-badge-data > svg {
+  margin-inline-end: var(--web-app-size-2xs);
+}
+
+/******* END OF THEME TEMPLATE ********/
+
+/*
+ * Theme-specific generics
+*/
+:root {
+  --rotterdam-color-green: #00811f;
+}
+
+@font-face {
+  font-family: "Bolder";
+  font-weight: bold;
+  src: url("../fonts/Bolder-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Bolder";
+  font-weight: light;
+  src: url("../fonts/Bolder-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Bolder";
+  font-weight: normal;
+  src: url("../fonts/Bolder-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Bolder";
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/Bolder-RegularItalic.woff2") format("woff2");
+}
