@@ -1,0 +1,70 @@
+[
+  {
+    "label": "Home",
+    "type": "internal",
+
+    "current": {
+      "pathname": "/",
+      "operator": "equals"
+    },
+    "handleClick": { "link": "/" }
+  },
+  {
+    "label": "Bijdragen",
+    "type": "readme",
+    "current": {
+      "pathname": "/contributing",
+      "operator": "includes"
+    },
+    "handleClick": {
+      "link": "https://github.com/ConductionNL/.github/blob/main/profile/README.md"
+    }
+  },
+  {
+    "label": "Organisatie",
+    "type": "readme",
+    "current": {
+      "pathname": "/governance",
+      "operator": "includes"
+    },
+    "handleClick": {
+      "link": "https://github.com/ConductionNL/.github/blob/main/profile/README.md"
+    }
+  },
+  {
+    "label": "Handleidingen",
+    "current": {
+      "pathname": "/docs",
+      "operator": "includes"
+    },
+    "subItems": [
+      {
+        "label": "Installatie",
+        "type": "readme",
+        "current": {
+          "pathname": "/docs/installation",
+          "operator": "equals"
+        },
+        "handleClick": { "link": "https://github.com/ConductionNL/.github/blob/main/profile/README.md" }
+      },
+      {
+        "label": "Architectuur",
+        "type": "readme",
+        "current": {
+          "pathname": "/docs/installation",
+          "operator": "equals"
+        },
+        "handleClick": { "link": "https://github.com/ConductionNL/.github/blob/main/profile/README.md" }
+      },
+      {
+        "label": "Publiceren",
+        "type": "readme",
+        "current": {
+          "pathname": "/docs/installation",
+          "operator": "equals"
+        },
+        "handleClick": { "link": "https://github.com/ConductionNL/.github/blob/main/profile/README.md" }
+      }
+    ]
+  }
+]

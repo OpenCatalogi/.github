@@ -23,6 +23,8 @@ jobs:
           github_repository_name_as_prefix: false
           nl_design_theme_classname: 'rotterdam-theme'
           pull_from_branche: 'main'
+          footer_content: 'https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/FooterContent.json'
+          navbar_content: 'https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/HeaderContent.json'
           start_page: 'https://github.com/OpenCatalogi/.github/blob/main/docs/Catalogi.md'
           favicon_logo: 'https://www.rotterdam.nl/images/logo-base.svg'
           navbar_logo: 'https://www.rotterdam.nl/images/logo-base.svg'
