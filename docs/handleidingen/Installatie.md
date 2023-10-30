@@ -47,7 +47,7 @@ Om je eigen Open Catalogi-portaal te publiceren, bieden we een GitHub-workflow a
 ![Publiceren van Frontend](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/installation_frontend.svg "Publiceren van Frontend")
 
 ## Gebruiken als SAAS
-Als je vertrouwelijke data wilt beheren in Open Catalogi, kun je de catalogus als SAAS afnemen. Voor alle [deelnemers](Deelnemen.md) van Open Catalogi biedt [Conduction](https://www.conduction.nl) een SAAS-installatie aan. Lees [hier](Deelnemen.md) meer over deelname aan Open Catalogi.
+Als je vertrouwelijke data wilt beheren in Open Catalogi, kun je de catalogus als SAAS afnemen. Voor alle [deelnemers](../GOVERNANCE.md) van Open Catalogi biedt [Conduction](https://www.conduction.nl) een SAAS-installatie aan. Lees [hier](../GOVERNANCE.md) meer over deelname aan Open Catalogi.
 
 Als je niet wilt deelnemen aan de Open Catalogi-coalitie maar wel gebruik wilt maken van de SAAS-oplossing, neem dan direct contact op met [Conduction](mailto:info@conduction.nl).
 

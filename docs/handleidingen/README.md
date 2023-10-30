@@ -1,5 +1,5 @@
 # Handleidingen
 
 - [Installatie](installatie)
-- [Deelnemen](deelnemen)
+- [Deelnemen](../GOVERNANCE.md)
 - [Architectuur](architectuur)
