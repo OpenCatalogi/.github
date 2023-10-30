@@ -18,7 +18,7 @@ jobs:
         with:
           opencatalogi: true
       - name: Create an Open Catalogi page
-        uses: OpenCatalogi/opencatalogi-action@1.0.0
+        uses: OpenCatalogi/opencatalogi-action@1.0.1
         with:
           github_repository_name_as_prefix: false
           nl_design_theme_classname: 'rotterdam-theme'
