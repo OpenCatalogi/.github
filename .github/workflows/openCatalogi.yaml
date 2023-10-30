@@ -25,7 +25,7 @@ jobs:
           pull_from_branche: 'development'
           footer_content: 'https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/FooterContent.json'
           navbar_content: 'https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/HeaderContent.json'
-          start_page: 'https://github.com/OpenCatalogi/.github/blob/main/docs/Catalogi.md'
+          start_page: 'https://github.com/OpenCatalogi/.github/blob/main/README.md'
           favicon_logo: 'https://dev.opencatalogi.nl/static/logo_OpenCatalogi-8b1b0a001c3f37dae4d3f69b5964ec72.png'
           navbar_logo: 'https://dev.opencatalogi.nl/static/logo_OpenCatalogi-8b1b0a001c3f37dae4d3f69b5964ec72.png'
           footer_logo: 'https://dev.opencatalogi.nl/static/logo_OpenCatalogi-8b1b0a001c3f37dae4d3f69b5964ec72.png'
