@@ -17,7 +17,7 @@
       "operator": "includes"
     },
     "handleClick": {
-      "link": "https://github.com/ConductionNL/.github/blob/main/profile/README.md"
+      "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/CONTRIBUTING.md"
     }
   },
   {
@@ -28,7 +28,7 @@
       "operator": "includes"
     },
     "handleClick": {
-      "link": "https://github.com/ConductionNL/.github/blob/main/profile/README.md"
+      "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/GOVERNANCE.md"
     }
   },
   {
@@ -45,7 +45,7 @@
           "pathname": "/docs/installation",
           "operator": "equals"
         },
-        "handleClick": { "link": "https://github.com/ConductionNL/.github/blob/main/profile/README.md" }
+        "handleClick": { "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Installatie.md" }
       },
       {
         "label": "Architectuur",
@@ -54,16 +54,61 @@
           "pathname": "/docs/installation",
           "operator": "equals"
         },
-        "handleClick": { "link": "https://github.com/ConductionNL/.github/blob/main/profile/README.md" }
+        "handleClick": { "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Architectuur.md" }
       },
       {
-        "label": "Publiceren",
+        "label": "Functionaliteit",
         "type": "readme",
         "current": {
           "pathname": "/docs/installation",
           "operator": "equals"
         },
-        "handleClick": { "link": "https://github.com/ConductionNL/.github/blob/main/profile/README.md" }
+        "handleClick": { "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Features.md" }
+      },
+      {
+        "label": "Frontend",
+        "type": "readme",
+        "current": {
+          "pathname": "/docs/installation",
+          "operator": "equals"
+        },
+        "handleClick": { "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Frontend.md" }
+      },
+      {
+        "label": "Publiccode",
+        "type": "readme",
+        "current": {
+          "pathname": "/docs/installation",
+          "operator": "equals"
+        },
+        "handleClick": { "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Publiccode.md" }
+      },
+      {
+        "label": "Publicorganisation",
+        "type": "readme",
+        "current": {
+          "pathname": "/docs/installation",
+          "operator": "equals"
+        },
+        "handleClick": { "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Publicorganisation.md" }
+      },
+      {
+        "label": "Productie",
+        "type": "readme",
+        "current": {
+          "pathname": "/docs/installation",
+          "operator": "equals"
+        },
+        "handleClick": { "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Productie.md" }
+      },
+      {
+        "label": "Testen",
+        "type": "readme",
+        "current": {
+          "pathname": "/docs/installation",
+          "operator": "equals"
+        },
+        "handleClick": { "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Testen.md" }
       }
     ]
   }
