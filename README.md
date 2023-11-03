@@ -40,7 +40,7 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - name: Create or Update publiccode.yaml
-     uses: OpenCatalogi/publiccode-action@1.1.0
+     uses: OpenCatalogi/publiccode-action@1.1.1
      with:
       opencatalogi: true
    - name: Create een Productpagina
@@ -69,11 +69,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:              
       - name: Create or Update opencatalogi.yaml
-        uses: OpenCatalogi/publiccode-action@1.1.0
+        uses: OpenCatalogi/publiccode-action@1.1.1
         with:
           opencatalogi: true
       - name: Create an Open Catalogi page
-        uses: OpenCatalogi/opencatalogi-action@1.0.0
+        uses: OpenCatalogi/opencatalogi-action@1.1.0
 ````
 4. Voor extra configuratieopties en stappen kunt u kijken naar de [Catalogi Page](https://github.com/marketplace/actions/create-an-open-catalogi-page) en [Publiccode](https://github.com/marketplace/actions/create-or-update-publiccode-yaml) acties op Github.
 
