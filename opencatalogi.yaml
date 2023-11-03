@@ -1,0 +1,57 @@
+contact:
+  email: ''
+  phone: ''
+name: ''
+publiccodeYmlVersion: '0.2'
+softwareOwned:
+- https://github.com/OpenCatalogi/.github
+- https://github.com/OpenCatalogi/web-app
+- https://github.com/OpenCatalogi/publiccode-action
+- https://github.com/OpenCatalogi/api
+- https://github.com/OpenCatalogi/leiden
+- https://github.com/OpenCatalogi/opencatalogi.nl
+- https://github.com/OpenCatalogi/opencatalogi-action
+- https://github.com/OpenCatalogi/Dimpact
+- https://github.com/OpenCatalogi/OpenCatalogiBundle
+- https://github.com/OpenCatalogi/Open-Webconcept
+- https://github.com/OpenCatalogi/productpage-action
+- https://github.com/OpenCatalogi/product-website
+softwareSupported:
+- software: https://github.com/OpenCatalogi/.github
+  type: community
+- software: https://github.com/OpenCatalogi/web-app
+  type: community
+- software: https://github.com/OpenCatalogi/publiccode-action
+  type: community
+- software: https://github.com/OpenCatalogi/api
+  type: community
+- software: https://github.com/OpenCatalogi/leiden
+  type: community
+- software: https://github.com/OpenCatalogi/opencatalogi.nl
+  type: community
+- software: https://github.com/OpenCatalogi/opencatalogi-action
+  type: community
+- software: https://github.com/OpenCatalogi/Dimpact
+  type: community
+- software: https://github.com/OpenCatalogi/OpenCatalogiBundle
+  type: community
+- software: https://github.com/OpenCatalogi/Open-Webconcept
+  type: community
+- software: https://github.com/OpenCatalogi/productpage-action
+  type: community
+- software: https://github.com/OpenCatalogi/product-website
+  type: community
+softwareUsed:
+- https://github.com/OpenCatalogi/.github
+- https://github.com/OpenCatalogi/web-app
+- https://github.com/OpenCatalogi/publiccode-action
+- https://github.com/OpenCatalogi/api
+- https://github.com/OpenCatalogi/leiden
+- https://github.com/OpenCatalogi/opencatalogi.nl
+- https://github.com/OpenCatalogi/opencatalogi-action
+- https://github.com/OpenCatalogi/Dimpact
+- https://github.com/OpenCatalogi/OpenCatalogiBundle
+- https://github.com/OpenCatalogi/Open-Webconcept
+- https://github.com/OpenCatalogi/productpage-action
+- https://github.com/OpenCatalogi/product-website
+website: ''
