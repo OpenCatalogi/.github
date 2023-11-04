@@ -1,7 +1,7 @@
 contact:
   email: ''
   phone: ''
-name: 'Open Catalogi'
+name: Open Catalogi
 publiccodeYmlVersion: '0.2'
 softwareOwned:
 - https://github.com/OpenCatalogi/.github
@@ -54,4 +54,4 @@ softwareUsed:
 - https://github.com/OpenCatalogi/Open-Webconcept
 - https://github.com/OpenCatalogi/productpage-action
 - https://github.com/OpenCatalogi/product-website
-website: 'https://opencatalogi.nl/'
+website: https://opencatalogi.nl/
