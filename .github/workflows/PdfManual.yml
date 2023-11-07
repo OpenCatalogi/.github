@@ -44,8 +44,11 @@ jobs:
       - name: Convert Markdown files to PDF
         run: |
           while IFS= read -r file; do
+            # Remove the zero-width space character before converting
+            sed -i 's/\u200B//g' "$file"
             filepath="${file%.*}.pdf"
-            pandoc "$file" -o "$filepath"
+            # Use xelatex for better unicode support
+            pandoc "$file" --pdf-engine=xelatex -o "$filepath"
           done < files.txt
 
       - name: Add Title Page if specified
