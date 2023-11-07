@@ -59,9 +59,6 @@ jobs:
           while IFS= read -r file; do
             pdf_list="$pdf_list ${file%.*}.pdf"
           done < files.txt
-          echo "# Glossary" > glossary.md
-          pandoc glossary.md -o glossary.pdf
-          pdf_list="$pdf_list glossary.pdf"
           pdfunite $pdf_list final_document.pdf
 
       - name: Save PDF as artifact
