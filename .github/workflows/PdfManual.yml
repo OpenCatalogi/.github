@@ -1,0 +1,71 @@
+# THis workflow creates a pdf from the markdown files within a repository
+name: PDF Manual
+
+on:
+  push:
+    paths:
+      - '**.md'
+
+env:
+  MARKDOWN_FILES: ${{ secrets.MARKDOWN_FILES }}  # expects a comma-separated list of files
+  TITLE_PAGE: ${{ secrets.TITLE_PAGE }}  # expects a path to the title page markdown
+
+jobs:
+  build_pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive texlive-latex-extra texlive-fonts-recommended poppler-utils
+
+      - name: Prepare file list
+        run: |
+          if [[ -n "${MARKDOWN_FILES}" ]]; then
+            IFS=',' read -ra ADDR <<< "${MARKDOWN_FILES}"
+            for file in "${ADDR[@]}"; do
+              echo "./$file" >> files.txt
+            done
+          else
+            find . -name '*.md' -not -path '*/\.*' | sort > files.txt
+          fi
+
+      - name: Generate index from file list
+        run: |
+          echo "# Index" > index.md
+          while IFS= read -r file; do
+            echo "- [$(basename "$file")]($file)" >> index.md
+          done < files.txt
+          pandoc index.md -o index.pdf
+
+      - name: Convert Markdown files to PDF
+        run: |
+          while IFS= read -r file; do
+            filepath="${file%.*}.pdf"
+            pandoc "$file" -o "$filepath"
+          done < files.txt
+
+      - name: Add Title Page if specified
+        run: |
+          if [[ -n "${TITLE_PAGE}" ]]; then
+            pandoc "${TITLE_PAGE}" -o title.pdf
+            pdf_list="title.pdf index.pdf"
+          else
+            pdf_list="index.pdf"
+          fi
+          while IFS= read -r file; do
+            pdf_list="$pdf_list ${file%.*}.pdf"
+          done < files.txt
+          echo "# Glossary" > glossary.md
+          pandoc glossary.md -o glossary.pdf
+          pdf_list="$pdf_list glossary.pdf"
+          pdfunite $pdf_list final_document.pdf
+
+      - name: Save PDF as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: compiled-markdown-pdf
+          path: final_document.pdf
