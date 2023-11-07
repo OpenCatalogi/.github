@@ -3,8 +3,8 @@ name: PDF Manual
 
 on:
   push:
-    paths:
-      - '**.md'
+    #paths:
+    #  - '**.md'
 
 env:
   MARKDOWN_FILES: ${{ secrets.MARKDOWN_FILES }}  # expects a comma-separated list of files
