@@ -13,21 +13,7 @@ softwareOwned:
 - https://github.com/OpenCatalogi/OpenCatalogiBundle
 - https://github.com/OpenCatalogi/productpage-action
 - https://github.com/OpenCatalogi/product-website
-softwareSupported:
-- software: https://github.com/OpenCatalogi/web-app
-  type: community
-- software: https://github.com/OpenCatalogi/publiccode-action
-  type: community
-- software: https://github.com/OpenCatalogi/opencatalogi.nl
-  type: community
-- software: https://github.com/OpenCatalogi/opencatalogi-action
-  type: community
-- software: https://github.com/OpenCatalogi/OpenCatalogiBundle
-  type: community
-- software: https://github.com/OpenCatalogi/productpage-action
-  type: community
-- software: https://github.com/OpenCatalogi/product-website
-  type: community
+softwareSupported: []
 softwareUsed:
 - https://github.com/OpenCatalogi/web-app
 - https://github.com/OpenCatalogi/publiccode-action
