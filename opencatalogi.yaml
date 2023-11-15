@@ -3,7 +3,7 @@ contact:
   phone: ''
 name: Open Catalogi
 publiccodeYmlVersion: '0.2'
-logo: https://avatars.githubusercontent.com/u/106239067?v=4
+logo: https://avatars.githubusercontent.com/u/106239067
 description: Eén centrale plek voor hergebruik van informatietechnologie binnen de overheid
 softwareOwned:
 - https://github.com/OpenCatalogi/web-app
