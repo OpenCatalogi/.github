@@ -13,8 +13,7 @@
     "label": "Bijdragen",
     "type": "internal",
     "current": {
-      "pathname": "/pages/Bijdragen",
-      "operator": "includes"
+      "pathname": "/pages/Bijdragen"
     },
     "handleClick": {
       "link": "/pages/Bijdragen"
@@ -24,8 +23,7 @@
     "label": "Organisatie",
     "type": "internal",
     "current": {
-      "pathname": "/pages/Organisatie",
-      "operator": "includes"
+      "pathname": "/pages/Organisatie"
     },
     "handleClick": {
       "link": "/pages/Organisatie"
@@ -37,6 +35,19 @@
       "pathname": "/pages/Handleidingen"
     },
     "subItems": [
+      {
+        "label": "README",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/pages/Handleidingen/README"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "README"
+          }
+        }
+      },
       {
         "label": "Installatie",
         "type": "internalMarkdown",
