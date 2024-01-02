@@ -36,8 +36,8 @@ De Azure-cloud bevat het ADFS-component dat fungeert als een identiteitsprovider
 Ten slotte omvat het systeem een externe catalogusacteur die communiceert met het Hipp-component, en een beheerdersacteur die communiceert met het F5 intern-component via een browser met JWT-claims. Er is ook een gebruikersacteur die communiceert met het F5 extern-component via een anonieme browser.
 
 ![OpenCatalogi User diagram](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/oc_user.svg "OpenCatalogi User diagram")
-![Alt](oc_admin.svg "UML Diagram of OpenCatalogi")
-![Alt](oc_extern.svg "UML Diagram of OpenCatalogi")
+![OpenCatalogi Admin diagram](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/oc_admin.svg "OpenCatalogi Admin diagram")
+![OpenCatalogi Extern diagram](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/oc_extern.svg "OpenCatalogi Extern diagram")
 
 ## Hoe vormt OpenCatalogi een gefedereerd netwerk?
 
@@ -47,14 +47,14 @@ Vervolgens communiceert de nieuwe installatie met alle andere installaties die v
 
 Dit onderzoekproces wordt regelmatig herhaald. Omdat elke installatie zijn eigen directory bijhoudt, blijft het netwerk robuust en operationeel, zelfs als een individuele installatie niet beschikbaar is.
 
-![Alt](createnetwork.svg "Sequence Diagram network creation")
+![Sequence Diagram network creation](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/createnetwork.svg "Sequence Diagram network creation")
 
 ## Hoe maakt OpenCatalogi gebruik van een gefedereerd netwerk?
 
 **Live gegevens**:
 Telkens wanneer een query wordt uitgevoerd naar het `/search` eindpunt van een OpenCatalogi-installatie, zoekt het antwoorden in zijn eigen MongoDB-index op basis van bepaalde filters. Tegelijkertijd controleert het ook zijn directory van bekende catalogi om andere catalogi te vinden die mogelijk de gevraagde gegevens bevatten en waar de oorspronkelijke catalogus toegang toe heeft. De query wordt ook asynchroon naar deze catalogi verzonden, en de reacties worden gecombineerd, tenzij een vooraf gedefinieerde time-outdrempel wordt bereikt.
 
-![Alt](live.svg "Sequence Diagram network creation")
+![Live data Diagram](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/live.svg "Live data Diagram")
 
 **Geïndexeerde gegevens**:
 OpenCatalogi geeft de voorkeur aan het indexeren van gegevens wanneer de bron dit toestaat. Tijdens elke uitvoer van netwerksynchronisatie (zoals uitgelegd in 'Hoe vormt OpenCatalogi een gefedereerd netwerk?'), worden alle gegevens die kunnen worden geïndexeerd, geïndexeerd als de bron is ingesteld op indexering. Het is belangrijk op te merken dat wanneer een object wordt gedeeld vanuit een andere catalogus, er een cloudgebeurtenisabonnement wordt gemaakt. Dit betekent dat wanneer het object wordt bijgewerkt in die catalogus, de wijzigingen ook vrijwel direct worden bijgewerkt in de lokale installatie.
