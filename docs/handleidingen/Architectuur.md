@@ -35,7 +35,7 @@ De Azure-cloud bevat het ADFS-component dat fungeert als een identiteitsprovider
 
 Ten slotte omvat het systeem een externe catalogusacteur die communiceert met het Hipp-component, en een beheerdersacteur die communiceert met het F5 intern-component via een browser met JWT-claims. Er is ook een gebruikersacteur die communiceert met het F5 extern-component via een anonieme browser.
 
-![Alt](oc_user.svg "UML Diagram of OpenCatalogi")
+![OpenCatalogi User diagram](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/oc_user.svg "OpenCatalogi User diagram")
 ![Alt](oc_admin.svg "UML Diagram of OpenCatalogi")
 ![Alt](oc_extern.svg "UML Diagram of OpenCatalogi")
 
