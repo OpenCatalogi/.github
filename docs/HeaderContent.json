@@ -2,113 +2,144 @@
   {
     "label": "Home",
     "type": "internal",
-
     "current": {
-      "pathname": "/",
-      "operator": "equals"
+      "pathname": "/"
     },
-    "handleClick": { "link": "/" }
+    "handleClick": {
+      "link": "/"
+    }
   },
   {
     "label": "Bijdragen",
-    "type": "readme",
+    "type": "internal",
     "current": {
-      "pathname": "/contributing",
+      "pathname": "/pages/Bijdragen",
       "operator": "includes"
     },
     "handleClick": {
-      "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/CONTRIBUTING.md"
+      "link": "/pages/Bijdragen"
     }
   },
   {
     "label": "Organisatie",
-    "type": "readme",
+    "type": "internal",
     "current": {
-      "pathname": "/governance",
+      "pathname": "/pages/Organisatie",
       "operator": "includes"
     },
     "handleClick": {
-      "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/GOVERNANCE.md"
+      "link": "/pages/Organisatie"
     }
   },
   {
     "label": "Handleidingen",
     "current": {
-      "pathname": "/docs",
-      "operator": "includes"
+      "pathname": "/pages/Handleidingen"
     },
     "subItems": [
       {
         "label": "Installatie",
-        "type": "readme",
+        "type": "internalMarkdown",
         "current": {
-          "pathname": "/docs/installation",
-          "operator": "equals"
+          "pathname": "/Handleidingen/Installatie"
         },
-        "handleClick": { "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Installatie.md" }
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Installatie"
+          }
+        }
       },
       {
         "label": "Architectuur",
-        "type": "readme",
+        "type": "internalMarkdown",
         "current": {
-          "pathname": "/docs/installation",
-          "operator": "equals"
+          "pathname": "/Handleidingen/Architectuur"
         },
-        "handleClick": { "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Architectuur.md" }
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Architectuur"
+          }
+        }
       },
       {
-        "label": "Functionaliteit",
-        "type": "readme",
+        "label": "Features",
+        "type": "internalMarkdown",
         "current": {
-          "pathname": "/docs/installation",
-          "operator": "equals"
+          "pathname": "/Handleidingen/Features"
         },
-        "handleClick": { "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Features.md" }
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Features"
+          }
+        }
       },
       {
         "label": "Frontend",
-        "type": "readme",
+        "type": "internalMarkdown",
         "current": {
-          "pathname": "/docs/installation",
-          "operator": "equals"
+          "pathname": "/Handleidingen/Frontend"
         },
-        "handleClick": { "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Frontend.md" }
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Frontend"
+          }
+        }
       },
       {
         "label": "Publiccode",
-        "type": "readme",
+        "type": "internalMarkdown",
         "current": {
-          "pathname": "/docs/installation",
-          "operator": "equals"
+          "pathname": "/Handleidingen/Publiccode"
         },
-        "handleClick": { "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Publiccode.md" }
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Publiccode"
+          }
+        }
       },
       {
         "label": "Publicorganisation",
-        "type": "readme",
+        "type": "internalMarkdown",
         "current": {
-          "pathname": "/docs/installation",
-          "operator": "equals"
+          "pathname": "/Handleidingen/Publicorganisation"
         },
-        "handleClick": { "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Publicorganisation.md" }
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Publicorganisation"
+          }
+        }
       },
       {
         "label": "Productie",
-        "type": "readme",
+        "type": "internalMarkdown",
         "current": {
-          "pathname": "/docs/installation",
-          "operator": "equals"
+          "pathname": "/Handleidingen/Productie"
         },
-        "handleClick": { "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Productie.md" }
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Productie"
+          }
+        }
       },
       {
         "label": "Testen",
-        "type": "readme",
+        "type": "internalMarkdown",
         "current": {
-          "pathname": "/docs/installation",
-          "operator": "equals"
+          "pathname": "/Handleidingen/Testen"
         },
-        "handleClick": { "link": "https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Testen.md" }
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Testen"
+          }
+        }
       }
     ]
   }
