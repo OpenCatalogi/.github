@@ -28,7 +28,7 @@ Om componenten (informatie) te publiceren op Open Catalogi, bieden we een GitHub
 Om organisatiegegevens te publiceren op Open Catalogi, is er eveneens een GitHub-workflow beschikbaar. Voeg het workflow-bestand toe aan de .github-repository van de organisatie die je wilt publiceren.
 
 > 1. Maak binnen uw GitHub-organisatie een repository aan met de naam `.github` (als u deze nog niet heeft).
-> 2. Maak binnen deze repository een map `workflows` aan, die zelf binnen een `.github` map hoort te zitten. Plaats daarin [deze workflow.yaml](https://github.com/OpenCatalogi/.github/blob/main/.github/workflows/opencatalogi-publish.yaml).
+> 2. Maak binnen deze repository een map `workflows` aan, die zelf binnen een `.github` map hoort te zitten. Plaats daarin [deze workflow.yaml](https://github.com/OpenCatalogi/.github/blob/main/.github/workflows/opencatalogi.yaml).
 > 3. Commit en push het workflow-bestand naar jouw repository.
 
 [Lees meer](Publicorganisation.md) over de configuratie-opties van de workflow.
