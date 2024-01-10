@@ -39,7 +39,7 @@ Om organisatiegegevens te publiceren op Open Catalogi, is er eveneens een GitHub
 Om je eigen Open Catalogi-portaal te publiceren, bieden we een GitHub-workflow aan. Voeg het workflow-bestand toe aan de .github-repository van de organisatie die je wilt publiceren. Publiceer vervolgens handmatig de gegenereerde GitHub Page.
 
 > 1. Maak binnen uw github organisaite een repositry aan met de naam .github (als us deze nog niet heeft)
-> 2. Maak binnen deze repository een map `.github` aan met daarin een map `workflows`en plaats daarin [deze workflow.yaml](https://raw.githubusercontent.com/OpenCatalogi/web-app/development/.github/workflows/opencatalogi-page-deploy.yml)
+> 2. Maak binnen deze repository een map `.github` aan met daarin een map `workflows`en plaats daarin [deze workflow.yaml](https://raw.githubusercontent.com/OpenCatalogi/web-app/development/.github/workflows/opencatalogi.yml)
 > 3. Ga binnen de repository naar instellingen(Settings) -> pagina's(Pages)  en selecteer onder Build en deploy bij **Branch** `gh-pages`
 
 [Lees meer](Frontend.md) over de configuratie-opties van de workflow.
