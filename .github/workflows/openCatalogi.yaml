@@ -14,9 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:              
       - name: Create or Update publiccode.yaml
-        uses: OpenCatalogi/publiccode-action@1.3.3
+        uses: OpenCatalogi/publiccode-action@1.3.6
         with:
-          opencatalogi: false
+          opencatalogi: true
       - name: Create an Open Catalogi page
         uses: OpenCatalogi/opencatalogi-action@1.1.7
         with:
