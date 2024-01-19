@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-organizations-index-tsx-db519f23583da69ed58e.js","mappings":"sIAEA,UAAeA,EAAiB,O","sources":["webpack://skeleton-pip/./src/pages/organizations/index.tsx"],"sourcesContent":["import OrganizationsPage from \"./OrganizationsPage\";\n\nexport default OrganizationsPage;\n"],"names":["OrganizationsPage"],"sourceRoot":""}

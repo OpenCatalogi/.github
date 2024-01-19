@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-components-index-tsx-d233e1a576693ca66da9.js","mappings":"sIAEA,UAAeA,EAAc,O","sources":["webpack://skeleton-pip/./src/pages/components/index.tsx"],"sourcesContent":["import ComponentsPage from \"./ComponentsPage\";\n\nexport default ComponentsPage;\n"],"names":["ComponentsPage"],"sourceRoot":""}
