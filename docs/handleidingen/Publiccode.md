@@ -11,7 +11,7 @@ Vanuit het OpenCatalogi-project is een GitHub-workflow beschikbaar die een `publ
 U kunt deze op de volgende manier gebruiken:
 
 > 1. Maak binnen de repository van uw component een directory aan met de naam `.github` (als u deze nog niet heeft).
-> 2. Maak binnen deze directory een map `workflows` aan, die zelf binnen een `.github` map hoort te zitten. Plaats daarin [deze workflow.yaml](https://github.com/OpenCatalogi/.github/blob/main/.github/workflows/opencatalogi-publish.yaml).
+> 2. Maak binnen deze directory een map `workflows` aan, die zelf binnen een `.github` map hoort te zitten. Plaats daarin [deze workflow.yaml](https://github.com/OpenCatalogi/.github/blob/main/.github/workflows/openCatalogi.yaml).
 > 3. Commit en push het workflow-bestand naar jouw repository.
 
 ## Handmatig Maken
