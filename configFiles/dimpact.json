@@ -1,0 +1,36 @@
+{
+  "GATSBY_SHOW_THEME_SWITCHER": "false",
+
+  "GATSBY_GITHUB_REPOSITORY_NAME": "web-app",
+  "GATSBY_USE_GITHUB_REPOSITORY_NAME_AS_PATH_PREFIX": "false",
+
+  "GATSBY_API_URL": "https://api.opencatalogi.nl/api",
+  "GATSBY_BASE_URL": "https://api.opencatalogi.nl",
+
+  "GATSBY_NL_DESIGN_THEME_CLASSNAME": "dimpact-theme",
+
+  "GATSBY_GITHUB_ORGANIZATION_URL": "",
+  "GATSBY_FAVICON_URL": "https://openwebconcept.nl/wp-content/uploads/2019/07/cropped-Favicon-32x32.png",
+
+  "GATSBY_PAGE_TITLE": "Leiden's Catalogi",
+
+  "GATSBY_HEADER_LOGO_URL": "",
+  "GATSBY_HEADER_SHOW_LOGIN": "false",
+  "GATSBY_HEADER_CONTENT": "https://raw.githubusercontent.com/OpenCatalogi/web-app/main/pwa/src/templates/templateParts/header/HeaderContent.json",
+
+  "GATSBY_JUMBOTRON_TITLE": "",
+  "GATSBY_JUMBOTRON_SUBTITLE": "",
+  "GATSBY_JUMBOTRON_IMAGE_PLACEMENT": "false",
+  "GATSBY_JUMBOTRON_IMAGE_URL": "",
+  "GATSBY_JUMBOTRON_DESCRIPTION": "",
+  "GATSBY_JUMBOTRON_ISCARD": "false",
+  "GATSBY_JUMBOTRON_SEARCHFORM": "true",
+  "GATSBY_JUMBOTRON_CONTAINER": "true",
+
+  "GATSBY_FOOTER_SHOW_CREATOR": "false",
+  "GATSBY_FOOTER_LOGO_URL": "false",
+  "GATSBY_FOOTER_CONTENT": "https://raw.githubusercontent.com/OpenCatalogi/web-app/25995205e1dbb043822d1c58c5c23f8e6f77ff7e/pwa/src/templates/templateParts/footer/FooterContent.json",
+  "GATSBY_FOOTER_CONTENT_HEADER": "heading-3",
+
+  "GATSBY_OPTIONAL_START_PAGE": ""
+}
