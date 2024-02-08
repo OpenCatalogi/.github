@@ -23,7 +23,7 @@ jobs:
           github_repository_name_as_prefix: false
           github_repository_url: https://github.com/OpenCatalogi/.github
           github_api_base_url: https://api.github.com/repos/OpenCatalogi/.github/contents
-          github_docs_directory_paths: '[{"name": "Handleidingen", "location": "/docs/handleidingen"}, {"name": "Roadmap", "location": "/docs/roadmap"}, {"name": "Docs", "location": "/docs"}]'
+          github_docs_directory_paths: '[{"name": "Handleidingen", "location": "/docs/handleidingen"}, {"name": "Docs", "location": "/docs"}]'
           slack_url: "https://samenorganiseren.slack.com/archives/C049GJ0QNHW"
           read_the_docs_url: "false"
           navbar_content: 'https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/NavbarContent.json'

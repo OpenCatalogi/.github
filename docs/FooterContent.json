@@ -56,11 +56,11 @@
         "icon": { "prefix": "fas", "icon": "arrow-right", "placement": "left" }
       },
       {
-        "value": "Frontend",
-        "ariaLabel": "Frontend",
+        "value": "Publiccode",
+        "ariaLabel": "Publiccode",
         "internalMarkdown": {
           "directoryName": "Handleidingen",
-          "fileName": "Frontend"
+          "fileName": "Publiccode"
         },
         "icon": { "prefix": "fas", "icon": "arrow-right", "placement": "left" }
       },
