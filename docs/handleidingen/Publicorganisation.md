@@ -197,7 +197,7 @@ OpenCatalogi scant iedere dag GitHub, dat betekent dat het lang kan duren voorda
 
 ### Stap 2: Maak een .gitlab Repository
 
-1. Ga naar de pagina van jouw nieuwe groep. Dit zou iets moeten zijn als <https://gitlab.com/\[groepsnaam>].
+1. Ga naar de pagina van jouw nieuwe groep. Dit zou iets moeten zijn als <https://gitlab.com/\[groepsnaam]>.
 
 2. Klik op 'New project' om een nieuw project te maken.
 
