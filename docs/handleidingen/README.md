@@ -1,11 +1,11 @@
 # Handleidingen
 
-  - [Installatie](/docs/Installatie.md)
-  - [Architectuur](/docs/Architectuur.md)
-  - [Functionaliteit](/docs/Features.md)
-  - [Frontend](/docs/Frontend.md)
-  - [Publiccode](/docs/Publiccode.md)
-  - [Publicorganisation](/docs/Publicorganisation.md)
-  - [Productie](/docs/Productie.md)
-  - [Testen](/docs/Testen.md)
+  - [Installatie](/docs/handleidingen/Installatie.md)
+  - [Architectuur](/docs/handleidingen/Architectuur.md)
+  - [Functionaliteit](/docs/handleidingen/Features.md)
+  - [Frontend](/docs/handleidingen/Frontend.md)
+  - [Publiccode](/docs/handleidingen/Publiccode.md)
+  - [Publicorganisation](/docs/handleidingen/Publicorganisation.md)
+  - [Productie](/docs/handleidingen/Productie.md)
+  - [Testen](/docs/handleidingen/Testen.md)
 
