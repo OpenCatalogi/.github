@@ -8,7 +8,7 @@ Vanuit de gedachte van zelf-documenterende code hoef je in dit geval alleen een 
 
 In de praktijk merken we echter dat het maken van een `yaml-bestand` uitdagend kan zijn. We hebben daarom een GitHub-workflow gemaakt die het bestand voor je genereert en automatisch bijwerkt als er wijzigingen zijn aan je codebase.
 
-Voor meer informatie en een korte handleiding zie [Maken van een workflow](handleidingen/Publicorganisation.md).
+Voor meer informatie en een korte handleiding zie [Maken van een workflow](/docs/handleidingen/Publicorganisation.md).
 
 > **Warning**
 > GitLab en Bitbucket worden op dit moment vanwege technische redenen (limitatie op hun search API) niet ondersteund.

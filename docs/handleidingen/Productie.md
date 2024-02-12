@@ -1,17 +1,17 @@
 # In productie nemen
 
-Het in productie nemen van Open Catalogi voor uw organisatie is makkelijker dan u wellicht denkt. Hieronder vindt u de stappen die u moet volgen om succesvol over te gaan naar de productiefase.
+Het in productie nemen van OpenCatalogi voor uw organisatie is makkelijker dan u wellicht denkt. Hieronder vindt u de stappen die u moet volgen om succesvol over te gaan naar de productiefase.
 
 
-- (optioneel) Kies een [leverancier](https://documentatie.opencatalogi.nl/pages/Handleidingen/Deelnemen) om Open Catalogi bij af te nemen. Of implementeer hem zelfstandig.
+- (optioneel) Kies een [leverancier](/docs/GOVERNANCE.md) om OpenCatalogi bij af te nemen. Of implementeer hem zelfstandig.
 - Versamel van te voren alle benodigde informatie
 - Vraag tijdig een PKI certificaat en DNS wijzig bij uw ICT leveranciers
 - Zorg dat u tijd beschikbaar hebt voor het grondig doortesten van de keten aan de hand van de test senario's
 
-Als u Open Catalogi zelfstandig instaleerd zult u de [acties voor leverancier](#acties-voor-leverancier) uiteraard zelf moeten uitvoeren.
+Als u OpenCatalogi zelfstandig instaleerd zult u de [acties voor leverancier](#acties-voor-leverancier) uiteraard zelf moeten uitvoeren.
 
 ## Benodigde informatie voor de vormgeving
-Om de vormgeving van Open Catalogi aan te passen aan uw organisatie, heeft uw leverancier of u de volgende informatie nodig:
+Om de vormgeving van OpenCatalogi aan te passen aan uw organisatie, heeft uw leverancier of u de volgende informatie nodig:
 
 - Logo in vector formaat (e.g. .svg, .eps of .ai)
 - Huisstijl handboek of webstie die als voorbeeld gebruikt kan worden
@@ -20,7 +20,7 @@ Om de vormgeving van Open Catalogi aan te passen aan uw organisatie, heeft uw le
 Om te beoordelen of uw organsatie NL Design tokens moet maken of aanpassen kunt u het [landelijke overicht van design tokens](https://github.com/nl-design-system/themes/tree/main/proprietary) raadplegen.
 
 ## Benodigde informatie voor de inrichting
-Voor de inrichting van Open Catalogi heeft uw leverancier of u de volgende informatie nodig:
+Voor de inrichting van OpenCatalogi heeft uw leverancier of u de volgende informatie nodig:
 
 - Welke afbeelding moet er worden getoond in de jumbotron? (afbeelding boven aan de landingspagina)
 - Welke contact gegevens moeten er in de footer worden getoond? Denk daarbij aan
@@ -52,21 +52,21 @@ Om het neerzetten van een omgeving soepel te laten verlopen, zijn er verschillen
 Aan de hand van de acties voor de opdrachtgever kan uw leverancier vervolgens aan de slag. Als u geen leverancier heeft moet u deze acties zelf verzetten.
 
 - [ ] Uitbreiden of aanmaken NL Design tokens aan de hand van de informatie voor de vormgeving
-- [ ] Inrichten van de Open Catalogi aan de hand van de informatie voor de inrichting
+- [ ] Inrichten van de OpenCatalogi aan de hand van de informatie voor de inrichting
 - [ ] Inrichten van koppelingen aan de hand van aangeleverde informatie
 - [ ] Globaal doortesten aan de hand van test senario's 
 - [ ] Aan uitvrager laten weten dat er een acceptatie kan plaatsvinden
 
 Wat doet de leverancier niet
-- Aanleveren WCAG raportage (deze staat [hier](https://raw.githubusercontent.com/ConductionNL/woo-website-template/main/docs/WCAG-Raportage.pdf))
-- Aanleveren PEN test (deze staat [hier]())
+- Aanleveren WCAG raportage (deze staat [hier](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/WCAG-Raportage.pdf))
+- Aanleveren PEN test (deze staat [hier](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/PENTEST-Raportage.pdf))
 
 ## Naar productie (Acceptatie)
 Als uw leverancier alles heeft klaar gezet is het tijd voor acceptatie en livegang
 
-- [ ] Doorlopen van de [Acceptatie tests](https://openwoo.app/pages/Documentatie/Tests)
+- [ ] Doorlopen van de [Acceptatie tests](/docs/handleidingen/Testen.md)
 - [ ] Website laten controleren en reviewen door communicatieafdeling
 - [ ] Indien alles correct, aan leverancier laten weten dat er geaccepteerd is.
-- [ ] Op eigen website verwijzen naar de OpenWOO Pagina's (deeplinks)
+- [ ] Op eigen website verwijzen naar de OpenCatalogi Pagina's (deeplinks)
 - [ ] Vier de livegang met een feestje
 

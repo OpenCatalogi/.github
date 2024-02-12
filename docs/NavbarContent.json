@@ -1,0 +1,151 @@
+[
+  {
+    "label": "Home",
+    "type": "internal",
+
+    "current": {
+      "pathname": "/"
+    },
+    "handleClick": {
+      "link": "/"
+    }
+  },
+  {
+    "label": "Bijdragen",
+    "type": "internalMarkdown",
+    "current": {
+      "pathname": "/Docs/CONTRIBUTING"
+    },
+    "handleClick": {
+      "internalMarkdown": {
+        "directoryName": "Docs",
+        "fileName": "CONTRIBUTING"
+      }
+    }
+  },
+  {
+    "label": "Organisatie",
+    "type": "internalMarkdown",
+    "current": {
+      "pathname": "/Docs/GOVERNANCE"
+    },
+    "handleClick": {
+      "internalMarkdown": {
+        "directoryName": "Docs",
+        "fileName": "GOVERNANCE"
+      }
+    }
+  },
+  {
+    "label": "Handleidingen",
+    "current": {
+      "pathname": "/Handleidingen"
+    },
+    "subItems": [
+      {
+        "label": "Installatie",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Handleidingen/Installatie"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Installatie"
+          }
+        }
+      },
+      {
+        "label": "Architectuur",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Handleidingen/Architectuur"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Architectuur"
+          }
+        }
+      },
+      {
+        "label": "Functionaliteit",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Handleidingen/Features"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Features"
+          }
+        }
+      },
+      {
+        "label": "Frontend",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Handleidingen/Frontend"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Frontend"
+          }
+        }
+      },
+      {
+        "label": "Publiccode",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Handleidingen/Publiccode"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Publiccode"
+          }
+        }
+      },
+      {
+        "label": "Publicorganisation",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Handleidingen/Publicorganisation"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Publicorganisation"
+          }
+        }
+      },
+      {
+        "label": "Productie",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Handleidingen/Productie"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Productie"
+          }
+        }
+      },
+      {
+        "label": "Testen",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Handleidingen/Testen"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Testen"
+          }
+        }
+      }
+    ]
+  }
+]

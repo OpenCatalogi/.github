@@ -16,7 +16,7 @@ Met andere woorden, repositories en organisaties wisselen gegevens uit binnen he
 
 ![UML Diagram van OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/architectuur_basic.svg "UML Diagram van OpenCatalogi")
 
-In een meer geavanceerde opzet kunnen ook andere bronnen dan repositories worden gebruikt (zoals API's) en kunnen organisaties hun eigen knooppunten starten. Meer informatie hierover vindt u in de [architectuursectie](https://documentatie.opencatalogi.nl/pages/Handleidingen/Architectuur).
+In een meer geavanceerde opzet kunnen ook andere bronnen dan repositories worden gebruikt (zoals API's) en kunnen organisaties hun eigen knooppunten starten. Meer informatie hierover vindt u in de [architectuursectie](/docs/handleidingen/Architectuur.md).
 
 ## Snelle Start
 Voor het beschikbaar stellen van publicaties of zelfs uw eigen catalogus heeft u geen eigen server nodig, maar wel een [GitHub-organisatie](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch) waarvan u de beheerder bent.
@@ -78,9 +78,9 @@ jobs:
 ````
 4. Voor extra configuratieopties en stappen kunt u kijken naar de [Catalogi Page](https://github.com/marketplace/actions/create-an-open-catalogi-page) en [Publiccode](https://github.com/marketplace/actions/create-or-update-publiccode-yaml) acties op Github.
 
-Voor meer details, het installeren van een eigen index en het afschermen van toegang zie [Installatie](https://documentatie.opencatalogi.nl/pages/Handleidingen/Installatie).
+Voor meer details, het installeren van een eigen index en het afschermen van toegang zie [Installatie](/docs/handleidingen/Installatie.md).
 
 ## Meedoen aan Open Catalogi
 
-Organisaties kunnen op verschillende manieren deelnemen aan het OpenCatalogi-project. Of u nu financieel wilt bijdragen aan de doorontwikkeling, deel wilt nemen aan de stuurgroep, of simpelweg de ontwikkelingen wilt volgen en feedback wilt geven, er is een vorm van deelname die bij uw organisatie past. Raadpleeg het gedeelte <a href="https://documentatie.opencatalogi.nl/pages/Handleidingen/Deelnemen">Deelname aan het Open Catalogi Project</a>
+Organisaties kunnen op verschillende manieren deelnemen aan het OpenCatalogi-project. Of u nu financieel wilt bijdragen aan de doorontwikkeling, deel wilt nemen aan de stuurgroep, of simpelweg de ontwikkelingen wilt volgen en feedback wilt geven, er is een vorm van deelname die bij uw organisatie past. Raadpleeg het gedeelte [Deelname aan het Open Catalogi Project](/docs/GOVERNANCE.md)
  voor meer informatie over hoe u kunt aansluiten en bijdragen.
