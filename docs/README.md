@@ -14,3 +14,4 @@
 - Overige documenten
   - [Bijdragen](/docs/CONTRIBUTING.md)
   - [Governance](/docs/GOVERNANCE.md)
+  - [Design](/docs/DESIGN.md)
