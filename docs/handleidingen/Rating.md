@@ -1,96 +1,63 @@
-# Testscenario's
+# Ratingssysteem voor Open Catalogi
 
-Om OpenCatalogi zelfstandig te kunnen installeren of doorontwikkelen, is het belangrijk om ook over herbruikbare testscenario's te beschikken.
+## Overzicht
 
-We kunnen de testscripts opsplitsen in de volgende categorieën:
+Voor open catalogi hanteren we een ratingssysteem gebaseerd op de kwaliteit van de documentatie. Een goed gedocumenteerd product ontvangt meer punten, wat bijdraagt aan een hogere rating. Dit systeem stimuleert ontwikkelaars om hun documentatie te verbeteren, waardoor de kwaliteit van de open catalogi als geheel toeneemt.
 
-1. Opzet en voorwaarden: Hier beschrijven we de omgevingseisen en initialisatieprocedures.
-2. Testcases: De daadwerkelijke testscenario's.
-3. Schoonmaak: Procedures om de omgeving terug te brengen naar de oorspronkelijke staat.
+## Rating Mechanisme
 
-## 1. Opzet en voorwaarden
+De rating wordt berekend op basis van een x/y schaal, waarbij:
 
-**Omgevingseisen**: Zorg ervoor dat je een lokale/testversie van OpenCatalogi hebt draaien (zie [Installatie](https://documentatie.opencatalogi.nl/pages/Handleidingen/Installatie) voor hoe dit werkt).
+- **x** staat voor het aantal verdiende punten.
+- **y** staat voor het totaal aantal mogelijk te verdienen punten, afhankelijk van het type publicatie (bijvoorbeeld applicaties, componenten, configuraties en API's).
 
-## 2. Testcases
+De verhouding tussen x en y resulteert in een percentage dat de score van de documentatie weergeeft. Dit percentage bepaalt de volgorde van weergave in de open catalogus frontend en wordt getoond aan bezoekers.
 
-### Testcase 1: Een nieuwe publicatie toevoegen aan OpenCatalogi
+## Beoordelingscriteria
 
-**Doel**: Verifiëren dat een nieuwe publicatie correct wordt weergegeven op het federatieve netwerk.
+De rating wordt vastgesteld door een repository te scannen op de aanwezigheid van specifieke documentatie, de inrichting van de repository zelf en de aanwezigheid van velden binnen de `publiccode.yaml`. 
 
-**Stappen**:
+## Beoordelingstabel
 
-1. Voeg een nieuwe repository toe aan uw organisatie met duidelijke naam en omschrijving.
-2. Plaats hierin de publiccode [GitHub action](https://github.com/marketplace/actions/create-or-update-publiccode-yaml).
-3. Zorg dat de GitHub-actie wordt getriggerd (bijvoorbeeld door deze handmatig te activeren of een wijziging uit te voeren op de repository).
-4. Vul de `publiccode.yaml` verder aan met de gegevens zoals beschreven onder [publiccode](https://documentatie.opencatalogi.nl/pages/Handleidingen/Publiccode).
-4. Ga naar OpenCatalogi en gebruik zoeken om de repository als publicatie te vinden.
-5. Open de gevonden publicatie en vergelijk de getoonde gegevens met de publiccode in uw repository.
+### Aanweizgheid van documenten
+- We controleren of de volgende documenten als `.md` bestand in de repository aanwezig zijn.
+- Dat doen we aan de hand van de bestandsnaam, oznder hoofdlettergevoeligheid
+- We volgen hierin zowel [github aanbeveilingen](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories) als algemene standaarden en bijzonder [github bestanden](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file). 
+- Er wordt alleen gecontroleerd op e aanwezigheid van bestanden, niet op de inhoud daarvan. 
+- De bestanden mogen zich op root niveau bevinden of binnen de `docs/` folder
+- Als het een 'multi-repository' betreft (meerdere publicaties uit één repository) controlen we de bestanden alleen op repository niveu
+- Voer ieder aanwezig bestand word 1 punt toegekend
+- Bestanden worden 
 
-**Verwachte resultaten**:
+| Bestand           | Doel |  
+|-------------------|------| 
+| README.md         |      |
+| LICENCE.md        |      |
+| CONTRIBUTING.md   |      |
+| CODE_OF_CONDUCT.md |      |
+| GOVERNANCE.md     |      |
+| SECURITY.md       |      |
+| SUPPORT.md        |      |
+| PUBLICCODE.yml    |      |
 
-- De nieuwe repository is vindbaar en wordt correct weergegeven op opencatalogi.nl.
 
-### Testcase 2: Een publicatie archiveren
 
-**Verwachte resultaten**:
+### Inrichting van de repository
 
-- De publicatie is alleen vindbaar als in het filter op opencatalogi.nl. `inclusief gearchifeerde publicaties` is aangevinkt.
-  
-### Testcase 3: Een publicatie verwijderen
 
-**Verwachte resultaten**:
+| Aspect                       | Criteria                                                                 | Max. Punten |
+| ---------------------------- | ------------------------------------------------------------------------ | ----------- |
+| **README-bestand**           | Aanwezigheid, volledigheid en duidelijkheid.                             | 20          |
+| **Gedetailleerde Documentatie** | Technische beschrijvingen, API-documentatie, gebruikershandleidingen.   | 30          |
+| **Voorbeelden en Tutorials** | Praktische gebruikscases, codevoorbeelden en stap-voor-stap handleidingen. | 20          |
+| **Licentie**                 | Duidelijke vermelding van de licentie.                                  | 10          |
+| **Bijdrage Richtlijnen**     | Informatie over hoe bij te dragen aan het project.                       | 10          |
+| **Code Kwaliteit en Veiligheid** | Documentatie over standaarden, beveiligingsprotocollen.                 | 10          |
 
-- De publicatie is niet meer vindbaar
+## Automatische Scanning en Beoordeling
 
-### Testcase 4: Een organisatie toevoegen
+De rating wordt automatisch bepaald door tools die de repository scannen op de bovengenoemde aspecten. De aanwezigheid en kwaliteit van een `publiccode.yaml` bestand wordt ook meegenomen in de beoordeling.
 
-**Verwachte resultaten**:
+## Gevolgen van de Rating
 
-- De nieuwe organisatie is vindbaar en word correct weergegeven op opencatalogi.nl
-
-### Testcase 5: Een hergebruik van componenten aangeven
-
-**Verwachte resultaten**:
-
-- Het hergebruikte component staat vermeld onder hergebruik bij de applicaite pagina
-- De organisatie staat vermeld op de component pagina onder hergebruik
-  
-### Testcase 6: Een ondersteuning van componenten aangeven
-
-**Verwachte resultaten**:
-
-- Het ondersteunde component staat vermeld onder hergebruik bij de applicaite pagina
-- De organisatie staat vermeld op de component pagina onder ondersteuning
-  
-### Testcase 7: Een organisatie verwijderen
-
-**Verwachte resultaten**:
-
-- De organisatie is niet meer vindbaar
-
-### Testcase 8: Een catalogus toevoegen
-
-**Verwachte resultaten**:
-
-- De catalogus wordt weergegeven op de Catalogusen pagina van OpenCatalogi
-- De catalogus is benaderbaar op de ingestelde domeinnaam
-
-### Testcase 9: Een catalogus configureren
-
-**Verwachte resultaten**:
-
-- De catalogus geeft in de footer de ingestelde gegevens weer
-- De catalogus geeft het ingestelde menu weer
-  
-## Technische test
-Naast functionele tests is het ook belangrijk om te controleren of de website voldoet aan de technische eisen voor overheidswebsites.
-
-### WCAG
-Er is een [WCAG-rapportage](https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/WCAG-Raportage.pdf) beschikbaar voor de website.
-
-U kunt de test zelf herhalen, vervang in de volgende url `https://opencatalogi.nl/` door het adres van uw OpenCatalogi-installatie
-[https://accessibe.com/accessscan?website=https://opencatalogi.nl/](https://accessibe.com/accessscan?website=https://opencatalogi.nl/)
-
-### Pentest
-Er is een [Pentest rapportage](https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/PENTEST-Raportage.pdf) beschikbaar voor de website.
+Een hogere rating leidt tot een betere zichtbaarheid in de open catalogus, waardoor de kans groter is dat het product gebruikt wordt. Dit systeem moedigt ontwikkelaars aan om te investeren in de kwaliteit van hun documentatie.
