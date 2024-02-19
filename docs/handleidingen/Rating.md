@@ -27,22 +27,34 @@ De rating wordt vastgesteld door een repository te scannen op de aanwezigheid va
 - De bestanden mogen zich op root niveau bevinden of binnen de `docs/` folder
 - Als het een 'multi-repository' betreft (meerdere publicaties uit één repository) controlen we de bestanden alleen op repository niveu
 - Voer ieder aanwezig bestand word 1 punt toegekend
-- Bestanden worden 
+- We kijken wel naar de funding.yaml voor weergaven de `bijdragen` knop, maar nemen deze niet mee als rating factor 
 
-| Bestand           | Doel |  
-|-------------------|------| 
-| README.md         |      |
-| LICENCE.md        |      |
-| CONTRIBUTING.md   |      |
-| CODE_OF_CONDUCT.md |      |
-| GOVERNANCE.md     |      |
-| SECURITY.md       |      |
-| SUPPORT.md        |      |
-| PUBLICCODE.yml    |      |
-
-
+| Bestand              | Doel                                                                                                                                                   |
+|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `README.md`          | Biedt een overzicht van het project, gebruiksinstructies, installatieprocedure, en bijdrage richtlijnen.                                               |
+| `LICENCE.md`         | Bevat de licentie-informatie voor het project, wat duidelijk maakt onder welke voorwaarden de software gebruikt en gedistribueerd mag worden.          |
+| `CONTRIBUTING.md`    | Geeft richtlijnen voor hoe anderen kunnen bijdragen aan het project, inclusief codebijdragen, documentatie updates, en issue rapportage.               |
+| `CODE_OF_CONDUCT.md` | Beschrijft de gedragscode voor deelname aan het project, waarmee een inclusieve en respectvolle gemeenschap wordt bevorderd.                           |
+| `GOVERNANCE.md`      | Legt de bestuurlijke structuur van het project uit, inclusief besluitvormingsprocessen en rollen binnen het projectteam.                              |
+| `SECURITY.md`        | Biedt informatie over hoe beveiligingsproblemen in het project gemeld kunnen worden en beschrijft het beleid voor het afhandelen van beveiligingsissues. |
+| `SUPPORT.md`         | Geeft aan waar gebruikers ondersteuning kunnen vinden (bijvoorbeeld via forums, chatkanalen, of e-mail), inclusief veelgestelde vragen.                |
+| `PUBLICCODE.yml`     | Een bestand specifiek ontworpen om openbare software te beschrijven, met metadata die het project categoriseert en helpt bij de vindbaarheid.          |
 
 ### Inrichting van de repository
+- We kijken of bepaalde properties zijn ingericht voor de repository aan de hand van de github/gitlab api.
+
+| Property    | Doel                                                                                                                                                   |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        |                                                |
+| Description |                                                |
+
+
+### Inrichting van de publiccode.yml
+
+| Property    | Doel                                                                                                                                                   |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name        |                                                |
+| Description |                                                |
 
 
 | Aspect                       | Criteria                                                                 | Max. Punten |
