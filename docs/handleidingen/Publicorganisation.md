@@ -23,10 +23,10 @@ U kunt deze op de volgende manier gebruiken:
 U kunt er ook voor kiezen om handmatig een publicorganisation bestand in uw repository op te nemen, houdt er in dat geval rekening mee dat het tot 24 uur kan duren voordat wijzigingen in het federatieve netwerk zichtbaar worden.
 
 > 1. Maak binnen uw github organisatee een repositry aan met de naam .github (als us deze nog niet heeft)
-> 2. Maak een `publiccode.yaml` bestand in de root van jouw repository met een teksteditor of een geïntegreerde ontwikkelomgeving (IDE).
-> 3. Voeg de vereiste metadata toe aan het `publiccode.yaml` bestand. Een voorbeeld van een basisstructuur tref je hieronder.
+> 2. Maak een `openCatalogi.yaml` bestand in de root van jouw repository met een teksteditor of een geïntegreerde ontwikkelomgeving (IDE).
+> 3. Voeg de vereiste metadata toe aan het `openCatalogi.yaml` bestand. Een voorbeeld van een basisstructuur tref je hieronder.
 > 4. Voeg eventuele aanvullende metadata toe die relevant kan zijn voor jouw component, zoals documentatie, afhankelijkheden, contactinformatie of onderhoudsinformatie.
-> 5. Commit en push het `publiccode.yaml` bestand naar jouw repository. Houd er rekening mee dat het de eerste keer tot 24 uur kan duren voordat OpenCatalogi je component indexeert.
+> 5. Commit en push het `openCatalogi.yaml` bestand naar jouw repository. Houd er rekening mee dat het de eerste keer tot 24 uur kan duren voordat OpenCatalogi je component indexeert.
 
 ## Voorbeeld
 
