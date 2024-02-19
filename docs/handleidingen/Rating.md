@@ -17,9 +17,14 @@ De verhouding tussen x en y resulteert in een percentage dat de score van de doc
 
 De rating wordt vastgesteld door een repository te scannen op de aanwezigheid van specifieke documentatie, de inrichting van de repository zelf en de aanwezigheid van velden binnen de `publiccode.yaml`. 
 
-## Beoordelingstabel
 
-### Aanweizgheid van documenten
+| Aspect                         | Criteria                                                                | Max. Punten |
+|--------------------------------| ----------------------------------------------------------------------- |-------------|
+| **Aanwezigheid van bestanden** | Aanwezigheid, volledigheid en duidelijkheid.                            | 8           |
+| **Inrichting van de repository** | Aanwezigheid, volledigheid en duidelijkheid.                            | ?           |
+| **Inrichting van de publiccode.yml** | Aanwezigheid, volledigheid en duidelijkheid.                            | ?           |
+
+### Aanwezigheid van documenten
 - We controleren of de volgende documenten als `.md` bestand in de repository aanwezig zijn.
 - Dat doen we aan de hand van de bestandsnaam, oznder hoofdlettergevoeligheid
 - We volgen hierin zowel [github aanbeveilingen](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories) als algemene standaarden en bijzondere [github bestanden](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file). 
@@ -58,14 +63,6 @@ De rating wordt vastgesteld door een repository te scannen op de aanwezigheid va
 | Description |                                                |
 
 
-| Aspect                       | Criteria                                                                 | Max. Punten |
-| ---------------------------- | ------------------------------------------------------------------------ | ----------- |
-| **README-bestand**           | Aanwezigheid, volledigheid en duidelijkheid.                             | 20          |
-| **Gedetailleerde Documentatie** | Technische beschrijvingen, API-documentatie, gebruikershandleidingen.   | 30          |
-| **Voorbeelden en Tutorials** | Praktische gebruikscases, codevoorbeelden en stap-voor-stap handleidingen. | 20          |
-| **Licentie**                 | Duidelijke vermelding van de licentie.                                  | 10          |
-| **Bijdrage Richtlijnen**     | Informatie over hoe bij te dragen aan het project.                       | 10          |
-| **Code Kwaliteit en Veiligheid** | Documentatie over standaarden, beveiligingsprotocollen.                 | 10          |
 
 ## Automatische Scanning en Beoordeling
 
