@@ -1,8 +1,8 @@
-# Ratingssysteem voor Open Catalogi
+# Ratingssysteem voor OpenCatalogi
 
 ## Overzicht
 
-Voor open catalogi hanteren we een ratingssysteem gebaseerd op de kwaliteit van de documentatie. Een goed gedocumenteerd product ontvangt meer punten, wat bijdraagt aan een hogere rating. Dit systeem stimuleert ontwikkelaars om hun documentatie te verbeteren, waardoor de kwaliteit van de open catalogi als geheel toeneemt.
+Voor OpenCatalogi hanteren we een ratingssysteem gebaseerd op de kwaliteit van de documentatie. Een goed gedocumenteerd product ontvangt meer punten, wat bijdraagt aan een hogere rating. Dit systeem stimuleert ontwikkelaars om hun documentatie te verbeteren, waardoor de kwaliteit van OpenCatalogi als geheel toeneemt.
 
 ## Rating Mechanisme
 
@@ -11,7 +11,7 @@ De rating wordt berekend op basis van een x/y schaal, waarbij:
 - **x** staat voor het aantal verdiende punten.
 - **y** staat voor het totaal aantal mogelijk te verdienen punten, afhankelijk van het type publicatie (bijvoorbeeld applicaties, componenten, configuraties en API's).
 
-De verhouding tussen x en y resulteert in een percentage dat de score van de documentatie weergeeft. Dit percentage bepaalt de volgorde van weergave in de open catalogus frontend en wordt getoond aan bezoekers.
+De verhouding tussen x en y resulteert in een percentage dat de score van de documentatie weergeeft. Dit percentage bepaalt de volgorde van weergave in de OpenCatalogi frontend en wordt getoond aan bezoekers.
 
 ## Beoordelingscriteria
 
@@ -27,12 +27,12 @@ De rating wordt vastgesteld door een repository te scannen op de aanwezigheid va
 ### Aanwezigheid van documenten
 - We controleren of de volgende documenten als `.md` bestand in de repository aanwezig zijn.
 - Dat doen we aan de hand van de bestandsnaam, oznder hoofdlettergevoeligheid
-- We volgen hierin zowel [github aanbeveilingen](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories) als algemene standaarden en bijzondere [github bestanden](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file). 
-- Er wordt alleen gecontroleerd op e aanwezigheid van bestanden, niet op de inhoud daarvan. 
+- We volgen hierin zowel [GitHub aanbevelingen](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories) als algemene standaarden en bijzondere [GitHub bestanden](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file). 
+- Er wordt alleen gecontroleerd op de aanwezigheid van bestanden, niet op de inhoud daarvan. 
 - De bestanden mogen zich op `root` niveau bevinden of binnen de `docs/` folder
 - Als het een 'multi-repository' betreft (meerdere publicaties uit één repository) controlen we de bestanden alleen op repository niveu
 - Voer ieder aanwezig bestand word 1 punt toegekend
-- We kijken wel naar de funding.yaml voor weergaven de `bijdragen` knop, maar nemen deze niet mee als rating factor 
+- We kijken wel naar de `funding.yaml` voor weergaven de `bijdragen` knop, maar nemen deze niet mee als rating factor 
 - We controlleren altijd op de aanwezigheid van deze documenten, ongeacht het type publicatie 
 
 | Bestand              | Doel                                                                                                                                                   |
@@ -70,4 +70,4 @@ De rating wordt automatisch bepaald door tools die de repository scannen op de b
 
 ## Gevolgen van de Rating
 
-Een hogere rating leidt tot een betere zichtbaarheid in de open catalogus, waardoor de kans groter is dat het product gebruikt wordt. Dit systeem moedigt ontwikkelaars aan om te investeren in de kwaliteit van hun documentatie.
+Een hogere rating leidt tot een betere zichtbaarheid in OpenCatalogi, waardoor de kans groter is dat het product gebruikt wordt. Dit systeem moedigt ontwikkelaars aan om te investeren in de kwaliteit van hun documentatie.
