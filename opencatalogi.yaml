@@ -1,10 +1,10 @@
+publiccodeYmlVersion: '0.2'
+name: Open Catalogi
+logo: https://avatars.githubusercontent.com/u/106239067
+description: Eén centrale plek voor hergebruik van informatietechnologie binnen de overheid
 contact:
   email: 'info@conduction.nl'
   phone: ''
-name: Open Catalogi
-publiccodeYmlVersion: '0.2'
-logo: https://avatars.githubusercontent.com/u/106239067
-description: Eén centrale plek voor hergebruik van informatietechnologie binnen de overheid
 softwareOwned:
 - https://github.com/OpenCatalogi/web-app
 - https://github.com/OpenCatalogi/publiccode-action
