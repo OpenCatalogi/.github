@@ -2,7 +2,7 @@
 
 ## Overzicht
 
-Voor OpenCatalogi hanteren we een ratingssysteem gebaseerd op de kwaliteit van de documentatie. Een goed gedocumenteerd product ontvangt meer punten, wat bijdraagt aan een hogere rating. Dit systeem stimuleert ontwikkelaars om hun documentatie te verbeteren, waardoor de kwaliteit van OpenCatalogi als geheel toeneemt.
+Voor OpenCatalogi hanteren we een ratingssysteem gebaseerd op de kwaliteit van de documentatie. Een goed gedocumenteerd product ontvangt meer punten, wat bijdraagt aan een hogere rating. Dit systeem stimuleert ontwikkelaars om hun documentatie te verbeteren, waardoor de kwaliteit van OpenCatalogi als geheel toeneemt. Een hogere rating leidt tot een betere zichtbaarheid in OpenCatalogi, waardoor de kans groter is dat het product gebruikt wordt. Dit systeem moedigt ontwikkelaars aan om te investeren in de kwaliteit van hun documentatie.
 
 ## Rating Mechanisme
 
@@ -53,6 +53,7 @@ De rating wordt vastgesteld door een repository te scannen op de aanwezigheid va
 ### Inrichting van de repository
 - We kijken of bepaalde properties zijn ingericht voor de repository aan de hand van de github/gitlab api.
 - Per property / criterium is er één punt te verdienen
+- Als het een 'multi-repository' betreft (meerdere publicaties uit één repository) controleren we de bestanden alleen op repository niveu
 
 | Property     | Doel                                                                                                                                                   | Criteria                        |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
@@ -69,19 +70,44 @@ De rating wordt vastgesteld door een repository te scannen op de aanwezigheid va
 > Je kan de beschrijving van je repository gemakenlijk in github aanpassen via de repository pagina 
 > ![img.png](img.png)
 
+
 ### Inrichting van de publiccode.yml
+De boordeling van de publiccode is publicatie type afhankenlijk dat wil zegen dat bepaalde properties alleen worden "gewogen" als ze relevant zijn voor de publicatie type, zo zal een configuratie bestand bijvoorbeeld niet worden beoordeeld op het beschickbaar hebben van een API.
 
-| Property    | Doel                                                                                                                                                   |
-|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Name        |                                                |
-| Description |                                                |
+| Property             | Publicatie Type                               |
+|----------------------|-----------------------------------------------|
+| publiccodeYmlVersion | component, configuratie, applicatie           |
+| name                 | component, configuratie, applicatie           |
+| applicationSuite     | configuratie            |
+| url                  | component, applicatie           |
+| landingURL           | component, applicatie           |
+| isBasedOn            | component, configuratie, applicatie           |
+| softwareVersion      | component, configuratie, applicatie           |
+| logo                 | component, configuratie, applicatie           |
+| monochromeLogo       | component, configuratie, applicatie           |
+| platforms            | component, configuratie, applicatie           |
+| releaseDate          | component, configuratie, applicatie           |
+| categories           | component, configuratie, applicatie           |
+| developmentStatus    | component, configuratie, applicatie           |
+| softwareType         | component, applicatie           |
+| description          | component, configuratie, applicatie           |
+| intendedaudience     | component, configuratie, applicatie           |
+| legal                | component, configuratie, applicatie           |
+| maintenance          | component, configuratie, applicatie           |
+| localisation         | component, configuratie, applicatie           |
+| dependsOn            | component, configuratie, applicatie           |
+| roadmap              | component, configuratie, applicatie           |
+| inputTypes           | component, applicatie           |
+| outputTypes          | component, applicatie           |
+| nl                   | component, configuratie, applicatie           |
+
+### Security en afhankenlijkheden
 
 
+### Installatie mogelijkheden
+Vanuit commonground verwachten we dat publicaties gemakenlijk te instaleren zijn op haven/kubernetes en daarvoor over de juiste helm installatie bestanden beschicken. We controleren dit door op artifacthub en bitname te controleren of de helm bestanden zijn aangeleverd. Voor bijde is 1 punt te verdienen. 
 
-## Automatische Scanning en Beoordeling
-
-De rating wordt automatisch bepaald door tools die de repository scannen op de bovengenoemde aspecten. De aanwezigheid en kwaliteit van een `publiccode.yaml` bestand wordt ook meegenomen in de beoordeling.
-
-## Gevolgen van de Rating
-
-Een hogere rating leidt tot een betere zichtbaarheid in OpenCatalogi, waardoor de kans groter is dat het product gebruikt wordt. Dit systeem moedigt ontwikkelaars aan om te investeren in de kwaliteit van hun documentatie.
+| Helm Repository | Doel                                                                                                                                                   |
+|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Artifact hub   |                                                |
+| Bitnami        |                                                |
