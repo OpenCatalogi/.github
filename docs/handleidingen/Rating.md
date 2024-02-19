@@ -35,25 +35,39 @@ De rating wordt vastgesteld door een repository te scannen op de aanwezigheid va
 - We kijken wel naar de `funding.yaml` voor weergaven de `bijdragen` knop, maar nemen deze niet mee als rating factor 
 - We controlleren altijd op de aanwezigheid van deze documenten, ongeacht het type publicatie 
 
-| Bestand              | Doel                                                                                                                                                   |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `README.md`          | Biedt een overzicht van het project, gebruiksinstructies, installatieprocedure, en bijdrage richtlijnen.                                               |
-| `LICENCE.md`         | Bevat de licentie-informatie voor het project, wat duidelijk maakt onder welke voorwaarden de software gebruikt en gedistribueerd mag worden.          |
-| `CONTRIBUTING.md`    | Geeft richtlijnen voor hoe anderen kunnen bijdragen aan het project, inclusief codebijdragen, documentatie updates, en issue rapportage.               |
-| `CODE_OF_CONDUCT.md` | Beschrijft de gedragscode voor deelname aan het project, waarmee een inclusieve en respectvolle gemeenschap wordt bevorderd.                           |
-| `GOVERNANCE.md`      | Legt de bestuurlijke structuur van het project uit, inclusief besluitvormingsprocessen en rollen binnen het projectteam.                              |
-| `SECURITY.md`        | Biedt informatie over hoe beveiligingsproblemen in het project gemeld kunnen worden en beschrijft het beleid voor het afhandelen van beveiligingsissues. |
-| `SUPPORT.md`         | Geeft aan waar gebruikers ondersteuning kunnen vinden (bijvoorbeeld via forums, chatkanalen, of e-mail), inclusief veelgestelde vragen.                |
-| `PUBLICCODE.yml`     | Een bestand specifiek ontworpen om openbare software te beschrijven, met metadata die het project categoriseert en helpt bij de vindbaarheid.          |
+| Bestand              | Doel                                                                                                                                                   |Criteria |
+|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| `README.md`          | Biedt een overzicht van het project, gebruiksinstructies, installatieprocedure, en bijdrage richtlijnen.                                               | Aanwezig in repository |
+| `LICENCE.md`         | Bevat de licentie-informatie voor het project, wat duidelijk maakt onder welke voorwaarden de software gebruikt en gedistribueerd mag worden.          | Aanwezig in repository |
+| `CONTRIBUTING.md`    | Geeft richtlijnen voor hoe anderen kunnen bijdragen aan het project, inclusief codebijdragen, documentatie updates, en issue rapportage.               | Aanwezig in repository |
+| `CODE_OF_CONDUCT.md` | Beschrijft de gedragscode voor deelname aan het project, waarmee een inclusieve en respectvolle gemeenschap wordt bevorderd.                           | Aanwezig in repository |
+| `GOVERNANCE.md`      | Legt de bestuurlijke structuur van het project uit, inclusief besluitvormingsprocessen en rollen binnen het projectteam.                              | Aanwezig in repository |
+| `SECURITY.md`        | Biedt informatie over hoe beveiligingsproblemen in het project gemeld kunnen worden en beschrijft het beleid voor het afhandelen van beveiligingsissues. | Aanwezig in repository |
+| `SUPPORT.md`         | Geeft aan waar gebruikers ondersteuning kunnen vinden (bijvoorbeeld via forums, chatkanalen, of e-mail), inclusief veelgestelde vragen.                | Aanwezig in repository |
+| `ROADMAP.md`         |                 | Aanwezig in repository |
+| `PUBLICCODE.yml`     | Een bestand specifiek ontworpen om openbare software te beschrijven, met metadata die het project categoriseert en helpt bij de vindbaarheid.          | Aanwezig in repository |
+
+> [!TIP]
+> Wil je je rating snel verbeteren? zorg er dan voor de bovenstaande documenten in je repository aanwezig zijn. Omdat we de documenten niet inhoudenlijk beoorderen kan je daarbij ook prima beginnen met een korte uitleg die je later uitbreid.
 
 ### Inrichting van de repository
 - We kijken of bepaalde properties zijn ingericht voor de repository aan de hand van de github/gitlab api.
+- Per property / criterium is er één punt te verdienen
 
-| Property    | Doel                                                                                                                                                   |
-|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Name        |                                                |
-| Description |                                                |
+| Property     | Doel                                                                                                                                                   | Criteria                        |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Name         |                                                | Ingesteld, meer dan 5 tekens    |
+| Description  |                                                | Ingesteld, meer dan 35 tekens   |
+| Website      |                                                | Ingesteld, geldige url          |
+| Tag's        |                                                | Er zijn meer dan 3 tags         |
+| Releases     |                                                | Er is meer dan 1 release        |
+| Packadges    |                                                | Er is meer dan 1 packadge       |
+| Deployments  |                                                | Er is meer dan 1 packadge       |
+| Contributors |                                                | Er zijn meer dan 5 contributors |
 
+> [!TIP]
+> Je kan de beschrijving van je repository gemakenlijk in github aanpassen via de repository pagina 
+> ![img.png](img.png)
 
 ### Inrichting van de publiccode.yml
 
