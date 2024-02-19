@@ -22,12 +22,13 @@ De rating wordt vastgesteld door een repository te scannen op de aanwezigheid va
 ### Aanweizgheid van documenten
 - We controleren of de volgende documenten als `.md` bestand in de repository aanwezig zijn.
 - Dat doen we aan de hand van de bestandsnaam, oznder hoofdlettergevoeligheid
-- We volgen hierin zowel [github aanbeveilingen](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories) als algemene standaarden en bijzonder [github bestanden](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file). 
+- We volgen hierin zowel [github aanbeveilingen](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories) als algemene standaarden en bijzondere [github bestanden](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file). 
 - Er wordt alleen gecontroleerd op e aanwezigheid van bestanden, niet op de inhoud daarvan. 
-- De bestanden mogen zich op root niveau bevinden of binnen de `docs/` folder
+- De bestanden mogen zich op `root` niveau bevinden of binnen de `docs/` folder
 - Als het een 'multi-repository' betreft (meerdere publicaties uit één repository) controlen we de bestanden alleen op repository niveu
 - Voer ieder aanwezig bestand word 1 punt toegekend
 - We kijken wel naar de funding.yaml voor weergaven de `bijdragen` knop, maar nemen deze niet mee als rating factor 
+- We controlleren altijd op de aanwezigheid van deze documenten, ongeacht het type publicatie 
 
 | Bestand              | Doel                                                                                                                                                   |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
