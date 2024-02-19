@@ -17,10 +17,10 @@ Je hebt geen lokale installatie van Open Catalogi nodig om het te benutten. Met 
 Om componenten (informatie) te publiceren op Open Catalogi, bieden we een [GitHub-workflow](https://github.com/marketplace/actions/create-or-update-publiccode-yaml). Voeg simpelweg het workflow-bestand toe aan de repository die je wilt publiceren.
 
 > 1. Maak binnen de repository van uw component een directory aan met de naam `.github` (als u deze nog niet heeft).
-> 2. Maak binnen deze directory een map `workflows` aan, die zelf binnen een `.github` map hoort te zitten. Plaats daarin [deze workflow.yaml](https://github.com/OpenCatalogi/.github/blob/main/.github/workflows/opencatalogi-publish.yaml).
+> 2. Maak binnen deze directory een map `workflows` aan, die zelf binnen een `.github` map hoort te zitten. Plaats daarin deze [workflow.yaml](https://github.com/OpenCatalogi/.github/blob/main/.github/workflows/openCatalogi.yaml).
 > 3. Commit en push het workflow-bestand naar jouw repository.
 
-[Lees meer](https://documentatie.opencatalogi.nl/github/Publiccode/?link=https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Publiccode.md ) over de configuratie-opties van de workflow.
+[Lees meer](/docs/handleidingen/Publiccode.md) over de configuratie-opties van de workflow.
 
 ![Publiceren van Componenten](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/installation_publiccode.svg "Publiceren van Componenten")
 
@@ -28,10 +28,10 @@ Om componenten (informatie) te publiceren op Open Catalogi, bieden we een [GitHu
 Om organisatiegegevens te publiceren op Open Catalogi, is er eveneens een [GitHub-workflow](https://github.com/marketplace/actions/create-or-update-publiccode-yaml) beschikbaar. Voeg het workflow-bestand toe aan de .github-repository van de organisatie die je wilt publiceren.
 
 > 1. Maak binnen uw GitHub-organisatie een repository aan met de naam `.github` (als u deze nog niet heeft).
-> 2. Maak binnen deze repository een map `workflows` aan, die zelf binnen een `.github` map hoort te zitten. Plaats daarin [deze workflow.yaml](https://github.com/OpenCatalogi/.github/blob/main/.github/workflows/opencatalogi-publish.yaml).
+> 2. Maak binnen deze repository een map `workflows` aan, die zelf binnen een `.github` map hoort te zitten. Plaats daarin deze [workflow.yaml](https://github.com/OpenCatalogi/.github/blob/main/.github/workflows/openCatalogi.yaml).
 > 3. Commit en push het workflow-bestand naar jouw repository.
 
-[Lees meer](https://documentatie.opencatalogi.nl/github/Publicorganisation/?link=https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Publicorganisation.md) over de configuratie-opties van de workflow.
+[Lees meer](/docs/handleidingen/Publicorganisation.md) over de configuratie-opties van de workflow.
 
 ![Publiceren van Organisatie](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/installation_publicorganisation.svg "Publiceren van Organisatie")
 
@@ -39,15 +39,15 @@ Om organisatiegegevens te publiceren op Open Catalogi, is er eveneens een [GitHu
 Om je eigen Open Catalogi-portaal te publiceren, bieden we een [GitHub-workflow aan](https://github.com/marketplace/actions/create-an-open-catalogi-page). Voeg het workflow-bestand toe aan de .github-repository van de organisatie die je wilt publiceren. Publiceer vervolgens handmatig de gegenereerde GitHub Page.
 
 > 1. Maak binnen uw github organisaite een repositry aan met de naam .github (als us deze nog niet heeft)
-> 2. Maak binnen deze repository een map `.github` aan met daarin een map `workflows`en plaats daarin [deze workflow.yaml](https://raw.githubusercontent.com/OpenCatalogi/web-app/development/.github/workflows/opencatalogi-page-deploy.yml)
+> 2. Maak binnen deze repository een map `.github` aan met daarin een map `workflows`en plaats daarin deze [workflow.yaml](https://github.com/OpenCatalogi/.github/blob/main/.github/workflows/openCatalogi.yaml)
 > 3. Ga binnen de repository naar instellingen(Settings) -> pagina's(Pages)  en selecteer onder Build en deploy bij **Branch** `gh-pages`
 
-[Lees meer](https://documentatie.opencatalogi.nl/github/Frontend/?link=https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/Frontend.md) over de configuratie-opties van de workflow.
+[Lees meer](/docs/handleidingen/Frontend.md) over de configuratie-opties van de workflow.
 
 ![Publiceren van Frontend](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/installation_frontend.svg "Publiceren van Frontend")
 
 ## Gebruiken als SAAS
-Als je vertrouwelijke data wilt beheren in Open Catalogi, kun je de catalogus als SAAS afnemen. Voor alle [deelnemers](../GOVERNANCE.md) van Open Catalogi biedt [Conduction](https://www.conduction.nl) een SAAS-installatie aan. Lees [hier](../GOVERNANCE.md) meer over deelname aan Open Catalogi.
+Als je vertrouwelijke data wilt beheren in Open Catalogi, kun je de catalogus als SAAS afnemen. Voor alle [deelnemers](/docs/GOVERNANCE.md) van Open Catalogi biedt [Conduction](https://www.conduction.nl) een SAAS-installatie aan. Lees [hier](/docs/GOVERNANCE.md) meer over deelname aan Open Catalogi.
 
 Als je niet wilt deelnemen aan de Open Catalogi-coalitie maar wel gebruik wilt maken van de SAAS-oplossing, neem dan direct contact op met [Conduction](mailto:info@conduction.nl).
 

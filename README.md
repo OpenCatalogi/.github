@@ -2,6 +2,7 @@
 
 OpenCatalogi creëert een krachtig federatief systeem dat informatie verzamelt van verschillende overheidsorganisaties, deze indexeert en u de mogelijkheid biedt om deze index te gebruiken of uw eigen index te starten. Met behulp van API's en gestandaardiseerde dataformaten kunnen verschillende entiteiten hun informatie naadloos integreren in één federatieve catalogus. De React-frontend is gebaseerd op NL Design en kan worden aangepast aan de huisstijl van uw organisatie met behulp van Design Tokens.
 
+
 Wat OpenCatalogi uniek maakt, is dat de frontend serverless (via GitHub) kan draaien, waardoor deelnemende organisaties OpenCatalogi niet zelf hoeven te installeren om het te kunnen gebruiken. Zowel de frontend als de gegevens kunnen worden gehost op GitHub.
 
 ## Opzet
@@ -15,7 +16,7 @@ Met andere woorden, repositories en organisaties wisselen gegevens uit binnen he
 
 ![UML Diagram van OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/architectuur_basic.svg "UML Diagram van OpenCatalogi")
 
-In een meer geavanceerde opzet kunnen ook andere bronnen dan repositories worden gebruikt (zoals API's) en kunnen organisaties hun eigen knooppunten starten. Meer informatie hierover vindt u in de [architectuursectie](https://documentatie.opencatalogi.nl/pages/Handleidingen/Architectuur).
+In een meer geavanceerde opzet kunnen ook andere bronnen dan repositories worden gebruikt (zoals API's) en kunnen organisaties hun eigen knooppunten starten. Meer informatie hierover vindt u in de [architectuursectie](/docs/handleidingen/Architectuur.md).
 
 ## Snelle Start
 Voor het beschikbaar stellen van publicaties of zelfs uw eigen catalogus heeft u geen eigen server nodig, maar wel een [GitHub-organisatie](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch) waarvan u de beheerder bent.
@@ -79,9 +80,9 @@ jobs:
 ````
 4. Voor extra configuratieopties en stappen kunt u kijken naar de [Catalogi Page](https://github.com/marketplace/actions/create-an-open-catalogi-page) en [Publiccode](https://github.com/marketplace/actions/create-or-update-publiccode-yaml) acties op Github.
 
-Voor meer details, het installeren van een eigen index en het afschermen van toegang zie [Installatie](https://documentatie.opencatalogi.nl/pages/Handleidingen/Installatie).
+Voor meer details, het installeren van een eigen index en het afschermen van toegang zie [Installatie](/docs/handleidingen/Installatie.md).
 
 ## Meedoen aan Open Catalogi
 
-Organisaties kunnen op verschillende manieren deelnemen aan het OpenCatalogi-project. Of u nu financieel wilt bijdragen aan de doorontwikkeling, deel wilt nemen aan de stuurgroep, of simpelweg de ontwikkelingen wilt volgen en feedback wilt geven, er is een vorm van deelname die bij uw organisatie past. Raadpleeg het gedeelte <a href="https://documentatie.opencatalogi.nl/pages/Handleidingen/Deelnemen">Deelname aan het Open Catalogi Project</a>
+Organisaties kunnen op verschillende manieren deelnemen aan het OpenCatalogi-project. Of u nu financieel wilt bijdragen aan de doorontwikkeling, deel wilt nemen aan de stuurgroep, of simpelweg de ontwikkelingen wilt volgen en feedback wilt geven, er is een vorm van deelname die bij uw organisatie past. Raadpleeg het gedeelte [Deelname aan het Open Catalogi Project](/docs/GOVERNANCE.md)
  voor meer informatie over hoe u kunt aansluiten en bijdragen.

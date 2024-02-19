@@ -10,7 +10,7 @@ We kunnen de testscripts opsplitsen in de volgende categorieën:
 
 ## 1. Opzet en voorwaarden
 
-**Omgevingseisen**: Zorg ervoor dat je een lokale/testversie van OpenCatalogi hebt draaien (zie [Installatie](https://documentatie.opencatalogi.nl/pages/Handleidingen/Installatie) voor hoe dit werkt).
+**Omgevingseisen**: Zorg ervoor dat je een lokale/testversie van OpenCatalogi hebt draaien (zie [Installatie](/docs/handleidingen/Installatie.md) voor hoe dit werkt).
 
 ## 2. Testcases
 
@@ -23,7 +23,7 @@ We kunnen de testscripts opsplitsen in de volgende categorieën:
 1. Voeg een nieuwe repository toe aan uw organisatie met duidelijke naam en omschrijving.
 2. Plaats hierin de publiccode [GitHub action](https://github.com/marketplace/actions/create-or-update-publiccode-yaml).
 3. Zorg dat de GitHub-actie wordt getriggerd (bijvoorbeeld door deze handmatig te activeren of een wijziging uit te voeren op de repository).
-4. Vul de `publiccode.yaml` verder aan met de gegevens zoals beschreven onder [publiccode](https://documentatie.opencatalogi.nl/pages/Handleidingen/Publiccode).
+4. Vul de `publiccode.yaml` verder aan met de gegevens zoals beschreven onder [publiccode](/docs/handleidingen/Publiccode.md).
 4. Ga naar OpenCatalogi en gebruik zoeken om de repository als publicatie te vinden.
 5. Open de gevonden publicatie en vergelijk de getoonde gegevens met de publiccode in uw repository.
 
