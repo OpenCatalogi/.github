@@ -17,14 +17,15 @@ De verhouding tussen x en y resulteert in een percentage dat de score van de doc
 
 De rating wordt vastgesteld door een repository te scannen op de aanwezigheid van specifieke documentatie, de inrichting van de repository zelf en de aanwezigheid van velden binnen de `publiccode.yaml`.
 
-| Aspect                               | Criteria                                 | Max. Punten |
-|--------------------------------------|------------------------------------------|-------------|
-| **Aanwezigheid van bestanden**       | Aanwezigheid bestanden                   | 8           |
-| **Inrichting van de repository**     | Configuratie repository                  | 8           |
-| **Inrichting van de publiccode.yml** | Properties in publiccode                 | 24          |
-| **Security en afhankenlijkheden**    | Aanwezigheid bestand                     | 1           |
-| **Installatie mogelijkheden**        | Aangemeld voor officiële installatie hubs| 2           |      
-|                                      | **Totaal**                               | 43          |
+| Aspect                               | Criteria                                  | Max. Punten |
+|--------------------------------------|-------------------------------------------|-------------|
+| **Aanwezigheid van bestanden**       | Aanwezigheid bestanden                    | 8           |
+| **Inrichting van de repository**     | Configuratie repository                   | 8           |
+| **Inrichting van de publiccode.yml** | Properties in publiccode                  | 24          |
+| **Security en afhankenlijkheden**    | Aanwezigheid bestand                      | 1           |
+| **Installatie mogelijkheden**        | Aangemeld voor installatie hubs | 2           |      
+| **Community**                        | Aangemeld voor etalages                   | 2           |      
+|                                      | **Totaal**                                | 45          |
 
 ### Aanwezigheid van documenten
 
