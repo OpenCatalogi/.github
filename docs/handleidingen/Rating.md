@@ -18,11 +18,14 @@ De verhouding tussen x en y resulteert in een percentage dat de score van de doc
 De rating wordt vastgesteld door een repository te scannen op de aanwezigheid van specifieke documentatie, de inrichting van de repository zelf en de aanwezigheid van velden binnen de `publiccode.yaml`. 
 
 
-| Aspect                         | Criteria                                                                | Max. Punten |
-|--------------------------------| ----------------------------------------------------------------------- |-------------|
-| **Aanwezigheid van bestanden** | Aanwezigheid, volledigheid en duidelijkheid.                            | 8           |
-| **Inrichting van de repository** | Aanwezigheid, volledigheid en duidelijkheid.                            | ?           |
-| **Inrichting van de publiccode.yml** | Aanwezigheid, volledigheid en duidelijkheid.                            | ?           |
+| Aspect                               | Criteria                                 | Max. Punten |
+|--------------------------------------|------------------------------------------|-------------|
+| **Aanwezigheid van bestanden**       | Aanwezigheid  bestanden                  | 8           |
+| **Inrichting van de repository**     | Configuratie repository                  | 8           |
+| **Inrichting van de publiccode.yml** | Properties in publiccode                 | 24          |
+| **Security en afhankenlijkheden**    | Aanwezigheid  bestand                    | 1           |
+ | **Installatie mogelijkheden** | Aangemeld voor officele installatie hubs | 2           |      
+ | | **Totaal**                               | 43          |
 
 ### Aanwezigheid van documenten
 - We controleren of de volgende documenten als `.md` bestand in de repository aanwezig zijn.
@@ -102,7 +105,11 @@ De boordeling van de publiccode is publicatie type afhankenlijk dat wil zegen da
 | nl                   | component, configuratie, applicatie           |
 
 ### Security en afhankenlijkheden
+Voor security en afhankenlijkheden gebruiken we de SBOM standaard, 
 
+| Bestand    | Doel                                                                     |Criteria |
+|------------|--------------------------------------------------------------------------|----------|
+| `sbom.xml` | Biedt een overzicht van afhankenlijkheden en risco's van een repository. | Aanwezig in repository |
 
 ### Installatie mogelijkheden
 Vanuit commonground verwachten we dat publicaties gemakenlijk te instaleren zijn op haven/kubernetes en daarvoor over de juiste helm installatie bestanden beschicken. We controleren dit door op artifacthub en bitname te controleren of de helm bestanden zijn aangeleverd. Voor bijde is 1 punt te verdienen. 
