@@ -77,44 +77,58 @@ De rating wordt vastgesteld door een repository te scannen op de aanwezigheid va
 ### Inrichting van de publiccode.yml
 De boordeling van de publiccode is publicatie type afhankenlijk dat wil zegen dat bepaalde properties alleen worden "gewogen" als ze relevant zijn voor de publicatie type, zo zal een configuratie bestand bijvoorbeeld niet worden beoordeeld op het beschickbaar hebben van een API.
 
-| Property             | Publicatie Type                               |
-|----------------------|-----------------------------------------------|
-| publiccodeYmlVersion | component, configuratie, applicatie           |
-| name                 | component, configuratie, applicatie           |
-| applicationSuite     | configuratie            |
-| url                  | component, applicatie           |
-| landingURL           | component, applicatie           |
-| isBasedOn            | component, configuratie, applicatie           |
-| softwareVersion      | component, configuratie, applicatie           |
-| logo                 | component, configuratie, applicatie           |
-| monochromeLogo       | component, configuratie, applicatie           |
-| platforms            | component, configuratie, applicatie           |
-| releaseDate          | component, configuratie, applicatie           |
-| categories           | component, configuratie, applicatie           |
-| developmentStatus    | component, configuratie, applicatie           |
-| softwareType         | component, applicatie           |
-| description          | component, configuratie, applicatie           |
-| intendedaudience     | component, configuratie, applicatie           |
-| legal                | component, configuratie, applicatie           |
-| maintenance          | component, configuratie, applicatie           |
-| localisation         | component, configuratie, applicatie           |
-| dependsOn            | component, configuratie, applicatie           |
-| roadmap              | component, configuratie, applicatie           |
-| inputTypes           | component, applicatie           |
-| outputTypes          | component, applicatie           |
-| nl                   | component, configuratie, applicatie           |
+| Property             | Doel | Publicatie Type                     |
+|----------------------|------|-------------------------------------|
+| publiccodeYmlVersion | | component, configuratie, applicatie |
+| name                 | |  component, configuratie, applicatie |
+| applicationSuite     | |  configuratie                        |
+| url                  | |  component, applicatie               |
+| landingURL           | |  component, applicatie               |
+| isBasedOn            | |  component, configuratie, applicatie |
+| softwareVersion      | |  component, configuratie, applicatie |
+| logo                 | |  component, configuratie, applicatie |
+| monochromeLogo       | |  component, configuratie, applicatie |
+| platforms            | |  component, configuratie, applicatie |
+| releaseDate          | |  component, configuratie, applicatie |
+| categories           | |  component, configuratie, applicatie |
+| developmentStatus    | |  component, configuratie, applicatie |
+| softwareType         | |  component, applicatie               |
+| description          | |  component, configuratie, applicatie |
+| intendedaudience     | |  component, configuratie, applicatie |
+| legal                | |  component, configuratie, applicatie |
+| maintenance          | |  component, configuratie, applicatie |
+| localisation         | |  component, configuratie, applicatie |
+| dependsOn            | |  component, configuratie, applicatie |
+| roadmap              | |  component, configuratie, applicatie |
+| inputTypes           | |  component, applicatie               |
+| outputTypes          | |  component, applicatie               |
+| nl                   | |  component, configuratie, applicatie |
 
 ### Security en afhankenlijkheden
-Voor security en afhankenlijkheden gebruiken we de SBOM standaard, 
+Voor security en afhankenlijkheden gebruiken we de SBOM standaard
 
-| Bestand    | Doel                                                                     |Criteria |
-|------------|--------------------------------------------------------------------------|----------|
+- Voer ieder aanwezig bestand word 1 punt toegekend
+
+| Bestand    | Doel                                                                     | Criteria               |
+|------------|--------------------------------------------------------------------------|------------------------|
 | `sbom.xml` | Biedt een overzicht van afhankenlijkheden en risco's van een repository. | Aanwezig in repository |
 
 ### Installatie mogelijkheden
 Vanuit commonground verwachten we dat publicaties gemakenlijk te instaleren zijn op haven/kubernetes en daarvoor over de juiste helm installatie bestanden beschicken. We controleren dit door op artifacthub en bitname te controleren of de helm bestanden zijn aangeleverd. Voor bijde is 1 punt te verdienen. 
 
-| Helm Repository | Doel                                                                                                                                                   |
-|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Artifact hub   |                                                |
-| Bitnami        |                                                |
+- Per overizcht wordt 1 punt toegekend
+
+| Helm Repository | Doel | Criteria               |
+|----------------|--|------------------------|
+| Artifact hub   | Overizcht van de kubernetes stichting voor installeerbare kubernets software | Is vindbaar via api | 
+| Bitnami        | Comemrcieel overzicht met installtie tool voor kubernetes | Is vindbaar via api |
+
+### Community
+Vanuit een commuity perspectie vinden we het belangrijk dat een repository zichzelf ook in de 'etalate' set, we controleren dit door etalages te bevragen en te kijken of de repository hierin voorkomt.
+
+- Per etalage wordt 1 punt toegekend
+
+| Porfolio                             | Doel                                                           | Publicatie Type                     | Criteria               |
+|--------------------------------------|----------------------------------------------------------------|---------------------------------- |------------------------|
+| developer.overheid.nl                | Overizcht alle door nederlandse overheden gemaakt repositories | component, applicatie               | Is vindbaar via api |
+| componentencatalogus.commonground.nl | Overizcht alle door nederlandse gemeenten gemaakt repositories | component, applicatie               | Is vindbaar via api |
