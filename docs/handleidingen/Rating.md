@@ -15,30 +15,30 @@ De verhouding tussen x en y resulteert in een percentage dat de score van de doc
 
 ## Beoordelingscriteria
 
-De rating wordt vastgesteld door een repository te scannen op de aanwezigheid van specifieke documentatie, de inrichting van de repository zelf en de aanwezigheid van velden binnen de `publiccode.yaml`. 
-
+De rating wordt vastgesteld door een repository te scannen op de aanwezigheid van specifieke documentatie, de inrichting van de repository zelf en de aanwezigheid van velden binnen de `publiccode.yaml`.
 
 | Aspect                               | Criteria                                 | Max. Punten |
 |--------------------------------------|------------------------------------------|-------------|
-| **Aanwezigheid van bestanden**       | Aanwezigheid  bestanden                  | 8           |
+| **Aanwezigheid van bestanden**       | Aanwezigheid bestanden                   | 8           |
 | **Inrichting van de repository**     | Configuratie repository                  | 8           |
 | **Inrichting van de publiccode.yml** | Properties in publiccode                 | 24          |
-| **Security en afhankenlijkheden**    | Aanwezigheid  bestand                    | 1           |
- | **Installatie mogelijkheden** | Aangemeld voor officele installatie hubs | 2           |      
- | | **Totaal**                               | 43          |
+| **Security en afhankenlijkheden**    | Aanwezigheid bestand                     | 1           |
+| **Installatie mogelijkheden**        | Aangemeld voor officiële installatie hubs| 2           |      
+|                                      | **Totaal**                               | 43          |
 
 ### Aanwezigheid van documenten
-- We controleren of de volgende documenten als `.md` bestand in de repository aanwezig zijn.
-- Dat doen we aan de hand van de bestandsnaam, oznder hoofdlettergevoeligheid
-- We volgen hierin zowel [GitHub aanbevelingen](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories) als algemene standaarden en bijzondere [GitHub bestanden](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file). 
-- Er wordt alleen gecontroleerd op de aanwezigheid van bestanden, niet op de inhoud daarvan. 
-- De bestanden mogen zich op `root` niveau bevinden of binnen de `docs/` folder
-- Als het een 'multi-repository' betreft (meerdere publicaties uit één repository) controlen we de bestanden alleen op repository niveu
-- Voer ieder aanwezig bestand word 1 punt toegekend
-- We kijken wel naar de `funding.yaml` voor weergaven de `bijdragen` knop, maar nemen deze niet mee als rating factor 
-- We controlleren altijd op de aanwezigheid van deze documenten, ongeacht het type publicatie 
 
-| Bestand              | Doel                                                                                                                                                   |Criteria |
+- We controleren of de volgende documenten als `.md` bestand in de repository aanwezig zijn.
+- Dat doen we aan de hand van de bestandsnaam, zonder hoofdlettergevoeligheid
+- We volgen hierin zowel [GitHub aanbevelingen](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/about-community-profiles-for-public-repositories) als algemene standaarden en bijzondere [GitHub bestanden](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file).
+- Er wordt alleen gecontroleerd op de aanwezigheid van bestanden, niet op de inhoud daarvan.
+- De bestanden mogen zich op `root` niveau bevinden of binnen de `docs/` folder
+- Als het een 'multi-repository' betreft (meerdere publicaties uit één repository) controleren we de bestanden alleen op repository niveau
+- Voor ieder aanwezig bestand wordt 1 punt toegekend
+- We kijken wel naar de `funding.yaml` voor weergave van de `bijdragen` knop, maar nemen deze niet mee als rating factor
+- We controleren altijd op de aanwezigheid van deze documenten, ongeacht het type publicatie
+
+| Bestand              | Doel                                                                                                                                                   | Criteria |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
 | `README.md`          | Biedt een overzicht van het project, gebruiksinstructies, installatieprocedure, en bijdrage richtlijnen.                                               | Aanwezig in repository |
 | `LICENCE.md`         | Bevat de licentie-informatie voor het project, wat duidelijk maakt onder welke voorwaarden de software gebruikt en gedistribueerd mag worden.          | Aanwezig in repository |
@@ -47,88 +47,91 @@ De rating wordt vastgesteld door een repository te scannen op de aanwezigheid va
 | `GOVERNANCE.md`      | Legt de bestuurlijke structuur van het project uit, inclusief besluitvormingsprocessen en rollen binnen het projectteam.                              | Aanwezig in repository |
 | `SECURITY.md`        | Biedt informatie over hoe beveiligingsproblemen in het project gemeld kunnen worden en beschrijft het beleid voor het afhandelen van beveiligingsissues. | Aanwezig in repository |
 | `SUPPORT.md`         | Geeft aan waar gebruikers ondersteuning kunnen vinden (bijvoorbeeld via forums, chatkanalen, of e-mail), inclusief veelgestelde vragen.                | Aanwezig in repository |
-| `ROADMAP.md`         |                 | Aanwezig in repository |
+| `ROADMAP.md`         | Biedt inzicht in de toekomstplannen en ontwikkelingsrichting van het project.                                                                           | Aanwezig in repository |
 | `PUBLICCODE.yml`     | Een bestand specifiek ontworpen om openbare software te beschrijven, met metadata die het project categoriseert en helpt bij de vindbaarheid.          | Aanwezig in repository |
 
 > [!TIP]
-> Wil je je rating snel verbeteren? zorg er dan voor de bovenstaande documenten in je repository aanwezig zijn. Omdat we de documenten niet inhoudenlijk beoorderen kan je daarbij ook prima beginnen met een korte uitleg die je later uitbreid.
+> Wil je je rating snel verbeteren? Zorg er dan voor dat de bovenstaande documenten in je repository aanwezig zijn. Omdat we de documenten niet inhoudelijk beoordelen, kan je daarbij ook prima beginnen met een korte uitleg die je later uitbreidt.
 
 ### Inrichting van de repository
-- We kijken of bepaalde properties zijn ingericht voor de repository aan de hand van de github/gitlab api.
-- Per property / criterium is er één punt te verdienen
-- Als het een 'multi-repository' betreft (meerdere publicaties uit één repository) controleren we de bestanden alleen op repository niveu
+
+- We kijken of bepaalde properties zijn ingericht voor de repository aan de hand van de GitHub/GitLab API.
+- Per property/criterium is er één punt te verdienen
+- Als het een 'multi-repository' betreft (meerdere publicaties uit één repository) controleren we de bestanden alleen op repository niveau
 
 | Property     | Doel                                                                                                                                                   | Criteria                        |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| Name         |                                                | Ingesteld, meer dan 5 tekens    |
-| Description  |                                                | Ingesteld, meer dan 35 tekens   |
-| Website      |                                                | Ingesteld, geldige url          |
-| Tag's        |                                                | Er zijn meer dan 3 tags         |
-| Releases     |                                                | Er is meer dan 1 release        |
-| Packadges    |                                                | Er is meer dan 1 packadge       |
-| Deployments  |                                                | Er is meer dan 1 packadge       |
-| Contributors |                                                | Er zijn meer dan 5 contributors |
+| Name         | De naam van de repository biedt een duidelijke identificatie van het project.                                                                          | Ingesteld, meer dan 5 tekens    |
+| Description  | Een korte beschrijving van het project maakt direct duidelijk wat het doel en de functie van het project zijn.                                         | Ingesteld, meer dan 35 tekens   |
+| Website      | Een link naar een projectwebsite of documentatie voor meer informatie.                                                                                 | Ingesteld, geldige url          |
+| Tags         | Tags helpen bij het categoriseren en vinden van het project binnen OpenCatalogi en andere zoekplatforms.                                               | Er zijn meer dan 3 tags         |
+| Releases     | Releases tonen de voortgang en de beschikbaarheid van stabiele versies van het project.                                                                | Er is meer dan 1 release        |
+| Packages     | Packages bieden gecontaineriseerde versies van de software voor gemakkelijke distributie en installatie.                                                | Er is meer dan 1 package        |
+| Deployments  | Deployments tonen aan dat het project actief wordt gebruikt en onderhouden.                                                                            | Er is meer dan 1 deployment     |
+| Contributors | Een actieve gemeenschap van bijdragers geeft aan dat het project levendig en in ontwikkeling is.                                                        | Er zijn meer dan 5 contributors |
 
 > [!TIP]
-> Je kan de beschrijving van je repository gemakenlijk in github aanpassen via de repository pagina 
-> ![img.png](img.png)
-
+> Je kan de beschrijving van je repository gemakkelijk in GitHub aanpassen via de repository pagina.
 
 ### Inrichting van de publiccode.yml
-De boordeling van de publiccode is publicatie type afhankenlijk dat wil zegen dat bepaalde properties alleen worden "gewogen" als ze relevant zijn voor de publicatie type, zo zal een configuratie bestand bijvoorbeeld niet worden beoordeeld op het beschickbaar hebben van een API.
+
+De beoordeling van de publiccode is publicatietype afhankelijk. Dat wil zeggen dat bepaalde properties alleen worden "gewogen" als ze relevant zijn voor het publicatietype. Zo zal een configuratiebestand bijvoorbeeld niet worden beoordeeld op het beschikbaar hebben van een API.
 
 | Property             | Doel | Publicatie Type                     |
 |----------------------|------|-------------------------------------|
-| publiccodeYmlVersion | | component, configuratie, applicatie |
-| name                 | |  component, configuratie, applicatie |
-| applicationSuite     | |  configuratie                        |
-| url                  | |  component, applicatie               |
-| landingURL           | |  component, applicatie               |
-| isBasedOn            | |  component, configuratie, applicatie |
-| softwareVersion      | |  component, configuratie, applicatie |
-| logo                 | |  component, configuratie, applicatie |
-| monochromeLogo       | |  component, configuratie, applicatie |
-| platforms            | |  component, configuratie, applicatie |
-| releaseDate          | |  component, configuratie, applicatie |
-| categories           | |  component, configuratie, applicatie |
-| developmentStatus    | |  component, configuratie, applicatie |
-| softwareType         | |  component, applicatie               |
-| description          | |  component, configuratie, applicatie |
-| intendedaudience     | |  component, configuratie, applicatie |
-| legal                | |  component, configuratie, applicatie |
-| maintenance          | |  component, configuratie, applicatie |
-| localisation         | |  component, configuratie, applicatie |
-| dependsOn            | |  component, configuratie, applicatie |
-| roadmap              | |  component, configuratie, applicatie |
-| inputTypes           | |  component, applicatie               |
-| outputTypes          | |  component, applicatie               |
-| nl                   | |  component, configuratie, applicatie |
+| publiccodeYmlVersion | Specificatie van de gebruikte versie van de publiccode.yml standaard. | component, configuratie, applicatie |
+| name                 | De naam van het project zoals bekend bij het publiek. | component, configuratie, applicatie |
+| applicationSuite     | Geeft aan of het project deel uitmaakt van een grotere suite van applicaties. | configuratie |
+| url                  | De URL naar de broncode repository van het project. | component, applicatie |
+| landingURL           | Een landingspagina voor het project voor meer informatie buiten de repository. | component, applicatie |
+| isBasedOn            | Geeft aan of het project is gebaseerd op of een fork is van een ander project. | component, configuratie, applicatie |
+| softwareVersion      | De huidige stabiele versie van het project. | component, configuratie, applicatie |
+| logo                 | Een logo dat het project visueel identificeert. | component, configuratie, applicatie |
+| monochromeLogo       | Een monochroom logo voor gebruik in beperkte grafische contexten. | component, configuratie, applicatie |
+| platforms            | De platformen waarop het project kan draaien. | component, configuratie, applicatie |
+| releaseDate          | De datum van de laatste stabiele release. | component, configuratie, applicatie |
+| categories           | Categorieën die helpen bij het classificeren van het project. | component, configuratie, applicatie |
+| developmentStatus    | De huidige ontwikkelingsstatus van het project. | component, configuratie, applicatie |
+| softwareType         | Het type software (bijvoorbeeld standalone, library, etc.). | component, applicatie |
+| description          | Een beschrijving van het project in verschillende talen. | component, configuratie, applicatie |
+| intendedaudience     | De doelgroep voor wie het project is ontworpen. | component, configuratie, applicatie |
+| legal                | Juridische informatie en licentiestatus van het project. | component, configuratie, applicatie |
+| maintenance          | Informatie over hoe en tot wanneer het project wordt onderhouden. | component, configuratie, applicatie |
+| localisation         | Beschikbare talen van de software. | component, configuratie, applicatie |
+| dependsOn            | Andere projecten of software waarvan dit project afhankelijk is. | component, configuratie, applicatie |
+| roadmap              | Een link naar de roadmap van het project. | component, configuratie, applicatie |
+| inputTypes           | De types van input die de software kan verwerken. | component, applicatie |
+| outputTypes          | De types van output die de software produceert. | component, applicatie |
+| nl                   | Lokalisatie-informatie specifiek voor Nederlandse gebruikers. | component, configuratie, applicatie |
 
-### Security en afhankenlijkheden
-Voor security en afhankenlijkheden gebruiken we de SBOM standaard
+### Security en afhankelijkheden
 
-- Voer ieder aanwezig bestand word 1 punt toegekend
+Voor security en afhankelijkheden gebruiken we de SBOM standaard.
+
+- Voor ieder aanwezig bestand wordt 1 punt toegekend.
 
 | Bestand    | Doel                                                                     | Criteria               |
 |------------|--------------------------------------------------------------------------|------------------------|
-| `sbom.xml` | Biedt een overzicht van afhankenlijkheden en risco's van een repository. | Aanwezig in repository |
+| `sbom.xml` | Biedt een overzicht van afhankelijkheden en risico's van een repository. | Aanwezig in repository |
 
 ### Installatie mogelijkheden
-Vanuit commonground verwachten we dat publicaties gemakenlijk te instaleren zijn op haven/kubernetes en daarvoor over de juiste helm installatie bestanden beschicken. We controleren dit door op artifacthub en bitname te controleren of de helm bestanden zijn aangeleverd. Voor bijde is 1 punt te verdienen. 
 
-- Per overizcht wordt 1 punt toegekend
+Vanuit Common Ground verwachten we dat publicaties gemakkelijk te installeren zijn op Haven/Kubernetes en daarvoor over de juiste Helm installatiebestanden beschikken. We controleren dit door op Artifact Hub en Bitnami te controleren of de Helm bestanden zijn aangeleverd. Voor beide is 1 punt te verdienen.
+
+- Per overzicht wordt 1 punt toegekend.
 
 | Helm Repository | Doel | Criteria               |
-|----------------|--|------------------------|
-| Artifact hub   | Overizcht van de kubernetes stichting voor installeerbare kubernets software | Is vindbaar via api | 
-| Bitnami        | Comemrcieel overzicht met installtie tool voor kubernetes | Is vindbaar via api |
+|-----------------|------|------------------------|
+| Artifact Hub    | Overzicht van de Kubernetes stichting voor installeerbare Kubernetes software | Is vindbaar via API | 
+| Bitnami         | Commercieel overzicht met installatietool voor Kubernetes | Is vindbaar via API |
 
 ### Community
-Vanuit een commuity perspectie vinden we het belangrijk dat een repository zichzelf ook in de 'etalate' set, we controleren dit door etalages te bevragen en te kijken of de repository hierin voorkomt.
 
-- Per etalage wordt 1 punt toegekend
+Vanuit een community perspectief vinden we het belangrijk dat een repository zichzelf ook in de 'etalage' zet, we controleren dit door etalages te bevragen en te kijken of de repository hierin voorkomt.
 
-| Porfolio                             | Doel                                                           | Publicatie Type                     | Criteria               |
-|--------------------------------------|----------------------------------------------------------------|---------------------------------- |------------------------|
-| developer.overheid.nl                | Overizcht alle door nederlandse overheden gemaakt repositories | component, applicatie               | Is vindbaar via api |
-| componentencatalogus.commonground.nl | Overizcht alle door nederlandse gemeenten gemaakt repositories | component, applicatie               | Is vindbaar via api |
+- Per etalage wordt 1 punt toegekend.
+
+| Portfolio                             | Doel                                                           | Publicatie Type                     | Criteria               |
+|---------------------------------------|----------------------------------------------------------------|-------------------------------------|------------------------|
+| developer.overheid.nl                 | Overzicht alle door Nederlandse overheden gemaakte repositories | component, applicatie               | Is vindbaar via API |
+| componentencatalogus.commonground.nl  | Overzicht alle door Nederlandse gemeenten gemaakte repositories | component, applicatie               | Is vindbaar via API |
