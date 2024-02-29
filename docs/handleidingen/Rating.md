@@ -78,32 +78,37 @@ De rating wordt vastgesteld door een repository te scannen op de aanwezigheid va
 
 De beoordeling van de publiccode is publicatietype afhankelijk. Dat wil zeggen dat bepaalde properties alleen worden "gewogen" als ze relevant zijn voor het publicatietype. Zo zal een configuratiebestand bijvoorbeeld niet worden beoordeeld op het beschikbaar hebben van een API.
 
-| Property             | Doel | Publicatie Type                     |
-|----------------------|------|-------------------------------------|
-| publiccodeYmlVersion | Specificatie van de gebruikte versie van de publiccode.yml standaard. | component, configuratie, applicatie |
-| name                 | De naam van het project zoals bekend bij het publiek. | component, configuratie, applicatie |
-| applicationSuite     | Geeft aan of het project deel uitmaakt van een grotere suite van applicaties. | configuratie |
-| url                  | De URL naar de broncode repository van het project. | component, applicatie |
-| landingURL           | Een landingspagina voor het project voor meer informatie buiten de repository. | component, applicatie |
+| Property             | Doel                                                                           | Publicatie Type                     |
+|----------------------|--------------------------------------------------------------------------------|-------------------------------------|
+| publiccodeYmlVersion | Specificatie van de gebruikte versie van de publiccode.yml standaard.          | component, configuratie, applicatie |
+| name                 | De naam van het project zoals bekend bij het publiek.                          | component, configuratie, applicatie |
+| applicationSuite     | Geeft aan of het project deel uitmaakt van een grotere suite van applicaties.  | configuratie                        |
+| url                  | De URL naar de broncode repository van het project.                            | component, applicatie               |
+| landingURL           | Een landingspagina voor het project voor meer informatie buiten de repository. | component, applicatie               |
 | isBasedOn            | Geeft aan of het project is gebaseerd op of een fork is van een ander project. | component, configuratie, applicatie |
-| softwareVersion      | De huidige stabiele versie van het project. | component, configuratie, applicatie |
-| logo                 | Een logo dat het project visueel identificeert. | component, configuratie, applicatie |
-| monochromeLogo       | Een monochroom logo voor gebruik in beperkte grafische contexten. | component, configuratie, applicatie |
-| platforms            | De platformen waarop het project kan draaien. | component, configuratie, applicatie |
-| releaseDate          | De datum van de laatste stabiele release. | component, configuratie, applicatie |
-| categories           | Categorieën die helpen bij het classificeren van het project. | component, configuratie, applicatie |
-| developmentStatus    | De huidige ontwikkelingsstatus van het project. | component, configuratie, applicatie |
-| softwareType         | Het type software (bijvoorbeeld standalone, library, etc.). | component, applicatie |
-| description          | Een beschrijving van het project in verschillende talen. | component, configuratie, applicatie |
-| intendedaudience     | De doelgroep voor wie het project is ontworpen. | component, configuratie, applicatie |
-| legal                | Juridische informatie en licentiestatus van het project. | component, configuratie, applicatie |
-| maintenance          | Informatie over hoe en tot wanneer het project wordt onderhouden. | component, configuratie, applicatie |
-| localisation         | Beschikbare talen van de software. | component, configuratie, applicatie |
-| dependsOn            | Andere projecten of software waarvan dit project afhankelijk is. | component, configuratie, applicatie |
-| roadmap              | Een link naar de roadmap van het project. | component, configuratie, applicatie |
-| inputTypes           | De types van input die de software kan verwerken. | component, applicatie |
-| outputTypes          | De types van output die de software produceert. | component, applicatie |
-| nl                   | Lokalisatie-informatie specifiek voor Nederlandse gebruikers. | component, configuratie, applicatie |
+| softwareVersion      | De huidige stabiele versie van het project.                                    | component, configuratie, applicatie |
+| releaseDate          | De datum van de laatste stabiele release.                                      | component, configuratie, applicatie |
+| createdDate          | De datum van creatie.                                                          | component, configuratie, applicatie |
+| logo                 | Een logo dat het project visueel identificeert.                                | component, configuratie, applicatie |
+| monochromeLogo       | Een monochroom logo voor gebruik in beperkte grafische contexten.              | component, configuratie, applicatie |
+| platforms            | De platformen waarop het project kan draaien.                                  | component, configuratie, applicatie |
+| categories           | Categorieën die helpen bij het classificeren van het project.                  | component, configuratie, applicatie |
+| usedBy               | Organisaties die dit component gebruiken                                       | component, configuratie, applicatie |
+| supportedBy          | Organisaties die services en diensten afgeven op dit component                 | component, configuratie, applicatie |
+| roadmap              | Een link naar de roadmap van het project.                                      | component, configuratie, applicatie |
+| developmentStatus    | De huidige ontwikkelingsstatus van het project.                                | component, configuratie, applicatie |
+| softwareType         | Het type software (bijvoorbeeld standalone, library, etc.).                    | component, applicatie               |
+| intendedaudience     | De doelgroep voor wie het project is ontworpen.                                | component, configuratie, applicatie |
+| description          | Een beschrijving van het project in verschillende talen.                       | component, configuratie, applicatie |
+| legal                | Juridische informatie en licentiestatus van het project.                       | component, configuratie, applicatie |
+| maintenance          | Informatie over hoe en tot wanneer het project wordt onderhouden.              | component, configuratie, applicatie |
+| localisation         | Beschikbare talen van de software.                                             | component, configuratie, applicatie |
+| dependsOn            | Andere projecten of software waarvan dit project afhankelijk is.               | component, configuratie, applicatie |
+| nl                   | Lokalisatie-informatie specifiek voor Nederlandse gebruikers.                  | component, configuratie, applicatie |
+| inputTypes           | De types van input die de software kan verwerken.                              | component, applicatie               |
+| outputTypes          | De types van output die de software produceert.                                | component, applicatie               |
+| hidden               |                                                                                |                                     |
+| downloads            |                                                                                |                                     |
 
 ### Security en afhankelijkheden
 
