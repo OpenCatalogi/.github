@@ -29,6 +29,7 @@ Voor het beschikbaar stellen van publicaties of zelfs uw eigen catalogus heeft u
 name: Mijn Open Catalogi Workflow
 
 on:
+ workflow_dispatch:
  push:
   branches:
    - main
@@ -58,6 +59,7 @@ jobs:
 name: My Open Catalogi Workflow
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -74,7 +76,7 @@ jobs:
         with:
           opencatalogi: true
       - name: Create an Open Catalogi page
-        uses: OpenCatalogi/opencatalogi-action@1.1.0
+        uses: OpenCatalogi/opencatalogi-action@1.1.1
 ````
 4. Voor extra configuratieopties en stappen kunt u kijken naar de [Catalogi Page](https://github.com/marketplace/actions/create-an-open-catalogi-page) en [Publiccode](https://github.com/marketplace/actions/create-or-update-publiccode-yaml) acties op Github.
 
