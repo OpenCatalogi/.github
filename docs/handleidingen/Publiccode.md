@@ -88,7 +88,7 @@ nl:
 ```
 
 > [!Note]
-> OpenCatalogi scant GitHub elke nacht, als je een component sneller wilt aanmelden of bijwerken, kan dat door naar [opencatalogi.nl](https://opencatalogi.nl/documentation/about) te gaan en onder "documentatie->over" (hoofd menu). Deze trigger wordt ook afgevuurd door de workflow.
+> OpenCatalogi scant GitHub elke nacht, als je een component sneller wilt aanmelden of bijwerken, kan dat door naar [opencatalogi.nl](https://opencatalogi.nl/documentation/usage/) te gaan en hier het formulier in te vullen om een repository toe te voegen. Deze trigger wordt ook afgevuurd door de workflow.
 
 > [!Warning]
 > Let op, OpenCatalogi bevraagt bij het inlezen van een repository de GitHub Search API, deze geeft alleen goede resultaten terug wanneer de repository is geïndexeerd. Dit kan worden geforceerd door een zoekopdracht uit te voeren op de GitHub website. Gebruik hiervoor de GitHub zoekbalk met bijvoorbeeld `repo:{{Uw Organisatie/Gebruiker}}/{{Uw repository}} publiccode` en wacht tot deze opdracht resultaten geeft. Dit kan zo'n 10 minuten duren en daarbij moet de pagina enige keren ververst worden.
