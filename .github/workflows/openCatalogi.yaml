@@ -26,7 +26,7 @@ jobs:
           pull_from_branche: "development"
           start_page: "false"
           favicon_logo: "https://dev.opencatalogi.nl/static/logo_OpenCatalogi-8b1b0a001c3f37dae4d3f69b5964ec72.png"
-          page_title: "DevOpenCatalogi"
+          page_title: "OpenCatalogi"
           navbar_show_login: "false"
           navbar_logo: "https://dev.opencatalogi.nl/static/logo_OpenCatalogi-8b1b0a001c3f37dae4d3f69b5964ec72.png"
           navbar_content: "https://raw.githubusercontent.com/OpenCatalogi/web-app/main/pwa/src/templates/templateParts/header/HeaderContent.json"
