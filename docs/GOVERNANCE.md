@@ -26,7 +26,7 @@ Als uw organisatie geïntreseerd is in deelname aan de OpenCatalogi-coalitie kun
 | [Roermond](https://www.roermond.nl)                 | Gemeente             | ✓              | ✓         |                                                    | ✓            |
 | [Assen](https://www.assen.nl)                       | Gemeente             | ✓              | ✓         |                                                    | ✓            |
 | [Hilversum](https://www.hilversum.nl)               | Gemeente             | ✓              | ✓         |                                                    | ✓            |
-| [Haarlememrmeer](https://haarlemmermeergemeente.nl) | Gemeente             | ✓              | ✓         |                                                    | ✓            |
+| [Haarlemmermeer](https://haarlemmermeergemeente.nl) | Gemeente             | ✓              | ✓         |                                                    | ✓            |
 | [Enschede](https://www.enschede.nl)                 | Gemeente             | ✓              | ✓         |                                                    | ✓            |
 | [Eindhoven](https://www.eindhoven.nl)               | Gemeente             | ✓              | ✓         |                                                    | ✓            |
 | [Conduction](https://www.conduction.nl)             | Leverancier          | ✓              |           | ✓                                                  |              |
