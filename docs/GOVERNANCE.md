@@ -35,7 +35,7 @@ Als uw organisatie geïntreseerd is in deelname aan de OpenCatalogi-coalitie kun
 | [Hoorn](https://www.hoorn.nl)                       | Gemeente             | ✓              |           |                                                    |              |
 | [Emmen](https://www.emmen.nl)                       | Gemeente             | ✓              |           |                                                    |              |
 | [Harderwijk](https://www.harderwijk.nl)             | Gemeente             | ✓              |           |                                                    |              |
-| [Leiden](https://gemeente.leiden.nl)                | Gemeente             | ✓              |           | [link](https://opencatalogi.github.io/leiden/)     |              |
+| [Leiden](https://gemeente.leiden.nl)                | Gemeente             | ✓              |           | [link](https://opencatalogi.github.io/leiden)      |              |
 | [Bronckhorst](https://www.bronckhorst.nl)           | Gemeente             | ✓              |           |                                                    |              |
 | [Delft](https://www.delft.nl)                       | Gemeente             | ✓              |           |                                                    |              |
 | [Open Webconcept](https://openwebconcept.nl/)       | Gemeente             | ✓              |           | ✓                                                  |              |
