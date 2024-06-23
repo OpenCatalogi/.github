@@ -1,0 +1,29 @@
+@startuml
+actor User
+participant "OpenCatalogi Installation A" as A
+participant "Directory" as Dir
+participant "OpenCatalogi Installation B" as B
+participant "OpenCatalogi Installation C" as C
+
+User -> A: Execute Federated Search(query)
+activate A
+
+A -> Dir: Get known installations
+activate Dir
+Dir -> A: Return list of known installations (B, C)
+deactivate Dir
+
+A -> B: Query (query)
+activate B
+B -> A: Return results
+deactivate B
+
+A -> C: Query (query)
+activate C
+C -> A: Return results
+deactivate C
+
+A -> A: Aggregate results
+A -> User: Return aggregated results
+deactivate A
+@enduml
