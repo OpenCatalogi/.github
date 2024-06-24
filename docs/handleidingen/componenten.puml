@@ -3,78 +3,76 @@ title: Components
 footer: Open Catalogi | Components
 header: Open Catalogi | Components
 
-
-cloud "Azure"{
- [ADFS]  as identity
+cloud "Identity & Access"{
+ [ADFS] as identity
 }
 
-cloud "Internet"{
-actor "User" as user
+cloud "Gebruikers"{
+actor "Burger" as burger
+actor "Medewerker" as medewerker
 actor "Admin" as adminUser
-actor "Externe Catalogus" as externalCatalouge
-
 }
 
 cloud "Externe Applicaties"{
 package "Bronnen" {
- [Zaaksysteem]  as ZGW
- [Etc.]  as ETC
+ [Zaaksysteem] as ZGW
+ [Etc.] as ETC
+}
+package "Catalogi" {
+ [Externe Catalogus] as externalCatalogue
 }
 }
 
 cloud "Kubernetes"{
 
-package "Layer 5 (interaction)" {
+package "Layer 5 (Interaction)" {
 package "React NL Design" {
- [Search UI]  as ui
+ [Search UI] as ui
 }
 
 package "Vue NL Design" {
- [Admin Interface]  as admin
+ [Admin UI] as admin
 }
 }
-
 
 package "Layer 4 (Logic)" as layer4 {
- [Synchronysations]  as service
+ [Synchronisaties] as service
 }
-
 
 package "Layer 2 (API)" as layer2 {
 
-
-package "Open Catalogi App" {
+package "Open Index" {
  [Search API] as SearchAPI
+}
+package "Open Registers" {
  [Admin API] as ObjectsAPI
 }
-
-
 }
 
-}
+package "Layer 1 (Data)" {
 
-package "Layer 1 (data)" {
-
-package "Search index" {
- [Elastic Search]  as search
+package "Search Index" {
+ [Elastic Search] as search
 }
 
 package "Object Store" {
- [ORC]  as db
+ [ORC] as db
 }
 }
 
-externalCatalouge <..> SearchAPI: Zoeken en Directory synchronysatie via API (PKIO)
-user <..> ui : Zoeken via browser (ANONIEM)
-adminUser <..> admin : Beheren via browser (JWT Claim)
+externalCatalogue <..> SearchAPI: Search + Directory
+burger <..> ui: Zoeken via browser (ANONIEM)
+medewerker <..> ui: Zoeken via browser (ANONIEM)
+adminUser <..> admin: Beheren via browser (JWT Claim)
 
 ui <..> SearchAPI: Search + Directory
 admin <..> ObjectsAPI: Publicaties + Catalogi + Metadata
-ZGW <..> service: Synchroizatie
-ETC <..> service: Synchroizatie
+ZGW <..> service: Synchronisatie
+ETC <..> service: Synchronisatie
 
-ObjectsAPI  .down.> db: Persist
-SearchAPI  .down.> search: Look up
+db .left.> search: Update
+ObjectsAPI .down.> db: Persist
+SearchAPI <.down. search: Lookup
 layer2 .down.> identity: AUTH
-service .down.> ObjectsAPI: In synchronyseren van publicaties
+service .down.> ObjectsAPI: In synchroniseren van publicaties
 @enduml
