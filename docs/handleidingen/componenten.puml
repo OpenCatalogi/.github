@@ -1,6 +1,6 @@
 @startuml
 title: Open Catalogi
-footer: Open Catalogi | Components
+footer: Common Gateway | Components
 header: Components
 
 interface "F5 extern (port 443)" as f5extern

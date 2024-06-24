@@ -3,7 +3,7 @@
 Open Catalogue provides a way to have multiple catalogues work together as one (virtual) catalogue, allowing users to search any or all of them at the same time. It does this by combining the [DCAT](https://joinup.ec.europa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe/release/300) standard with both [JSON-LD](https://json-ld.org/) and [FSC](https://docs.fsc.nlx.io/introduction) to create an API that provides data from both single and multiple catalogues. Additionally, there are multiple front-end solutions that then use this API to provide a context-related search interface to end users (e.g., citizens, public officials, journalists, or researchers).
 
 ## Basic Setup
-The basic object of Open Catalogue is a catalogue. Each catalogue is a collection of publications. Publications represent 'something' that needs to be publicized. What that something is, is defined by a metadata description (defined by a [schema.json](https://json-schema.org/)). Catalogues can contain publications from different types (e.g., datasets from the [WHO](), requests from the [WOO](), or repositories of [publiccode](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html)). Publications MUST belong to ONE catalogue, each catalogue MUST belong to ONE organization, meaning that publications are traceable to organizations through their catalogue.
+The basic object of Open Catalogue is a catalogue. Each catalogue is a collection of publications. Publications represent 'something' that needs to be publicized. What that something is, is defined by a metadata description (defined by a [schema.json](https://json-schema.org/)). Catalogues can contain publications from different types (e.g., datasets from the [WHO](), requests from the [WOO](), or repositories of [publiccode](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html)). Publications MUST belong to ONE catalogue, and each catalogue MUST belong to ONE organization, meaning that publications are traceable to organizations through their catalogue.
 
 ## Federated Search
 Each Open Catalogue installation provides a search endpoint that allows searching the catalogues belonging to that installation, allowing searching multiple catalogues at once. Each Open Catalogue installation also keeps track of other Open Catalogue installations and keeps a record of those in its `directory`. This provides the basic constraints for the federated search.
@@ -50,3 +50,10 @@ The publication functions as a [DCAT Catalogue Record](https://semiceu.github.io
 
 ## About Metadata
 A metadata file describes and defines the (meta)data stored in a publication. It does this by defining properties (e.g., name) and requirements for that property (e.g., minimal length). Metadata descriptions are used to validate publications on creation, add context to JSON-LD messages, and generate dynamic search interfaces.
+
+Traditionally, Open Catalogue focused on scraping publiccode files from GitHub and GitLab based on the publiccode.yaml standard, but recent years have seen the addition of WOO, Decat, and other standards. By default, the Open Catalogue object store supports the local development storage of metadata files. But metadata files can and SHOULD be separately hosted.
+
+Keep in mind that metadata files are (in line with the VNG ORC standard) defined in [json-schema](https://json-schema.org/) which means that they are versioned within their file.
+
+## Data Governance
+When data is synchronized into the Open Catalogue object store, metadata is mapped (or generated) to the best of our abilities. There will however always be gaps. We are currently working on a dashboard to make these gaps visible in order for governance.

@@ -1,65 +1,60 @@
 # Architectuur
 
-## Bodyless
+Open Catalogue biedt een manier om meerdere catalogi samen te laten werken als één (virtuele) catalogus, waardoor gebruikers in alle of enkele catalogi tegelijk kunnen zoeken. Dit wordt gedaan door de [DCAT](https://joinup.ec.europa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe/release/300) standaard te combineren met zowel [JSON-LD](https://json-ld.org/) als [FSC](https://docs.fsc.nlx.io/introduction) om een API te creëren die gegevens levert van zowel enkele als meerdere catalogi. Bovendien zijn er meerdere front-end oplossingen die deze API gebruiken om een contextgerelateerde zoekinterface aan eindgebruikers te bieden (bijv. burgers, overheidsfunctionarissen, journalisten of onderzoekers).
 
-In de meest simpele opzet is een OpenCatalogi-installatie een stateless/platte React frontend die gegevens weergeeft uit het OpenCatalogi federatieve netwerk.
+## Basisconfiguratie
+Het basisobject van Open Catalogue is een catalogus. Elke catalogus is een verzameling publicaties. Publicaties vertegenwoordigen 'iets' dat moet worden gepubliceerd. Wat dat 'iets' is, wordt gedefinieerd door een metadatabeschrijving (gedefinieerd door een [schema.json](https://json-schema.org/)). Catalogi kunnen publicaties van verschillende typen bevatten (bijv. datasets van de [WHO](), verzoeken van de [WOO](), of repositories van [publiccode](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html)). Publicaties MOETEN bij ÉÉN catalogus horen, en elke catalogus MOET bij ÉÉN organisatie horen, wat betekent dat publicaties traceerbaar zijn naar organisaties via hun catalogus.
 
-Als er geen aanvullende business logica van toepassing is (zoals rollen en rechten) en de data uit het federatieve netwerk direct wordt weergegeven is er geen noodzaak voor een backend.
+## Federatief zoeken
+Elke installatie van Open Catalogue biedt een zoek-endpoint waarmee gezocht kan worden in de catalogi die bij die installatie horen, waardoor meerdere catalogi tegelijk doorzocht kunnen worden. Elke installatie van Open Catalogue houdt ook andere Open Catalogue-installaties bij en registreert deze in zijn `directory`. Dit biedt de basisvoorwaarden voor het federatief zoeken.
 
-## Federatieve netwerk
+Bij het uitvoeren van een federatieve zoekopdracht zal een Open Catalogue-instantie alle andere Open Catalogue-installaties die bij hem bekend zijn vanuit zijn directory ophalen, die instanties asynchroon bevragen en de resultaten aggregeren.
 
-## Datamodel
+Wat prestaties betreft, proberen we zo weinig mogelijk op te vragen. Hiervoor passen we de volgende "trucs" toe:
+- Bij het zoeken naar een specifiek type metadata, bevragen we alleen catalogi waarvan bekend is dat ze die hebben.
+- We bevragen Open Catalogue-installaties in plaats van catalogi.
 
-Het datamodel van OpenCatalogi is gebaseerd op Public Code, een Europese standaard voor het beschrijven van opensource-projecten. Dit model vertaald naar een OpenAPI-beschrijving in lijn met de NL API-strategie. Deze is standaard is tevens aangevuld met elementen uit de huidige Common Ground catalogus en developer.overheid om te komen tot een overkoepeld datamodel voor opensource in Nederland.
+## Alles up-to-date houden
+Wanneer een nieuwe Open Catalogue-installatie wordt ontdekt, zal de ontdekkende instantie zichzelf kenbaar maken bij de ontdekte instantie en een meldingsabonnement nemen. Open Catalogue-installaties zullen andere installaties in hun directory op de hoogte brengen wanneer:
+- Een catalogus wordt toegevoegd, gewijzigd of verwijderd.
+- Een metadatabeschrijving wordt toegevoegd, gewijzigd of verwijderd.
+- Een item in hun directory wordt toegevoegd, gewijzigd of verwijderd.
 
-Lees meer:
-
-- [Het volledige datamodel](https://conduction.stoplight.io/docs/publiccode)
-- [Afwijkingen ten opzichte van publiccode](https://github.com/OpenCatalogi/.github/discussions/10)
-
-Het systeem is verdeeld in verschillende lagen. Laag 5 is de interactielaag, Laag 4 is de logische laag en Laag 1 is de datalaag.
-
-Laag 5 (Interactie) bevat de gebruikersinterface en de beheerdersinterface. Deze interfaces zijn respectievelijk ondergebracht in React Container 1 en React Container 2. De gebruiker en beheerder communiceren met deze interfaces via webbrowsers. De interactie van de gebruiker via de browser is anoniem, terwijl de interactie van de beheerder JWT-claims bevat.
-
-Laag 4 (Logica) is de kern van het systeem en bestaat uit meerdere componenten. De NGINX-container bevat de Nginx-grens die de Web Gateway uitvoert, die is ondergebracht in de Gateway Container. De Gateway Container bevat ook de OpenCatalogi-plugin en de ORM (Object-Relationele Mapping). De Gateway implementeert deze plug-ins en communiceert met het identiteitscomponent in de Azure-cloud. De Gateway maakt ook indexen naar MongoDB, caches naar Redis en slaat gegevens op in de ORM.
-
-De Redis Container bevat het Redis-component en de MongoDB Container bevat de MongoDB-database. De Gateway logt naar Loki en rapporteert aan Prometheus. De OpenCatalogi-plugin wisselt informatie uit met de externe catalogus op basis van PKI (Public Key Infrastructure).
-
-Laag 1 (Data) bevat een Database Service die verschillende databasesystemen bevat zoals PostgreSQL, MsSQL, MySQL en Oracle. De ORM slaat gegevens op in deze databases.
-
-Het systeem is ondergebracht in een Kubernetes-cluster. Het ingress-component maakt de gebruikersinterface, de beheerdersinterface en het Nginx-component beschikbaar. Het ingress-component communiceert met F5 extern alleen voor openbare eindpunten en objecten, en met F5 intern voor alle eindpunten. Het communiceert ook met het Hipp-component voor catalogusuitwisseling.
-
-De externe catalogus communiceert met het Hipp-component met behulp van PKIO. Het Hipp-component valt buiten de scope van het systeem.
-
-De Azure-cloud bevat het ADFS-component dat fungeert als een identiteitsprovider.
-
-Ten slotte omvat het systeem een externe catalogusacteur die communiceert met het Hipp-component, en een beheerdersacteur die communiceert met het F5 intern-component via een browser met JWT-claims. Er is ook een gebruikersacteur die communiceert met het F5 extern-component via een anonieme browser.
-
-![OpenCatalogi User diagram](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/oc_user.svg "OpenCatalogi User diagram")
-![OpenCatalogi Admin diagram](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/oc_admin.svg "OpenCatalogi Admin diagram")
-![OpenCatalogi Extern diagram](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/oc_extern.svg "OpenCatalogi Extern diagram")
-
-## Hoe vormt OpenCatalogi een gefedereerd netwerk?
-
-Elke OpenCatalogi-installatie (aangeduid als een Catalogus) onderhoudt een directorylijst van andere bekende installaties (of catalogi). Wanneer een nieuwe installatie aan het netwerk wordt toegevoegd, moet deze op de hoogte zijn van, of ten minste één bestaande installatie vinden. Deze bestaande installatie verstrekt zijn directory aan de nieuwe installatie, waardoor deze op de hoogte wordt gebracht van alle andere bekende installaties. Tijdens dit proces wordt de nieuwe installatie ook toegevoegd aan de directory van de bestaande installatie, die als referentie wordt gebruikt.
-
-Vervolgens communiceert de nieuwe installatie met alle andere installaties die vermeld staan in zijn directory. Het doel van deze communicatie is tweeledig: het aankondigen van zijn toevoeging aan het netwerk en informeren of ze op de hoogte zijn van andere installaties die nog niet zijn opgenomen in de directory van de nieuwe installatie.
-
-Dit onderzoekproces wordt regelmatig herhaald. Omdat elke installatie zijn eigen directory bijhoudt, blijft het netwerk robuust en operationeel, zelfs als een individuele installatie niet beschikbaar is.
+Dit betekent dat een nieuwe installatie zich slechts bij één andere installatie bekend hoeft te maken om door te groeien naar alle andere installaties. Directory-updates worden uniek gemaakt door een event key om cirkelmeldingen en overbelasting van het netwerk te voorkomen.
 
 ![Sequence Diagram network creation](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/createnetwork.svg "Sequence Diagram network creation")
 
-## Hoe maakt OpenCatalogi gebruik van een gefedereerd netwerk?
+## Onder de motorkap
+Open Catalogue bestaat eigenlijk uit een paar technische componenten die samenwerken. Om te beginnen bestaat het uit verschillende objecten (Catalogi, Publicaties, Documenten en Index) die worden opgeslagen in een objectstore (of ORC in VNG-termen). Publicaties bieden een basis workflow management setup. Wanneer een publicatie als gepubliceerd is gemarkeerd, wordt deze vervolgens overgebracht naar een zoekindex (Elasticsearch). Het Open Catalogue zoek-endpoint gebruikt deze zoekindex vervolgens om vragen te beantwoorden. Dit betekent dat de gebruiksgerichte (publieke) frontend de zoekindex gebruikt (aangezien het vragen stelt aan het zoek-endpoint) en dat het administratie-endpoint de objectstore gebruikt.
 
-**Live gegevens**:
-Telkens wanneer een query wordt uitgevoerd naar het `/search` eindpunt van een OpenCatalogi-installatie, zoekt het antwoorden in zijn eigen MongoDB-index op basis van bepaalde filters. Tegelijkertijd controleert het ook zijn directory van bekende catalogi om andere catalogi te vinden die mogelijk de gevraagde gegevens bevatten en waar de oorspronkelijke catalogus toegang toe heeft. De query wordt ook asynchroon naar deze catalogi verzonden, en de reacties worden gecombineerd, tenzij een vooraf gedefinieerde time-outdrempel wordt bereikt.
+Afzonderlijke synchronisatieservices kunnen publicaties maken van externe bronnen (bijvoorbeeld GitHub, of case handling systemen). Deze publicaties worden in de objectstore gemaakt en moeten als gepubliceerd worden gemarkeerd voordat ze worden gesynchroniseerd naar de zoekindex (en beschikbaar worden gemaakt onder het zoek-endpoint), hoewel dit proces geautomatiseerd kan worden in de configuratie. Deze strikte scheiding van gegevens op basis van de rol en context van verzoekers in een opslag- en een zoekgedeelte voorkomt onbedoelde openbaarmaking van informatie. Dit is vooral belangrijk omdat Open Catalogue ook wordt gebruikt door [OpenWoo.app]().
 
-![Live data Diagram](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/live.svg "Live data Diagram")
+Normaal gesproken worden documenten (en bestanden in het algemeen) niet overgebracht naar de objectstore, maar verkregen van de bron wanneer een enkel object wordt opgevraagd. Je kunt er echter voor kiezen om dat object over te brengen (per configuratie) om te voorkomen dat de bronapplicatie te vaak wordt bevraagd. Dit is vooral handig bij oudere of minder presterende bronnen. Documenten worden echter NOOIT overgebracht naar de zoekindex om indirecte blootstelling te voorkomen. Documenten kunnen ook worden toegevoegd aan publicaties die handmatig zijn aangemaakt via de administratie-interface. Houd er echter rekening mee dat deze documenten mogelijk nog steeds moeten worden gearchiveerd volgens de archiefwet.
 
-**Geïndexeerde gegevens**:
-OpenCatalogi geeft de voorkeur aan het indexeren van gegevens wanneer de bron dit toestaat. Tijdens elke uitvoer van netwerksynchronisatie (zoals uitgelegd in 'Hoe vormt OpenCatalogi een gefedereerd netwerk?'), worden alle gegevens die kunnen worden geïndexeerd, geïndexeerd als de bron is ingesteld op indexering. Het is belangrijk op te merken dat wanneer een object wordt gedeeld vanuit een andere catalogus, er een cloudgebeurtenisabonnement wordt gemaakt. Dit betekent dat wanneer het object wordt bijgewerkt in die catalogus, de wijzigingen ook vrijwel direct worden bijgewerkt in de lokale installatie.
+![components](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/components.svg "components")
 
-> :note:
->
-> - Bronnen worden pas gebruikt door een catalogus als de beheerder hiervoor akkoord heeft gegeven
-> - Bronnen kunnen zelf voorwaarden stellen aan het gebruikt (bijvoorbeeld alleen met PKI-certificaat, of aan de hand van API-sleutel)
+## Handmatige publicaties en ZGW
+De admin UI staat je toe om handmatig publicaties te maken, documenten eraan toe te voegen en een basis publicatiestroom te hebben. Als je een complexere stroom met verschillende rollen en acties wilt, kun je misschien naar ZGW kijken.
+
+## De zoek-API
+De belangrijkste functie van Open Catalogue is de zoek-API. Deze wordt aangeboden in twee vormen: plain JSON en JSON-LD, en faciliteert de mogelijkheid voor federatief zoeken.
+
+Kernconcepten en richtlijnen:
+Gebruikers moeten worden begeleid/geholpen bij het vinden van de juiste informatie. De enorme hoeveelheid gegevens die theoretisch beschikbaar is op Open Catalogue maakt dit een uitdaging. Om deze uitdaging aan te gaan, maken we gebruik van [faceted search](https://www.oxfordsemantic.tech/faqs/what-is-faceted-search#:~:text=Faceted%20search%20is%20a%20method,that%20we%20are%20looking%20for.). Gebruikersinterfaces MOETEN altijd een dynamisch gecreëerde zoekinterface bevatten met behulp van deze faceted search. Zoekfacetten bevatten zowel zoekopties als de verwachte resultaten onder die opties, waardoor gebruikers een goed idee krijgen van hoe ze hun zoekopdracht kunnen aanpassen. Dat betekent ook dat de facetten tijdens of na elke zoekopdracht moeten worden bijgewerkt.
+
+Dit is waar prestaties een rol spelen. Zoekfacetten worden (optioneel) geretourneerd op de zoek-API, zodat zowel resultaten als facetten in één oproep MOETEN worden verkregen. Je MAG het echter splitsen in twee oproepen (resultaten ophalen en facetten ophalen) als je de facetten direct daarna of asynchroon bijwerkt met het resultaat. Dit kan je een prestatieverbetering van 200 tot 400 ms opleveren. In deze configuratie MOET je echter een laadtoestand op de zoekinterface implementeren totdat beide oproepen zijn voltooid.
+
+Bij het bevragen van de zoek-API MOET je je zoekopdracht beperken door catalogi of metadatasets (bijv. WOO Verzoeken) of bij voorkeur beide om te voorkomen dat je een te brede zoekopdracht uitvoert (en daarmee de API overbelast). Het heeft de voorkeur dat de gebruikersinterface klein begint.
+
+## Meer over de catalogus
+De catalogus functioneert zowel als een [DCAT-catalogus](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CataloguedResource) als een [FCS Inway]. Dit betekent dat een catalogus slechts bij ÉÉN organisatie kan horen; eigendom van de catalogus wordt geverifieerd door middel van een PKI-certificaat.
+
+## Over publicaties
+De publicatie functioneert als een [DCAT-catalogusrecord](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord). Oorspronkelijk ontworpen als een houder voor een [publiccode.yaml](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html).
+
+## Over metadata
+Een metadata-bestand beschrijft en definieert de (meta)gegevens die in een publicatie zijn opgeslagen. Dit wordt gedaan door eigenschappen (bijv. naam) en vereisten voor die eigenschap (bijv. minimale lengte) te definiëren. Metadatabeschrijvingen worden gebruikt om publicaties bij creatie te valideren, context toe te voegen aan JSON-LD-berichten en dynamische zoekinterfaces te genereren.
+
+Traditioneel richtte Open Catalogue zich op het scrapen van publiccode-bestanden van GitHub en GitLab op basis van de publiccode.yaml-standaard, maar de afgelopen jaren zijn WOO, Decat en andere standaarden toegevoegd. Standaard ondersteunt de Open Catalogue-objectstore de lokale ontwikkelingsopslag van metadatabestanden. Maar metadatabestanden kunnen en MOETEN afzonderlijk worden gehost.
+
+Houd er rekening mee dat metadatabestanden (in lijn met de VNG ORC-standaard) zijn gedefinieerd in [json-schema](https://json-schema.org
