@@ -22,12 +22,16 @@ When a new Open Catalogue installation is discovered, the discovering instance w
 
 That means that a new installation only needs to make itself known to one other installation in order to snowball to all other installations. Directory updates are made unique by an event key to prevent circular notifications and overloading the network.
 
+![Sequence Diagram network creation](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/createnetwork.svg "Sequence Diagram network creation")
+
 ## Under the Hood
 Open Catalogue actually consists of a couple of technical components working together. For a start, it consists of several objects (Catalogi, Publications, Documents, and Index) which are stored in an object store (or ORC in VNG terms). Publications give a basic workflow management setup. When a publication is marked as published, it is then transferred to a search index (Elasticsearch). The Open Catalogue search endpoint then uses this search index to answer questions. This means that the user-oriented (public) frontend uses the search index (since it questions the search endpoint) and that the administration endpoint uses the object store.
 
 Separate synchronization services can create publications from external sources (for example GitHub, or case handling systems). These publications are created in the object store and need to be marked as published before they are synchronized to the search index (and are made available under the search endpoint), though this process can be automated in configuration. This hard separation of data based on the role and context of requesters in a store and a search part prevents accidental disclosure of information. This is especially important because Open Catalogue is also used by [OpenWoo.app]().
 
 Normally speaking, documents (and files in general) aren't transferred to the object store, but obtained from the source when a single object is requested. You can however choose to transfer said object (per configuration) in order to prevent over asking the source application. This is especially convenient when dealing with older or less performant sources. Documents however are NEVER transferred to the search index in order to prevent indirect exposure. Documents can also be added to publications that have been manually created through the administration interface. Keep in mind though that these documents might still be required to be archived under archival law.
+
+![components](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/components.svg "components")
 
 ## Manual Publications and ZGW
 The admin UI does allow you to manually create publications, attach documents to them, and have a basic publication flow. If you want a more complex flow with several roles and actions, you might want to take a look into ZGW.  

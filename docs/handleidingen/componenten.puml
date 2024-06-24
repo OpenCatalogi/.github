@@ -1,12 +1,8 @@
 @startuml
-title: Open Catalogi
-footer: Common Gateway | Components
-header: Components
+title: Components
+footer: Open Catalogi | Components
+header: Open Catalogi | Components
 
-interface "F5 extern (port 443)" as f5extern
-interface "F5 intern (port 443)" as f5intern
-
-interface "Hipp (outd of scope)" as hipp
 
 cloud "Azure"{
  [ADFS]  as identity
@@ -19,6 +15,12 @@ actor "Externe Catalogus" as externalCatalouge
 
 }
 
+cloud "Externe Applicaties"{
+package "Bronnen" {
+ [Zaaksysteem]  as ZGW
+ [Etc.]  as ETC
+}
+}
 
 cloud "Kubernetes"{
 
@@ -62,19 +64,17 @@ package "Object Store" {
 }
 }
 
-externalCatalouge <..> hipp: PKIO
-hipp <..> SearchAPI: Catalogus uitwisselingen
+externalCatalouge <..> SearchAPI: Zoeken en Directory synchronysatie via API (PKIO)
+user <..> ui : Zoeken via browser (ANONIEM)
+adminUser <..> admin : Beheren via browser (JWT Claim)
 
+ui <..> SearchAPI: Search + Directory
+admin <..> ObjectsAPI: Publicaties + Catalogi + Metadata
+ZGW <..> service: Synchroizatie
+ETC <..> service: Synchroizatie
 
-user <..> f5extern: Browser ANONIEM
-adminUser <..> f5intern : Browser MET JWT Claim
-f5extern <..> ui: Alleen openbare endpoints en objecten
-f5intern <..> admin: Alle endpionts
-ui <..> SearchAPI: Alle endpionts
-admin <..> ObjectsAPI: Alle endpionts
 ObjectsAPI  .down.> db: Persist
 SearchAPI  .down.> search: Look up
 layer2 .down.> identity: AUTH
-service .down.> ObjectsAPI: AUTH
-
+service .down.> ObjectsAPI: In synchronyseren van publicaties
 @enduml
