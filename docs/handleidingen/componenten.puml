@@ -24,7 +24,7 @@ cloud "Kubernetes"{
 
 package "Layer 5 (interaction)" {
 package "React NL Design" {
- [User Interface]  as ui
+ [Search UI]  as ui
 }
 
 package "Vue NL Design" {
@@ -43,7 +43,7 @@ package "Layer 2 (API)" as layer2 {
 
 package "Open Catalogi App" {
  [Search API] as SearchAPI
- [CRUD API] as ObjectsAPI
+ [Admin API] as ObjectsAPI
 }
 
 
