@@ -61,6 +61,37 @@ Zowel de zoeken API als beheer API ondersteunen [faceted search](https://www.oxf
 
 Naast het verbeteren van de zoek ervaring kan faceted search ook worden gebruikt om statistische informatie op te halen over de onderligende gegevens. Bijvoorbeeld voor het weergeven van aantal publicaties per categorie in grafieken of staafdiagrammen. Een mooivoorbeeld hiervan is terug te vinden op commonground.opencatalogi.nl. Daardat de gegevens gerelateerd zijn aan zoekopdrachten, en zoekopdrachten een hoge granuliteit hebben is het mogenlijk om op relatief detail niveu deze overzichten te creëren.
 
+## Adapters richting externe catalogi
+Het federatieve netwerk is een mooie manier om data bij de bron op te halen maar wordt (nog) niet door alle landelijke platformen ondersteund. Er zijn daarom een aantal adapters beschickbaar die gevens ophalen uit het federatieve netwerk en doorzetten naar 3e partijen. Deze adaptors worden  (landelijk) gehost
+
+- [X] **Woo index** Deze adaptor versameld iedere avond de gevens behoerne de bij publicaties gerelateerd aan de WOO en set deze om naar een sitemap.xml ten behoeve van de door KOOP ontwikkelde harvester
+- [ ] **DROP** (Roadmap) In ontwikkeling bij de gemeente Buren
+- [ ] **SDG** (Roadmap) In ontwikkeling bij de gemeente Buren
+- [ ] **data.overheid** (Roadmap) gewenst bij de gemeente Rotterdam
+
+
+## Search up to date houden
+Bij wijzigingen in de publicatie (ORC) of documenten (DRC) opslag wordt de search index (elastic) genotificeerd van een wijziging (creeren, updaten of verwijderen) zodat deze wijziging in de index kan worden verwerkt. Dit betekend dat de zoekindex zichzelf live houdt ten opzichten van publicaties en documenten. Hou er hierbij rekening mee dat documenten NIET in de zoekindex owrden opgenomen. 
+
+## Uniek maken van documenten
+Open Catalogi maakt documenten onder publicaties uniek aan de hand van [hashing](https://stackoverflow.com/questions/2444321/how-are-hash-functions-like-md5-unique), hashing geeft een unieke code voor ieder document aan de hand van de documentinhoud + eigenschappen. Hierdoor kunnen we bijvoorbeeld vaststellen of een document voorkomt onder meerdere publicatie en deze informatie aan gebruiker terug geven.
+
+Voorbeeld casus, in een raadsvergadering wordt voorgenomen vergunning besproken. Deze verguning is al eens eerder in de raad besproken, in een commisie besproken en hangt vast aan een zaak (vergunnings aanvraag). Aangenomen dat al deze objecten worden gepubliceerd komt de vergunning onder een 4 tal publicaties voor. Door dit vast te stellen voorkomen we niet alleen onnodige dataduplicatie van de PDF we kunnen ook in de zoek interface kenbaar maken dat er meer informatie is over het document. Deze context is met name intressant voorbeeld onderzoekers en journalisten die niet alleen het resultaat maar ook het besluit vormings procces willen weten.
+
+Het faciltieer ook een andere vorm van interactie waarbij gebruikers door de livecycle van een document heen kunnen gaan, vanuit het voorbeeld hierboven zou een gebruiker bijvoorbeeld vanuit de raadsvergadering kunnen door navigeren naar de commisie vergadering en daar de (video) notulen raadplegen over de inbreng van verschillende fracties.
+
+## Samen voegen van bijlagen
+In de praktijk zien we dat overheden de neiging hebben om PDF's samen te voegen, vanuit een gebruikers perspectief is dit echter extreem onwensenlijk. 
+
+Om dat te illustreren kunnen we als voorbeel een denkbeeldig woo verzoek aanhalen rondom contact van wethouder A met persoon B over onderwerp C. Dit Woo verzoek levert 2000 mailtjes op. Als we deze 2000 mails samenvoegen tot één pdf heeft dat een aantal negatieve conseqenties.
+
+- Er is niet langer metadata per mail beschickbaar, hierdoor gaat contextuele zoek informatie verloren
+- Stel in een van de mails is ook over onder D gesproken en een journalist zoekt hier naar dan krijgt die een document van 2000 pagina's terug
+- Door het samenvoegen onstaat een nieuwe unieke hash en kan de uniekheid van een document niet langer worden gegarandeerd (zie ook uniek maken documenten)
+- Als we voor de zoek index keywords uit de mail trekken die we zwaarder wegen omdat het bijvorobeeld veel gezocht word willen we dat per mail doen. Als we het doen over het hele document is de  kans graat dat we te veel keywords pakken en het document in iedere zoekopdracht met een hoge rating terug komt.
+
+Het geniet dus de absolute voorkeur om documenten niet samen te voegen en zo klein mogenlijk te houden.
+
 ## Authenticatie en Authorisatie
 Voor Authenticatie wordt gebruik gemaakt van OAuth (in de meeste gevallen geleverd door ADFS) waarbij de gebruiker en groepen waartoe deze behoord worden aangelverd door het externe authorisatie component. Deze groepen worden vervolgens vergeleken met de in de beheer api bekende groepen waar rechten aan toe zijn gekend.
 
@@ -69,4 +100,4 @@ Een metadata-bestand beschrijft en definieert de (meta)gegevens die in een publi
 
 Traditioneel richtte Open Catalogue zich op het scrapen van publiccode-bestanden van GitHub en GitLab op basis van de publiccode.yaml-standaard, maar de afgelopen jaren zijn WOO, Decat en andere standaarden toegevoegd. Standaard ondersteunt de Open Catalogue-objectstore de lokale ontwikkelingsopslag van metadatabestanden. Maar metadatabestanden kunnen en MOETEN afzonderlijk worden gehost.
 
-Houd er rekening mee dat metadatabestanden (in lijn met de VNG ORC-standaard) zijn gedefinieerd in [json-schema](https://json-schema.org
+Houd er rekening mee dat metadatabestanden (in lijn met de VNG ORC-standaard) zijn gedefinieerd in [json-schema](https://json-schema.org)

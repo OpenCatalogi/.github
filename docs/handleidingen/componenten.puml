@@ -58,6 +58,10 @@ package "Search Index" {
 package "Object Store" {
  [ORC] as db
 }
+
+package "Document Store" {
+ [DRC] as drc
+}
 }
 
 externalCatalogue <..> SearchAPI: Search + Directory
@@ -70,9 +74,10 @@ admin <..> ObjectsAPI: Publicaties + Catalogi + Metadata
 ZGW <..> service: Synchronisatie
 ETC <..> service: Synchronisatie
 
-db .left.> search: Update
 ObjectsAPI .down.> db: Persist
+ObjectsAPI .down.> drc: Persist
 SearchAPI <.down. search: Lookup
+SearchAPI <.down. drc: Lookup
 layer2 .down.> identity: AUTH
 service .down.> ObjectsAPI: In synchroniseren van publicaties
 @enduml
