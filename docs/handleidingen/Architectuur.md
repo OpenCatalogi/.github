@@ -2,6 +2,8 @@
 
 Open Catalogue biedt een manier om meerdere catalogi samen te laten werken als één (virtuele) catalogus, waardoor gebruikers in alle of enkele catalogi tegelijk kunnen zoeken. Dit wordt gedaan door de [DCAT](https://joinup.ec.europa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe/release/300) standaard te combineren met zowel [JSON-LD](https://json-ld.org/) als [FSC](https://docs.fsc.nlx.io/introduction) om een API te creëren die gegevens levert van zowel enkele als meerdere catalogi. Bovendien zijn er meerdere front-end oplossingen die deze API gebruiken om een contextgerelateerde zoekinterface aan eindgebruikers te bieden (bijv. burgers, overheidsfunctionarissen, journalisten of onderzoekers).
 
+In de zin van GEMMA/NORA architectuur geeft Open Catalogi hiermee invulling aan het concept generieke publicaite voorziening.
+
 ## Basisconfiguratie
 Het basisobject van Open Catalogue is een catalogus. Elke catalogus is een verzameling publicaties. Publicaties vertegenwoordigen 'iets' dat moet worden gepubliceerd. Wat dat 'iets' is, wordt gedefinieerd door een metadatabeschrijving (gedefinieerd door een [schema.json](https://json-schema.org/)). Catalogi kunnen publicaties van verschillende typen bevatten (bijv. datasets van de [WHO](), verzoeken van de [WOO](), of repositories van [publiccode](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html)). Publicaties MOETEN bij ÉÉN catalogus horen, en elke catalogus MOET bij ÉÉN organisatie horen, wat betekent dat publicaties traceerbaar zijn naar organisaties via hun catalogus.
 
@@ -53,6 +55,14 @@ De catalogus functioneert zowel als een [DCAT-catalogus](https://semiceu.github.
 
 ## Over publicaties
 De publicatie functioneert als een [DCAT-catalogusrecord](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord). Oorspronkelijk ontworpen als een houder voor een [publiccode.yaml](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html).
+
+## Faceted Search & data visualisatie
+Zowel de zoeken API als beheer API ondersteunen [faceted search](https://www.oxfordsemantic.tech/faqs/what-is-faceted-search#:~:text=Faceted%20search%20is%20a%20method,that%20we%20are%20looking%20for.).
+
+Naast het verbeteren van de zoek ervaring kan faceted search ook worden gebruikt om statistische informatie op te halen over de onderligende gegevens. Bijvoorbeeld voor het weergeven van aantal publicaties per categorie in grafieken of staafdiagrammen. Een mooivoorbeeld hiervan is terug te vinden op commonground.opencatalogi.nl. Daardat de gegevens gerelateerd zijn aan zoekopdrachten, en zoekopdrachten een hoge granuliteit hebben is het mogenlijk om op relatief detail niveu deze overzichten te creëren.
+
+## Authenticatie en Authorisatie
+Voor Authenticatie wordt gebruik gemaakt van OAuth (in de meeste gevallen geleverd door ADFS) waarbij de gebruiker en groepen waartoe deze behoord worden aangelverd door het externe authorisatie component. Deze groepen worden vervolgens vergeleken met de in de beheer api bekende groepen waar rechten aan toe zijn gekend.
 
 ## Over metadata
 Een metadata-bestand beschrijft en definieert de (meta)gegevens die in een publicatie zijn opgeslagen. Dit wordt gedaan door eigenschappen (bijv. naam) en vereisten voor die eigenschap (bijv. minimale lengte) te definiëren. Metadatabeschrijvingen worden gebruikt om publicaties bij creatie te valideren, context toe te voegen aan JSON-LD-berichten en dynamische zoekinterfaces te genereren.

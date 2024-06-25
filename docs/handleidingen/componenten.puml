@@ -9,8 +9,8 @@ cloud "Identity & Access"{
 
 cloud "Gebruikers"{
 actor "Burger" as burger
-actor "Medewerker" as medewerker
-actor "Admin" as adminUser
+actor "Ambtenaar" as medewerker
+actor "Beheerder" as adminUser
 }
 
 cloud "Externe Applicaties"{
@@ -27,11 +27,11 @@ cloud "Kubernetes"{
 
 package "Layer 5 (Interaction)" {
 package "React NL Design" {
- [Search UI] as ui
+ [Zoeken UI] as ui
 }
 
 package "Vue NL Design" {
- [Admin UI] as admin
+ [Beheer UI] as admin
 }
 }
 
@@ -42,10 +42,10 @@ package "Layer 4 (Logic)" as layer4 {
 package "Layer 2 (API)" as layer2 {
 
 package "Open Index" {
- [Search API] as SearchAPI
+ [Zoeken API] as SearchAPI
 }
 package "Open Registers" {
- [Admin API] as ObjectsAPI
+ [Beheer API] as ObjectsAPI
 }
 }
 
