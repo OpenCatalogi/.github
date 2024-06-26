@@ -2,7 +2,7 @@
 
 ## Overzicht
 
-Voor OpenCatalogi hanteren we een ratingssysteem gebaseerd op de kwaliteit van de documentatie. Een goed gedocumenteerd product ontvangt meer punten, wat bijdraagt aan een hogere rating. Dit systeem stimuleert ontwikkelaars om hun documentatie te verbeteren, waardoor de kwaliteit van OpenCatalogi als geheel toeneemt. Een hogere rating leidt tot een betere zichtbaarheid in OpenCatalogi, waardoor de kans groter is dat het product gebruikt wordt. Dit systeem moedigt ontwikkelaars aan om te investeren in de kwaliteit van hun documentatie.
+Voor OpenCatalogi hanteert een ratingssysteem gebaseerd op de kwaliteit van de documentatie. Een goed gedocumenteerd product ontvangt meer punten, wat bijdraagt aan een hogere rating. Dit systeem stimuleert ontwikkelaars om hun documentatie te verbeteren, waardoor de kwaliteit van OpenCatalogi als geheel toeneemt. Een hogere rating leidt tot een betere zichtbaarheid in OpenCatalogi, waardoor de kans groter is dat het product gebruikt wordt. Dit systeem moedigt ontwikkelaars aan om te investeren in de kwaliteit van hun documentatie.
 
 ## Rating Mechanisme
 
@@ -23,8 +23,8 @@ De rating wordt vastgesteld door een repository te scannen op de aanwezigheid va
 | **Inrichting van de repository**     | Configuratie repository                   | 8           |
 | **Inrichting van de publiccode.yml** | Properties in publiccode                  | 24          |
 | **Security en afhankenlijkheden**    | Aanwezigheid bestand                      | 1           |
-| **Installatie mogelijkheden**        | Aangemeld voor installatie hubs | 2           |      
-| **Community**                        | Aangemeld voor etalages                   | 2           |      
+| **Installatie mogelijkheden**        | Aangemeld voor installatie hubs | 2           |
+| **Community**                        | Aangemeld voor etalages                   | 2           |
 |                                      | **Totaal**                                | 45          |
 
 ### Aanwezigheid van documenten
@@ -128,7 +128,7 @@ Vanuit Common Ground verwachten we dat publicaties gemakkelijk te installeren zi
 
 | Helm Repository | Doel | Criteria               |
 |-----------------|------|------------------------|
-| Artifact Hub    | Overzicht van de Kubernetes stichting voor installeerbare Kubernetes software | Is vindbaar via API | 
+| Artifact Hub    | Overzicht van de Kubernetes stichting voor installeerbare Kubernetes software | Is vindbaar via API |
 | Bitnami         | Commercieel overzicht met installatietool voor Kubernetes | Is vindbaar via API |
 
 ### Community
