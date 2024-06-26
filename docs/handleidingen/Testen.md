@@ -35,7 +35,7 @@ We kunnen de testscripts opsplitsen in de volgende categorieën:
 
 **Verwachte resultaten**:
 
-- De publicatie is alleen vindbaar als in het filter op opencatalogi.nl. `inclusief gearchifeerde publicaties` is aangevinkt.
+- De publicatie is alleen vindbaar als in het filter op opencatalogi.nl. `inclusief gearchiveerde publicaties` is aangevinkt.
   
 ### Testcase 3: Een publicatie verwijderen
 
@@ -53,14 +53,14 @@ We kunnen de testscripts opsplitsen in de volgende categorieën:
 
 **Verwachte resultaten**:
 
-- Het hergebruikte component staat vermeld onder hergebruik bij de applicaite pagina
+- Het hergebruikte component staat vermeld onder hergebruik bij de applicatiepagina
 - De organisatie staat vermeld op de component pagina onder hergebruik
   
 ### Testcase 6: Een ondersteuning van componenten aangeven
 
 **Verwachte resultaten**:
 
-- Het ondersteunde component staat vermeld onder hergebruik bij de applicaite pagina
+- Het ondersteunde component staat vermeld onder hergebruik bij de applicatie pagina
 - De organisatie staat vermeld op de component pagina onder ondersteuning
   
 ### Testcase 7: Een organisatie verwijderen
@@ -84,13 +84,16 @@ We kunnen de testscripts opsplitsen in de volgende categorieën:
 - De catalogus geeft het ingestelde menu weer
   
 ## Technische test
+
 Naast functionele tests is het ook belangrijk om te controleren of de website voldoet aan de technische eisen voor overheidswebsites.
 
 ### WCAG
+
 Er is een [WCAG-rapportage](https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/WCAG-Raportage.pdf) beschikbaar voor de website.
 
 U kunt de test zelf herhalen, vervang in de volgende url `https://opencatalogi.nl/` door het adres van uw OpenCatalogi-installatie
 [https://accessibe.com/accessscan?website=https://opencatalogi.nl/](https://accessibe.com/accessscan?website=https://opencatalogi.nl/)
 
 ### Pentest
+
 Er is een [Pentest rapportage](https://github.com/OpenCatalogi/.github/blob/main/docs/handleidingen/PENTEST-Raportage.pdf) beschikbaar voor de website.

@@ -21,7 +21,8 @@ Als uw organisatie geïntreseerd is in deelname aan de OpenCatalogi-coalitie kun
 | Organisatie                                         | Type                 | Geïnteresseerd | Stuurgroep | Installatie                                        | Financiering |
 |-----------------------------------------------------|----------------------|----------------|------------|----------------------------------------------------|--------------|
 | [Dimpact](https://www.dimpact.nl)                   | Samenwerkingsverband | ✓              | ✓         | ✓                                                  | ✓           |
-| [Conxillium](https://www.conxillium.com)            | Leverancier          | ✓              |           |                                                    |              |
+| [Common Ground](https://commonground.nl/)                   | Samenwerkingsverband | ✓              | ✓         | [link](https://componentencatalogus.commonground.nl/)                                              | ✓           |
+| [Conxillium](https://www.conxillium.com)            | Leverancier          | ✓              |           |                                                    |         ✓     |
 | [Rotterdam](https://www.rotterdam.nl)               | Gemeente             | ✓              | ✓         | ✓                                                  | ✓           |
 | [Roermond](https://www.roermond.nl)                 | Gemeente             | ✓              | ✓         |                                                    | ✓            |
 | [Assen](https://www.assen.nl)                       | Gemeente             | ✓              | ✓         |                                                    | ✓            |

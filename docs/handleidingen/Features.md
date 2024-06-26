@@ -1,10 +1,8 @@
 # Features
 
-## Onderscheiding vermogen versus software catalogus
+## Onderscheiding vermogen
 
-In tegenstelling tot de GEMMA softwarecatalogus kan je OpenCatalogi direct koppelen aan interne bronnen binnen uw organisatie zoals CMDB
-
-Daarnaast ondersteunt Open Catalogi ook het delen van de niet-softwaretypen zoals:
+OpenCatalogi biedt unieke voordelen ten opzichte van traditionele catalogi door directe koppelingen met interne bronnen binnen uw organisatie, zoals CMDB. Daarnaast ondersteunt OpenCatalogi het delen van diverse niet-softwaretypen, waaronder:
 
 - Product service blueprints
 - Regels
@@ -13,6 +11,16 @@ Daarnaast ondersteunt Open Catalogi ook het delen van de niet-softwaretypen zoal
 - Documenten
 - Datasets
 
-## PublicCode.yaml
+## Ondersteunde standaarden
 
-## PublicOrganisation.yaml
+### DCAT
+
+OpenCatalogi ondersteunt het gebruik van DCAT (Data Catalog Vocabulary), een RDF-vocabulaire voor het publiceren van data catalogi op het web. DCAT maakt het mogelijk om datasets op een gestandaardiseerde manier te beschrijven, waardoor ze beter vindbaar, toegankelijk en herbruikbaar zijn. Met DCAT kunnen organisaties hun datasets effectief delen en integreren met andere datacatalogi, wat de interoperabiliteit en het gebruik van open data bevordert.
+
+### PublicCode.yaml
+
+OpenCatalogi ondersteunt de integratie en validatie van PublicCode.yaml-bestanden, wat zorgt voor gestandaardiseerde en herbruikbare beschrijvingen van softwarecomponenten.
+
+### PublicOrganisation.yaml
+
+Met PublicOrganisation.yaml kunnen organisaties hun structuur en verantwoordelijkheden op een gestandaardiseerde manier vastleggen, wat de interoperabiliteit en samenwerking tussen verschillende entiteiten bevordert.

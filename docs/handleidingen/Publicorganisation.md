@@ -4,7 +4,7 @@ Het bestand `openCatalogi.yaml` is een voorgestelde standaard voor het identific
 
 Door dit bestand te implementeren, kunnen openbare organisaties effectiever communiceren over hun software portfolio en bijdragen aan een transparant ecosysteem voor open-source. Het `openCatalogi.yaml`-bestand van elke organisatie biedt essentiële informatie die kan worden gebruikt door ontwikkelaars, burgers en andere belanghebbenden om de activiteiten en toewijding van de organisatie in het opensource domein te begrijpen.
 
-Een belangrijk aspect van deze toewijding aan opensource is de ondersteuning die een organisatie biedt voor bepaalde software. Dit omvat zowel software die eigendom is van de organisatie zelf als software die eigendom is van andere organisaties. De geboden ondersteuning kan verschillende vormen aannemen, zoals onderhoud, hosting, software als een dienst (SaaS) of andere services. Deze details worden vastgelegd in een onderhoudsobject onder het veld `softwareSupported`.
+Een belangrijk aspect van deze toewijding aan open source is de ondersteuning die een organisatie biedt voor bepaalde software. Dit omvat zowel software die eigendom is van de organisatie zelf als software die eigendom is van andere organisaties. De geboden ondersteuning kan verschillende vormen aannemen, zoals onderhoud, hosting, software als een dienst (SaaS) of andere services. Deze details worden vastgelegd in een onderhoudsobject onder het veld `softwareSupported`.
 
 Het onderhoud-object vertegenwoordigt het type en niveau van ondersteuning dat de organisatie biedt voor een bepaalde software. Het bevat details zoals het type onderhoud en contactgegevens voor onderhoudsvragen.
 
@@ -161,7 +161,7 @@ softwareUsed:
 
 OpenCatalogi scant iedere dag GitHub, maar als je wilt weten of jouw bestand klopt kan dat wat lang duren. Gelukkig kan je dit ook versnellen
 
-1. Ga naar [opencatalogi.nl](https://opencatalogi.nl/)
+1. Ga naar [opencatalogi.nl](https://opencatalogi.nl/documentation/usage)
 2. Klik in het hoofdmenu op "documentatie"" en selecteer "over"
 3. Plak in de balk "Meld uw component" je URL van jouw .github repository e.g. "<https://github.com/\[organisatienaam]/.github>"
 4. Als alles goed gaat word je daarna doorverwezen naar jouw organisatiepagina
