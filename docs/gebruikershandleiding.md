@@ -6,6 +6,10 @@ In deze gebruikershandleiding is informatie te vinden over het plaatsen van comp
 
 Er zijn vier manieren om een component zichtbaar te maken op OpenCatalogi.
 
+### Het opgeven van de repository-URL
+
+De snelste manier is het opgeven van de repository-URL voor componenten via de volgende [pagina](https://opencatalogi.nl/documentation/usage)
+
 ### Een `publiccode.yaml` opnemen in je repository
 
 OpenCatalogi is gebouwd op het Europese Publiccode framework. Uitgangspunt hierbij is dat open source betekent dat de broncode in een git repository staat (bijvoorbeeld GitHub, GitLab of SourceTree) die openbaar toegankelijk is.
@@ -28,7 +32,3 @@ OpenCatalogi synchroniseert onder andere met:
 <https://www.softwarecatalogus.nl/>.
 
 Het daar vermelden van software zorgt ervoor dat deze wordt overgenomen in OpenCatalogi.
-
-### Via het aanmaken van een account
-
-U kunt via [hier]() een formulier een account aanvragen. Via een account kunt u de gegevens van uw component en organisatie aanpassen en nieuwe componenten aanmelden.

@@ -69,6 +69,19 @@
         }
       },
       {
+        "label": "Nextcloud",
+        "type": "internalMarkdown",
+        "current": {
+          "pathname": "/Handleidingen/Nextcloud"
+        },
+        "handleClick": {
+          "internalMarkdown": {
+            "directoryName": "Handleidingen",
+            "fileName": "Nextcloud"
+          }
+        }
+      },
+      {
         "label": "Functionaliteit",
         "type": "internalMarkdown",
         "current": {

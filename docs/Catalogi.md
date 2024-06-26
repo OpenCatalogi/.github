@@ -1,2 +1,0 @@
-# Welkom op dat Catalogus van open catalogi 
-Ook de Open Catalogi organistie maakt en publiceerd open source software, en ook wijzelf maken daarbij gebruik van de Open Catalogi Catalogus om ons werk zichtbaar te maken.
