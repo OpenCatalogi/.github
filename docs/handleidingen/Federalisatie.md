@@ -1,15 +1,16 @@
 # Federalisatie
 
-In de kern is federalisatie een relatief simpel proces, een binnen komende vraag word asynchroon doorgezet naar verschillende bronnen (in dit geval catalogi). Vervolgens worden de resultaten van deze bronnen ge-aggregeert en een totaalresultaat en terug gegeven aan de vrager.
+In de kern is federalisatie een relatief simpel proces waarbij een binnenkomende vraag asynchroon wordt doorgezet naar verschillende bronnen (in dit geval catalogi). Vervolgens worden de resultaten van deze bronnen geaggregeerd en als totaalresultaat teruggegeven aan de vrager.
 
-Op deze manier ontstaat een federatief stelsel, ofwel een virtueele catalogi die onder water bestaat uit meerdere catalogi. Dit vormt de kern van het [search endpoint](). Het belangrijkste probleem dat federalisatie hiermee oplost is het bevragen van meerdere organisaties (of onderliggende) zonder dat er een centrale (landelijke) index of datalake hoeft te worden opgebowud.
+Op deze manier ontstaat een federatief stelsel, oftewel een virtuele catalogus die onder water bestaat uit meerdere catalogi. Dit vormt de kern van het search endpoint. Het belangrijkste probleem dat federalisatie oplost, is het bevragen van meerdere organisaties (of onderliggende) zonder dat er een centrale (landelijke) index of datalake hoeft te worden opgebouwd.
 
 ## Flow
 
-![Federatieve bevragings flow](https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/docs/Federalisatie.svg)
+![Federatieve bevragingsflow](https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/docs/Federalisatie.svg)
 
 ## Configuratie per vraag (Request)
-Bij iedere vraag kan de vragende partij (requester) beinvloeden hoe hij wil dat het verzoek word afgehandeld. Hierbij ligt de focus met name op wanneer een federatieve bevraging word beschouwd als afgerond en welke bronnen worden uitgesloten.
+
+Bij iedere vraag kan de vragende partij (requester) beïnvloeden hoe hij wil dat het verzoek wordt afgehandeld. Hierbij ligt de focus met name op wanneer een federatieve bevraging wordt beschouwd als afgerond en welke bronnen worden uitgesloten.
 
 | Parameter                           | Standaardwaarde | Beschrijving                                                                                                                                                                                                                                        |
 |-------------------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -22,28 +23,28 @@ Bij iedere vraag kan de vragende partij (requester) beinvloeden hoe hij wil dat 
 >*Opmerking:* `_federalization_use_sources` en `_federalization_exclude_sources` kunnen niet gelijktijdig worden gebruikt. Als beide query parameters worden meegegeven, volgt er een foutmelding.
 
 ## Vaste Configuratie
-Als configuratie per vraag kan op endpoint niveau worden overschreven door vaste query parameters op te geven.
 
-Daarnaast is per endpoint op te geven welke sources via dit endoint worden gefederaliseerd.
+De configuratie per vraag kan op endpoint-niveau worden overschreven door vaste query parameters op te geven. Daarnaast is per endpoint op te geven welke bronnen via dit endpoint worden gefederaliseerd.
 
 ## Voorwaarden
-Alleen endpoint die voldoen aan het Open Index patroon kunnen worden gefederaliserd via de federalisatie services
+
+Alleen endpoints die voldoen aan het Open Index-patroon kunnen worden gefederaliseerd via de federalisatie-services.
 
 ## Aggregeren van Resultaten
 
-De zoek service gaat er vanuit dat ieder aangeroepen bron een resultaat terug levert in de vorm van een json result opbject waarbij de gevonden objecten zich als array onder de property results bevinden.
+De zoekservice gaat ervan uit dat iedere aangeroepen bron een resultaat teruglevert in de vorm van een JSON-resultaatobject waarbij de gevonden objecten zich als array onder de property results bevinden.
 
 ```json
 {
   "results":[]
 }
-``` 
+```
 
-De verschillende rusult objecten uit de diverse bronnen worden vervolgens van een “_rating”(matte waarin trefwoorden in het object voorkomen) en  “_source” (uuid van de bron zo als bekend bij het federatieve zoekendpoint) property voorzien. En onder gebracht een nieuwe result list binnen de zoek service.
+De verschillende resultaatobjecten uit de diverse bronnen worden vervolgens van een `_rating` (mate waarin trefwoorden in het object voorkomen) en `_source` (UUID van de bron zoals bekend bij het federatieve zoekendpoint) property voorzien en ondergebracht in een nieuwe result list binnen de zoekservice.
 
-De resultaten van de bron (status, status name, responce time, objects_returned) worden vervolgen als object toegevoegd aan de source list.
+De resultaten van de bron (status, status name, response time, objects_returned) worden vervolgens als object toegevoegd aan de source list.
 
-Vervolgens word de result array geordend op `_rating`, pagination toegepast en een JSON result object naar de vragende partij gestuurd.
+Vervolgens wordt de result array geordend op _rating, pagination toegepast en een JSON-resultaatobject naar de vragende partij gestuurd.
 
 ```json
 {
@@ -89,10 +90,11 @@ Vervolgens word de result array geordend op `_rating`, pagination toegepast en e
     // Meer resultaten...
   ]
 }
-``` 
+```
 
 ## Simpel voorbeeld
-Laten we eens uitgaan van een federatief endpoint dat 5 indexen doorleverd. Al 5 de indexen beschicken over 5 objecten dus er zijn in totaal 25 objecten. We gaan er even vanuit dat er een rating heeft plaatsgevonden
+
+Laten we eens uitgaan van een federatief endpoint dat 5 indexen doorlevert. Al deze vijf indexen beschikken over vijf objecten, dus er zijn in totaal 25 objecten. We gaan er even vanuit dat er een rating heeft plaatsgevonden.
 
 | Bron 1            | Bron 2            | Bron 3            | Bron 4            | Bron 5            |
 |-------------------|-------------------|-------------------|-------------------|-------------------|
@@ -144,6 +146,7 @@ Het totaal source bericht zou dan zijn (zonder rating en pagination)
 ```
 
 ## Discovery & Advertising
+
 Iedere instantie van Open Index houd naast de eigen index ook een lijst bij van andere Indexen. Deze lijst wordt gebruikt voor het asynchoon stellen van zoekvragen (zie ook federalisatie). Vanuit princiepe is deze lijst altijd openbaar. Op het moment dat een installaite van Open Index online komt moet deze ten minimale één andere Open Index installaite weten om gemeenschappenlijk ene federatief netwerk te vormen en zochzelf verer uit te breiden. Hierbij zijn de stappen als volgt
 
 1. Open Index Installatie komt online
@@ -155,22 +158,23 @@ Iedere instantie van Open Index houd naast de eigen index ook een lijst bij van 
 
 Op deze manier word er (relatief snel) per installatie een totaal directory opgebouwd van andere installaties.
 
-
 ![Discovery flow](https://raw.githubusercontent.com/CommonGateway/OpenIndex/main/docs/Discovery.svg)
 
 ## Healthy en unhealthy indexen
-Het kan in de praktijk voorkomen dat een externe index verdwijnt (Bijvoorbeeld omdat deze word verwijderd door de beheerder) of kapot is. In dat geval wil je voorkomen dat er steeds asynchrone bevragingen op worden uitgevoerd.
 
+In de praktijk kan het voorkomen dat een externe index verdwijnt (bijvoorbeeld omdat deze wordt verwijderd door de beheerder) of kapot is. In dat geval wil je voorkomen dat er steeds asynchrone bevragingen op worden uitgevoerd.
 
 ## Federatief zoeken buiten Open Index
-Federatief zoeken is een patroon dat door Open Index wordt gefaciltieerd boven op bestaande zoek oplossingen zo als elastic search en MongoDB. Doordat de resultaten van deze oplossingen worden gemapped naar het patroon federatief zoeken kunnen de onderliggende indexen worden gegregeerd. Het is echter ook mogenlijk om het patroon rechtstreek uit te leveren vanuit de registers zeld (het [framework Open Registers](https://openregisters.app/) ondersteund dit ook) dit heeft zowel voordelen als nadelen
+
+Federatief zoeken is een patroon dat door Open Index wordt gefaciliteerd bovenop bestaande zoekoplossingen zoals Elastic Search en MongoDB. Doordat de resultaten van deze oplossingen worden gemapt naar het patroon van federatief zoeken, kunnen de onderliggende indexen worden geaggregeerd. Het is echter ook mogelijk om het patroon rechtstreeks uit te leveren vanuit de registers zelf (het [framework Open Registers](https://openregisters.app/) ondersteund dit ook). Dit heeft zowel voordelen als nadelen.
 
 **Voordelen**
+
 - Er is geen (of een kleinere) organisatie brede index nodig
-- Het lijnt beter uit bij het architectuur princiepe data bij de bron
+- Het sluit beter aan bij het architectuurprincipe 'data bij de bron'.
 
 **Nadelen**
+
 - Een register is geoptimaliseerd voor data betrouwbaarheid boven snelheid, en zal doorgaans iets langsamer zijn dan een gepsecialiseerde zoekoplossing
 - Er zullen veel bevragingen (en daarmee belasting) neerkomen bij de bron
-- Het aantal asynchrone bevragingen vanuit de federatieve zoekopdracht neemt toe, die wordt daardoor langsamer en zwaarder om uit te voeren. 
-
+- Het aantal asynchrone bevragingen vanuit de federatieve zoekopdracht neemt toe, die wordt daardoor langsamer en zwaarder om uit te voeren.
