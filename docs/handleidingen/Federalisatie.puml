@@ -1,0 +1,27 @@
+@startuml
+!theme plain
+
+actor Requester as "Requester"
+entity "Federatief Endpoint" as FE
+queue "Bron 1" as B1
+queue "Bron 2" as B2
+queue "Bron N" as BN
+database "Resultaten Verwerking" as RV
+
+== Bevraging Proces ==
+Requester -> FE : Bevraagt federatief endpoint
+FE -> FE : Bepaalt sources
+group Asynchroon bevragen van alle bronnen
+    FE -> B1 : Stelt vraag
+    FE -> B2 : Stelt vraag
+    FE -> BN : Stelt vraag
+end
+...
+B1 -> FE : Resultaat 1
+B2 -> FE : Resultaat 2
+BN -> FE : Resultaat N
+FE -> RV : Verwerkt resultaten per 500
+RV -> FE : Gegroepeerde resultaten
+FE -> Requester : Geeft gegroepeerde resultaten terug
+
+@enduml
