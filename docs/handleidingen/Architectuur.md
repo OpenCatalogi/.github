@@ -67,6 +67,21 @@ De catalogus functioneert zowel als een [DCAT-catalogus](https://semiceu.github.
 
 De publicatie functioneert als een [DCAT-catalogusrecord](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord). Oorspronkelijk ontworpen als een houder voor een [publiccode.yaml](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html).
 
+## Meer over de directory
+Iedere Open Catalogi installatie beschickt over een directory, deze verhoud zich tot het [fcs directory concept](). Een directory is kort gezegd een overzicht van alle andere catalogi die bekend zijn bij deze Open Catalogi installatie, zogenoemde listings. Deze lsitings vormend de kern onder het `federatief zoeken` dat tehcnisch neerkomt op het asynchroon bevragen van meerdere listings en de resultaten agregegeren. Hiervoor bieden listings een aantal kern functionaliteiten
+
+
+- **Weten welke catalogi beschickbaar zijn**: De direcotry geeft een overzicht van alle catalogi de gebruikt kunnen worden voor de federatieve zoekvraag
+- **Het automatisch vinden van catalogi**: Open Catalogi instanties wisselen onderling hun directories uit, doormiddel van het discovery patroon
+- **Het verspreidend van informatie uit de eigen catalogi**: Open Catalogi verspreiden actief hun eigen informatie aan de hand van het advertising patroon
+- **Beperken van het aantal zoekvragen**: Catalogi delen op installatie niveau een search endpoint zodat één bevraging meerdere catalogi kan beslaan. In de directory worden de catalogi daarom bij elkaar getrokken aan de hand van search endpoints
+- **Beperken van het aantal catalogi**: Door het bijhouden van de daadwerkenlijk in een catalogi beschickbare metadata (type publicaties) worden alleen catalogi bevraagd die dat object type daadwerkenlijk bevatten (dit voorkomt onnodige bevragingen)
+- **Configureren van catalogi gebruik**: In de directory kan de beheerder aangeven welke catalogi die wel/niet wil opnemen/beschickbaar stellen voor eigen zoekvragen.
+- **Overnemen van metadata**: Binnen Open Catalogi kunnen er publciaties worden gepubliceerd op elders gedefineerde metadata, via de directory kan worden aangegeven welke meta data uit welke catalogi word overgenomen.
+
+Eigen Catalogi zijn per definitie onderdeel van de directory, en niet via de directory wijzigbaar (ze worden op code niveau aangevuld op alle directory overzichten). 
+
+
 ## Faceted Search & datavisualisatie
 
 Zowel de zoeken-API, als de beheer-API, ondersteunen [faceted search](https://www.oxfordsemantic.tech/faqs/what-is-faceted-search#:~:text=Faceted%20search%20is%20a%20method,that%20we%20are%20looking%20for.).
