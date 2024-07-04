@@ -23,8 +23,9 @@ Als we vervolgens inzoemen op een catalogus bestaad die feitenlijk uit vier func
 
 Het is aan applicaties zelf om hier vervolgens invulling aan te geven. Vanuit de Open catalogi community leveren we een aantal componenten die hier invulling aan geven. Hierbij hebben we er voor gekozen om de componenten in twee varianten te ontwikklen. 
 
-- Iedere component in een eigen container (bedoeld voor grote organisaties)
-- Alle componenten op één gemeenschappenlijk framework (bedoeld voor kleine en middelgrote organisaties)
+- **Iedere component in een eigen container** Bedoeld voor grote organisaties die graag alles op kubernetes draaien
+- **Alle componenten op één gemeenschappenlijk framework** Bedoeld voor kleine en middelgrote organisaties die gebruik amken van een (viruteel) linux serverpark of azure.
+- **Alles in één applicatie** Bedoeld voor locale ontwikkeling en testen, niet bedoeld voor productie doeleinden. 
 
 Om dit te realiseren is de onderlinggende code opgedeeld in meerdere libaries die door de verschillende verschijningsvormen worden gedeeld.
 
