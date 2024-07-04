@@ -2,7 +2,8 @@
 !theme plain
 
 actor Requester as "Requester"
-entity "Federatief Endpoint" as FE
+entity "Search Endpoint" as FE
+database "Directory" as Dir
 queue "Bron 1" as B1
 queue "Bron 2" as B2
 queue "Bron N" as BN

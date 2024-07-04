@@ -1,0 +1,259 @@
+{
+    "title": "Publication",
+    "x-stoplight": {
+        "id": "si4k6eus5t78z"
+    },
+    "version": "0.0.1",
+    "type": "object",
+    "description": "The publication object is the core of Open Index, acting as a metadata wrapper for objects and thereby forming the common link between different publications from, for example, WOO and OC.",
+    "tags": [
+        "Open Index"
+    ],
+    "properties": {
+        "id": {
+            "type": "string",
+            "format": "uuid",
+            "immutable": true,
+            "readOnly": true,
+            "description": "The unique identifier of this publication",
+            "example": "33f88aa9-6ac0-4f6c-967e-ecf787fd6a3d",
+            "x-stoplight": {
+                "id": "ekkdssgohmmmu"
+            }
+        },
+        "reference": {
+            "type": "string",
+            "immutable": true,
+            "maxLength": 255,
+            "description": "The unique human readable identifier of the underlaying source object of the publication, e.g. a case number or letter reference",
+            "x-stoplight": {
+                "id": "laq43hthtxg4e"
+            }
+        },
+        "title": {
+            "type": "string",
+            "format": "text",
+            "description": "The title (name) of a publication",
+            "minLength": 25,
+            "maxLength": 255,
+            "required": true,
+            "examples": [
+                "Advice on soil remediation due to PFAS"
+            ],
+            "x-stoplight": {
+                "id": "ux666bcgkla7k"
+            }
+        },
+        "summary": {
+            "type": "string",
+            "format": "text",
+            "description": "A short summary of the publication for the overview page",
+            "minLength": 50,
+            "maxLength": 255,
+            "required": true,
+            "examples": [
+                "This report provides expert advice on soil remediation strategies to address contamination from PFAS (Per- and Polyfluoroalkyl Substances), highlighting effective techniques and safety measures for environmental restoration."
+            ],
+            "x-stoplight": {
+                "id": "tv9zerxz8bx57"
+            }
+        },
+        "description": {
+            "type": "string",
+            "format": "text",
+            "description": "An extensive description of the publication for display on the publication page",
+            "maxLength": 2555,
+            "examples": [
+                "This comprehensive report addresses the pressing issue of soil contamination at the site of the now-demolished Raintree Industrial Complex, located on the outskirts of the fictional municipality of Greenborough. The industrial activities previously conducted at Raintree, primarily involving the manufacture of high-performance coatings, have left a significant environmental footprint, primarily due to the presence of Per- and Polyfluoroalkyl Substances (PFAS) in the soil.\n\nPFAS, commonly referred to as \"forever chemicals,\" are a group of man-made compounds known for their persistence in the environment and in the human body, where they can accumulate over time. The demolition of the Raintree Industrial Complex offers a unique opportunity to address this contamination before the land is repurposed for residential development.\n\nThe primary focus of this report is to offer detailed advice on the remediation strategies necessary to ensure the site is safe for future residential use. The following key actions are recommended:\n\nComprehensive Site Assessment: A thorough environmental assessment must be conducted to map the extent of PFAS contamination. This should include soil, groundwater, and surface water testing throughout the entire site.\nSelection of Remediation Techniques: Based on the levels and types of PFAS found, appropriate remediation techniques should be employed. Techniques such as soil washing, on-site thermal desorption, and the use of activated carbon filters can be effective in removing or containing PFAS compounds.\nCommunity Engagement and Transparency: Keeping the local community informed and involved through the remediation process is crucial. Regular updates, public consultations, and transparent reporting of findings and progress should be mandated.\nRegulatory Compliance and Monitoring: The project must comply with all local and national environmental regulations. A long-term monitoring plan should be established to ensure that the remediation efforts are sustained and that no further pollution occurs.\nPreparation for Residential Development: Once the site has been certified as meeting all safety standards for residential use, planning can commence for housing development. This phase should include an assessment of infrastructure needs and the potential impacts on local traffic, schools, and healthcare services.\nThis report underscores the necessity of a careful, scientifically-grounded approach to soil remediation, particularly in areas affected by industrial pollutants such as PFAS. By adhering to the outlined strategies, Greenborough can safely transform the former industrial site into a vibrant residential community, ensuring a safe and healthy environment for future generations."
+            ],
+            "x-stoplight": {
+                "id": "81z0bcl7q66yj"
+            }
+        },
+        "image": {
+            "type": "string",
+            "description": "An image for the publication, can be provided as a reference `url` or `base64` encoded image",
+            "x-stoplight": {
+                "id": "qakcmnijqpk0q"
+            }
+        },
+        "category": {
+            "type": "string",
+            "description": "The category within which the publication falls, these can be self-defined categories or predefined categories",
+            "minLength": 25,
+            "maxLength": 255,
+            "required": true,
+            "examples": [
+                "adviezen"
+            ],
+            "x-stoplight": {
+                "id": "bjfps184q6yiz"
+            }
+        },
+        "portal": {
+            "type": "string",
+            "format": "url",
+            "description": "An optional reference to a different publication page, for example in the RIS",
+            "examples": [
+                "httpsL//open.zuid-drecht.nl/publicaties/33f88aa9-6ac0-4f6c-967e-ecf787fd6a3d"
+            ],
+            "x-stoplight": {
+                "id": "vm2saw8r22nt7"
+            }
+        },
+        "publication": {
+            "description": "Date from when this publication should be discoverable, this can be a date in the future or past. Publications where this date is in the future or is blank will **NOT** be displayed in queries of the search API **UNLESS** the call is authenticated.",
+            "type": "string",
+            "format": "date-time",
+            "default": "now",
+            "examples": [
+                "2024-04-29 11:00:00"
+            ],
+            "x-stoplight": {
+                "id": "fp8vzofw0poqr"
+            }
+        },
+        "featured": {
+            "description": "`Featured` can be used to indicate that a publication should be discoverable on, for example, the homepage of a publication platform. From the API perspective, this property merely acts as a flag to find the items that are featured faster. The actual functionality of feature can thus vary per publication platform.",
+            "type": "boolean",
+            "default": false,
+            "examples": [
+                false,
+                true
+            ],
+            "x-stoplight": {
+                "id": "bdc6j983y6p7o"
+            }
+        },
+        "organization": {
+            "type": "object",
+            "$ref": "../models/Organisation.json",
+            "format": "json",
+            "description": "The organization belonging to this publication object, in theory multiple organizations can share one Open Index installation but this is discouraged.",
+            "x-stoplight": {
+                "id": "kph7susvepvrj"
+            }
+        },
+        "schema": {
+            "type": "string",
+            "format": "url",
+            "description": "Schemas add predictability and interpretability to the objects published under `data`. They describe the object contained in `data` and the conditions it must meet. For this, we use the [json-schema](https://json-schema.org/) which is itself part of [OAS 3](https://swagger.io/specification/). In the `schema` property, we expect a URL reference to a publicly accessible schema.json object. This could be on a website or GitHub, for instance. During `POST` and `PUT` actions on the publication object, the object in `data` is tested against this schema. Additionally, a consuming party can use the URL to retrieve the schema so they can interpret the object in `data`.",
+            "required": true,
+            "examples": [
+                "../models/metadata.tooi_adviezen.schema.json"
+            ],
+            "x-stoplight": {
+                "id": "fydtmoa99a2mo"
+            }
+        },
+        "status": {
+            "type": "string",
+            "description": "Attention! The publication object can only be included in an Open Index if the status is Published! The other statuses are intended for internal processing within the Woo Register.",
+            "required": true,
+            "oneOf": [
+                "New, Revised, Rejected, Published, Withdrawn, Archived"
+            ],
+            "x-stoplight": {
+                "id": "me9jbppqw02lj"
+            }
+        },
+        "attachments": {
+            "type": "array",
+            "items": {
+                "$ref": "../models/Attachment.json",
+                "x-stoplight": {
+                    "id": "cigvlliypc9kp"
+                }
+            },
+            "format": "json",
+            "x-stoplight": {
+                "id": "run30bq5p4q0h"
+            }
+        },
+        "attachment_count": {
+            "type": "integer",
+            "readOnly": true,
+            "description": "**Generated** The amount of attachments belonging to this publication",
+            "x-stoplight": {
+                "id": "ocrb6uaxp61fe"
+            }
+        },
+        "themes": {
+            "type": "array",
+            "format": "url",
+            "description": "The urls of the theme's associated with this publication",
+            "x-stoplight": {
+                "id": "am3nc113aid7h"
+            }
+        },
+        "data": {
+            "type": "array"
+        },
+        "anonymization": {
+            "type": "object",
+            "description": "Whether the attachment is properly annonymized and the results there of",
+            "properties": {
+                "anonymized": {
+                    "type": "boolean",
+                    "description": "If there was a succesfull anonymization",
+                    "x-stoplight": {
+                        "id": "lazj3s7mtl6se"
+                    }
+                },
+                "results": {
+                    "type": "string",
+                    "description": "Any results of the anonymization procces",
+                    "maxLength": 2500,
+                    "x-stoplight": {
+                        "id": "4rhwqfamgt5h9"
+                    }
+                }
+            },
+            "x-stoplight": {
+                "id": "kl4fhhptdi5zx"
+            }
+        },
+        "language": {
+            "type": "object",
+            "description": "The language and language level of the object",
+            "properties": {
+                "code": {
+                    "type": "string",
+                    "description": "ISO 639-1 standard language code",
+                    "example": "en-us",
+                    "maxLength": 7,
+                    "x-stoplight": {
+                        "id": "l89btnkl5nfsc"
+                    }
+                },
+                "level": {
+                    "type": "string",
+                    "description": "Common European Framework of Reference (CEFR) for language level, see https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages for a explanation and translation to ACTFL",
+                    "example": "A1",
+                    "oneof": [
+                        "0",
+                        "A1",
+                        "A2",
+                        "B1",
+                        "B2",
+                        "C1",
+                        "C2"
+                    ],
+                    "maxLength": 2,
+                    "x-stoplight": {
+                        "id": "bgk2gts6fveqn"
+                    }
+                }
+            },
+            "x-stoplight": {
+                "id": "h5jxclqamzf0v"
+            }
+        }
+    },
+    "required": [
+        "title",
+        "summary",
+        "category",
+        "schema"
+    ]
+}

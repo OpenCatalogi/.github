@@ -1,0 +1,69 @@
+{
+    "title": "Organization",
+    "$id": "https://openwoo.app/schemas/organization.schema.json", 
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+    "version": "0.0.1",
+    "type": "object",
+    "description": "An organization that provides a calagi, each oc api can only contain oné organisation. Multy tenancy is achieved trough api-keys",
+    "tags": ["Open Index"],
+    "properties": {
+        "id": {
+            "type": "string",
+            "format": "uuid",
+            "immutable": true,
+            "readOnly": true,
+            "description": "The unique identifier for this organization"
+        },
+        "title": {
+            "type": "string",
+            "format": "text",
+            "description": "The title (name) of a subject",
+            "minLength": 25,
+            "maxLength": 255,
+            "required": true
+        },
+        "summary": {
+            "type": "string",
+            "format": "text",
+            "description": "A short summary of the subject for the overview page",
+            "minLength": 50,
+            "maxLength": 2500,
+            "required": true
+        },
+        "description": {
+            "type": "string",
+            "format": "text",
+            "description": "An extensive description of the subject for display on the subject page",
+            "maxLength": 25000
+        },
+        "image": {
+            "type": "string",
+            "description": "An image for the subject, can be provided as a reference `url` or `base64` encoded image"
+        },
+        "oin": {
+            "type": "string",
+            "description": "Het OIN van deze organisatie"
+        },
+        "tooi": {
+            "type": "string",
+            "description": "Het tooi nummer van deze organisatie"
+        },
+        "rsin": {
+            "type": "string",
+            "format": "text",
+            "minLength": 9,
+            "maxLength": 9,
+            "required": true,
+            "immutable": true,
+            "description": "The RSIN of the Non-natural person being the organization that created the case. This must be a valid RSIN consisting of 9 digits and comply with the 11-test as described in https://en.wikipedia.org/wiki/Burgerservicenummer#11-proef."
+        },
+        "pki": {
+            "type": "string",
+            "description": "Het PKI certificaat wat word gebruik om namens deze organisatie te publiceren"
+        }
+    },
+    "required": [
+        "title",
+        "summary"
+    ]
+}

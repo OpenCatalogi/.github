@@ -1,0 +1,32 @@
+{
+    "openapi": "3.1.0"
+    "info": {
+        "title": "OpenCatalogi",
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:3000"
+        }
+    ],
+    "paths": {},
+    "components": {
+        "schemas": {
+            "Organisation": {
+                "$ref": "./Organisation.json"
+            },
+            "Publication": {
+                "$ref": "./Publication.json"
+            },
+            "Attachment": {
+                "$ref": "./Attachment.json"
+            },
+            "Catalogue": {
+                "$ref": "./Catalogue.json"
+            },
+            "Listing": {
+                "$ref": "./Listing.json"
+            }
+        }
+    }
+}

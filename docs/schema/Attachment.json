@@ -1,0 +1,127 @@
+{
+    "title": "Attachment",
+    "$id": "https://openwoo.app/schemas/attachment.schema.json",
+    "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+    "version": "0.0.1",
+    "type": "object",
+    "description": "An attachment object",
+    "tags": ["Open Index"],
+    "properties": {
+        "id": {
+            "type": "string",
+            "format": "uuid",
+            "immutable": true,
+            "readOnly": true,
+            "description": "The unique identifier of this subject"
+        },
+        "reference": {
+            "type": "string",
+            "immutable": true,
+            "maxLength": 255,
+            "description": "The unique human readable identifier of the underlaying source object of the publication, e.g. a case number or letter reference"
+        },
+        "title": {
+            "type": "string",
+            "format": "text",
+            "description": "The title (name) of a Attachment, if the title is left empty the file name wil be used instead",
+            "minLength": 25,
+            "maxLength": 255
+        },
+        "summary": {
+            "type": "string",
+            "format": "text",
+            "description": "A short summary of the subject for the overview page",
+            "minLength": 50,
+            "maxLength": 2500
+        },
+        "description": {
+            "type": "string",
+            "format": "text",
+            "description": "An extensive description of the subject for display on the subject page",
+            "maxLength": 25000
+        },
+        "labels": {
+            "type": "array",
+            "description": "Possible labels on the attachment that are used to assess what kind of file it is"
+        },
+        "url": {
+            "type": "string",
+            "format": "url",
+            "description": "The URL to the original document, this URL  should be accessible to Open Index. When there is an ‘POST` or `PUT` request to Open Index then Open Index wil try to get the original file from the URL and use it to fill the `documentText`,` type`, ` extension` and ` size` properties",
+            "required": true
+        },
+        "content": {
+            "type": "string",
+            "format": "text",
+            "readOnly": true,
+            "description": "The text from the original document, which is included in the search index to facilitate searching of documents. This value is automatically updated and thus cannot be set via the API"
+        },
+        "type": {
+            "type": "string",
+            "readOnly": true,
+            "description": "The MIME type of the attachment, determined at the time of reading and recorded for display in the UI. This value is automatically updated and thus cannot be set via the API"
+        },
+        "extension": {
+            "type": "string",
+            "readOnly": true,
+            "description": "The extension of the attachment, determined at the time of reading and recorded for display in the UI. This value is automatically updated and thus cannot be set via the API"
+        },
+        "size": {
+            "type": "integer",
+            "readOnly": true,
+            "description": "The size of the attachment in bytes, determined at the time of reading and recorded for display in the UI. This value is automatically updated and thus cannot be set via the API"
+        },
+        "anonymization": {
+            "type": "object",
+            "description": "Whether the attachment is properly annonymized and the results there of",
+            "properties": {
+                "anonymized": {
+                    "type": "boolean",
+                    "description": "If there was a succesfull anonymization"
+                },
+                "results": {
+                    "type": "string",
+                    "description": "Any results of the anonymization procces",
+                    "maxLength": 2500
+                }
+
+            }
+        },
+        "language": {
+            "type": "object",
+            "description": "The language and language level of the object",
+            "properties": {
+                "code": {
+                    "type": "string",
+                    "description": "ISO 639-1 standard language code",
+                    "example": "en-us",
+                    "maxLength": 7
+                },
+                "level": {
+                    "type": "string",
+                    "description": "Common European Framework of Reference (CEFR) for language level, see https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages for a explanation and translation to ACTFL",
+                    "example": "A1",
+                    "oneof": ["0","A1","A2","B1","B2","C1","C2"],
+                    "maxLength": 2
+                }
+            }
+        },
+        "version_of": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Is this attachment a version of another attachment, e.g. annonymized or pdf rendering of another document"
+        },
+        "hash": {
+            "type": "string",
+            "immutable": true,
+            "unique":true,
+            "readOnly": true,
+            "maxLength": 255,
+            "description": "**Generated** \nA file hash is essential for ensuring the uniqueness and integrity of files. It serves several critical purposes:\n\nUniqueness: Each file, regardless of its type, generates a unique hash value. Even a small change in the file content will result in a completely different hash, allowing for easy differentiation between files.\n\nIntegrity Verification: By comparing the hash value of a file at different times, one can verify that the file has not been altered. This is crucial for maintaining data integrity, as any unauthorized or accidental changes can be detected immediately.\n\nSecurity: Hashes play a vital role in security protocols. They ensure that the content has not been tampered with during transmission or storage, providing confidence in the file's authenticity.\n\nData Deduplication: In systems that store large amounts of data, file hashes help in identifying and eliminating duplicate files, thus saving storage space and improving efficiency.\n\nDigital Signatures and Certificates: Hashes are integral to the functioning of digital signatures and certificates, which verify the identity of the sender and ensure that the file has not been altered.\n\nOverall, file hashes are a fundamental tool in data management and cybersecurity, ensuring that files remain unique, intact, and secure."
+        }
+    },
+    "required": [
+        "id",
+        "url"
+    ]
+}
