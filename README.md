@@ -26,6 +26,8 @@ Het is aan applicaties zelf om hier vervolgens invulling aan te geven. Vanuit de
 - Iedere component in een eigen container (bedoeld voor grote organisaties)
 - Alle componenten op één gemeenschappenlijk framework (bedoeld voor kleine en middelgrote organisaties)
 
+Om dit te realiseren is de onderlinggende code opgedeeld in meerdere libaries die door de verschillende verschijningsvormen worden gedeeld.
+
 ![UML Diagram van OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/components.svg "UML Diagram van OpenCatalogi")
 
 Voor een uitgebreide opzet over de interne werking van catalogi kunt u kijken in de [architectuursectie](/docs/handleidingen/Architectuur.md). 
