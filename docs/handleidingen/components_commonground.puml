@@ -4,14 +4,21 @@ footer: Open Catalogi | Components
 header: Matrix
 
 
+package "Layer 5 (interactie)" {
  [Beheer Interface] as adminUI
  [Publicatie platform] as userUi
+}
+
+
+package "Layer 2 (api)" {
  [Gebruikers API] as objectsAPI
  [Zoeken API] as searchAPI
+}
 
-
+package "Layer 1 (data)" {
 database "Search index" as elastic
 database "Objecten opslag" as ORC
+}
 
 adminUI .down.> objectsAPI: Opslaan
 userUi <.down. searchAPI: Opzoeken

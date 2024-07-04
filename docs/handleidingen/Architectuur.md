@@ -4,6 +4,32 @@ OpenCatalogi biedt een manier om meerdere catalogi samen te laten werken als é�
 
 In de zin van GEMMA/NORA architectuur geeft OpenCatalogi hiermee invulling aan het concept generieke publicatievoorziening.
 
+
+![UML Diagram van OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/components_simple.svg "UML Diagram van OpenCatalogi")
+
+Als we vervolgens inzoemen op een catalogus bestaad die feitenlijk uit vier functionele delen (Beheer UI, Gebruikers UI, Beheer API, Zoeken API) en 2 opslag componenten (Zoekindex en Oojecten opslag). Daarbij is het interactie vlak van de API's gedefineerd in de Open Catalogi standaard([OAS]()) en het gedrag in [architectuur]().
+
+![UML Diagram van OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/components_commonground.svg "UML Diagram van OpenCatalogi")
+
+Het is aan applicaties zelf om hier vervolgens invulling aan te geven. Vanuit de Open catalogi community leveren we een aantal componenten die hier invulling aan geven. Hierbij hebben we er voor gekozen om de componenten in twee varianten te ontwikklen en een derde aan te bieden voor development en test doeleinden. 
+
+- **Iedere component in een eigen container** Bedoeld voor grote organisaties die graag alles op kubernetes draaien
+- **Alle componenten op één gemeenschappenlijk framework** Bedoeld voor kleine en middelgrote organisaties die gebruik amken van een (viruteel) linux serverpark of azure.
+- **Alles in één applicatie** Bedoeld voor locale ontwikkeling en testen, niet bedoeld voor productie doeleinden. 
+
+Om dit te realiseren is de onderlinggende code opgedeeld in meerdere libaries die door de verschillende verschijningsvormen worden gedeeld. Aan de hand van bovenstaande kunnen we redenlijk snel tot een applicatie weergave komen voor de gemiddelde overheid waarbij de volgende uitgangs punten doen:
+
+- Componenten voor laag 5 (interatie), 4 (Logica), en 2 (API)  hosten we op kubernetes
+- 1 (data) hosten we een dataplatform
+- Externe catalogi hebben de seach API nodig voor zoeken en directory uitwisseling
+- We hebben een synchronysaite service nodig die gegevens uit bron systeemen inleest
+- De gebruikersgroepen zijn Burger (inwoner, journalist, onderzoeker of raadslid), Medewerker en Beheerder
+- De gemidelde overheid is een kleine overheid, dan zetten we nextcloud in om gemakenlijk te hosten
+
+Dan komen we tot de volgende architectuurplaat
+
+![UML Diagram van OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/components.svg "UML Diagram van OpenCatalogi")
+
 ## Basisconfiguratie
 
 Het basisobject van OpenCatalogi is een catalogus. Elke catalogus is een verzameling publicaties. Publicaties vertegenwoordigen 'iets' dat moet worden gepubliceerd. Wat dat 'iets' is, wordt gedefinieerd door een metadatabeschrijving (gedefinieerd door een [schema.json](https://json-schema.org/)). Catalogi kunnen publicaties van verschillende typen bevatten (bijv. datasets van de [WHO](https://www.who.int/data/sets), verzoeken van de [WOO](https://www.rijksoverheid.nl/onderwerpen/wet-open-overheid-woo#:~:text=Is%20de%20informatie%20die%20je,dat%20aan%20je%20worden%20gemeld.), of repositories van [publiccode](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html)). Publicaties MOETEN bij ÉÉN catalogus horen, en elke catalogus MOET bij ÉÉN organisatie horen, wat betekent dat publicaties traceerbaar zijn naar organisaties via hun catalogus.

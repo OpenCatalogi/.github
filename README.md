@@ -17,31 +17,16 @@ Vanuit het Open Catalogi stelsel gaan we er vanuit dat een gebruiker bij een int
 
 ![UML Diagram van OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/components_simple.svg "UML Diagram van OpenCatalogi")
 
-Als we vervolgens inzoemen op een catalogus bestaad die feitenlijk uit vier functionele delen (Beheer UI, Gebruikers UI, Beheer API, Zoeken API) en 2 opslag componenten (Zoekindex en Oojecten opslag). Daarbij is het interactie vlak van de API's gedefineerd in de Open Catalogi standaard([OAS]()) en het gedrag in [architectuur]().
-
-![UML Diagram van OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/components_matrix.svg "UML Diagram van OpenCatalogi")
-
-Het is aan applicaties zelf om hier vervolgens invulling aan te geven. Vanuit de Open catalogi community leveren we een aantal componenten die hier invulling aan geven. Hierbij hebben we er voor gekozen om de componenten in twee varianten te ontwikklen. 
-
-- **Iedere component in een eigen container** Bedoeld voor grote organisaties die graag alles op kubernetes draaien
-- **Alle componenten op één gemeenschappenlijk framework** Bedoeld voor kleine en middelgrote organisaties die gebruik amken van een (viruteel) linux serverpark of azure.
-- **Alles in één applicatie** Bedoeld voor locale ontwikkeling en testen, niet bedoeld voor productie doeleinden. 
-
-Om dit te realiseren is de onderlinggende code opgedeeld in meerdere libaries die door de verschillende verschijningsvormen worden gedeeld.
-
-![UML Diagram van OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/components.svg "UML Diagram van OpenCatalogi")
-
 Voor een uitgebreide opzet over de interne werking van catalogi kunt u kijken in de [architectuursectie](/docs/handleidingen/Architectuur.md). 
 
 ## Landelijke diensten
 Vanuit de gedachte van een federatief stelsel is iedere deelnemer verantwoornlijk voor zijn/haar eigen inbreng aan installaties en interfaces. Toch is het handig als er zo nu en dan al een en ander draaid om op terug te vallen. Vanuit de Open Catalogi community worden daarom de volgende diensten ook als achtervang aangeboden.
 
-1. Op [opencatalogi.nl]() draaid een instantie van de interface waarmee gezocht kan worden in het federatief netwerk. Hiermee maken we de data visueel en is het makenlijk te controlleren of je publicaties goed doorkomen. Het is echter een uitgangspunt dat iedere organisatie haar eigen publicaite voorziening treft.
+1. Op [opencatalogi.nl](https://opencatalogi.nl/) draaid een instantie van de interface waarmee gezocht kan worden in het federatief netwerk. Hiermee maken we de data visueel en is het makenlijk te controlleren of je publicaties goed doorkomen. Het is echter een uitgangspunt dat iedere organisatie haar eigen publicaite voorziening treft.
 2. Op [opencatalogi.nl/catalogi]() geven we een visuele representatie van de landelijke directory zodat inzichtenlijk is welke catalogi bechickbaar zijn.
 3. Vanuit de landelijke instantie draaien we een catolgus [github]() de gekopeld is aan github (voor het automatisch inzichtenlijk maken van open source projecten).
 4. Vanuit de landelijke instantie draaien we een catolgus [gitlab]() de gekopeld is aan gitlab (voor het automatisch inzichtenlijk maken van open source projecten).
 4. Vanuit de landelijke instantie draaien we een catolgus [opencatalogi]() waarmee we [metadata formats]() beschickbaar stellen voor hergebruik.
-
 
 Wat OpenCatalogi uniek maakt, is dat de frontend serverless (via GitHub) kan draaien, waardoor deelnemende organisaties OpenCatalogi niet zelf hoeven te installeren om het te kunnen gebruiken. Zowel de frontend als de gegevens kunnen worden gehost op GitHub.
 
