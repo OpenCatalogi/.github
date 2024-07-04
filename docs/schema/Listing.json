@@ -1,0 +1,69 @@
+{
+    "title": "Listing",
+    "x-stoplight": {
+        "id": "etf6dier69xua"
+    },
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string",
+            "x-stoplight": {
+                "id": "t89khy9vktahz"
+            }
+        },
+        "title": {
+            "type": "string",
+            "x-stoplight": {
+                "id": "6zjzjxlcbmd8m"
+            }
+        },
+        "summary": {
+            "type": "string",
+            "x-stoplight": {
+                "id": "16dz3jq5h4rvv"
+            }
+        },
+        "description": {
+            "type": "string",
+            "x-stoplight": {
+                "id": "4obkujy1d1rj2"
+            }
+        },
+        "search": {
+            "type": "string",
+            "x-stoplight": {
+                "id": "qjuwcfm76rfhf"
+            }
+        },
+        "metadata": {
+            "type": "string",
+            "x-stoplight": {
+                "id": "juc112d3j38c1"
+            }
+        },
+        "status": {
+            "type": "string",
+            "x-stoplight": {
+                "id": "j01chmsbk2026"
+            }
+        },
+        "lastSync": {
+            "type": "string",
+            "x-stoplight": {
+                "id": "k3kf8csm60254"
+            }
+        },
+        "default": {
+            "type": "string",
+            "x-stoplight": {
+                "id": "g7curfthewpi1"
+            }
+        },
+        "available": {
+            "type": "string",
+            "x-stoplight": {
+                "id": "l7hy2jzu83kvy"
+            }
+        }
+    }
+}

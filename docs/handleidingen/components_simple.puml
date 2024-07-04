@@ -1,0 +1,26 @@
+@startuml
+title: Open Catalogi
+footer: Open Catalogi | Components
+header: Simpel
+
+cloud "Internet"{
+actor "Gebruiker" as user
+
+}
+
+
+cloud "org 1" {
+ [Catalogus] as cat1
+ [Catalogus] as cat3
+}
+
+cloud "org 2" {
+ [Catalogus] as cat2
+}
+
+
+user .down.> cat1: Opzoeken
+cat1 .right.> cat2: Gebruikt
+cat1 .left.> cat3: Gebruikt
+
+@enduml
