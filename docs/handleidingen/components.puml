@@ -26,18 +26,18 @@ package "Bronnen" {
 
 cloud "Kubernetes"{
 
-package "Layer 5 (interaction)" {
-package "React NL Design" {
- [User Interface]  as userUi
+package "Layer 5 (interactie)" {
+package "Publicatie platform" {
+ [React NL Design]  as userUi
 }
 
-package "Vue NL Design" {
- [Admin Interface]  as adminUi
+package "Beheer Interface" {
+ [Vue NL Design]  as adminUi
 }
 }
 
 
-package "Layer 4 (Logic)" as layer4 {
+package "Layer 4 (logica)" as layer4 {
  [Synchronysations]  as service
 }
 
@@ -46,11 +46,11 @@ package "Layer 2 (API)" as layer2 {
 
 
 package "Next Cloud framework"{
-package "Search API" {
+package "Zoeken API" {
  [Open Index] as searchAPI
 }
 
-package "CRUD API" {
+package "Beheer  API" {
  [Open Registers] as objectsAPI
 }
 }
