@@ -4,7 +4,6 @@ OpenCatalogi biedt een manier om meerdere catalogi samen te laten werken als é�
 
 In de zin van GEMMA/NORA architectuur geeft OpenCatalogi hiermee invulling aan het concept generieke publicatievoorziening.
 
-
 ![UML Diagram van OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/components_simple.svg "UML Diagram van OpenCatalogi")
 
 Als we vervolgens inzoemen op een catalogus bestaad die feitenlijk uit vier functionele delen (Beheer UI, Gebruikers UI, Beheer API, Zoeken API) en 2 opslag componenten (Zoekindex en Oojecten opslag). Daarbij is het interactie vlak van de API's gedefineerd in de Open Catalogi standaard([OAS]()) en het gedrag in [architectuur]().
@@ -33,6 +32,32 @@ Dan komen we tot de volgende architectuurplaat
 ## Basisconfiguratie
 
 Het basisobject van OpenCatalogi is een catalogus. Elke catalogus is een verzameling publicaties. Publicaties vertegenwoordigen 'iets' dat moet worden gepubliceerd. Wat dat 'iets' is, wordt gedefinieerd door een metadatabeschrijving (gedefinieerd door een [schema.json](https://json-schema.org/)). Catalogi kunnen publicaties van verschillende typen bevatten (bijv. datasets van de [WHO](https://www.who.int/data/sets), verzoeken van de [WOO](https://www.rijksoverheid.nl/onderwerpen/wet-open-overheid-woo#:~:text=Is%20de%20informatie%20die%20je,dat%20aan%20je%20worden%20gemeld.), of repositories van [publiccode](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html)). Publicaties MOETEN bij ÉÉN catalogus horen, en elke catalogus MOET bij ÉÉN organisatie horen, wat betekent dat publicaties traceerbaar zijn naar organisaties via hun catalogus.
+
+## API's
+De API's van Open Catalogi zijn voor nu nog terug te vinden op https://conduction.stoplight.io/docs/open-catalogi. Het is een wens om deze in de zomer naar redocly te verplaatsen.
+
+## Codebases
+
+| Codebase | Rol | Organisatie | Licentie |
+|----------|------------------------------|             |          |  
+| [Github](https://github.com/ConductionNL/web-app)| Publicatie Platform    |  Open Catalogi            |          |  
+| [Github](https://github.com/ConductionNL/opencatalogi)| Beheer API, Zoeken API, Beheer Interface    | Open Catalogi            |  EUPL        |  
+| [Github](https://github.com/maykinmedia/objects-api)| ORC (objecten opslag)    | Maykin Media            |  EUPL        |  
+| [Github](https://github.com/open-zaak/open-zaak)        | DRC (documenten opslag)      | Maykin Media            |  EUPL        |  
+| [Github](https://github.com/elastic/elasticsearch)         | Elastic Search      | Elastic            |  SPL + EL        |  
+| [Github](https://github.com/OpenCatalogi/OpenCatalogiBundle)         | Synchronysatie Service      | Conduction            |  EUPL        |  
+
+
+Hierop zijn een paar opmerkingen te maken
+- We hebben recentenlijk de keuze gemaakt om over te stappen op nextcloud, meer hierover kan je teruglezen op [https://documentatie.opencatalogi.nl/Handleidingen/Nextcloud/](https://documentatie.opencatalogi.nl/Handleidingen/Nextcloud/).
+- Het inzetten van ORC, DRC en Elastic zijn vanuit Open Catalogi gezien (geadviseerde) keuzes. Het is ook mogenlijk om alles in een interne database of externe object store op te slaan.
+- De Synchronysatie service draaid momenteel nog op het common gateway platform, er is echter voor gekozen om ook deze over te brengen naar nextcloud.
+- Beheer API en Zoeken API worden samen met de beheer interface geleverd door één code base, een praktische inrichtingskeuze die we hebben overgenomen van Open Zaak. Voor organisaties die componenten graag splitsen in containers zijn ze echter ook los instaleerbaar.
+- Het is ook mogenlijk om de zoeken API direct vanuit elastic search uit te leveren, dat heeft een aanzienlijk performance voordeel. Maar verhinderd ook het federatief zoeken.
+- Voor het ORC en DRC zijn aanvullende compenten beschickbaar/benodigd (OTC, Notificaties etc) die laten we hier voor het overzicht even weg
+
+## Functionaliteit Beheer omgeving
+Een flink stuk van de randvoorwaardenlijke functionaleit van Open Catlogi (zoals ADFS) wordt afgevangen in de Beheer interface.
 
 ## Federatief zoeken
 

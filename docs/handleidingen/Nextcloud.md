@@ -1,6 +1,10 @@
-# Waarom Conduction Overstapt naar Nextcloud
+# Waarom we overstappen naar Nextcloud
 
-Bij Conduction hebben we na jaren van ontwikkeling op ons eigen API-platform geconcludeerd dat bepaalde elementen beter opgelost kunnen worden met een ander framework. Onze keuze viel op Nextcloud, een open source framework, dat perfect aansluit bij onze behoeften aan bestandsopslag, ADFS-authenticatie en beveiliging.
+Alle eerste iteraties van Open Catalogi draaiden op het [https://api-platform.com/](api platform) freamework van [digital state](https://digitalstate.io/). Recentenlijk zijn we begonnen met de overstap naar [nextcloud](https://nextcloud.com/), waarom zou je dat in hemelsnaam doen?
+
+Wel innovatie betekend expirimenteren, 5 dingen proberen en er 4 loslaten. En hellaas is API platform voor ons een van de dingen die we los gaan laten. Niet omdat het een slecht framework is. In tegendeel, het is een technisch sterk framework voor register ontwikkeling. Maar het is ook abstract, technisch niet super makenlijk uit te rollen.
+
+Daarnaast zien we dat nextcloud (met europese steun) een sterke opmars maakt bij (buitenlandse) overheden
 
 ## Redenen voor de Overstap
 
