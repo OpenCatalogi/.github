@@ -14,7 +14,7 @@ Overheden en leveranciers kunnen op een aantal manieren bijdragen aan dit projec
 
 ## Deelname OpenCatalogi
 
-Als uw organisatie geïntreseerd is in deelname aan de OpenCatalogi-coalitie kunt u contact opnemen via [jaap.vanvliet@dimpact.nl](jaap.vanvliet@dimpact.nl)
+Als uw organisatie geïntreseerd is in deelname aan de OpenCatalogi-coalitie kunt u contact opnemen via [jaap.vanvliet@dimpact.nl](mailto:jaap.vanvliet@dimpact.nl)
 
 ## Deelnemers
 

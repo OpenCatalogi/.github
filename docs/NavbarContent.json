@@ -11,15 +11,41 @@
     }
   },
   {
-    "label": "Bijdragen",
+    "label": "Standaard",
     "type": "internalMarkdown",
     "current": {
-      "pathname": "/Docs/CONTRIBUTING"
+      "pathname": "/Docs/Standaard"
     },
     "handleClick": {
       "internalMarkdown": {
         "directoryName": "Docs",
-        "fileName": "CONTRIBUTING"
+        "fileName": "Standaard"
+      }
+    }
+  },
+  {
+    "label": "Componenten",
+    "type": "internalMarkdown",
+    "current": {
+      "pathname": "/Docs/Componenten"
+    },
+    "handleClick": {
+      "internalMarkdown": {
+        "directoryName": "Docs",
+        "fileName": "Componenten"
+      }
+    }
+  },
+  {
+    "label": "Projecten",
+    "type": "internalMarkdown",
+    "current": {
+      "pathname": "/Docs/Projecten"
+    },
+    "handleClick": {
+      "internalMarkdown": {
+        "directoryName": "Docs",
+        "fileName": "Projecten"
       }
     }
   },
@@ -27,12 +53,12 @@
     "label": "Organisatie",
     "type": "internalMarkdown",
     "current": {
-      "pathname": "/Docs/GOVERNANCE"
+      "pathname": "/Docs/Organisatie"
     },
     "handleClick": {
       "internalMarkdown": {
         "directoryName": "Docs",
-        "fileName": "GOVERNANCE"
+        "fileName": "Organisatie"
       }
     }
   },
