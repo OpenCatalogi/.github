@@ -1,6 +1,10 @@
 # Projecten
 Naast de generieke organisatie zijn er een aantal project groepen actief met (deel) projecten aan de hand van open catalogi.
 
+## Core
+**Product Owner**: [Ronald van Cortenberghe](mailto:r.vancortenberghe@rotterdam.nl)(Gemeente Rotterdam)
+Het core project faciliteerd de architectuur, standaard, kern componenten en communicatie van Open catalogi
+
 ## Software Catalogus
 **Product Owner**: [Ronald van Cortenberghe](mailto:r.vancortenberghe@rotterdam.nl)(Gemeente Rotterdam)
 Van oorsprong is het Open Catalogi als project begonnen om een alternatief te bieden voor de [commonground componenten catalogus]() (wat later het [portfolio](https://app.powerbi.com/view?r=eyJrIjoiOWU4MjlmYTktNjE2MS00OGRhLTgwMjYtZWZhNTFhZmRhZjI2IiwidCI6IjZlZjAyOWFiLTNmZDctNGQ5OC05YjBlLWQxZjVmZWRlYTZkMSIsImMiOjh9&pageName=ffe4f1f9018d7bd035bc) werdt) waarbij het niet langer noodzakenlijk is om infortmatie te brengen. 

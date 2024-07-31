@@ -1,5 +1,5 @@
 # Wat is Open Catalogi?
-Open Catalogi bestaad uit drie onderdelen
+Open Catalogi bestaad uit vier onderdelen
 
 1. Een (architectuur) standaard voor het fereatief delen en vinden van gegevens
 2. Open Source componenent en applicaties die invulling geven aan die standaard
@@ -7,7 +7,7 @@ Open Catalogi bestaad uit drie onderdelen
 4. Een organisatie die al deze dingen coördineerd
 
 **De Architectuur**
-Ww gaan er vanuit dat een gebruiker bij een interface een zoekvraag steld aan een catalogus, de catalogus maakt vervolgens gebruik van bij hem bekende andere catalogi voor het beantwoorden van de vraag. Het federatief stelsel wordt daarmee gefaciliteerd door catalogi die onderling samenwerken
+We gaan er vanuit dat een gebruiker bij een interface een zoekvraag steld aan een catalogus, de catalogus maakt vervolgens gebruik van bij hem bekende andere catalogi voor het beantwoorden van de vraag. Het federatief stelsel wordt daarmee gefaciliteerd door catalogi die onderling samenwerken
 
 ![UML Diagram van OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/components_simple.svg "UML Diagram van OpenCatalogi")
 
