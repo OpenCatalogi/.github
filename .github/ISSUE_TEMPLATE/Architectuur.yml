@@ -1,7 +1,7 @@
-name: Feature request
-description: Request a feature
-title: "[feature]: As a user I want ....."
-labels: [feature-request]
+name: Architectuur Vraag/Voorstel
+description: Stel een vraag of doe een voorstel over de standaard
+title: "[architectuur]: Als een [gebruikersrol] wil ik [functionaliteit], zodat [waardetoevoeging]"
+labels: [architecture]
 assignees:
   - rubenvdlinde
   - RonaldvCortenberghe
@@ -9,21 +9,21 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before proposing a new feature, please ensure to double-check our backlog to avoid duplications. We structure our user stories in an[agile format](https://www.agilealliance.org/glossary/user-story-template/) 
+        Voordat je een nieuwe vraag stelt of een voorstel indient, controleer dan eerst onze backlog om duplicaties te voorkomen. We structureren onze user stories in een [agile formaat](https://www.agilealliance.org/glossary/user-story-template/) 
         
-        - Include the *Who* in the title. For instance, `As a user, I want …`
-        - Incorporate the *What* into the title as well. For example, `… a robust site map`
-        - Define the *Why* in the first paragraph of the user story
+        - Vermeld de *Wie* in de titel. Bijvoorbeeld, `Als een gebruiker wil ik ...`
+        - Verwerk de *Wat* ook in de titel. Bijvoorbeeld, `... een duidelijke standaard`
+        - Definieer de *Waarom* in de eerste alinea van de user story
         ---
 
-        We appreciate the time you've taken to suggest a new feature. To expedite the processing of this request, we need certain details.
+        We waarderen de tijd die je neemt om een vraag te stellen of een voorstel te doen. Om de verwerking te versnellen, hebben we bepaalde details nodig.
 
   - type: textarea
     id: why
     attributes:
-      placeholder: "So ...."
-      label: What is the purpose of your request? Why is it necessary?
-      description: Provide a clear and precise description of the issue you're aiming to address.. 
+      placeholder: "Dus ...."
+      label: Wat is het doel van je vraag of voorstel? Waarom is het noodzakelijk?
+      description: Geef een duidelijke en nauwkeurige beschrijving van het probleem of de verbetering die je wilt adresseren.
     validations:
       required: true
   - type: textarea
@@ -33,28 +33,23 @@ body:
         1. ...
         2. ...
         3. ...       
-      label: The acceptance criteria for the proposed feature
-      description: Detail the conditions that, if met, would mean your request has been successfully implemented.
+      label: De acceptatiecriteria voor het voorstel
+      description: Beschrijf de voorwaarden waaraan moet worden voldaan om je vraag beantwoord of voorstel succesvol geïmplementeerd te beschouwen.
     validations:
       required: true
   - type: dropdown
     id: component-location
     attributes:
-      label: Implementation Area Include any other pertinent details or screenshots related to the feature request.
-      description: Where should this change occur?
+      label: Implementatiegebied
+      description: Waar moet deze wijziging plaatsvinden?
       options:
-        - Startpagina(Homepage)
-        - Componenten overzicht (zoekpagina)
-        - Componenten detailpagina
-        - Organisatie detailpagina
-        - Documentatiepagina's
-        - Beheerschermen
-        - API
-        - Somewhere else (please specify in the description)
+        - Architectuurdocumentatie
+        - Standaardenoverzicht
+        - Iets anders (specificeer dit in de beschrijving)
     validations:
       required: true
   - type: textarea
     id: context
     attributes:
-      label: Additional context
-      description:  Include any other pertinent details or screenshots related to the feature request.
+      label: Aanvullende context
+      description: Voeg alle andere relevante details of screenshots met betrekking tot je vraag of voorstel toe.

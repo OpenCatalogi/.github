@@ -1,5 +1,5 @@
-name: Bug report
-description: File a bug report
+name: Bugrapport
+description: Meld een bug
 title: "[Bug]: "
 labels: [bug]
 assignees:
@@ -9,56 +9,56 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before opening a bug report, please search for the behaviour in the existing issues. 
+        Voordat je een bugrapport opent, zoek dan eerst naar het gedrag in de bestaande issues.
         
         ---
         
-        Thank you for taking the time to file a bug report. To address this bug as fast as possible, we need some information.
+        Bedankt dat je de tijd neemt om een bugrapport in te dienen. Om deze bug zo snel mogelijk op te lossen, hebben we wat informatie nodig.
   - type: input
     id: os
     attributes:
-      label: Operating system
-      description: "Which operating system do you use? Please provide the version as well."
+      label: Besturingssysteem
+      description: "Welk besturingssysteem gebruik je? Geef ook de versie op."
       placeholder: "macOS Big Sur 11.5.2"
     validations:
       required: true
   - type: dropdown
     id: component-location
     attributes:
-      label: Project Location
-      description: Where did you find the bug?
+      label: Projectlocatie
+      description: Waar heb je de bug gevonden?
       options:
         - Frontend
         - Backend
-        - Somewhere else (please specify in the description!)
+        - Iets anders (specificeer dit in de beschrijving!)
     validations:
       required: true
   - type: dropdown
     id: installation
     attributes:
-      label: Instalation Location
-      description: Where is the project located?
+      label: Installatielocatie
+      description: Waar is het project geïnstalleerd?
       options:
-        - Local
-        - Remote
-        - Somewhere else (please specify in the description!)
+        - Lokaal
+        - Extern
+        - Iets anders (specificeer dit in de beschrijving!)
     validations:
       required: true
   - type: textarea
     id: bug-description
     attributes:
-      label: Bug description
-      description: What happened?
+      label: Bugbeschrijving
+      description: Wat gebeurde er?
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: Steps to reproduce
-      description: Which steps do we need to take to reproduce this error?
+      label: Stappen om te reproduceren
+      description: Welke stappen moeten we nemen om deze fout te reproduceren?
   - type: textarea
     id: logs
     attributes:
-      label: Relevant log output
-      description: If applicable, provide relevant log output. No need for backticks here.
+      label: Relevante log-output
+      description: Indien van toepassing, geef relevante log-output. Geen backticks nodig hier.
       render: shell
