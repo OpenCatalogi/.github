@@ -6,7 +6,6 @@ OpenCatalogi is een standaard die eigenlijk bestaat uit een verzameling van ande
 - [NL GOV profile for OAuth 2.0](https://www.forumstandaardisatie.nl/open-standaarden/nl-gov-assurance-profile-oauth-20)
 - [FSC](https://vng.nl/projecten/federatieve-service-connectiviteit-fsc)
 - [DCAT](https://www.forumstandaardisatie.nl/open-standaarden/dcat)
-- [APNL]()
 - [NL API-strategie](https://docs.geostandaarden.nl/api/API-Strategie/)
 - [MDTO](https://www.nationaalarchief.nl/archiveren/mdto)
 - [Publiccode](https://publiccode.eu/nl/)
