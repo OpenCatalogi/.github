@@ -9,7 +9,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Voordat je een nieuwe functie voorstelt, controleer dan onze backlog om duplicaties te voorkomen. We structureren onze user stories in een [agile formaat](https://www.agilealliance.org/glossary/user-story-template/) 
+        Voordat je een nieuwe functie voorstelt, controleer dan eerst onze backlog om duplicaties te voorkomen. We structureren onze user stories in een [agile formaat](https://www.agilealliance.org/glossary/user-story-template/) 
         
         - Vermeld de *Wie* in de titel. Bijvoorbeeld, `Als een gebruiker wil ik ...`
         - Verwerk de *Wat* ook in de titel. Bijvoorbeeld, `... een robuuste site map`
@@ -29,7 +29,7 @@ body:
   - type: textarea
     id: acceptance
     attributes:
-      placeholder:|
+      placeholder: |
         1. ...
         2. ...
         3. ...       
@@ -45,12 +45,12 @@ body:
       options:
         - Startpagina
         - Componenten overzicht (zoekpagina)
-        - Componentendetailpagina
-        - Organisatiedetailpagina
+        - Componenten detailpagina
+        - Organisatie detailpagina
         - Documentatiepagina's
         - Beheerschermen
         - API
-        - Iets anders (geef dit aan in de beschrijving)
+        - Iets anders (specificeer dit in de beschrijving)
     validations:
       required: true
   - type: textarea
