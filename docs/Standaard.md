@@ -3,13 +3,14 @@
 OpenCatalogi is een standaard die eigenlijk bestaat uit een verzameling van andere standaarden:
 
 - [NL Gov profile for cloud events](https://www.logius.nl/domeinen/gegevensuitwisseling/nl-gov-profile-cloudevents)
-- [NL GOV profile for OAuth 2.0](https://www.forumstandaardisatie.nl/open-standaarden/nl-gov-assurance-profile-oauth-20) [FSC](https://vng.nl/projecten/federatieve-service-connectiviteit-fsc)
+- [NL GOV profile for OAuth 2.0](https://www.forumstandaardisatie.nl/open-standaarden/nl-gov-assurance-profile-oauth-20)
+- [FSC](https://vng.nl/projecten/federatieve-service-connectiviteit-fsc)
 - [DCAT](https://www.forumstandaardisatie.nl/open-standaarden/dcat)
 - [APNL]()
 - [NL API-strategie](https://docs.geostandaarden.nl/api/API-Strategie/)
 - [MDTO](https://www.nationaalarchief.nl/archiveren/mdto)
 - [Publiccode](https://publiccode.eu/nl/)
-- [TOOI](<https://standaarden.overheid.nl/tooi>
+- [TOOI](https://standaarden.overheid.nl/tooi)
 
 Deze standaarden bescrhijven gemeenschappelijk hoe catalogi kunnen worden vormgegeven op een manier waardoor ze gezamenlijk één virtuele catalogus vormen. Hierdoor blijft de data bij de bron (organisatie) en zijn er geen landelijke indexen nodig. Aanvullingen op OpenCatalogi moeten dus ook altijd conform deze standaarden worden toegevoegd.
 
