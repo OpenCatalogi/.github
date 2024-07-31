@@ -27,6 +27,10 @@ Het beschickbaar stellen van high value datasets voor de t.b.v. (WHO)[]
 
 - De metadata defintie DCAT
 
+## Regels.overheid.nl
+**Product Owner**: [Steven Gort](mailto:steven.Gort@ictu.nl)(Steven Gort)
+
+
 ## OpenWoo.app 
 **Product Owner**: [Ruben van der Linde](mailto:ruben@conduction.nl)(Conduction)
 Het doorzoekbaar maken van data t.b.v. (WOO)[]

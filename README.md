@@ -1,17 +1,19 @@
 # Wat is Open Catalogi?
 Open Catalogi bestaad uit vier onderdelen
 
-1. Een (architectuur) standaard voor het fereatief delen en vinden van gegevens
-2. Open Source componenent en applicaties die invulling geven aan die standaard
-3. Projecten de gebruik maken van deze componenten 
-4. Een organisatie die al deze dingen coördineerd
+1. **Een standaard** voor het federatief delen en vinden van gegevens
+2. **Open Source componenenten** en applicaties die invulling geven aan die standaard
+3. **Projecten** die gebruik maken van deze componenten 
+4. **Een organisatie** die al deze dingen coördineerd
 
-**De Architectuur**
+**De Standaard**
 We gaan er vanuit dat een gebruiker bij een interface een zoekvraag steld aan een catalogus, de catalogus maakt vervolgens gebruik van bij hem bekende andere catalogi voor het beantwoorden van de vraag. Het federatief stelsel wordt daarmee gefaciliteerd door catalogi die onderling samenwerken
 
 ![UML Diagram van OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/components_simple.svg "UML Diagram van OpenCatalogi")
 
 Voor een uitgebreide opzet over de interne werking van catalogi kunt u kijken in onder [standaard](/Docs/Standaard/). 
+
+Het is de ambitie van Open catalogi om deze standaard Q2 2025 te laten opnemen op de standaarden lijst van forum standaardisatie.
 
 **Componenten**
 Vanuit de Open Catalogi gemeenschap worden een aantal open source componenten onderhouden en ontwikkeld die organisaties helpen met het implementeren van Open Catalogi, de belangrijkste daarvan zijn:
@@ -39,7 +41,7 @@ Voor meer details kunt u kijken onder [organisatie](Docs/Organisatie/).
 - Q3 2024
 - Q4 2024
 - Q1 2025
-- Q2 2025
+- Q2 2025, Open catalogi tot landelijke standaard
 
 **Vragen/Problemen**
 Heeft u vragen, opmerkingen, aanbevelingen of problemen met de architectuur van Open Catalogi of een van de door Open Catalogi beheerde componenten? Dien hem dan vooral in via [github](https://github.com/OpenCatalogi/.github/issues/new/choose).
