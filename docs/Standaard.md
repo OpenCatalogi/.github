@@ -31,11 +31,3 @@ Vanuit de gedachte van een federatief stelsel is iedere deelnemer verantwoornlij
 
 Wat OpenCatalogi uniek maakt, is dat de frontend serverless (via GitHub) kan draaien, waardoor deelnemende organisaties OpenCatalogi niet zelf hoeven te installeren om het te kunnen gebruiken. Zowel de frontend als de gegevens kunnen worden gehost op GitHub.
 
-## Varianten
-Hoewel Open Catalogi zich in princiepe leent voor het publiceren van alles (het besschrijft immers alleen een stelsel van samenwerkende catalogi) zien we binnen het poject een aantal varianten naar voren komen:
-
-- **Software catalogus** Van oorsprong is het Open Catalogi als project begonnen om een alternatief te bieden voor de [commonground componenten vatalogus]() waarbij het niet langer noodzakenlijk is om infortmatie te brengen. In plaatsdaarvan wordt deze opgehaald aan de hand van een publiccode.yaml bestand.
-- **OpenWoo.app** Het doorzoekbaar maken van data t.b.v. (WOO)[]
-- **Datacatalogus** Het beschickbaar stellen van high value datasets voor de t.b.v. (WHO)[] 
-
-## Snelle Start

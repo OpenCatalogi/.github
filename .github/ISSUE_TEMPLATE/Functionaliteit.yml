@@ -1,5 +1,5 @@
-name: Feature request
-description: Request a feature
+name: Functionele vraag
+description: Een vraag over bestaande of nieuwe functionaliteit van een Open Catalogi component
 title: "[feature]: As a user I want ....."
 labels: [feature-request]
 assignees:
