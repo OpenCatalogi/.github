@@ -23,6 +23,11 @@ Daarmee word de structuur zo als we die doorgaans zien
 
 ![Basis Componenten](../handleidingen/components_commonground_dms.svg)
 
+## Scheiding van architectuur en uitvoering
+Vanuit commonground plaatsen we binne [het 5 lagen model](https://componentencatalogus.commonground.nl/5-lagen-model) API's als losse laag en teken we ze in als losse componenten. Of dit in de uitvoering ook moet leiden tot losse applicatie componenten (zoals beschreven door archimate) is nog maar de vraag.
+
+Vanuit Open Catalogi hanteren we één next cloud applicatie die bijde api's kan uitleveren, hiermee laten we de keuze aan overheden of zij wel of geen losse installatie willen per API. 
+
 ## Alternatieve naamgeving van componenten en applicaties
 Vanuit commonground maken we een verschil tussen architecturele componenten (API's databases etc) en instaleerbare componenten. Een goed voorbeeld hiervan is [open zaak](https://openzaak.org/) waarbij één applicatie meerdere
 
