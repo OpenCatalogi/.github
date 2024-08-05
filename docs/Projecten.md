@@ -5,11 +5,13 @@ Naast de generieke organisatie zijn er een aantal projectgroepen actief met (dee
 ## Core
 
 **Product Owner**: [Ronald van Cortenberghe](mailto:r.vancortenberghe@rotterdam.nl)(Gemeente Rotterdam)
+
 Het core project faciliteert de architectuur, standaard, kerncomponenten en communicatie van Opencatalogi.
 
 ## Software Catalogus
 
 **Product Owner**: [Ronald van Cortenberghe](mailto:r.vancortenberghe@rotterdam.nl)(Gemeente Rotterdam)
+
 Van oorsprong is het OpenCatalogi als project begonnen om een alternatief te bieden voor de [Common Ground componentencatalogus](https://componentencatalogus.commonground.nl/) (wat later het [portfolio](https://app.powerbi.com/view?r=eyJrIjoiOWU4MjlmYTktNjE2MS00OGRhLTgwMjYtZWZhNTFhZmRhZjI2IiwidCI6IjZlZjAyOWFiLTNmZDctNGQ5OC05YjBlLWQxZjVmZWRlYTZkMSIsImMiOjh9&pageName=ffe4f1f9018d7bd035bc) werd), waarbij het niet langer noodzakelijk is om informatie te brengen.
 
 In plaats daarvan wordt deze opgehaald aan de hand van een `publiccode.yaml`-bestand dat in de repository wordt geplaatst. Makkenlijker kunnen we het niet maken, de codebase maakt daarmee zichzelf kenbaar, vindbaar en alle beschrijvingen blijven daar waar die hoort, bij de bron(code).
@@ -27,6 +29,7 @@ Vanuit dit project wordt beschikbaar gesteld:
 ## Generieke datalandschap
 
 **Product Owner**: [Ronald Kok](mailto:rdw.kok@rotterdam.nl)(Gemeente Rotterdam)
+
 Het beschikbaar stellen van high value datasets voor de t.b.v. (WHO)[]
 
 - De metadatadefintie DCAT
@@ -38,12 +41,28 @@ Het beschikbaar stellen van high value datasets voor de t.b.v. (WHO)[]
 ## OpenWoo.app
 
 **Product Owner**: [Ruben van der Linde](mailto:ruben@conduction.nl)(Conduction)
+
 Het doorzoekbaar maken van data t.b.v. [Woo](https://www.rijksoverheid.nl/onderwerpen/wet-open-overheid-woo)
 
-- Verschillende metadatadefinities
-  - Woo-verzoeken en - convenanten
-- Een service voor het ophalen van Woo-gegevens uit zaaksystemen
-- Een service voor het ophalen van Woo-gegevens uit raadsinformatiesystemen
+**Aanvullingen en afwijkingen ten opzichten van de standaard architectuur**
+
+- (vervanging) In plaats van het standaard publicatie platform zijn er 3 andere opties
+- (vervanging) De beheer interface vanuit Open Catalogi wordt alleen gebruikt al technisch beheer interface, in plaats daarvan zijn er 2 andere beheers interfaces voor medewerkers beschickbaar
+- (aanvulling) Een service voor het ophalen van Woo-gegevens uit zaaksystemen
+- (aanvulling) Een service voor het ophalen van Woo-gegevens uit raadsinformatiesystemen
+- (aanvulling) Een service voor het klaarzetten van Woo-gegevens voor de Woo-index van Koop
+
+| Component | Invulling |
+| ----------- | ----------- |
+| _publicatie platform_ | [Basis Nl Design app](https://github.com/ConductionNL/woo-website-template) of [Uitgebreide Nl Design app]() of [Drupal plugin]()|
+| _beheer interface_ | [Uitgebreide Nl Design app]() of [Drupal plugin]() |
+
+![Basis Componenten](../handleidingen/components_commonground_woo.svg)
+
+**Metadata definties**
+- Woo-verzoeken en Besluiten
+- convenanten
+- etc
 
 ## Een deelproject opstarten
 
