@@ -5,14 +5,14 @@ header: Componenten Matrix
 
 
 package "Layer 5 (interactie)" {
- [Beheer Interface] as adminUI
  [Publicatie platform] as userUi
+ [Beheer Interface] as adminUI
 }
 
 
 package "Layer 2 (api)" {
- [Beheer API] as beheerAPI
  [Zoeken API] as searchAPI
+ [Beheer API] as beheerAPI
 }
 
 package "Layer 1 (data)" {
@@ -25,6 +25,4 @@ userUi <.down. searchAPI: Opzoeken
 beheerAPI .down.> ORC: Opslaan
 searchAPI <.down. elastic: Zoeken
 ORC .right.> elastic: Updaten
-
-
 @enduml

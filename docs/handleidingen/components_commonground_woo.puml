@@ -5,8 +5,8 @@ header: Componenten Matrix
 
 
 package "Layer 5 (interactie)" {
- [//Publicatie platform//\nOC Web App (Conduction)] as userUi
- [//Beheer Interface//\nOC Next Cloud App (Conduction)] as adminUI
+ [//Publicatie platform//\nOpen Tilburg (Acato)] as userUi
+ [//Beheer Interface//\nBeheer Tilburg (Acato)] as adminUI
 }
 
 
