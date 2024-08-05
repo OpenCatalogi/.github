@@ -1,47 +1,53 @@
 # Projecten
-Naast de generieke organisatie zijn er een aantal project groepen actief met (deel) projecten aan de hand van open catalogi.
+
+Naast de generieke organisatie zijn er een aantal projectgroepen actief met (deel)projecten aan de hand van OpenCatalogi.
 
 ## Core
+
 **Product Owner**: [Ronald van Cortenberghe](mailto:r.vancortenberghe@rotterdam.nl)(Gemeente Rotterdam)
-Het core project faciliteerd de architectuur, standaard, kern componenten en communicatie van Open catalogi
+Het core project faciliteert de architectuur, standaard, kerncomponenten en communicatie van Opencatalogi.
 
 ## Software Catalogus
+
 **Product Owner**: [Ronald van Cortenberghe](mailto:r.vancortenberghe@rotterdam.nl)(Gemeente Rotterdam)
-Van oorsprong is het Open Catalogi als project begonnen om een alternatief te bieden voor de [commonground componenten catalogus]() (wat later het [portfolio](https://app.powerbi.com/view?r=eyJrIjoiOWU4MjlmYTktNjE2MS00OGRhLTgwMjYtZWZhNTFhZmRhZjI2IiwidCI6IjZlZjAyOWFiLTNmZDctNGQ5OC05YjBlLWQxZjVmZWRlYTZkMSIsImMiOjh9&pageName=ffe4f1f9018d7bd035bc) werdt) waarbij het niet langer noodzakenlijk is om infortmatie te brengen. 
+Van oorsprong is het OpenCatalogi als project begonnen om een alternatief te bieden voor de [Common Ground componentencatalogus](https://componentencatalogus.commonground.nl/) (wat later het [portfolio](https://app.powerbi.com/view?r=eyJrIjoiOWU4MjlmYTktNjE2MS00OGRhLTgwMjYtZWZhNTFhZmRhZjI2IiwidCI6IjZlZjAyOWFiLTNmZDctNGQ5OC05YjBlLWQxZjVmZWRlYTZkMSIsImMiOjh9&pageName=ffe4f1f9018d7bd035bc) werd), waarbij het niet langer noodzakelijk is om informatie te brengen.
 
-In plaatsdaarvan wordt deze opgehaald aan de hand van een publiccode.yaml bestand dat in de repository wordt geplaats. Makkenlijk kunnen we het niet maken, de codebase maakt daarmee zichzelf kenbaar en vindbaar en alle beschrijving blijft daar waard die hoor, bij de bron (code).
+In plaats daarvan wordt deze opgehaald aan de hand van een `publiccode.yaml`-bestand dat in de repository wordt geplaatst. Makkenlijker kunnen we het niet maken, de codebase maakt daarmee zichzelf kenbaar, vindbaar en alle beschrijvingen blijven daar waar die hoort, bij de bron(code).
 
-Vanuit dit project wordt beschickbaar gesteld
+Vanuit dit project wordt beschikbaar gesteld:
 
-- Verschillende metadata definities
-    - publiccode
-    - publiccode.service Objecten voor het aanbieden van een service (dienst) op een software pakket
-- Een github catalogus voor applicaties en componenten gevonden op github
-- Een gitlab catalogus voor applicaties en componenten gevonden op github
-- Een componenten catalogus voor commonground beschrijvingen over gevonden componenten
-- Een [git service]() beschickbaarbaar gesteld die automatisch [github]() en [gitlab]() afzoekt naar repositories die een publiccode bevatten en die deze opneemt in de 
+- Verschillende metadatadefinities
+  - publiccode
+  - publiccode.service Objecten voor het aanbieden van een service (dienst) op een software pakket
+- Een GitHub-catalogus voor applicaties en componenten gevonden op GitHub
+- Een GitLab-catalogus voor applicaties en componenten gevonden op GitLab
+- Een componentencatalogus voor Common Ground-beschrijvingen over gevonden componenten
+- Een [Git service]() beschikbaar gesteld die automatisch [GitHub](https://github.com/) en [GitLab](https://about.gitlab.com/) afzoekt naar (geïndexeerde) repositories die een `publiccode.yaml` bevatten en die deze opneemt in OpenCatalogi.
 
 ## Generieke datalandschap
-**Product Owner**: [Ronald Kok](mailto:rdw.kok@rotterdam.nl)(Gemeente Rotterdam)
-Het beschickbaar stellen van high value datasets voor de t.b.v. (WHO)[] 
 
-- De metadata defintie DCAT
+**Product Owner**: [Ronald Kok](mailto:rdw.kok@rotterdam.nl)(Gemeente Rotterdam)
+Het beschikbaar stellen van high value datasets voor de t.b.v. (WHO)[]
+
+- De metadatadefintie DCAT
 
 ## Regels.overheid.nl
+
 **Product Owner**: [Steven Gort](mailto:steven.Gort@ictu.nl)(Steven Gort)
 
+## OpenWoo.app
 
-## OpenWoo.app 
 **Product Owner**: [Ruben van der Linde](mailto:ruben@conduction.nl)(Conduction)
-Het doorzoekbaar maken van data t.b.v. (WOO)[]
+Het doorzoekbaar maken van data t.b.v. [Woo](https://www.rijksoverheid.nl/onderwerpen/wet-open-overheid-woo)
 
-- Verschillende metadata definities
-    - Woo verzoeken en convenanten
-- Een service voor het ophalen van Woo gegevens uit zaaksystemen
-- Een service voor het ophalen van Woo gegevens uit raads informatie systemen
+- Verschillende metadatadefinities
+  - Woo-verzoeken en - convenanten
+- Een service voor het ophalen van Woo-gegevens uit zaaksystemen
+- Een service voor het ophalen van Woo-gegevens uit raadsinformatiesystemen
 
-## Een deel project opstarten
-Wil je zelf aan de hand van open catalogi een eigen project opstarten? en hierbij terugleveren aan de open catalogi gemeenschap? Dan kan je een deel project opstarten. Neem daarvoor contact op met [jaap.vanvliet@dimpact.nl](mailto:jaap.vanvliet@dimpact.nl). Van een deel project verwachten we:
+## Een deelproject opstarten
 
-- Bijdragen aan de algemene ontwikkeling van Open Catalogi
-- Aanwezigheid van de product owner bij de community meetings (ider kwartaal)
+Wil je zelf aan de hand van OpenCatalogi een eigen project opstarten? en hierbij terugleveren aan de OpenCatalogi gemeenschap? Dan kan je een deel project opstarten. Neem daarvoor contact op met [jaap.vanvliet@dimpact.nl](mailto:jaap.vanvliet@dimpact.nl). Van een deel project verwachten we:
+
+- Bijdragen aan de algemene ontwikkeling van OpenCatalogi
+- Aanwezigheid van de product owner bij de community meetings (ieder kwartaal)

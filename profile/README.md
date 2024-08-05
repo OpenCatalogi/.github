@@ -41,9 +41,9 @@ Meer informatie over installeren via Helm kan worden gevonden op de [helm](https
 
 ### Alternatieve installatieroute
 
-In sommige gevallen is er meer behoefte aan controle over de installatie (bijvoorbeeld omdat er geen Kubernetes omgeving beschikbaar is) in dat geval kan gebruik worden gemaakt van een ‘kale’ Common Gateway instalatie, zie voor meer informatie over het installeren van de Common Gateway de [Common Gateway installatie handleiding](https://github.com/ConductionNL/commonground-gateway).
+In sommige gevallen is er meer behoefte aan controle over de installatie (bijvoorbeeld omdat er geen Kubernetes omgeving beschikbaar is) in dat geval kan gebruik worden gemaakt van een ‘kale’ Common Gateway installatie, zie voor meer informatie over het installeren van de Common Gateway de [Common Gateway installatie handleiding](https://github.com/ConductionNL/commonground-gateway).
 
-Omdat OpenCatalogi een Common Gateway plugin is kan je vervolgens simpelweg in de Common Gatewayy naar plugins navigeren, zoeken naar OpenCatalogi, en op installeren klikken.
+Omdat OpenCatalogi een Common Gateway-plugin is kan je vervolgens simpelweg in de Common Gatewayy naar plugins navigeren, zoeken naar OpenCatalogi, en op installeren klikken.
 
 ## Bijwerken naar nieuwere versies
 
@@ -83,7 +83,7 @@ Het datamodel van OpenCatalogi is gebaseerd op Public Code, een Europese standaa
 
 Lees meer
 
-- [Het volledige datamodel](https://conduction.stoplight.io/docs/publiccode)
+- [Het volledige datamodel](https://conduction.stoplight.io/docs/open-catalogi)
 - [Afwijkingen ten opzichte van publiccode](https://github.com/OpenCatalogi/.github/discussions/10)
 
 ## Projectinrichting

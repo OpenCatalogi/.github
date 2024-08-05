@@ -2,62 +2,64 @@
 
 OpenCatalogi biedt een manier om meerdere catalogi samen te laten werken als één (virtuele) catalogus, waardoor gebruikers in alle of enkele catalogi tegelijk kunnen zoeken. Dit wordt gedaan door de [DCAT](https://joinup.ec.europa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe/release/300) standaard te combineren met zowel [JSON-LD](https://json-ld.org/) als [FSC](https://docs.fsc.nlx.io/introduction) om een API te creëren die gegevens levert van zowel enkele als meerdere catalogi. Bovendien zijn er meerdere front-end oplossingen die deze API gebruiken om een contextgerelateerde zoekinterface aan eindgebruikers te bieden (bijv. burgers, overheidsfunctionarissen, journalisten of onderzoekers).
 
-In de zin van GEMMA/NORA architectuur geeft OpenCatalogi hiermee invulling aan het concept generieke publicatievoorziening.
+In de zin van GEMMA/NORA-architectuur geeft OpenCatalogi hiermee invulling aan het concept generieke publicatievoorziening.
 
 ![UML Diagram van OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/components_simple.svg "UML Diagram van OpenCatalogi")
 
-Als we vervolgens inzoemen op een catalogus bestaad die feitenlijk uit vier functionele delen (Beheer UI, Gebruikers UI, Beheer API, Zoeken API) en 2 opslag componenten (Zoekindex en Oojecten opslag). Daarbij is het interactie vlak van de API's gedefineerd in de Open Catalogi standaard([OAS]()) en het gedrag in [architectuur]().
+Als we vervolgens inzoomen op een catalogus bestaat die feitelijk uit vier functionele delen (Beheer-UI, Gebruikers-UI, Beheer-API, Zoeken-API) en twee opslag componenten (Zoekindex en Objectenopslag). Daarbij is het interactievlak van de API's gedefinieerd in de OpenCatalogi-standaard(../../../Standaard.md) en het gedrag in [architectuur]().
 
 ![UML Diagram van OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/components_commonground.svg "UML Diagram van OpenCatalogi")
 
-Het is aan applicaties zelf om hier vervolgens invulling aan te geven. Vanuit de Open catalogi community leveren we een aantal componenten die hier invulling aan geven. Hierbij hebben we er voor gekozen om de componenten in twee varianten te ontwikklen en een derde aan te bieden voor development en test doeleinden. 
+Het is aan applicaties zelf om hier vervolgens invulling aan te geven. Vanuit de OpenCatalogi community leveren we een aantal componenten die hier invulling aan geven. Hierbij hebben we er voor gekozen om de componenten in twee varianten te ontwikkelen en een derde aan te bieden voor development en test doeleinden.
 
-- **Iedere component in een eigen container** Bedoeld voor grote organisaties die graag alles op kubernetes draaien
-- **Alle componenten op één gemeenschappenlijk framework** Bedoeld voor kleine en middelgrote organisaties die gebruik amken van een (viruteel) linux serverpark of azure.
-- **Alles in één applicatie** Bedoeld voor locale ontwikkeling en testen, niet bedoeld voor productie doeleinden. 
+- **Iedere component in een eigen container** Bedoeld voor grote organisaties die graag alles op Kubernetes draaien
+- **Alle componenten op één gemeenschappelijk framework** Bedoeld voor kleine en middelgrote organisaties die gebruik maken van een (virtueel) Linux serverpark of Azure.
+- **Alles in één applicatie** Bedoeld voor lokale ontwikkeling en testen, niet bedoeld voor productie doeleinden.
 
-Om dit te realiseren is de onderlinggende code opgedeeld in meerdere libaries die door de verschillende verschijningsvormen worden gedeeld. Aan de hand van bovenstaande kunnen we redenlijk snel tot een applicatie weergave komen voor de gemiddelde overheid waarbij de volgende uitgangs punten doen:
+Om dit te realiseren is de onderliggende code opgedeeld in meerdere libaries die door de verschillende verschijningsvormen worden gedeeld. Aan de hand van bovenstaande kunnen we redelijk snel tot een applicatie weergave komen voor de gemiddelde overheid waarbij de volgende uitgangspunten doen:
 
-- Componenten voor laag 5 (interatie), 4 (Logica), en 2 (API)  hosten we op kubernetes
+- Componenten voor laag 5 (interactie), 4 (Logica), en 2 (API)  hosten we op Kubernetes
 - 1 (data) hosten we een dataplatform
-- Externe catalogi hebben de seach API nodig voor zoeken en directory uitwisseling
-- We hebben een synchronysaite service nodig die gegevens uit bron systeemen inleest
+- Externe catalogi hebben de Seach-API nodig voor zoeken en directory uitwisseling
+- We hebben een synchronisatie service nodig die gegevens uit bron systemen inleest
 - De gebruikersgroepen zijn Burger (inwoner, journalist, onderzoeker of raadslid), Medewerker en Beheerder
-- De gemidelde overheid is een kleine overheid, dan zetten we nextcloud in om gemakenlijk te hosten
+- De gemiddelde overheid is een kleine overheid, dan zetten we Nextcloud in om gemakkelijk te hosten
 
-Dan komen we tot de volgende architectuurplaat
+Dan komen we tot de volgende architectuurplaat:
 
 ![UML Diagram van OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/components.svg "UML Diagram van OpenCatalogi")
 
 ## Basisconfiguratie
 
-Het basisobject van OpenCatalogi is een catalogus. Elke catalogus is een verzameling publicaties. Publicaties vertegenwoordigen 'iets' dat moet worden gepubliceerd. Wat dat 'iets' is, wordt gedefinieerd door een metadatabeschrijving (gedefinieerd door een [schema.json](https://json-schema.org/)). Catalogi kunnen publicaties van verschillende typen bevatten (bijv. datasets van de [WHO](https://www.who.int/data/sets), verzoeken van de [WOO](https://www.rijksoverheid.nl/onderwerpen/wet-open-overheid-woo#:~:text=Is%20de%20informatie%20die%20je,dat%20aan%20je%20worden%20gemeld.), of repositories van [publiccode](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html)). Publicaties MOETEN bij ÉÉN catalogus horen, en elke catalogus MOET bij ÉÉN organisatie horen, wat betekent dat publicaties traceerbaar zijn naar organisaties via hun catalogus.
+Het basisobject van OpenCatalogi is een catalogus. Elke catalogus is een verzameling publicaties. Publicaties vertegenwoordigen 'iets' dat moet worden gepubliceerd. Wat dat 'iets' is, wordt gedefinieerd door een metadatabeschrijving (gedefinieerd door een [schema.json](https://json-schema.org/)). Catalogi kunnen publicaties van verschillende typen bevatten (bijv. datasets van de [WHO](https://wetten.overheid.nl/BWBR0036795), verzoeken van de [Woo](https://www.rijksoverheid.nl/onderwerpen/wet-open-overheid-woo#:~:text=Is%20de%20informatie%20die%20je,dat%20aan%20je%20worden%20gemeld.), of repositories van [publiccode](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html)). Publicaties MOETEN bij ÉÉN catalogus horen, en elke catalogus MOET bij ÉÉN organisatie horen, wat betekent dat publicaties traceerbaar zijn naar organisaties via hun catalogus.
 
-## API's
-De API's van Open Catalogi zijn voor nu nog terug te vinden op https://conduction.stoplight.io/docs/open-catalogi. Het is een wens om deze in de zomer naar redocly te verplaatsen.
+## APIs
+
+De APIs van OpenCatalogi zijn voor nu nog terug te vinden op <https://conduction.stoplight.io/docs/open-catalogi>. Het is een wens om deze in de zomer naar [Redocly](https://redocly.com/) te verplaatsen.
 
 ## Codebases
 
 | Codebase | Rol | Organisatie | Licentie |
 |----------|------------------------------|             |          |  
-| [Github](https://github.com/ConductionNL/web-app)| Publicatie Platform    |  Open Catalogi            |          |  
-| [Github](https://github.com/ConductionNL/opencatalogi)| Beheer API, Zoeken API, Beheer Interface    | Open Catalogi            |  EUPL        |  
-| [Github](https://github.com/maykinmedia/objects-api)| ORC (objecten opslag)    | Maykin Media            |  EUPL        |  
-| [Github](https://github.com/open-zaak/open-zaak)        | DRC (documenten opslag)      | Maykin Media            |  EUPL        |  
-| [Github](https://github.com/elastic/elasticsearch)         | Elastic Search      | Elastic            |  SPL + EL        |  
-| [Github](https://github.com/OpenCatalogi/OpenCatalogiBundle)         | Synchronysatie Service      | Conduction            |  EUPL        |  
-
+| [Github](https://github.com/OpenCatalogi/web-app)| Publicatie Platform    |  Open Catalogi            |          |  
+| [Github](https://github.com/ConductionNL/opencatalogi)| Beheer API, Zoeken API, Beheerinterface    | OpenCatalogi            |  EUPL        |  
+| [Github](https://github.com/maykinmedia/objects-api)| ORC (objectenopslag)    | Maykin Media            |  EUPL        |  
+| [Github](https://github.com/open-zaak/open-zaak)        | DRC (documentenopslag)      | Maykin Media            |  EUPL        |  
+| [Github](https://github.com/elastic/elasticsearch)         | Elastic Search      | Elastic            |  SPL + EUPL        |  
+| [Github](https://github.com/OpenCatalogi/OpenCatalogiBundle)         | Synchronisatie Service      | Conduction            |  EUPL        |  
 
 Hierop zijn een paar opmerkingen te maken
-- We hebben recentenlijk de keuze gemaakt om over te stappen op nextcloud, meer hierover kan je teruglezen op [https://documentatie.opencatalogi.nl/Handleidingen/Nextcloud/](https://documentatie.opencatalogi.nl/Handleidingen/Nextcloud/).
-- Het inzetten van ORC, DRC en Elastic zijn vanuit Open Catalogi gezien (geadviseerde) keuzes. Het is ook mogenlijk om alles in een interne database of externe object store op te slaan.
-- De Synchronysatie service draaid momenteel nog op het common gateway platform, er is echter voor gekozen om ook deze over te brengen naar nextcloud.
-- Beheer API en Zoeken API worden samen met de beheer interface geleverd door één code base, een praktische inrichtingskeuze die we hebben overgenomen van Open Zaak. Voor organisaties die componenten graag splitsen in containers zijn ze echter ook los instaleerbaar.
-- Het is ook mogenlijk om de zoeken API direct vanuit elastic search uit te leveren, dat heeft een aanzienlijk performance voordeel. Maar verhinderd ook het federatief zoeken.
-- Voor het ORC en DRC zijn aanvullende compenten beschickbaar/benodigd (OTC, Notificaties etc) die laten we hier voor het overzicht even weg
 
-## Functionaliteit Beheer omgeving
-Een flink stuk van de randvoorwaardenlijke functionaleit van Open Catlogi (zoals ADFS) wordt afgevangen in de Beheer interface.
+- We hebben recentelijk de keuze gemaakt om over te stappen op Nextcloud. Meer hierover kan je teruglezen op [https://documentatie.opencatalogi.nl/Handleidingen/Nextcloud/](https://documentatie.opencatalogi.nl/Handleidingen/Nextcloud/).
+- Het inzetten van ORC, DRC en Elastic zijn vanuit Open Catalogi gezien (geadviseerde) keuzes. Het is ook mogelijk om alles in een interne database of externe object store op te slaan.
+- De Synchronisatie service draait momenteel nog op het common gateway platform, er is echter voor gekozen om ook deze over te brengen naar Nextcloud.
+- Beheer API en Zoeken API worden samen met de beheerinterface geleverd door één code base, een praktische inrichtingskeuze die we hebben overgenomen van Open Zaak. Voor organisaties die componenten graag splitsen in containers zijn ze echter ook los installeerbaar.
+- Het is ook mogelijk om de zoeken API direct vanuit Elasticsearch uit te leveren, dat heeft een aanzienlijk performance voordeel. Maar verhinderd ook het federatief zoeken.
+- Voor het ORC en DRC zijn aanvullende componenten beschikbaar/benodigd (OTC, Notificaties etc.) die laten we hier voor het overzicht even weg
+
+## Functionaliteit Beheeromgeving
+
+Een flink stuk van de randvoorwaardelijke functionaliteit van OpenCatalogi (zoals ADFS) wordt afgevangen in de Beheerinterface.
 
 ## Federatief zoeken
 
@@ -86,7 +88,7 @@ Dit betekent dat een nieuwe installatie zich slechts bij één andere installati
 
 OpenCatalogi bestaat eigenlijk uit een paar technische componenten die samenwerken. Om te beginnen bestaat het uit verschillende objecten (Catalogi, Publicaties, Documenten en Index) die worden opgeslagen in een objectstore (of ORC in VNG-termen). Publicaties bieden een basis workflowmanagement setup. Wanneer een publicatie als gepubliceerd is gemarkeerd, wordt deze vervolgens overgebracht naar een zoekindex (Elasticsearch). Het OpenCatalogi zoek-endpoint gebruikt deze zoekindex vervolgens om vragen te beantwoorden. Dit betekent dat de gebruiksgerichte (publieke) frontend de zoekindex gebruikt (aangezien het vragen stelt aan het zoek-endpoint) en dat het administratie-endpoint de objectstore gebruikt.
 
-Afzonderlijke synchronisatieservices kunnen publicaties maken van externe bronnen (bijvoorbeeld GitHub, of case handling systemen). Deze publicaties worden in de objectstore gemaakt en moeten als gepubliceerd worden gemarkeerd voordat ze worden gesynchroniseerd naar de zoekindex (en beschikbaar worden gemaakt onder het zoek-endpoint), hoewel dit proces geautomatiseerd kan worden in de configuratie. Deze strikte scheiding van gegevens op basis van de rol en context van verzoekers in een opslag- en zoekgedeelte voorkomt onbedoelde openbaarmaking van informatie. Dit is vooral belangrijk omdat OpenCatalogi ook wordt gebruikt door [OpenWoo.app](OpenWoo.app).
+Afzonderlijke synchronisatieservices kunnen publicaties maken van externe bronnen (bijvoorbeeld GitHub, of case handling systemen). Deze publicaties worden in de objectstore gemaakt en moeten als gepubliceerd worden gemarkeerd voordat ze worden gesynchroniseerd naar de zoekindex (en beschikbaar worden gemaakt onder het zoek-endpoint), hoewel dit proces geautomatiseerd kan worden in de configuratie. Deze strikte scheiding van gegevens op basis van de rol en context van verzoekers in een opslag- en zoekgedeelte voorkomt onbedoelde openbaarmaking van informatie. Dit is vooral belangrijk omdat OpenCatalogi ook wordt gebruikt door [OpenWoo.app](https://openwoo.app/).
 
 Normaal gesproken worden documenten (en bestanden in het algemeen) niet overgebracht naar de objectstore, maar verkregen van de bron wanneer een enkel object wordt opgevraagd. Je kunt er echter voor kiezen om dat object over te brengen (per configuratie) om te voorkomen dat de bronapplicatie te vaak wordt bevraagd. Dit is vooral handig bij oudere of minder presterende bronnen. Documenten worden echter NOOIT overgebracht naar de zoekindex om indirecte blootstelling te voorkomen. Documenten kunnen ook worden toegevoegd aan publicaties die handmatig zijn aangemaakt via de administratie-interface. Houd er echter rekening mee dat deze documenten mogelijk nog steeds moeten worden gearchiveerd volgens de archiefwet.
 
@@ -112,36 +114,35 @@ Bij het bevragen van de zoeken-API MOET de zoeken-UI de zoekopdracht beperken aa
 
 ## Meer over de catalogus
 
-De catalogus functioneert zowel als een [DCAT-catalogus](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CataloguedResource) als een [FCS Inway]. Dit betekent dat een catalogus slechts bij ÉÉN organisatie kan horen; eigendom van de catalogus wordt geverifieerd door middel van een PKI-certificaat.
+De catalogus functioneert zowel als een [DCAT-catalogus](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CataloguedResource) als een [FCS Inway](https://artifacthub.io/packages/helm/commonground/fsc-nlx-inway). Dit betekent dat een catalogus slechts bij ÉÉN organisatie kan horen; eigendom van de catalogus wordt geverifieerd door middel van een PKI-certificaat.
 
 ## Over publicaties
 
 De publicatie functioneert als een [DCAT-catalogusrecord](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord). Oorspronkelijk ontworpen als een houder voor een [publiccode.yaml](https://docs.italia.it/italia/developers-italia/publiccodeyml-en/en/master/index.html).
 
 ## Meer over de directory
-Iedere Open Catalogi installatie beschickt over een directory, deze verhoud zich tot het [fcs directory concept](). Een directory is kort gezegd een overzicht van alle andere catalogi die bekend zijn bij deze Open Catalogi installatie, zogenoemde listings. Deze lsitings vormend de kern onder het `federatief zoeken` dat tehcnisch neerkomt op het asynchroon bevragen van meerdere listings en de resultaten agregegeren. Hiervoor bieden listings een aantal kern functionaliteiten
 
+Iedere OpenCatalogi installatie beschikt over een directory, deze verhoudt zich tot het [FSC directory concept](https://directory-ui.demo.fsc.nlx.io/). Een directory is kort gezegd een overzicht van alle andere catalogi die bekend zijn bij deze OpenCatalogi-installatie, zogenoemde listings. Deze listings vormen de kern onder het `federatief zoeken` dat technisch neerkomt op het asynchroon bevragen van meerdere listings en de resultaten aggregeren. Hiervoor bieden listings een aantal kern functionaliteiten:
 
-- **Weten welke catalogi beschickbaar zijn**: De direcotry geeft een overzicht van alle catalogi de gebruikt kunnen worden voor de federatieve zoekvraag
-- **Het automatisch vinden van catalogi**: Open Catalogi instanties wisselen onderling hun directories uit, doormiddel van het discovery patroon
-- **Het verspreidend van informatie uit de eigen catalogi**: Open Catalogi verspreiden actief hun eigen informatie aan de hand van het advertising patroon
+- **Weten welke catalogi beschikbaar zijn**: De directory geeft een overzicht van alle catalogi die gebruikt kunnen worden voor de federatieve zoekvraag
+- **Het automatisch vinden van catalogi**: Open Catalogi instanties wisselen onderling hun directories uit, door middel van het discovery-patroon
+- **Het verspreidend van informatie uit de eigen catalogi**: Open Catalogi verspreiden actief hun eigen informatie aan de hand van het advertising-patroon
 - **Beperken van het aantal zoekvragen**: Catalogi delen op installatie niveau een search endpoint zodat één bevraging meerdere catalogi kan beslaan. In de directory worden de catalogi daarom bij elkaar getrokken aan de hand van search endpoints
-- **Beperken van het aantal catalogi**: Door het bijhouden van de daadwerkenlijk in een catalogi beschickbare metadata (type publicaties) worden alleen catalogi bevraagd die dat object type daadwerkenlijk bevatten (dit voorkomt onnodige bevragingen)
-- **Configureren van catalogi gebruik**: In de directory kan de beheerder aangeven welke catalogi die wel/niet wil opnemen/beschickbaar stellen voor eigen zoekvragen.
-- **Overnemen van metadata**: Binnen Open Catalogi kunnen er publciaties worden gepubliceerd op elders gedefineerde metadata, via de directory kan worden aangegeven welke meta data uit welke catalogi word overgenomen.
+- **Beperken van het aantal catalogi**: Door het bijhouden van de daadwerkelijk in een catalogi beschikbare metadata (type publicaties) worden alleen catalogi bevraagd die dat object type daadwerkenlijk bevatten (dit voorkomt onnodige bevragingen)
+- **Configureren van catalogi gebruik**: In de directory kan de beheerder aangeven welke catalogi die wel/niet wil opnemen/beschikbaar stellen voor eigen zoekvragen.
+- **Overnemen van metadata**: Binnen Open Catalogi kunnen er publicaties worden gepubliceerd op elders gedefinieerde metadata, via de directory kan worden aangegeven welke meta data uit welke catalogi wordt overgenomen.
 
-Eigen Catalogi zijn per definitie onderdeel van de directory, en niet via de directory wijzigbaar (ze worden op code niveau aangevuld op alle directory overzichten). 
-
+Eigen Catalogi zijn per definitie-onderdeel van de directory, en niet via de directory wijzigbaar (ze worden op code niveau aangevuld op alle directory overzichten).
 
 ## Faceted Search & datavisualisatie
 
 Zowel de zoeken-API, als de beheer-API, ondersteunen [faceted search](https://www.oxfordsemantic.tech/faqs/what-is-faceted-search#:~:text=Faceted%20search%20is%20a%20method,that%20we%20are%20looking%20for.).
 
-Naast het verbeteren van de zoekervaring, kan faceted search ook worden gebruikt om statistische informatie op te halen over de onderligende gegevens. Bijvoorbeeld voor het weergeven van aantal publicaties per categorie in grafieken of staafdiagrammen. Een mooi voorbeeld hiervan is terug te vinden op [commonground.opencatalogi.nl](commonground.opencatalogi.nl). Daardat de gegevens gerelateerd zijn aan zoekopdrachten, en zoekopdrachten een hoge granulariteit hebben is het mogenlijk om op relatief detailniveau deze overzichten te creëren.
+Naast het verbeteren van de zoekervaring, kan faceted search ook worden gebruikt om statistische informatie op te halen over de onderliggende gegevens. Bijvoorbeeld voor het weergeven van aantal publicaties per categorie in grafieken of staafdiagrammen. Een mooi voorbeeld hiervan is terug te vinden op [commonground.opencatalogi.nl](https://commonground.opencatalogi.nl). Doordat de gegevens gerelateerd zijn aan zoekopdrachten, en zoekopdrachten een hoge granulariteit hebben is het mogelijk om op relatief detailniveau deze overzichten te creëren.
 
 ## Adapters richting externe catalogi
 
-Het federatieve netwerk is een mooie manier om data bij de bron op te halen maar wordt (nog) niet door alle landelijke platformen ondersteund. Er zijn daarom een aantal adapters beschikbaar die gevens ophalen uit het federatieve netwerk en doorzetten naar derde partijen. Deze adaptors worden  (landelijk) gehost.
+Het federatieve netwerk is een mooie manier om data bij de bron op te halen, maar wordt (nog) niet door alle landelijke platformen ondersteund. Er zijn daarom een aantal adapters beschikbaar die gegevens ophalen uit het federatieve netwerk en doorzetten naar derde partijen. Deze adaptors worden  (landelijk) gehost.
 
 - [X] **Woo index** Deze adapter verzamelt elke avond de gegevens van publicaties gerelateerd aan de WOO en zet deze om naar een sitemap.xml voor de door KOOP ontwikkelde harvester.
 - [ ] **DROP** (Roadmap) In ontwikkeling bij de gemeente Buren
@@ -156,15 +157,15 @@ Bij wijzigingen in de publicatieopslag (ORC) of documentopslag (DRC) wordt de zo
 
 OpenCatalogi maakt documenten onder publicaties uniek aan de hand van [hashing](https://stackoverflow.com/questions/2444321/how-are-hash-functions-like-md5-unique), hashing geeft een unieke code voor ieder document aan de hand van de documentinhoud + eigenschappen. Hierdoor kunnen we bijvoorbeeld vaststellen of een document voorkomt onder meerdere publicaties en deze informatie aan gebruiker terug te geven.
 
-Een voorbeeld: In een raadsvergadering wordt een voorgenomen vergunning besproken. Deze vergunning is al eerder in de raad en in een commissie besproken en is gekoppeld aan een zaak (vergunningsaanvraag). Aangenomen dat al deze objecten worden gepubliceerd, verschijnt de vergunning in vier verschillende publicaties. Door dit te identificeren, voorkomen we niet alleen onnodige dataduplicatie van de PDF, maar kunnen we ook in de zoekinterface aangeven dat er meer informatie over het document beschikbaar is. Deze context is met name interessant voor onderzoekers en journalisten die niet alleen geïnteresseerd zijn in het resultaat, maar ook in het besluitvormingsproces.
+Een voorbeeld: In een raadsvergadering wordt een voorgenomen vergunning besproken. Deze vergunning is al eerder in de raad en in een commissie besproken en is gekoppeld aan een zaak (vergunningsaanvraag). Aangenomen dat al deze objecten worden gepubliceerd, verschijnt de vergunning in vier verschillende publicaties. Door dit te identificeren, voorkomen we niet alleen onnodige dataduplicatie van de pdf, maar kunnen we ook in de zoekinterface aangeven dat er meer informatie over het document beschikbaar is. Deze context is met name interessant voor onderzoekers en journalisten die niet alleen geïnteresseerd zijn in het resultaat, maar ook in het besluitvormingsproces.
 
 Het faciliteert ook een andere vorm van interactie waarbij gebruikers door de levenscyclus van een document kunnen navigeren. Vanuit het bovenstaande voorbeeld kan een gebruiker bijvoorbeeld vanuit de raadsvergadering naar de commissievergadering navigeren en daar de (video)notulen raadplegen om de inbreng van verschillende fracties te bekijken.
 
 ## Samenvoegen van bijlagen
 
-In de praktijk zien we dat overheden de neiging hebben om PDF's samen te voegen, maar vanuit gebruikersperspectief is dit zeer onwenselijk.
+In de praktijk zien we dat overheden de neiging hebben om pdf's samen te voegen, maar vanuit gebruikersperspectief is dit zeer onwenselijk.
 
-Om dit te illustreren, kunnen we een denkbeeldig WOO-verzoek aanhalen over het contact van wethouder A met persoon B over onderwerp C. Dit WOO-verzoek levert 2000 e-mails op. Het samenvoegen van deze 2000 e-mails tot één PDF heeft een aantal negatieve gevolgen:
+Om dit te illustreren, kunnen we een denkbeeldig WOO-verzoek aanhalen over het contact van wethouder A met persoon B over onderwerp C. Dit WOO-verzoek levert 2000 e-mails op. Het samenvoegen van deze 2000 e-mails tot één pdf heeft een aantal negatieve gevolgen:
 
 - Metadata per e-mail gaat verloren, waardoor contextuele zoekinformatie verdwijnt.
 - Als in een van de e-mails ook over onderwerp D wordt gesproken en een journalist zoekt hiernaar, krijgt hij een document van 2000 pagina's terug.
