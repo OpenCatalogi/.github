@@ -18,11 +18,13 @@ package "Layer 2 (api)" {
 package "Layer 1 (data)" {
 database "Zoek index" as elastic
 database "Objecten opslag" as ORC
+database "Documenten opslag" as DMS
 }
 
 adminUI .down.> beheerAPI: Opslaan
 userUi <.down. searchAPI: Opzoeken
 beheerAPI .down.> ORC: Opslaan
+beheerAPI .down.> DMS: Opslaan
 searchAPI <.down. elastic: Zoeken
 ORC .right.> elastic: Updaten
 
