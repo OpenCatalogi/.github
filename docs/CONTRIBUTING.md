@@ -1,6 +1,8 @@
 # Aanleveren
 
-## Via GitHub
+> **Note** Bijdragen aan OpenCatalogi kan op meerdere manieren. Een toevoeging doen aan de catalogus is de manier waarop OpenCatalogi groeit. De manier waarop dat kan staat in dit document beschreven. Voor bijdrage aan ontwikkeling en verbeteringen aan de software verwijzen we graag naar onze [GitBook](https://conduction.gitbook.io/opencatalogi-nextcloud/developers/aan-de-slag-met-development) over de manier waarop bijdrage geleverd kan worden.
+
+## Aanleveren  via GitHub
 
 OpenCatalogi is gebouwd op het Europese Publiccode framework. Uitgangspunt hierbij is dat code of gegevens in een git repository staan (bijvoorbeeld GitHub, GitLab of BitBucket) die openbaar toegankelijk is.
 
@@ -17,7 +19,7 @@ Voor meer informatie en een korte handleiding zie [Maken van een workflow](/docs
 
 Het federatieve netwerk van OpenCatalogi scant ook andere catalogi voor gegevens. De makkelijkste manier om te worden opgenomen kan dan ook zijn om simpelweg uw publicatie in een andere catalogus te plaatsen die onderdeel is van het netwerk. De volgende catalogi worden op dit moment door OpenCatalogi ondersteund:
 
-- [Commonground Componentencatalogus](https://componentencatalogus.commonground.nl/)
+- [Common Ground Componentencatalogus](https://componentencatalogus.commonground.nl/)
 - [Developer.overheid](https://developer.overheid.nl/apis)
 
 > **Warning**
