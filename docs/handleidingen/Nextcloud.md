@@ -1,8 +1,8 @@
 # Waarom we overstappen naar Nextcloud
 
-Alle eerste iteraties van Open Catalogi draaiden op het [https://api-platform.com/](api platform) freamework van [digital state](https://digitalstate.io/). Recentenlijk zijn we begonnen met de overstap naar [nextcloud](https://nextcloud.com/), waarom zou je dat in hemelsnaam doen?
+Alle eerste iteraties van Open Catalogi draaiden op het [https://api-platform.com/](api platform) framework van [digital state](https://digitalstate.io/). Recentenlijk zijn we begonnen met de overstap naar [nextcloud](https://nextcloud.com/), waarom zou je dat in hemelsnaam doen?
 
-Wel innovatie betekend expirimenteren, 5 dingen proberen en er 4 loslaten. En hellaas is API platform voor ons een van de dingen die we los gaan laten. Niet omdat het een slecht framework is. In tegendeel, het is een technisch sterk framework voor register ontwikkeling. Maar het is ook abstract, technisch niet super makenlijk uit te rollen.
+Wel innovatie betekend experimenteren, 5 dingen proberen en er 4 loslaten. En helaas is API platform voor ons een van de dingen die we los gaan laten. Niet omdat het een slecht framework is. In tegendeel, het is een technisch sterk framework voor register ontwikkeling. Maar het is ook abstract, technisch niet super makelijk uit te rollen.
 
 Daarnaast zien we dat nextcloud (met europese steun) een sterke opmars maakt bij (buitenlandse) overheden
 
