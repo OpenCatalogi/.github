@@ -1,23 +1,23 @@
 # Componenten
 
 ## Basis Componenten
-In de kern bestaad Open Catalogi uit een viertal basis componenten
+In de kern bestaat Open Catalogi uit een viertal basis componenten
 
 - Een _publicatie platform_ waarin de burger kan zoeken
 - Een _beheer interface_ waarin medewerkers publicaties en configuratie kunnen beheren
 - Een _beheer API_ die de beheer interfae faciliteerd
 - Een _zoeken API_ de het publicaite platform faciliteerd
 
-De bijde API's maken daarbij gebruik van data opslag, in de meest simpele form is dat 
-- _Objecten opslag_ voor publicaites, metadata over documenten, thema's, catalogi etc
+De beide API's maken daarbij gebruik van data opslag, in de meest simpele vorm is dat 
+- _Objecten opslag_ voor publicaties, metadata over documenten, thema's, catalogi etc
 - _Zoek Index_ voor het lezen van zoeken functionaliteit 
 
-Vanuit de architectuur doen we geen uitspraken over de dataopslag behalve dat er een harde scheiding moet zijn tussen het opslag van behandel gegevens (Objecten opslag) waar ook niet publieke informatie in kan voorkomen en de zoek gegevens (Zoek index) waar alleen publieke informatie mag voorkomen.
+Vanuit de architectuur doen we geen uitspraken over de dataopslag behalve dat er een harde scheiding moet zijn tussen de opslag van behandelgegevens (Objecten opslag) waar ook niet publieke informatie in kan voorkomen en de zoekgegevens (Zoek index) waarin alleen publieke informatie mag voorkomen.
 
 ![Basis Componenten](../handleidingen/components_commonground.svg)
 
 ## Invulling van de Componenten
-Bovenstaande abstracten componenten behoeven natuurlijk een concrete invulling, daarvoor heeft Open Catalogi een aantal open source oplossingen geraliseerd of hergebruikt.
+Bovenstaande abstracte componenten behoeven natuurlijk een concrete invulling, daarvoor heeft Open Catalogi een aantal open source oplossingen geraliseerd of hergebruikt.
 
 | Component | Invulling |
 | ----------- | ----------- |
@@ -31,7 +31,7 @@ Bovenstaande abstracten componenten behoeven natuurlijk een concrete invulling, 
 Daarnaast hebben diverse projecten zo als de software catalogus en open woo hun eigen aanvullende over vervangende componenten gerealiseerd. Kijk daarvoor bij [projecten](Projecten).
 
 ## Data Opslag
-Hoewel erg geen archtiecturele eis is met betrekking tot hoe documenten en objecten worden opgeslagen kiesen we er zelf bij de uitvoering voor om documenten (bestanden) en gegevens over documenten de scheiden. Voornaamste overweging hierachter is dat je documenten een spel appart zijn dat je graag in een [DMS](https://en.wikipedia.org/wiki/Document_management_system) speelt.
+Hoewel erg geen architecturele eis is, met betrekking tot hoe documenten en objecten worden opgeslagen, kiesen we er zelf bij de uitvoering voor om documenten (bestanden) en gegevens over documenten de scheiden. Voornaamste overweging hierbij is dat de documenten een spel apart zijn dat je graag in een [DMS](https://en.wikipedia.org/wiki/Document_management_system) speelt.
 
 Daarmee word de structuur zo als we die doorgaans zien 
 
