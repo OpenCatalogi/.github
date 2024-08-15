@@ -31,7 +31,7 @@ Bovenstaande abstracte componenten behoeven natuurlijk een concrete invulling, d
 Daarnaast hebben diverse projecten zo als de software catalogus en open woo hun eigen aanvullende over vervangende componenten gerealiseerd. Kijk daarvoor bij [projecten](Projecten).
 
 ## Data Opslag
-Hoewel erg geen architecturele eis is, met betrekking tot hoe documenten en objecten worden opgeslagen, kiesen we er zelf bij de uitvoering voor om documenten (bestanden) en gegevens over documenten de scheiden. Voornaamste overweging hierbij is dat de documenten een spel apart zijn dat je graag in een [DMS](https://en.wikipedia.org/wiki/Document_management_system) speelt.
+Hoewel erg geen architecturele eis is, met betrekking tot hoe documenten en objecten worden opgeslagen, kiezen we er zelf bij de uitvoering voor om documenten (bestanden) en gegevens over documenten de scheiden. Voornaamste overweging hierbij is dat de documenten een spel apart zijn dat je graag in een [DMS](https://en.wikipedia.org/wiki/Document_management_system) speelt.
 
 Daarmee word de structuur zo als we die doorgaans zien 
 
@@ -42,10 +42,10 @@ Vanuit commonground plaatsen we binnen [het 5 lagen model](https://componentenca
 
 
 
-We zelf Open Catalogi als [application collaboration](https://pubs.opengroup.org/architecture/archimate301-doc/chap09.html#_Toc489946067) bestaande uit  hanteren we één next cloud applicatie die bijde api's kan uitleveren, hiermee laten we de keuze aan overheden of zij wel of geen losse installatie willen per API. Hoewel een functionele scheiding tussen de API's dus mogenlijk is, zien wij bijde api's als één applicatie component dat naast de API's ook een (technisch) beheers interface, logging en andere randvoorwaardenlijke functionaliteiten voor haar rekening neemt. Hiermee lijnen we uit op andere commonground applicaties zo als [open zaak](https://openzaak.org/).
+We zelf Open Catalogi als [application collaboration](https://pubs.opengroup.org/architecture/archimate301-doc/chap09.html#_Toc489946067) bestaande uit  hanteren we één next cloud applicatie die beide api's kan uitleveren, hiermee laten we de keuze aan overheden of zij wel of geen losse installatie willen per API. Hoewel een functionele scheiding tussen de API's dus mogenlijk is, zien wij beide api's als één applicatie component dat naast de API's ook een (technisch) beheers interface, logging en andere randvoorwaardenlijke functionaliteiten voor haar rekening neemt. Hiermee lijnen we uit op andere commonground applicaties zo als [open zaak](https://openzaak.org/).
 
 ## Alternatieve naamgeving van componenten en applicaties
-Vanuit commonground maken we een verschil tussen architecturele componenten (API's databases etc) en instaleerbare componenten. Een goed voorbeeld hiervan is [open zaak](https://openzaak.org/) waarbij één applicatie meerdere
+Vanuit commonground maken we een verschil tussen architecturele componenten (API's databases etc) en installeerbare componenten. Een goed voorbeeld hiervan is [open zaak](https://openzaak.org/) waarbij één applicatie meerdere
 
 - Open Index (Zoeken API + Zoek Index)
 - Open Registers (Beheer API + Objecten Api)
