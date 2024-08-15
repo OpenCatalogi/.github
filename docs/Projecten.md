@@ -14,7 +14,7 @@ Het core project faciliteert de architectuur, standaard, kerncomponenten en comm
 
 Van oorsprong is het OpenCatalogi als project begonnen om een alternatief te bieden voor de [Common Ground componentencatalogus](https://componentencatalogus.commonground.nl/) (wat later het [portfolio](https://app.powerbi.com/view?r=eyJrIjoiOWU4MjlmYTktNjE2MS00OGRhLTgwMjYtZWZhNTFhZmRhZjI2IiwidCI6IjZlZjAyOWFiLTNmZDctNGQ5OC05YjBlLWQxZjVmZWRlYTZkMSIsImMiOjh9&pageName=ffe4f1f9018d7bd035bc) werd), waarbij het niet langer noodzakelijk is om informatie te brengen.
 
-In plaats daarvan wordt deze opgehaald aan de hand van een `publiccode.yaml`-bestand dat in de repository wordt geplaatst. Makkenlijker kunnen we het niet maken, de codebase maakt daarmee zichzelf kenbaar, vindbaar en alle beschrijvingen blijven daar waar die hoort, bij de bron(code).
+In plaats daarvan wordt deze opgehaald aan de hand van een `publiccode.yaml`-bestand dat in de repository wordt geplaatst. Makkelijker kunnen we het niet maken, de codebase maakt daarmee zichzelf kenbaar, vindbaar en alle beschrijvingen blijven daar waar die hoort, bij de bron(code).
 
 Vanuit dit project wordt beschikbaar gesteld:
 
@@ -47,7 +47,7 @@ Het doorzoekbaar maken van data t.b.v. [Woo](https://www.rijksoverheid.nl/onderw
 **Aanvullingen en afwijkingen ten opzichten van de standaard architectuur**
 
 - (vervanging) In plaats van het standaard publicatie platform zijn er 3 andere opties
-- (vervanging) De beheer interface vanuit Open Catalogi wordt alleen gebruikt al technisch beheer interface, in plaats daarvan zijn er 2 andere beheers interfaces voor medewerkers beschickbaar
+- (vervanging) De beheer interface vanuit Open Catalogi wordt alleen gebruikt als technisch beheer interface, in plaats daarvan zijn er 2 andere beheers interfaces voor medewerkers beschikbaar
 - (aanvulling) Een service voor het ophalen van Woo-gegevens uit zaaksystemen
 - (aanvulling) Een service voor het ophalen van Woo-gegevens uit raadsinformatiesystemen
 - (aanvulling) Een service voor het klaarzetten van Woo-gegevens voor de Woo-index van Koop
