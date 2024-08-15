@@ -11,7 +11,7 @@ OpenCatalogi is een standaard die eigenlijk bestaat uit een verzameling van ande
 - [Publiccode](https://publiccode.eu/nl/)
 - [TOOI](https://standaarden.overheid.nl/tooi)
 
-Deze standaarden bescrhijven gemeenschappelijk hoe catalogi kunnen worden vormgegeven op een manier waardoor ze gezamenlijk één virtuele catalogus vormen. Hierdoor blijft de data bij de bron (organisatie) en zijn er geen landelijke indexen nodig. Aanvullingen op OpenCatalogi moeten dus ook altijd conform deze standaarden worden toegevoegd.
+Deze standaarden beschrijven gemeenschappelijk hoe catalogi kunnen worden vormgegeven op een manier waardoor ze gezamenlijk één virtuele catalogus vormen. Hierdoor blijft de data bij de bron (organisatie) en zijn er geen landelijke indexen nodig. Aanvullingen op OpenCatalogi moeten dus ook altijd conform deze standaarden worden toegevoegd.
 
 De OpenCatalogi-standaard houdt dan verder in dat er:
 
@@ -33,7 +33,7 @@ Vanuit het OpenCatalogi-stelsel gaan we er vanuit dat:
 1. een gebruiker bij een interface een zoekvraag stelt aan een catalogus
 2. de catalogus maakt vervolgens gebruik van bij hem bekende andere catalogi voor het beantwoorden van de vraag.
 
-Hierbij kan één organisatie meerdere catalogi hebben, maar behoord iedere catalogus altijd bij één organisatie.
+Hierbij kan één organisatie meerdere catalogi hebben, maar behoort iedere catalogus altijd bij één organisatie.
 
 ![UML Diagram van OpenCatalogi](https://raw.githubusercontent.com/OpenCatalogi/.github/main/docs/handleidingen/components_simple.svg "UML Diagram van OpenCatalogi")
 
