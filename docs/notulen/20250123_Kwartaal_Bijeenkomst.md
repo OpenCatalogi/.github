@@ -1,8 +1,8 @@
 *Dit is een concept verslag van de kwartaalbijeenkomst van de OpenCatalogi community van 23-01-2025, op @@ nog aan te vullen*
 
-**Locatie**: ICTU<br>
+**Locatie**: ICTU
 **Aanwezigen**: Jaap van Vliet, Steven Gort, Martin de Bijl, Ronald Kok, Maurice te Wispelaere, Gordon Thomsett, RCortenberghe, Jaap Huib<br>
-**Afwezigen**: @@<br>
+**Afwezigen**: @@
 
 **Opening**: 
 
@@ -79,7 +79,7 @@ Ruben: branche dwing je meer grip op doorontwikkeling.
 Steven: code-base is single point of truth. Er is maar 1 landingsplek. Steven wil de beheerfunctie wel opnemen. 4-ogen principe. 
 Ruben: voordeel aan 1 repository is dat alle issues op 1 plek zetten. 
 
-**BESLUIT**: branches met aanbod van Steven voor beheersrol op zich te nemen. Pull-request voor branche merges. managen door Steven. Release keuze door productowner (bijvoorbeeld per kwartaal). Voldoen we aan semantic versioning. 
+**BESLUIT**: B-20250123-1 branches met aanbod van Steven voor beheersrol op zich te nemen. Pull-request voor branche merges. managen door Steven. Release keuze door productowner (bijvoorbeeld per kwartaal). Voldoen we aan semantic versioning. 
 
 Ruben: Dit beteken dat we op Github projecten kunnen aanmaken en issues kunnen sharen. En we kunnen het volgen over het geheel. En daarmee zichtbare roadmap. En daarmee kan je in community overleg over features hebben ondersteund door een kanban. 
 
@@ -89,7 +89,7 @@ Martin: Blijft dat werken met Main (oude naamgeving: master/slave).
 
 Steven: je zal ook iets van een acceptatie omgeving moeten hebben. Je zal ook iets met issues over en weer moeten doen. 
 
-**BESLUIT**: https://github.com/orgs/OpenCatalogi wordt de basis voor ons allen. Daar projecten onder hangen. En daar je issues in noteren en die relateren aan main issues. 
+**BESLUIT**: B-20250123-2: https://github.com/orgs/OpenCatalogi wordt de basis voor ons allen. Daar projecten onder hangen. En daar je issues in noteren en die relateren aan main issues. 
 
 Jaap: Wil afspraak over structuur, ook voor Q2; dan loopt innovatiesubsidie af. VNG deelname aan community. Kijken naar productownerschap voor na Q2. Op korte termijn de **BESLUIT**en doorvoeren. 
 
@@ -97,11 +97,11 @@ Ruben: zorg er dan ook voor dat de use-cases als projecten erin staan.
 
 Jaap: Wanneer in uitvoering. Wanneer klaar? 
 
-* Actie: Ruben: voor 3 februari moeten de use-cases als projecten erop staan. 
-* Actie: Steven: user-stories -> epics 
-* Actie: RK : zelfde voor datasets
-* Actie: RC: werkafspraken 
-* Actie: red je het niet - update mailtje. 
+- [ ]  Actie A-20250123-1: Ruben: voor 3 februari moeten de use-cases als projecten erop staan.
+- [ ]  Actie A-20250123-2: Steven: user-stories -> epics
+- [ ]  Actie A-20250123-3: RK: zelfde voor datasets
+- [ ]  Actie A-20250123-4: RC: werkafspraken
+- [ ]  Actie A-20250123-5: All: red je het niet - update mailtje. 
 
 Jaap: Agenda community - volgende fase. 
 
@@ -115,7 +115,7 @@ Ruben: Idee voor werkgroepje voor installeren OC. Daaruit aanvullen documentatie
 Steven: klein clubje, nu is code-base nog niet stabiel genoeg voor documenteren. Kennisclubje vormen en als taskforce in te zetten om anderen op weg te helpen. Wego4it doet dat ook als service. 
 
 **BESLUIT**: Vrijdagochtend clubje uitbouwen naar werkgroep.
-* Actie: RK + RC - afstemmen of Edwin van Eersel wil aansluiten.
+- [ ] Actie A-20250123-6: RK + RC - afstemmen of Edwin van Eersel wil aansluiten.
 
 RC: Ook iets regelen voor hulpvragen. In kopteam richting aangeven voor hoe organiseren we met elkaar de hulpvragen.
 RC: Bijvoorbeeld over connectoren.
@@ -127,5 +127,7 @@ Steven: 3 doelgroepen: nerds - vinden hun eigen weg. bestuurlijk - goed uitgeleg
 Jaap: op 13 februari willen we goede demo voor BZK. Daar nog mee aan de slag. 
 Ruben: wat hebben we klaarstaan aan demo's? En OpenCatalogi.nl wordt omgezet naar nieuwe release. 
 
-* Actie: RC en Ruben passen dit aan. Componenten moeten nog ingeladen doen o.a. 
-* Actie: Jaap: 6 februari check voor opzet van de demo. 14:16 uur ingeplanned. Locatie nader te bepalen.
+- [ ] Actie A-20250123-7: RC en Ruben passen dit aan. Componenten moeten nog ingeladen doen o.a.
+- [ ] Actie A-20250123-8: Jaap: 6 februari check voor opzet van de demo. 14:16 uur ingeplanned. Locatie nader te bepalen. 
+
+
