@@ -1,4 +1,4 @@
-*Dit is een concept verslag van de kwartaalbijeenkomst van de OpenCatalogi community van 23-01-2025, op @@ nog aan te vullen*
+_Dit is een transcript en dient als input voor het verslag van de kwartaalbijeenkomst van de OpenCatalogi community van 23-01-2025_
 
 **Locatie**: ICTU
 **Aanwezigen**: Jaap van Vliet, Steven Gort, Martin de Bijl, Ronald Kok, Maurice te Wispelaere, Gordon Thomsett, RCortenberghe, Jaap Huib<br>
@@ -11,8 +11,8 @@ Jaap: Wat wil je ophalen in deze sessie?
 - Jaap: Use-cases om te demonstreren op BZK - ICTU - Innovatiedag 13 februari
 - Ronald K (RK): Doorontwikkeling community
 - Steven: Snappen hoe je (OpenCatalogi) OC aan de praat krijgt
-- Ronald C (RC): @@
-- Jaap Huib (JH): @@
+- Ronald C (RC): Hoe organiseren we dat hulpvragen in de community kunnen landen
+- Jaap Huib (JH): Update waar we nu staan met OC
 - Maurice: Wat ondersteunt deze tool en zijn we er al? Wat zijn de ambities. High-value.
 - Gordon: Waar past deze tooling in ons metadata landschap en wat hebben we eraan.
 
@@ -26,16 +26,17 @@ RC: Nu bezig op wat er al is. Welke datasets, formulieren, procesbeschrijvingen.
 Maurice: Geeft inzicht in alle plekken waar initiatieven plaatsvinden. 
 
 Steven: meer content en dan een generiek interface om te vinden. Soort van google / web over de objecten in onderstaand plaatje.
+![image](https://github.com/user-attachments/assets/40a8e903-3c6a-4f5e-8743-74fe3966de1a)
 
 RC: Zoeken op WOZ en je krijgt direct alle relevante onderdelen. 
 
 Maurice: dienstfiets intikken -> fietsvergoeding, manier om aan te vragen. Soort van Rio (intranet Rotterdam). Dus slim zoeken. 
 
-RC: Ja, slim zoeken. Zijn we er al, nee nog niet. 
+RC: Ja, slim zoeken. Zijn we er al, nee nog niet. Het zou mooi zijn als we een routine krijgen om telkens metadata toe te voegen zodat de gebruiker makkelijk kan vinden.
 
 Maurice: er zijn meer collega's die deze functionaliteit nog niet kennen. Wat kan ik er mee? 
 
-Jaap: 'duizend dingen doekje'. Aanpak is te werken langs use-cases zodat we ontdekken dat je OC er ook voor in kan zetten. Zo ook aangesloten op common ground voor keurmerk op toepassingen. Ook daarvoor toegepast.
+Jaap: 'OC is geen duizend dingen doekje'. Aanpak is te werken langs use-cases zodat we ontdekken dat je OC er ook voor in kan zetten. Zo ook aangesloten op common ground voor keurmerk op toepassingen. Ook daarvoor toegepast.
 En zo voor Rotterdam: datasets, Dimpact: inrichting formulieren, 
 
 Maurice: hoe vinden de mensen de weg naar deze oplossing. 
@@ -51,7 +52,7 @@ Jaap: Een schaap over de dam....
 
 Maurice: Je zal een gebruikersgroep moeten organiseren binnen je eigen organisatie. 
 
-Jaap: Er moet een opschalingsstrategie komen om de olievlek te vergroten.
+Jaap: Samenvattend: als een usecase is gestart dient deze in gebruik genomen te worden en “gevuld”. Ook een benoemde eigenaar / Ambassadeur. En dan bepalen hoe verder opgeschaald kan worden binnen en/of buiten de organisatie. Om de olievlek te vergroten.
 
 RC: Gebruikersgroep binnen eigen organisatie en ook met andere organisaties. 
 
@@ -61,7 +62,7 @@ Jaap: Antwoord op ambities zijn gegeven. Graag use-cases nu induiken.
 Jaap: CG: Winnie trok de keurmerk toepassing. Is stil gevallen. Valt en staat met eigenaarschap. Wat meevalt is dat VNG voor OC gekozen heeft. Dat helpt al met opschaling. 
 RK: High-value datasets - live: wat in Rotterdam kan. op z'n minst G4. Rotterdam zoekt de opschaling intern door OC in werkproces te plaatsen en te borgen. Daarnaast doorontwikkeling in samenspraak met G5 met accent op het metamodel voor informatie als zijnde het fundament.
 Jaap: formulieren - inzichtelijk krijgen hoe zo'n formulier in elkaar zit. Open Formulieren is een ontwikkeling die content levert, te vinden 
-Jaap: service blueprint - customer journey's - visueel. 79 blueprints. Worden veel gemaakt in omnichannel, zou je ook erbij willen hebben.
+Martin: service blueprint - customer journey's - visueel. 79 blueprints. Worden veel gemaakt in omnichannel, zou je ook erbij willen hebben.
 Steven: regels - bijv. normenbrief, iedere gemeente maakt daar een normenkaart van. Wil een linked data machine readable - vindbaar via OC. Aanbieden aan Wego4It. 
 
 Jaap: volgende punt: 
@@ -81,9 +82,9 @@ Ruben: voordeel aan 1 repository is dat alle issues op 1 plek zetten.
 
 **BESLUIT**: B-20250123-1 branches met aanbod van Steven voor beheersrol op zich te nemen. Pull-request voor branche merges. managen door Steven. Release keuze door productowner (bijvoorbeeld per kwartaal). Voldoen we aan semantic versioning. 
 
-Ruben: Dit beteken dat we op Github projecten kunnen aanmaken en issues kunnen sharen. En we kunnen het volgen over het geheel. En daarmee zichtbare roadmap. En daarmee kan je in community overleg over features hebben ondersteund door een kanban. 
+Ruben: Dit betekent dat we op Github projecten kunnen aanmaken en issues kunnen sharen. En we kunnen het volgen over het geheel. En daarmee zichtbare roadmap. En daarmee kan je in community overleg over features hebben ondersteund door een kanban. 
 
-
+![image](https://github.com/user-attachments/assets/3d509625-d83c-49e1-9d2e-8ead138b0b6f)
 
 Martin: Blijft dat werken met Main (oude naamgeving: master/slave). 
 
