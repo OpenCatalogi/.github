@@ -72,6 +72,8 @@ Wat prestaties betreft, proberen we zo weinig mogelijk op te vragen. Hiervoor pa
 - Bij het zoeken naar een specifiek type metadata, bevragen we alleen catalogi waarvan bekend is dat ze die hebben.
 - We bevragen OpenCatalogi-installaties in plaats van catalogi.
 
+Om dit te bereiken worden, is er de `_catalogi`-query parameter. In deze parameter geven we de lijst van te lezen catalogi. Dit kunnen interne en externe catalogi zijn. De search controleert vervolgens via de directory welke catalogi er aan een search endpoint hangen (dus per instantie) en geeft dan de `_catalogi`-parameter door aan dit search endpoint. Omdat deze catalogi worden gebaseerd op de listings in de directory, betekent dit dat de bevraagde externe installatie niet gaat doorvragen op andere instanties van OpenCatalogi. Ook wanneer er in de bevraging zelf geen `_catalogi` parameter is gedefinieerd, wordt deze parameter wel samengesteld om alleen de bij een instance geregistreerde catalogi te bevragen, met als resultaat dat ook in deze situatie de bevraging maar één instance diep wordt gedaan.
+
 ## Alles up-to-date houden
 
 Wanneer een nieuwe OpenCatalogi-installatie wordt ontdekt, zal de ontdekkende instantie zichzelf kenbaar maken bij de ontdekte instantie en een meldingsabonnement nemen. OpenCatalogi-installaties zullen andere installaties in hun directory op de hoogte brengen wanneer:
