@@ -1,0 +1,44 @@
+@startuml
+allow_mixing
+!define RECTANGLE class
+
+' Define entities
+RECTANGLE OpenCatalogue {
+    Catalogi
+    Publications
+    Documents
+    Index
+}
+
+RECTANGLE ObjectStore {
+    +store(Catalogi)
+    +store(Publications)
+    +store(Documents)
+    +store(Index)
+}
+
+RECTANGLE SearchIndex {
+    +index(Publications)
+}
+
+RECTANGLE SynchronizationService {
+    +createPublication(source)
+}
+
+actor User
+actor Admin
+actor ExternalSource
+
+' Relationships
+OpenCatalogue -down-> ObjectStore: stores data in
+OpenCatalogue -down-> SearchIndex: transfers published data to
+
+SynchronizationService --> ObjectStore: creates Publications
+ObjectStore --> SearchIndex: transfers published Publications
+
+User --> SearchIndex: queries search endpoint
+Admin --> ObjectStore: manages data
+
+' External Sources
+ExternalSource --> SynchronizationService: provides data
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+participant "New Installation" as A
+participant "Existing Installation" as B
+participant "Other Installations" as C
+
+A -> B: Request directory
+note over A, B: New installation needs to know at least one existing installation
+B --> A: Provide directory
+note over B: Existing installation provides its directory
+
+A -> B: Add itself to B's directory
+note over A, B: New installation is added to existing installation's directory
+
+A -> C: Announce itself and request other unknown installations
+note over A, C: New installation communicates with all other installations in its directory
+C --> A: Provide other unknown installations
+note over C: Other installations provide their known installations to the new one
+
+note over A: Repeat the process at regular intervals
+@enduml

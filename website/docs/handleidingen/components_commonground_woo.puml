@@ -1,0 +1,30 @@
+@startuml
+title: Open Catalogi
+footer: Open Catalogi | Components
+header: Componenten Matrix
+
+
+package "Layer 5 (interactie)" {
+ [//Publicatie platform//\nOpen Tilburg (Acato)] as userUi
+ [//Beheer Interface//\nBeheer Tilburg (Acato)] as adminUI
+}
+
+
+package "Layer 2 (api)" {
+ [//Zoeken API//\nOC Next Cloud App (Conduction)] as searchAPI
+ [//Beheer API//\nOC Next Cloud App (Conduction)] as beheerAPI
+}
+
+package "Layer 1 (data)" {
+database "//Zoek index//\nElastic Search (Elastic)" as elastic
+database "//Objecten opslag//\nOverige Objecten (Maykin)" as ORC
+database "//DMS//\nOpen Zaak (Maykin)" as DMS
+}
+
+adminUI .down.> beheerAPI: Opslaan
+userUi <.down. searchAPI: Opzoeken
+beheerAPI .down.> ORC: Opslaan
+beheerAPI .down.> DMS: Opslaan
+searchAPI <.down. elastic: Zoeken
+ORC .right.> elastic: Updaten
+@enduml

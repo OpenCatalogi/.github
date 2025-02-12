@@ -1,0 +1,23 @@
+@startuml
+title: Open Catalogi
+footer: Open Catalogi | Components
+header: Matrix
+
+
+ [Beheer Interface] as adminUI
+ [Publicatie platform] as userUi
+ [Gebruikers API] as objectsAPI
+ [Zoeken API] as searchAPI
+
+
+database "Search index" as elastic
+database "Objecten opslag" as ORC
+
+adminUI .down.> objectsAPI: Opslaan
+userUi <.down. searchAPI: Opzoeken
+objectsAPI .down.> ORC: Opslaan
+searchAPI <.down. elastic: Zoeken
+ORC .left.> elastic: Updaten
+
+
+@enduml

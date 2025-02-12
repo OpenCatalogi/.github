@@ -1,0 +1,120 @@
+[
+  {
+    "title": "Links",
+    "items": [
+      {
+        "ariaLabel": "Home",
+        "value": "Home",
+        "link": "/",
+        "icon": { "prefix": "fas", "icon": "home", "placement": "left" }
+      },
+      {
+        "value": "Github",
+        "ariaLabel": "Github",
+        "link": "https://github.com/OpenCatalogi",
+        "icon": { "prefix": "fab", "icon": "github", "placement": "left" }
+      }
+    ]
+  },
+  {
+    "title": "Handleidingen",
+    "items": [
+      {
+        "value": "Installatie",
+        "ariaLabel": "Installatie",
+        "internalMarkdown": {
+          "directoryName": "Handleidingen",
+          "fileName": "Installatie"
+        },
+        "icon": { "prefix": "fas", "icon": "arrow-right", "placement": "left" }
+      },
+      {
+        "value": "Architectuur",
+        "ariaLabel": "Architectuur",
+        "internalMarkdown": {
+          "directoryName": "Handleidingen",
+          "fileName": "Architectuur"
+        },
+        "icon": { "prefix": "fas", "icon": "arrow-right", "placement": "left" }
+      },
+      {
+        "value": "Functionaliteit",
+        "ariaLabel": "Functionaliteit",
+        "internalMarkdown": {
+          "directoryName": "Handleidingen",
+          "fileName": "Features"
+        },
+        "icon": { "prefix": "fas", "icon": "arrow-right", "placement": "left" }
+      },
+      {
+        "value": "Frontend",
+        "ariaLabel": "Frontend",
+        "internalMarkdown": {
+          "directoryName": "Handleidingen",
+          "fileName": "Frontend"
+        },
+        "icon": { "prefix": "fas", "icon": "arrow-right", "placement": "left" }
+      },
+      {
+        "value": "Publiccode",
+        "ariaLabel": "Publiccode",
+        "internalMarkdown": {
+          "directoryName": "Handleidingen",
+          "fileName": "Publiccode"
+        },
+        "icon": { "prefix": "fas", "icon": "arrow-right", "placement": "left" }
+      },
+      {
+        "value": "Publicorganisation",
+        "ariaLabel": "Publicorganisation",
+        "internalMarkdown": {
+          "directoryName": "Handleidingen",
+          "fileName": "Publicorganisation"
+        },
+        "icon": { "prefix": "fas", "icon": "arrow-right", "placement": "left" }
+      },
+      {
+        "value": "Productie",
+        "ariaLabel": "Productie",
+        "internalMarkdown": {
+          "directoryName": "Handleidingen",
+          "fileName": "Productie"
+        },
+        "icon": { "prefix": "fas", "icon": "arrow-right", "placement": "left" }
+      },
+      {
+        "value": "Testen",
+        "ariaLabel": "Testen",
+        "internalMarkdown": {
+          "directoryName": "Handleidingen",
+          "fileName": "Testen"
+        },
+        "icon": { "prefix": "fas", "icon": "arrow-right", "placement": "left" }
+      }
+    ]
+  },
+  {
+    "title": "Overige Documenten",
+    "items": [
+      {
+        "ariaLabel": "Bijdragen",
+        "value": "Bijdragen",
+        "internalMarkdown": {
+          "directoryName": "Docs",
+          "fileName": "CONTRIBUTING"
+        },
+
+        "icon": { "prefix": "fas", "icon": "arrow-right", "placement": "left" }
+      },
+      {
+        "ariaLabel": "Organisatie",
+        "value": "Organisatie",
+        "internalMarkdown": {
+          "directoryName": "Docs",
+          "fileName": "GOVERNANCE"
+        },
+        "icon": { "prefix": "fas", "icon": "arrow-right", "placement": "left" }
+      }
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+@startuml
+title: Open Catalogi
+footer: Open Catalogi | Components
+header: Componenten Matrix
+
+
+package "Layer 5 (interactie)" {
+ [Publicatie platform] as userUi
+ [Beheer Interface] as adminUI
+}
+
+
+package "Layer 2 (api)" {
+ [Zoeken API] as searchAPI
+ [Beheer API] as beheerAPI
+}
+
+package "Layer 1 (data)" {
+database "Zoek index" as elastic
+database "Objecten opslag" as ORC
+}
+
+adminUI .down.> beheerAPI: Opslaan
+userUi <.down. searchAPI: Opzoeken
+beheerAPI .down.> ORC: Opslaan
+searchAPI <.down. elastic: Zoeken
+ORC .right.> elastic: Updaten
+@enduml

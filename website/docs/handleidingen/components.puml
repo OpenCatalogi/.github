@@ -1,0 +1,92 @@
+@startuml
+title: Open Catalogi
+footer: Open Catalogi | Components
+header: Components
+
+cloud "Internet"{
+actor "Burger" as user
+actor "Medewerker" as employee
+actor "Beheerder" as admin
+
+}
+
+cloud "Federatief netwerk" {
+package "Catalogi" {
+ [Externe Catalogus] as externalCatalouge
+}
+}
+
+cloud "Externe Applicaties"{
+package "Bronnen" {
+ [Zaaksysteem]  as zaaksysteem
+ [Etc.]  as overigebronnen
+}
+}
+
+
+cloud "Kubernetes"{
+
+package "Layer 5 (interactie)" {
+package "Publicatie platform" {
+ [React NL Design]  as userUi
+}
+
+package "Beheer Interface" {
+ [Vue NL Design]  as adminUi
+}
+}
+
+
+package "Layer 4 (logica)" as layer4 {
+ [Synchronysations]  as service
+}
+
+
+package "Layer 2 (API)" as layer2 {
+
+
+package "Next Cloud framework"{
+package "Zoeken API" {
+ [Open Index] as searchAPI
+}
+
+package "Beheer  API" {
+ [Open Registers] as objectsAPI
+}
+}
+
+}
+
+}
+
+package "Layer 1 (data)" {
+
+package "Search" {
+ [Elastic Search]  as searchDb
+}
+
+package "Object Store" {
+ [ORC]  as objectsDb
+}
+
+package "DMS" {
+ [DRC]  as drc
+}
+}
+
+user <.down.> userUi: Browser ANONIEM
+employee <.down.> userUi: Browser ANONIEM
+admin <.down.> adminUi: Browser JWT token
+userUi ..> searchAPI: Opzoeken
+adminUi ..> objectsAPI: Opslaan
+objectsAPI ..> objectsDb : Data opslaan
+objectsAPI ..> drc : Documenten opslaan
+searchAPI ..> searchDb: Opzoeken
+objectsDb .left.> searchDb: Updaten
+service ..> objectsAPI: Updaten
+externalCatalouge <.> searchAPI: Directory uitwisselen
+externalCatalouge ..> searchAPI: Opzoeken
+zaaksysteem <.down.> service: Synchronyseren
+overigebronnen  <.down.>  service: Synchronyseren
+
+@enduml

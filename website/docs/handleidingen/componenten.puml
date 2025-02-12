@@ -1,0 +1,83 @@
+@startuml
+title: Components
+footer: Open Catalogi | Components
+header: Open Catalogi | Components
+
+cloud "Identity & Access"{
+ [ADFS] as identity
+}
+
+cloud "Gebruikers"{
+actor "Burger" as burger
+actor "Ambtenaar" as medewerker
+actor "Beheerder" as adminUser
+}
+
+cloud "Externe Applicaties"{
+package "Bronnen" {
+ [Zaaksysteem] as ZGW
+ [Etc.] as ETC
+}
+package "Catalogi" {
+ [Externe Catalogus] as externalCatalogue
+}
+}
+
+cloud "Kubernetes"{
+
+package "Layer 5 (Interaction)" {
+package "React NL Design" {
+ [Zoeken UI] as ui
+}
+
+package "Vue NL Design" {
+ [Beheer UI] as admin
+}
+}
+
+package "Layer 4 (Logic)" as layer4 {
+ [Synchronisaties] as service
+}
+
+package "Layer 2 (API)" as layer2 {
+
+package "Open Index" {
+ [Zoeken API] as SearchAPI
+}
+package "Open Registers" {
+ [Beheer API] as ObjectsAPI
+}
+}
+
+package "Layer 1 (Data)" {
+
+package "Search Index" {
+ [Elastic Search] as search
+}
+
+package "Object Store" {
+ [ORC] as db
+}
+
+package "Document Store" {
+ [DRC] as drc
+}
+}
+
+externalCatalogue <..> SearchAPI: Search + Directory
+burger <..> ui: Zoeken via browser (ANONIEM)
+medewerker <..> ui: Zoeken via browser (ANONIEM)
+adminUser <..> admin: Beheren via browser (JWT Claim)
+
+ui <..> SearchAPI: Search + Directory
+admin <..> ObjectsAPI: Publicaties + Catalogi + Metadata
+ZGW <..> service: Synchronisatie
+ETC <..> service: Synchronisatie
+
+ObjectsAPI .down.> db: Persist
+ObjectsAPI .down.> drc: Persist
+SearchAPI <.down. search: Lookup
+SearchAPI <.down. drc: Lookup
+layer2 .down.> identity: AUTH
+service .down.> ObjectsAPI: In synchroniseren van publicaties
+@enduml

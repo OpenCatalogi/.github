@@ -1,0 +1,88 @@
+@startuml
+title: Open Catalogi
+footer: Common Gateway | Components
+header: Components
+
+actor "User" as user
+interface "F5 extern (port 443)" as f5extern
+actor "Admin" as adminUser
+interface "F5 intern (port 443)" as f5intern
+
+actor "Externe Catalogus" as externalCatalouge
+interface "Hipp (outd of scope)" as hipp
+
+cloud "Azure"{
+ [ADFS]  as identity
+}
+
+cloud "Internet"{
+interface "External Catalog" as externalCatalog
+}
+
+
+cloud "Kubernetes"{
+
+boundary "ingress" as ingress
+database loki
+database prometheus
+
+package "Layer 5 (interaction)" {
+package "React Container 1" {
+ [User Interface]  as ui
+}
+
+package "React Container 2" {
+ [Admin Interface]  as admin
+}
+}
+
+
+package "Layer 4 (Logic)" {
+package "NGINX Container" {
+ boundary "Nginx" as Nginx
+}
+
+package "Gateway Container" {
+ [Open Catalogi plugin] as Plugins
+ [Web Gateway] as Gateway
+ [ORM] as ORM
+}
+
+package "RedisContainer" {
+ [Redis] as Redis
+}
+
+
+package "MongoDB Container" {
+ database  "MongoDB " as MognoDB
+}
+}
+
+}
+
+package "Layer 1 (data)" {
+cloud "Database Service"{
+ database  "Postgress/MsSQL/MySql/Oracle" as db
+}
+}
+
+externalCatalouge <..> hipp: PKIO
+user <..> f5extern: Browser ANONIEM
+adminUser <..> f5intern : Browser MET JWT Claim
+f5extern <..> ingress: Alleen openbare endpoints en objecten
+f5intern <..> ingress: Alle endpionts
+hipp <..> ingress: Catalogus uitwisselingen
+ingress <..> ui: Exposes
+ingress <..> admin: Exposes
+ingress <..> Nginx: Exposes
+Nginx  <..> Gateway: Runs
+Gateway <..> Plugins: Implements
+Gateway <..> identity: Implements
+Gateway ..> loki: Logs to
+Gateway ..> prometheus: Reports to
+Plugins <..> externalCatalog: exchanges based on pki
+Gateway ..> MognoDB: Index
+Gateway ..> Redis: Cache
+Gateway ..> ORM: Store
+ORM  ..> db: Persist
+@enduml

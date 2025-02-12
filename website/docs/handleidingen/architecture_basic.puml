@@ -1,0 +1,30 @@
+@startuml
+' Define entities
+class Catalogue {
+  +String name
+  +List<Publication> publications
+  +Organization owner
+}
+
+class Organization {
+  +String name
+  +PKI certificate
+}
+
+class Publication {
+  +String title
+  +String description
+  +Metadata metadata
+}
+
+class Metadata {
+  +String property
+  +String requirements
+}
+
+' Relationships
+Publication "*" --> "1" Catalogue : belongs to
+Metadata "*" --> "1" Catalogue : belongs to
+Publication "*" --> "1" Metadata : defined by
+Catalogue "*" --> "1" Organization : owned by
+@enduml
